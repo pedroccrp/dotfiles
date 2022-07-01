@@ -31,6 +31,14 @@ if has('nvim')
 
     " Autocomplete Configs
     let g:deoplete#enable_at_startup = 1
+
+    " Autopairs Configs
+    let g:closetag_filenames = '*.html,*.xhtml,*.xml,*.vue,*.phtml,*.js,*.jsx,*.coffee,*.erb'
+
+    " Snippets Configs
+    let g:UltiSnipsExpandTrigger = "<tab>"
+    let g:UltiSnipsJumpForwardTrigger = "<tab>"
+    let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 endif
 
 " ---------------------------
@@ -56,16 +64,39 @@ if has('nvim')
 
     " Github
     Plug 'tpope/vim-fugitive'
+    Plug 'Xuyuanp/nerdtree-git-plugin'
 
     " Github copilot
     Plug 'github/copilot.vim'
 
     " Autocomplete
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    " Autocomplete (deoplete plugins)
+    Plug 'deoplete-plugins/deoplete-zsh'
+
+    " Autopairs
+    Plug 'alvan/vim-closetag'"
+    Plug 'jiangmiao/auto-pairs'
+
+    "Surround
+    Plug 'tpope/vim-surround'
 
     " VimWiki
     Plug 'vimwiki/vimwiki'
 
+    " Syntax
+    Plug 'gisphm/vim-gitignore'
+
+    " Snippets
+    Plug 'SirVer/ultisnips'
+    Plug 'honza/vim-snippets'
+
+    " Tmux
+    Plug 'christoomey/vim-tmux-navigator'
+
+    " Needed for other plugins
+    Plug 'roxma/vim-hug-neovim-rpc'
+    Plug 'roxma/nvim-yarp', { 'do': 'pip install -r requirements.txt' }
     call plug#end()
 endif
 
@@ -108,8 +139,9 @@ map <leader>sv :source $MYVIMRC<CR>
 
 " Maximize Split
 nnoremap <leader><Space> :call MaximizeToggle()<CR>
-" nnoremap <C-W>o :call MaximizeToggle()<CR>
-" nnoremap <C-W><C-O> :call MaximizeToggle()<CR>
+
+" Scripts
+nnoremap <leader>r :!%:p
 
 function! MaximizeToggle()
   if exists("s:maximize_session")
