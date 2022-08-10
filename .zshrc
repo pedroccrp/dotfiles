@@ -12,6 +12,8 @@ ZSH_THEME="spaceship"
 
 # VIM Configs
 MYVIMRC="~/.vim/vimrc"
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -78,6 +80,7 @@ plugins=(
     git
     zsh-autosuggestions
     npm
+    fzf
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -111,6 +114,8 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export FZF_BASE=$HOME/.oh-my-zsh/plugins/fzf
 
 alias reload='source ~/.zshrc'
 
@@ -151,3 +156,16 @@ zinit light zsh-users/zsh-completions
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Custom commands
+
+best_release() {
+  grep -F -x -v -f <(git log "$1" --pretty=format:"%s") <(git log "$2" --pretty=format:"%s") | uniq | grep DPMS | sed 's/^/* /'
+}
+
+# using ripgrep combined with preview
+# find-in-file - usage: fif <searchTerm>
+fif() {
+  if [ ! "$#" -gt 0 ]; then echo "Need a string to search for!"; return 1; fi
+  rg --files-with-matches --no-messages "$1" | fzf --preview "highlight -O ansi -l {} 2> /dev/null | rg --colors 'match:bg:yellow' --ignore-case --pretty --context 10 '$1' || rg --ignore-case --pretty --context 10 '$1' {}"
+}

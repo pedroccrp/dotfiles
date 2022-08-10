@@ -5,6 +5,10 @@ set number
 set relativenumber
 
 if has('nvim')
+    hi Normal guibg=NONE ctermbg=NONE
+    au ColorScheme * hi Normal ctermbg=none guibg=none
+    au ColorScheme myspecialcolors hi Normal ctermbg=red guibg=red
+
     set tabstop=4 shiftwidth=4 expandtab
 
     set splitbelow
@@ -39,6 +43,11 @@ if has('nvim')
     let g:UltiSnipsExpandTrigger = "<tab>"
     let g:UltiSnipsJumpForwardTrigger = "<tab>"
     let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+    
+    " Test Kotlin Development
+    let g:android_sdk_path = expand("$ANDROID_HOME")
+    let g:gradle_loclist_show = 0
+    let g:gradle_show_signs = 0 
 endif
 
 " ---------------------------
@@ -53,11 +62,11 @@ if has('nvim')
     Plug 'vim-airline/vim-airline-themes'
     Plug 'christoomey/vim-system-copy'
 
+    " QOL
+    Plug 'psliwka/vim-smoothie'
+
     " File Navigation
     Plug 'preservim/nerdtree'
-
-    " Multiple Cursors
-    Plug 'terryma/vim-multiple-cursors'
 
     " Kotlin
     Plug 'udalov/kotlin-vim'
@@ -69,10 +78,25 @@ if has('nvim')
     " Github copilot
     Plug 'github/copilot.vim'
 
+    " Test Kotlin Development
+    Plug 'hsanson/vim-android'
+    Plug 'dense-analysis/ale'
+    Plug 'georgewfraser/java-language-server'
+    Plug 'fwcd/kotlin-language-server'
+ 
     " Autocomplete
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+
     " Autocomplete (deoplete plugins)
     Plug 'deoplete-plugins/deoplete-zsh'
+    Plug 'mhartington/nvim-typescript'
+    Plug 'Shougo/neco-vim'
+    Plug 'deoplete-plugins/deoplete-jedi'
+    Plug 'carlitux/deoplete-ternjs'
 
     " Autopairs
     Plug 'alvan/vim-closetag'"
@@ -83,6 +107,7 @@ if has('nvim')
 
     " VimWiki
     Plug 'vimwiki/vimwiki'
+    Plug 'fitzterra/vimwiki-git' 
 
     " Syntax
     Plug 'gisphm/vim-gitignore'
@@ -93,6 +118,7 @@ if has('nvim')
 
     " Tmux
     Plug 'christoomey/vim-tmux-navigator'
+    Plug 'preservim/vimux'
 
     " Needed for other plugins
     Plug 'roxma/vim-hug-neovim-rpc'
@@ -109,10 +135,6 @@ noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
-noremap! <Up> <Nop>
-noremap! <Down> <Nop>
-noremap! <Left> <Nop>
-noremap! <Right> <Nop>
 
 " Tabs Movement
 nnoremap K :tabn<CR>
@@ -137,8 +159,25 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 map <leader>vm :tabnew $MYVIMRC<CR>
 map <leader>sv :source $MYVIMRC<CR>
 
+" Terminal Related
+map <Leader>vp :VimuxPromptCommand<CR>
+map <Leader>vl :VimuxRunLastCommand<CR>
+
 " Maximize Split
 nnoremap <leader><Space> :call MaximizeToggle()<CR>
+
+" Copy to clipboard
+vnoremap <C-c> "+y
+
+" Deoplete
+function! s:check_back_space() abort "{{{
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction"}}}
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ deoplete#manual_complete()
 
 " Scripts
 nnoremap <leader>r :!%:p
