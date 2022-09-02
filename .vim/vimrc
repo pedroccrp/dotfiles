@@ -3,6 +3,7 @@
 " ---------------------------
 set number
 set relativenumber
+set nohlsearch
 
 if has('nvim')
     hi Normal guibg=NONE ctermbg=NONE
@@ -14,17 +15,26 @@ if has('nvim')
     set splitbelow
     set splitright
 
-    " CtrlP Configs
-    let g:ctrlp_map = '<c-p>'
-    let g:ctrlp_cmd = 'CtrlP'
-    let g:ctrlp_custom_ignore = '\v(\.cache)$'
-    let g:ctrlp_user_command =  ['.git', 'cd %s && git ls-files . -co --exclude-standard']
-
     " Color Scheme
-    let g:airline_powerline_fonts = 1
-    let g:airline_theme = 'powerlineish'
+    set background=dark
+    let g:lightline = {
+      \ 'colorscheme': 'one',
+      \ }
 
-    colorscheme Tomorrow-Night
+    " Seach Config
+    let g:rg_command = 'rg --vimgrep -S'
+    map <C-P> :Files<CR>
+
+    " Code Analysis
+    let b:ale_linters = ['pyflakes', 'flake8', 'pylint']
+    " let b:ale_fixers = ['eslint']
+    " let b:ale_fix_on_save = 1
+    
+    " Gitgutter
+    nmap ]c <Plug>GitGutterNextHunk
+    nmap [c <Plug>GitGutterPrevHunk
+    nmap <Leader>hs <Plug>GitGutterStageHunk
+    nmap <Leader>hu <Plug>GitGutterUndoHunk
 
     " VimWiki Configs
     let g:vimwiki_list = [{'path': '~/vimwiki/',
@@ -57,34 +67,37 @@ if has('nvim')
     call plug#begin()
 
     " Core
-    Plug 'ctrlpvim/ctrlp.vim'
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
     Plug 'christoomey/vim-system-copy'
+    Plug 'itchyny/lightline.vim'
 
     " QOL
     Plug 'psliwka/vim-smoothie'
+    Plug 'easymotion/vim-easymotion'
+    Plug 'tpope/vim-commentary'
 
     " File Navigation
     Plug 'preservim/nerdtree'
+    Plug 'jremmen/vim-ripgrep'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
 
     " Kotlin
     Plug 'udalov/kotlin-vim'
 
-    " Github
+    " Git
     Plug 'tpope/vim-fugitive'
     Plug 'Xuyuanp/nerdtree-git-plugin'
+    Plug 'airblade/vim-gitgutter'
 
     " Github copilot
     Plug 'github/copilot.vim'
-
-    " Test Kotlin Development
-    Plug 'hsanson/vim-android'
+    
+    " Code Errors
     Plug 'dense-analysis/ale'
-    Plug 'georgewfraser/java-language-server'
-    Plug 'fwcd/kotlin-language-server'
- 
+
     " Autocomplete
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'sheerun/vim-polyglot'
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
@@ -93,7 +106,6 @@ if has('nvim')
 
     " Autocomplete (deoplete plugins)
     Plug 'deoplete-plugins/deoplete-zsh'
-    Plug 'mhartington/nvim-typescript'
     Plug 'Shougo/neco-vim'
     Plug 'deoplete-plugins/deoplete-jedi'
     Plug 'carlitux/deoplete-ternjs'
