@@ -1,2 +1,10 @@
 # dotfiles
-Repository for storing and sharing all kind of configuration files
+
+Where the magic happens.
+
+## Instalation
+
+```
+chmod +x ./install.sh
+./install.sh
+```

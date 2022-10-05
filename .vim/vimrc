@@ -5,6 +5,8 @@ set number
 set relativenumber
 set nohlsearch
 
+let &t_ut=''
+
 if has('nvim')
     hi Normal guibg=NONE ctermbg=NONE
     au ColorScheme * hi Normal ctermbg=none guibg=none
@@ -77,8 +79,7 @@ if has('nvim')
 
     " File Navigation
     Plug 'preservim/nerdtree'
-    Plug 'jremmen/vim-ripgrep'
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'jremmen/vim-ripgrep' Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
 
     " Kotlin

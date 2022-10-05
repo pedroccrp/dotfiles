@@ -1,0 +1,12 @@
+[user]
+	name = Pedro Pontes
+	email = pontescpedro@gmail.com
+[core]
+	editor = nvim
+[alias]
+	mr = push -u origin HEAD
+    lg = log --graph --oneline --all
+[mergetool "fugitive"]
+	cmd = nvim -f -c \"Gvdiffsplit!\" \"$MERGED\"
+[merge]
+	tool = fugitive
