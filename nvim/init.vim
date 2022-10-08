@@ -60,6 +60,9 @@ vnoremap > >gv
 vnoremap y myy`y
 vnoremap Y myY`y
 
+" Copy 'path:line' to clipboard
+nnoremap <silent> yp :let @+=expand("%") . ':' . line(".")<CR>
+
 " When text is wrapped, move by terminal rows, not lines, unless a count is provided
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
@@ -76,7 +79,7 @@ nnoremap N Nzzzv
 nnoremap J mzJ`z
 
 " Open the current file in the default program
-nmap <leader>x :!xdg-open %<cr><cr>
+nmap <leader>xx :!xdg-open %<cr><cr>
 
 " Disable arrow keys
 noremap <Up> <Nop>
@@ -84,11 +87,9 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
-" Tabs Movement
-nnoremap K :tabn<CR>
-nnoremap J :tabN<CR>
-nnoremap <C-t> :tabnew<CR>
-nnoremap <C-w> :tabc<CR>
+" Buffer Movement
+nnoremap K :bn<CR>
+nnoremap J :bp<CR>
 
 " Split Movement
 nnoremap <C-J> <C-W><C-J>
@@ -135,6 +136,7 @@ source ~/.config/nvim/plugins/phpactor.vim
 source ~/.config/nvim/plugins/polyglot.vim
 source ~/.config/nvim/plugins/projectionist.vim
 source ~/.config/nvim/plugins/quickscope.vim
+source ~/.config/nvim/plugins/rspec.vim
 source ~/.config/nvim/plugins/repeat.vim
 source ~/.config/nvim/plugins/rooter.vim
 source ~/.config/nvim/plugins/sayonara.vim
