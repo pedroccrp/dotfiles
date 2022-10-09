@@ -1,0 +1,10 @@
+<application>
+  <component name="MaterialThemeConfig">
+    <option name="premium" value="true" />
+    <option name="pristineConfig" value="false" />
+    <option name="accentColor" value="84ffff" />
+    <option name="selectedTheme" value="DEEPOCEAN" />
+    <option name="userId" value="-9e33db1:17ccca5a860:-8000" />
+    <option name="version" value="6.9.1" />
+  </component>
+</application>

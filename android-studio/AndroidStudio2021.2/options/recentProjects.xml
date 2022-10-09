@@ -1,0 +1,45 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/oxeanbits/androidplayground">
+          <value>
+            <RecentProjectMetaInfo frameTitle="Android Playground – MainActivity.kt [Android_Playground.app]" projectWorkspaceId="1yVMZNaV4HEpQt2U4hlffbINgq4">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="AI-203.7717.56.2031.7583922" />
+              <option name="buildTimestamp" value="1627329542613" />
+              <frame x="64" y="27" width="1856" height="1053" extendedState="6" />
+              <option name="productionCode" value="AI" />
+              <option name="projectOpenTimestamp" value="1633460022614" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/oxeanbits/TodoApp">
+          <value>
+            <RecentProjectMetaInfo frameTitle="TodoApp – ActionBarComponent.kt [TodoApp.app]" projectWorkspaceId="1z6EE6YDM9ZvUDOZXiUNZtetlym">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="AI-203.7717.56.2031.7583922" />
+              <option name="buildTimestamp" value="1627329595169" />
+              <frame x="64" y="27" width="1856" height="1053" extendedState="6" />
+              <option name="productionCode" value="AI" />
+              <option name="projectOpenTimestamp" value="1633522786664" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/oxeanbits/dpms-redux-android">
+          <value>
+            <RecentProjectMetaInfo frameTitle="DPMS – BaseRouteQueueTest.kt [DPMS.app.unitTest]" opened="true" projectWorkspaceId="2AzNBabKHstK129RJ7KNPuKx04w">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="AI-212.5712.43.2112.8512546" />
+              <option name="buildTimestamp" value="1651163269740" />
+              <frame x="0" y="27" width="1920" height="1053" extendedState="6" />
+              <option name="productionCode" value="AI" />
+              <option name="projectOpenTimestamp" value="1656010733118" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/oxeanbits" />
+  </component>
+</application>

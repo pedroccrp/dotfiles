@@ -1,0 +1,1502 @@
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/storage/objectbox/PictureObjectBox.kt" description="Maybe changing the way the pictures are returned here can make them stay on state" line="43" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:upstream" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:upstream" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:upstream" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:upstream" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="DPMS" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/polls/PollRoutesBuilder.kt">
+          <provider selected="true" editor-type-id="android-source-code">
+            <state>
+              <editor-state relative-caret-position="140">
+                <caret line="40" column="31" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="31" />
+              </editor-state>
+              <multi-preview-state selected="">
+                <representations>
+                  <list />
+                </representations>
+              </multi-preview-state>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/polls/PollRoutesFactory.kt">
+          <provider selected="true" editor-type-id="android-source-code">
+            <state>
+              <editor-state relative-caret-position="208">
+                <caret line="12" selection-start-line="12" selection-end-line="13" />
+              </editor-state>
+              <multi-preview-state selected="">
+                <representations>
+                  <list />
+                </representations>
+              </multi-preview-state>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/middlewares/rest/polls/PollRoutesFactoryTest.kt">
+          <provider selected="true" editor-type-id="android-source-code">
+            <state>
+              <editor-state relative-caret-position="261">
+                <caret line="133" column="70" selection-start-line="133" selection-start-column="70" selection-end-line="133" selection-end-column="70" />
+              </editor-state>
+              <multi-preview-state selected="">
+                <representations>
+                  <list />
+                </representations>
+              </multi-preview-state>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/reducers/reducers/basic/PictureReducerTest.kt">
+          <provider selected="true" editor-type-id="android-source-code">
+            <state>
+              <editor-state relative-caret-position="199">
+                <caret line="353" column="45" selection-start-line="353" selection-start-column="45" selection-end-line="353" selection-end-column="45" />
+              </editor-state>
+              <multi-preview-state selected="">
+                <representations>
+                  <list />
+                </representations>
+              </multi-preview-state>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sync/src/test/java/com/kaefer/pms/sync/models/DatasheetTest.kt">
+          <provider selected="true" editor-type-id="android-source-code">
+            <state>
+              <editor-state relative-caret-position="173">
+                <caret line="108" column="24" selection-start-line="108" selection-start-column="24" selection-end-line="108" selection-end-column="24" />
+              </editor-state>
+              <multi-preview-state selected="">
+                <representations>
+                  <list />
+                </representations>
+              </multi-preview-state>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sync/src/test/java/com/kaefer/pms/sync/immutables/base/base_copy/DatasheetTest.kt">
+          <provider selected="true" editor-type-id="android-source-code">
+            <state>
+              <editor-state />
+              <multi-preview-state selected="">
+                <representations>
+                  <list />
+                </representations>
+              </multi-preview-state>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sync/src/test/java/com/kaefer/pms/sync/models/FlexibleEditableTest.kt">
+          <provider selected="true" editor-type-id="android-source-code">
+            <state>
+              <editor-state relative-caret-position="183">
+                <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+              </editor-state>
+              <multi-preview-state selected="">
+                <representations>
+                  <list />
+                </representations>
+              </multi-preview-state>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/SyncMiddleware.kt">
+          <provider selected="true" editor-type-id="android-source-code">
+            <state>
+              <editor-state relative-caret-position="363">
+                <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+              </editor-state>
+              <multi-preview-state selected="">
+                <representations>
+                  <list />
+                </representations>
+              </multi-preview-state>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/api/pms/api/SyncRoutes.kt">
+          <provider selected="true" editor-type-id="android-source-code">
+            <state>
+              <editor-state relative-caret-position="129">
+                <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+              </editor-state>
+              <multi-preview-state selected="">
+                <representations>
+                  <list />
+                </representations>
+              </multi-preview-state>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/api/pms/api/routes/Routes.kt">
+          <provider selected="true" editor-type-id="android-source-code">
+            <state>
+              <editor-state relative-caret-position="285">
+                <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+              </editor-state>
+              <multi-preview-state selected="">
+                <representations>
+                  <list />
+                </representations>
+              </multi-preview-state>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>SYNC_REQUE</find>
+      <find>request</find>
+      <find>confirmRe</find>
+      <find>CONFIRM</find>
+      <find>REQUEST</find>
+      <find>send</find>
+      <find>cancel</find>
+      <find>cancel_progress</find>
+      <find>check if update</find>
+      <find>PICTURE</find>
+      <find>CREATE_PIC</find>
+      <find>picture</find>
+      <find>check sync</find>
+      <find>!!</find>
+      <find>PictureRoute&lt;</find>
+      <find>syncPicture</find>
+      <find>CREATED_REC</find>
+      <find>CREATED_RECORD</find>
+      <find>FlexibleMiddlewareTest</find>
+      <find>SYNC_AL</find>
+      <find>MutableMap</find>
+      <find>status_done</find>
+      <find>done</find>
+      <find>&quot;done</find>
+      <find>&quot;done&quot;</find>
+      <find>status_</find>
+      <find>newFlexibleWo</find>
+      <find>newFlexi</find>
+      <find>check state</find>
+      <find>callb</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/reducers/reducers/basic/flexible</dir>
+      <dir>$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/storage</dir>
+      <dir>$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.oxeanbits/ImageEditor-Android/v0.1.2/9105422268e2d94189228dfd66d1c226128f3d2a/ImageEditor-Android-v0.1.2-sources.jar!/com/xinlan/imageeditlibrary/editimage</dir>
+      <dir>$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/database</dir>
+      <dir>$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/storage/objectbox/converters</dir>
+      <dir>$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/ui/components/planning_performance</dir>
+      <dir>$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/ui/components/views/columns</dir>
+      <dir>$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/ui/activities/dropformula</dir>
+      <dir>$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/ui/activities/inspections</dir>
+      <dir>$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/ui/components/planning_performance</dir>
+      <dir>$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/ui/components/item</dir>
+      <dir>$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/ui/components/drop_formula</dir>
+      <dir>$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/ui/components</dir>
+      <dir>$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/ui/components</dir>
+      <dir>$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/ui/components/drop_formula</dir>
+      <dir>$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/reducers/sync</dir>
+      <dir>$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/utils</dir>
+      <dir>$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/ui/components/views/columns</dir>
+      <dir>$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/actions</dir>
+      <dir>$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/models</dir>
+      <dir>$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/models/base</dir>
+      <dir>$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/ui/components/navigation_bar</dir>
+      <dir>$PROJECT_DIR$/sync/src/test/java/com/kaefer/pms/sync/models</dir>
+      <dir>$PROJECT_DIR$/sync/src/test/java/com/kaefer/pms/sync/api</dir>
+      <dir>$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/base</dir>
+      <dir>$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest</dir>
+      <dir>$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/middlewares/rest</dir>
+      <dir>$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/database/base</dir>
+      <dir>$PROJECT_DIR$/sync/src/test/java/com/kaefer/pms/sync/immutables/base/base_copy</dir>
+      <dir>$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/middlewares/rest/polls</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/DpmsApplication.kt" />
+      <option value="$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/actions/ActionCreator.kt" />
+      <option value="$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/api/pms/api/InspectRoutes.kt" />
+      <option value="$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/api/pms/api/ProgressServiceRoutes.kt" />
+      <option value="$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/api/pms/api/DatasheetRoutes.kt" />
+      <option value="$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/api/pms/api/RequestRoutes.kt" />
+      <option value="$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/api/pms/api/ProgressRoutes.kt" />
+      <option value="$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/api/pms/api/ScopeRoutes.kt" />
+      <option value="$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/base/RoutesMiddleware.kt" />
+      <option value="$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/base/BaseSyncPicturesMiddleware.kt" />
+      <option value="$PROJECT_DIR$/sync/src/test/java/com/kaefer/pms/sync/api/PictureRoutesTest.kt" />
+      <option value="$PROJECT_DIR$/sync/src/test/java/com/kaefer/pms/sync/api/InspectPictureRoutesTest.kt" />
+      <option value="$PROJECT_DIR$/sync/src/test/java/com/kaefer/pms/sync/api/ProgressPictureRoutesTest.kt" />
+      <option value="$PROJECT_DIR$/sync/src/test/java/com/kaefer/pms/sync/api/ScopePictureRoutesTest.kt" />
+      <option value="$PROJECT_DIR$/sync/src/test/java/com/kaefer/pms/sync/api/ProgressServicePictureRoutesTest.kt" />
+      <option value="$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/api/pms/api/routes/PictureRoute.kt" />
+      <option value="$PROJECT_DIR$/sync/src/test/java/com/kaefer/pms/sync/api/DatasheetRoutesTest.kt" />
+      <option value="$PROJECT_DIR$/sync/src/test/java/com/kaefer/pms/sync/api/InspectRoutesTest.kt" />
+      <option value="$PROJECT_DIR$/sync/src/test/java/com/kaefer/pms/sync/api/RequestRoutesTest.kt" />
+      <option value="$PROJECT_DIR$/sync/src/test/java/com/kaefer/pms/sync/api/ScopeRoutesTest.kt" />
+      <option value="$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/PictureUploadMiddleware.kt" />
+      <option value="$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/ProgressHistoriesSyncMiddleware.kt" />
+      <option value="$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/EstimateServicesSyncMiddleware.kt" />
+      <option value="$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/ProgressServiceHistoriesSyncMiddleware.kt" />
+      <option value="$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/ProgressSyncMiddleware.kt" />
+      <option value="$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/base/FlexibleMiddlewareTest.kt" />
+      <option value="$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/middlewares/rest/base/FlexibleSyncMiddlewareTest.java" />
+      <option value="$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/middlewares/rest/base/FlexibleSyncMiddlewareTest.kt" />
+      <option value="$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/middlewares/rest/ScopesSyncMiddlewareTest.kt" />
+      <option value="$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/middlewares/rest/base/UploadMiddlewareTest.kt" />
+      <option value="$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/middlewares/rest/InspectsSyncMiddlewareTest.kt" />
+      <option value="$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/middlewares/rest/DatasheetsSyncMiddlewareTest.kt" />
+      <option value="$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/middlewares/rest/EstimateServicesSyncMiddlewareTest.kt" />
+      <option value="$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/middlewares/rest/ProgressServicesSyncMiddlewareTest.kt" />
+      <option value="$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/middlewares/rest/ProgressSyncMiddlewareTest.kt" />
+      <option value="$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/middlewares/rest/RequestsSyncMiddlewareTest.kt" />
+      <option value="$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/api/pms/model/SyncConstants.kt" />
+      <option value="$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/InspectsSyncMiddleware.kt" />
+      <option value="$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/models/RequestStatus.kt" />
+      <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+      <option value="$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/ui/components/StatusBadge.kt" />
+      <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <option value="$PROJECT_DIR$/app/src/main/res/values-zh-rCN/strings.xml" />
+      <option value="$PROJECT_DIR$/app/src/main/res/values-pt/strings.xml" />
+      <option value="$PROJECT_DIR$/app/src/main/res/values-fr/strings.xml" />
+      <option value="$PROJECT_DIR$/app/src/main/res/values-es/strings.xml" />
+      <option value="$PROJECT_DIR$/app/src/main/res/values-no/strings.xml" />
+      <option value="$PROJECT_DIR$/app/src/main/res/values-de/strings.xml" />
+      <option value="$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/polls/PollRoutesBuilder.kt" />
+      <option value="$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/polls/PollRoutesFactory.kt" />
+      <option value="$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/middlewares/rest/polls/PollRoutesFactoryTest.kt" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1" />
+    <panes />
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local" commandHistoryFileName="DPMS-history" />
+    </option>
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ProgressServicesDatabaseMiddlewareTest - 2022.05.16 at 12h 54m 39s.xml">
+      <configuration name="ProgressServicesDatabaseMiddlewareTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="ProgressServicesDatabaseMiddlewareTest - 2022.05.16 at 12h 54m 40s.xml">
+      <configuration name="ProgressServicesDatabaseMiddlewareTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="PictureReducerTest_check_state_mutation_for_upload_failed - 2022.05.19 at 13h 14m 44s.xml">
+      <configuration name="PictureReducerTest.check state mutation for upload failed" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="DatasheetTest_newFlexibleWorks - 2022.05.19 at 13h 17m 53s.xml">
+      <configuration name="DatasheetTest.newFlexibleWorks" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="PollRoutesFactoryTest_check_for_registered_requests_in_poll_routes - 2022.05.19 at 13h 26m 52s.xml">
+      <configuration name="PollRoutesFactoryTest.check for registered requests in poll routes" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="PollRoutesFactoryTest_check_for_registered_requests_in_poll_routes - 2022.05.19 at 13h 31m 00s.xml">
+      <configuration name="PollRoutesFactoryTest.check for registered requests in poll routes" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="PollRoutesFactoryTest_check_for_registered_requests_in_poll_routes - 2022.05.19 at 13h 35m 49s.xml">
+      <configuration name="PollRoutesFactoryTest.check for registered requests in poll routes" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="PollRoutesFactoryTest_check_for_registered_requests_in_poll_routes - 2022.05.19 at 13h 41m 04s.xml">
+      <configuration name="PollRoutesFactoryTest.check for registered requests in poll routes" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="PollRoutesFactoryTest_check_for_registered_requests_in_poll_routes - 2022.05.19 at 13h 41m 55s.xml">
+      <configuration name="PollRoutesFactoryTest.check for registered requests in poll routes" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="PollRoutesFactoryTest_check_for_registered_requests_in_poll_routes - 2022.05.19 at 13h 45m 02s.xml">
+      <configuration name="PollRoutesFactoryTest.check for registered requests in poll routes" configurationId="GradleRunConfiguration" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <editor active="true" />
+    <layout>
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.6534749" weight="0.26858836" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" sideWeight="0.35200667" side_tool="true" weight="0.16082974" />
+      <window_info id="Commit" order="4" sideWeight="0.6511824" visible="true" weight="0.251347" />
+      <window_info id="Pull Requests" order="5" sideWeight="0.49944258" weight="0.329472" />
+      <window_info id="Build Variants" order="6" sideWeight="0.34881756" side_tool="true" visible="true" weight="0.251347" />
+      <window_info id="Resources Explorer" order="7" sideWeight="0.49944258" weight="0.3294702" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.49972406" side_tool="true" weight="0.42667323" />
+      <window_info anchor="bottom" id="TODO" order="1" weight="0.32998884" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.19734251" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.800689" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.33021653" />
+      <window_info anchor="bottom" id="clangd" order="5" />
+      <window_info anchor="bottom" id="Services" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Logcat" order="7" weight="0.27706692" />
+      <window_info anchor="bottom" x="70" y="160" width="1603" height="735" id="Build" order="8" sideWeight="0.50027597" visible="true" weight="0.42667323" />
+      <window_info anchor="bottom" id="Logcat V2" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.33021653" />
+      <window_info anchor="bottom" id="Find" order="11" weight="0.3538386" />
+      <window_info anchor="bottom" id="Android Profiler" order="12" weight="0.33021653" />
+      <window_info anchor="bottom" id="Debug" order="13" weight="0.42765749" />
+      <window_info anchor="bottom" id="Layout Inspector" order="14" sideWeight="0.49972406" side_tool="true" weight="0.59498036" />
+      <window_info anchor="bottom" x="1920" y="37" width="1920" height="1043" id="Run" maximized="true" order="15" weight="0.30068898" />
+      <window_info anchor="bottom" x="64" y="64" width="1856" height="1016" id="App Inspection" maximized="true" order="16" sideWeight="0.50027597" weight="0.4680118" />
+      <window_info anchor="right" id="Gradle" order="0" />
+      <window_info anchor="right" id="Layout Validation" order="1" />
+      <window_info anchor="right" id="ADB Wi-Fi" order="2" side_tool="true" weight="0.34492275" />
+      <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
+      <window_info anchor="right" id="Android Emulator" order="4" side_tool="true" weight="0.33001077" />
+      <window_info anchor="right" id="Assistant" order="5" weight="0.33001077" />
+      <window_info anchor="right" id="Device Manager" order="6" weight="0.33001077" />
+      <window_info anchor="right" id="github.copilotToolWindow" order="7" weight="0.33001077" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.65384614" weight="0.26858836" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" sideWeight="0.35200667" side_tool="true" weight="0.16082974" />
+      <window_info id="Commit" order="4" sideWeight="0.6479933" visible="true" weight="0.16082974" />
+      <window_info id="Pull Requests" order="5" sideWeight="0.49944258" weight="0.329472" />
+      <window_info id="Build Variants" order="6" sideWeight="0.35200667" side_tool="true" weight="0.16082974" />
+      <window_info id="Resources Explorer" order="7" sideWeight="0.49944258" weight="0.3294702" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.49972406" side_tool="true" weight="0.42667323" />
+      <window_info anchor="bottom" id="TODO" order="1" weight="0.32998884" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.34891734" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.800689" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.33021653" />
+      <window_info anchor="bottom" id="clangd" order="5" />
+      <window_info anchor="bottom" id="Services" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Logcat" order="7" weight="0.33218503" />
+      <window_info anchor="bottom" x="70" y="160" width="1603" height="735" id="Build" order="8" sideWeight="0.50027597" weight="0.42667323" />
+      <window_info anchor="bottom" id="Logcat V2" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32998884" />
+      <window_info anchor="bottom" id="Find" order="11" weight="0.3538386" />
+      <window_info anchor="bottom" id="Android Profiler" order="12" weight="0.33021653" />
+      <window_info anchor="bottom" id="Debug" order="13" visible="true" weight="0.3144685" />
+      <window_info anchor="bottom" id="Layout Inspector" order="14" sideWeight="0.49972406" side_tool="true" weight="0.59498036" />
+      <window_info anchor="bottom" id="Run" order="15" weight="0.28001967" />
+      <window_info active="true" anchor="bottom" x="64" y="64" width="1856" height="1016" id="App Inspection" maximized="true" order="16" sideWeight="0.50027597" type="WINDOWED" weight="0.5004921" />
+      <window_info anchor="right" id="Gradle" order="0" />
+      <window_info anchor="right" id="Layout Validation" order="1" />
+      <window_info anchor="right" id="ADB Wi-Fi" order="2" side_tool="true" weight="0.34492275" />
+      <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
+      <window_info anchor="right" id="Android Emulator" order="4" side_tool="true" weight="0.33001077" />
+      <window_info anchor="right" id="Assistant" order="5" weight="0.33001077" />
+      <window_info anchor="right" id="Device Manager" order="6" weight="0.33001077" />
+    </layout-to-restore>
+    <recentWindows>
+      <value>Run</value>
+      <value>Commit</value>
+      <value>Debug</value>
+      <value>github.copilotToolWindow</value>
+      <value>Build Variants</value>
+      <value>Version Control</value>
+      <value>Project</value>
+      <value>Messages</value>
+      <value>Pull Requests</value>
+      <value>Problems View</value>
+      <value>Find</value>
+      <value>Logcat</value>
+      <value>Build</value>
+      <value>App Inspection</value>
+      <value>Event Log</value>
+      <value>Favorites</value>
+      <value>Device Manager</value>
+      <value>Android Profiler</value>
+      <value>Layout Inspector</value>
+      <value>Android Emulator</value>
+      <value>ADB Wi-Fi</value>
+      <value>Terminal</value>
+      <value>TODO</value>
+      <value>Assistant</value>
+    </recentWindows>
+  </component>
+  <component name="Trusted.Project.Settings" hasCheckedIfOldProject="true" trusted="YES" />
+  <component name="WindowStateProjectService">
+    <state x="107" y="87" width="1656" height="846" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1652133120180">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="107" y="87" width="1656" height="846" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652133120180" />
+    <state x="173" y="121" width="1601" height="832" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/64.27.1856.1053@64.27.1856.1053" timestamp="1649705292416" />
+    <state x="1920" y="116" width="1920" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/64.27.3776.1053@64.27.3776.1053" timestamp="1647346733218" />
+    <state x="765" y="272" width="444" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1649444762812">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="765" y="272" width="444" height="569" key="#com.intellij.ide.util.MemberChooser/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1646164286307" />
+    <state x="765" y="272" key="#com.intellij.ide.util.MemberChooser/64.27.1856.1053/64.27.1856.1053@64.27.1856.1053" timestamp="1649444762812" />
+    <state x="364" y="27" width="912" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1651504289521">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="364" y="27" width="1245" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1651504289521" />
+    <state x="364" y="27" width="912" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/64.27.1856.1053/64.27.1856.1053@64.27.1856.1053" timestamp="1649440994953" />
+    <state x="364" y="27" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/64.27.1856.1053@64.27.1856.1053" timestamp="1648841860891" />
+    <state x="389" y="303" width="384" height="507" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1652284188558">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="389" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652284188558" />
+    <state x="389" y="303" width="384" height="507" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/64.27.1856.1053/64.27.1856.1053@64.27.1856.1053" timestamp="1649444101127" />
+    <state x="725" y="303" width="524" height="507" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/64.27.3776.1053@64.27.3776.1053" timestamp="1649297737090" />
+    <state x="741" y="323" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1652480730620">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="741" y="323" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652480730620" />
+    <state x="472" y="104" width="1131" height="817" key="#xdebugger.XInspectDialog" timestamp="1652191018226">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="472" y="104" width="1131" height="817" key="#xdebugger.XInspectDialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652191018226" />
+    <state x="966" y="141" width="881" height="760" key="#xdebugger.evaluate" timestamp="1652215492025">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="966" y="141" width="774" height="760" key="#xdebugger.evaluate/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652215492025" />
+    <state x="1006" y="121" width="881" height="760" key="#xdebugger.evaluate/64.27.1856.1053/64.27.1856.1053@64.27.1856.1053" timestamp="1646431727920" />
+    <state x="871" y="81" width="931" height="878" key="#xdebugger.evaluate/64.27.1856.1053@64.27.1856.1053" timestamp="1649078448708" />
+    <state x="467" y="171" width="1350" height="760" key="#xdebugger.evaluate/64.27.3776.1053@64.27.3776.1053" timestamp="1649861598650" />
+    <state x="779" y="293" width="426" height="527" key="AndroidProcessChooserDialog" timestamp="1652886868956">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="976" y="293" width="426" height="527" key="AndroidProcessChooserDialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652193121819" />
+    <state x="976" y="293" key="AndroidProcessChooserDialog/64.27.1856.1053/64.27.1856.1053@64.27.1856.1053" timestamp="1647260526331" />
+    <state x="779" y="293" width="426" height="527" key="AndroidProcessChooserDialog/64.27.1856.1053@64.27.1856.1053" timestamp="1652886868956" />
+    <state x="1920" y="293" width="426" height="527" key="AndroidProcessChooserDialog/64.27.3776.1053@64.27.3776.1053" timestamp="1649860243687" />
+    <state width="587" height="110" key="DebuggerActiveHint" timestamp="1652217215937">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state width="587" height="110" key="DebuggerActiveHint/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652217215937" />
+    <state width="573" height="110" key="DebuggerActiveHint/64.27.1856.1053/64.27.1856.1053@64.27.1856.1053" timestamp="1646431256416" />
+    <state width="598" height="418" key="DebuggerActiveHint/64.27.1856.1053@64.27.1856.1053" timestamp="1649078488585" />
+    <state x="173" y="36" width="1656" height="853" key="DiffContextDialog" timestamp="1651841536638">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="173" y="36" width="1656" height="853" key="DiffContextDialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1651841536638" />
+    <state x="164" y="127" width="1656" height="853" key="DiffContextDialog/64.27.1856.1053/64.27.1856.1053@64.27.1856.1053" timestamp="1648227412096" />
+    <state x="173" y="36" width="1484" height="879" key="DiffContextDialog/64.27.1856.1053@64.27.1856.1053" timestamp="1648846996836" />
+    <state x="786" y="293" key="FileChooserDialogImpl" timestamp="1652193649514">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="786" y="293" key="FileChooserDialogImpl/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652193649514" />
+    <state width="1812" height="406" key="GridCell.Tab.0.bottom" timestamp="1652987146188">
+      <screen x="64" y="27" width="3776" height="1053" />
+    </state>
+    <state width="1812" height="277" key="GridCell.Tab.0.bottom/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652720756484" />
+    <state width="1812" height="227" key="GridCell.Tab.0.bottom/64.27.1856.1053/64.27.1856.1053@64.27.1856.1053" timestamp="1650584612505" />
+    <state width="1812" height="406" key="GridCell.Tab.0.bottom/64.27.1856.1053@64.27.1856.1053" timestamp="1652901157822" />
+    <state width="1812" height="406" key="GridCell.Tab.0.bottom/64.27.3776.1053@64.27.3776.1053" timestamp="1652987146188" />
+    <state width="1812" height="406" key="GridCell.Tab.0.center" timestamp="1652987146185">
+      <screen x="64" y="27" width="3776" height="1053" />
+    </state>
+    <state width="1812" height="277" key="GridCell.Tab.0.center/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652720756480" />
+    <state width="1812" height="227" key="GridCell.Tab.0.center/64.27.1856.1053/64.27.1856.1053@64.27.1856.1053" timestamp="1650584612504" />
+    <state width="1812" height="406" key="GridCell.Tab.0.center/64.27.1856.1053@64.27.1856.1053" timestamp="1652901157821" />
+    <state width="1812" height="406" key="GridCell.Tab.0.center/64.27.3776.1053@64.27.3776.1053" timestamp="1652987146185" />
+    <state width="1812" height="406" key="GridCell.Tab.0.left" timestamp="1652987146183">
+      <screen x="64" y="27" width="3776" height="1053" />
+    </state>
+    <state width="1812" height="277" key="GridCell.Tab.0.left/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652720756468" />
+    <state width="1812" height="227" key="GridCell.Tab.0.left/64.27.1856.1053/64.27.1856.1053@64.27.1856.1053" timestamp="1650584612504" />
+    <state width="1812" height="406" key="GridCell.Tab.0.left/64.27.1856.1053@64.27.1856.1053" timestamp="1652901157820" />
+    <state width="1812" height="406" key="GridCell.Tab.0.left/64.27.3776.1053@64.27.3776.1053" timestamp="1652987146183" />
+    <state width="1812" height="406" key="GridCell.Tab.0.right" timestamp="1652987146186">
+      <screen x="64" y="27" width="3776" height="1053" />
+    </state>
+    <state width="1812" height="277" key="GridCell.Tab.0.right/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652720756482" />
+    <state width="1812" height="227" key="GridCell.Tab.0.right/64.27.1856.1053/64.27.1856.1053@64.27.1856.1053" timestamp="1650584612505" />
+    <state width="1812" height="406" key="GridCell.Tab.0.right/64.27.1856.1053@64.27.1856.1053" timestamp="1652901157821" />
+    <state width="1812" height="406" key="GridCell.Tab.0.right/64.27.3776.1053@64.27.3776.1053" timestamp="1652987146186" />
+    <state width="1812" height="406" key="GridCell.Tab.1.bottom" timestamp="1652987146194">
+      <screen x="64" y="27" width="3776" height="1053" />
+    </state>
+    <state width="1812" height="406" key="GridCell.Tab.1.bottom/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652317888145" />
+    <state width="1812" height="269" key="GridCell.Tab.1.bottom/64.27.1856.1053/64.27.1856.1053@64.27.1856.1053" timestamp="1648228719595" />
+    <state width="1812" height="406" key="GridCell.Tab.1.bottom/64.27.1856.1053@64.27.1856.1053" timestamp="1652901157826" />
+    <state width="1812" height="406" key="GridCell.Tab.1.bottom/64.27.3776.1053@64.27.3776.1053" timestamp="1652987146194" />
+    <state width="1812" height="406" key="GridCell.Tab.1.center" timestamp="1652987146190">
+      <screen x="64" y="27" width="3776" height="1053" />
+    </state>
+    <state width="1812" height="406" key="GridCell.Tab.1.center/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652317888142" />
+    <state width="1812" height="269" key="GridCell.Tab.1.center/64.27.1856.1053/64.27.1856.1053@64.27.1856.1053" timestamp="1648228719594" />
+    <state width="1812" height="406" key="GridCell.Tab.1.center/64.27.1856.1053@64.27.1856.1053" timestamp="1652901157824" />
+    <state width="1812" height="406" key="GridCell.Tab.1.center/64.27.3776.1053@64.27.3776.1053" timestamp="1652987146190" />
+    <state width="1812" height="406" key="GridCell.Tab.1.left" timestamp="1652987146189">
+      <screen x="64" y="27" width="3776" height="1053" />
+    </state>
+    <state width="1812" height="406" key="GridCell.Tab.1.left/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652317888140" />
+    <state width="1812" height="269" key="GridCell.Tab.1.left/64.27.1856.1053/64.27.1856.1053@64.27.1856.1053" timestamp="1648228719594" />
+    <state width="1812" height="406" key="GridCell.Tab.1.left/64.27.1856.1053@64.27.1856.1053" timestamp="1652901157823" />
+    <state width="1812" height="406" key="GridCell.Tab.1.left/64.27.3776.1053@64.27.3776.1053" timestamp="1652987146189" />
+    <state width="1812" height="406" key="GridCell.Tab.1.right" timestamp="1652987146192">
+      <screen x="64" y="27" width="3776" height="1053" />
+    </state>
+    <state width="1812" height="406" key="GridCell.Tab.1.right/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652317888143" />
+    <state width="1812" height="269" key="GridCell.Tab.1.right/64.27.1856.1053/64.27.1856.1053@64.27.1856.1053" timestamp="1648228719595" />
+    <state width="1812" height="406" key="GridCell.Tab.1.right/64.27.1856.1053@64.27.1856.1053" timestamp="1652901157825" />
+    <state width="1812" height="406" key="GridCell.Tab.1.right/64.27.3776.1053@64.27.3776.1053" timestamp="1652987146192" />
+    <state x="575" y="296" width="824" height="521" key="IDE.errors.dialog" timestamp="1652307742536">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="575" y="296" width="824" height="521" key="IDE.errors.dialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652307742536" />
+    <state x="1920" y="106" width="1484" height="879" key="MergeDialog" timestamp="1646067080017">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1920" y="106" width="1484" height="879" key="MergeDialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1646067080017" />
+    <state x="315" y="315" width="739" height="493" key="MultipleFileMergeDialog" timestamp="1652908244308">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="2180" y="295" width="739" height="493" key="MultipleFileMergeDialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652808649894" />
+    <state x="315" y="315" key="MultipleFileMergeDialog/64.27.1856.1053@64.27.1856.1053" timestamp="1652908244308" />
+    <state x="737" y="175" width="508" height="763" key="RollbackChangesDialog" timestamp="1652806804880">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="737" y="175" width="500" height="763" key="RollbackChangesDialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652806804880" />
+    <state x="737" y="175" width="508" height="763" key="RollbackChangesDialog/64.27.1856.1053@64.27.1856.1053" timestamp="1649692310713" />
+    <state x="1920" y="175" key="RollbackChangesDialog/64.27.3776.1053@64.27.3776.1053" timestamp="1649297688010" />
+    <state x="559" y="167" width="1396" height="737" key="SettingsEditor" timestamp="1651503063974">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="559" y="167" width="932" height="737" key="SettingsEditor/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1651503063974" />
+    <state x="361" y="343" width="1396" height="737" key="SettingsEditor/64.27.3776.1053@64.27.3776.1053" timestamp="1649334123623" />
+    <state x="721" y="284" width="540" height="540" key="StructurePopup" timestamp="1649440925443">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="721" y="284" width="540" height="540" key="StructurePopup/64.27.1856.1053/64.27.1856.1053@64.27.1856.1053" timestamp="1649440925443" />
+    <state width="557" height="988" key="SwitcherDM" timestamp="1647521533518">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state width="557" height="988" key="SwitcherDM/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1647521533518" />
+    <state x="164" y="127" width="1656" height="853" maximized="true" key="VCS.FileHistoryDialog" timestamp="1652883665091">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="177" y="137" width="1656" height="853" key="VCS.FileHistoryDialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652481148938" />
+    <state x="164" y="127" width="1656" height="853" maximized="true" key="VCS.FileHistoryDialog/64.27.1856.1053/64.27.1856.1053@64.27.1856.1053" timestamp="1652883665091" />
+    <state x="587" y="271" width="800" height="572" key="Vcs.Push.Dialog.v2" timestamp="1652735851157">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="587" y="271" width="800" height="572" key="Vcs.Push.Dialog.v2/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652735851157" />
+    <state x="1920" y="271" key="Vcs.Push.Dialog.v2/64.27.3776.1053@64.27.3776.1053" timestamp="1649333706618" />
+    <state width="928" height="526" key="XDebugger.FullValuePopup" timestamp="1648686598035">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state width="928" height="526" key="XDebugger.FullValuePopup/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1648686598035" />
+    <state x="783" y="337" width="396" height="445" key="chooseDestDirectoryDialog" timestamp="1647643944226">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="783" y="337" width="396" height="445" key="chooseDestDirectoryDialog/64.27.1856.1053/64.27.1856.1053@64.27.1856.1053" timestamp="1647643944226" />
+    <state x="2442" y="163" width="1920" height="693" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1648729327625">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2442" y="163" width="891" height="707" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1648729327625" />
+    <state x="1920" y="29" width="1514" height="1000" maximized="true" key="dock-window-1" timestamp="1652188372099">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1920" y="29" width="1514" height="1000" maximized="true" key="dock-window-1/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652188372099" />
+    <state x="1920" y="164" width="1514" height="750" maximized="true" key="dock-window-1/64.27.3776.1053@64.27.3776.1053" timestamp="1649297535571" />
+    <state x="164" y="127" width="1656" height="853" key="dock-window-10" timestamp="1648072473942">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="164" y="127" width="1656" height="853" key="dock-window-10/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1648072473942" />
+    <state x="164" y="127" width="1656" height="853" key="dock-window-11" timestamp="1648072473946">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="164" y="127" width="1656" height="853" key="dock-window-11/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1648072473946" />
+    <state x="164" y="127" width="1656" height="853" key="dock-window-12" timestamp="1648072473948">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="164" y="127" width="1656" height="853" key="dock-window-12/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1648072473948" />
+    <state x="164" y="127" width="1656" height="853" key="dock-window-13" timestamp="1648072473951">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="164" y="127" width="1656" height="853" key="dock-window-13/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1648072473951" />
+    <state x="164" y="127" width="1656" height="853" key="dock-window-14" timestamp="1648072493823">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="164" y="127" width="1656" height="853" key="dock-window-14/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1648072493823" />
+    <state x="164" y="127" width="1656" height="853" key="dock-window-15" timestamp="1648072507007">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="164" y="127" width="1656" height="853" key="dock-window-15/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1648072507007" />
+    <state x="1920" y="12" width="1514" height="1000" maximized="true" key="dock-window-2" timestamp="1648068478136">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1920" y="12" width="1514" height="1000" maximized="true" key="dock-window-2/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1648068478136" />
+    <state x="1920" y="0" width="1514" height="1000" maximized="true" key="dock-window-3" timestamp="1648134871927">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1920" y="0" width="1514" height="1000" maximized="true" key="dock-window-3/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1648134871927" />
+    <state x="164" y="127" width="1656" height="853" key="dock-window-4" timestamp="1648072385285">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="164" y="127" width="1656" height="853" key="dock-window-4/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1648072385285" />
+    <state x="164" y="127" width="1656" height="853" key="dock-window-5" timestamp="1648072430526">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="164" y="127" width="1656" height="853" key="dock-window-5/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1648072430526" />
+    <state x="164" y="127" width="1656" height="853" key="dock-window-6" timestamp="1648072430528">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="164" y="127" width="1656" height="853" key="dock-window-6/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1648072430528" />
+    <state x="164" y="127" width="1656" height="853" key="dock-window-7" timestamp="1648072430529">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="164" y="127" width="1656" height="853" key="dock-window-7/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1648072430529" />
+    <state x="164" y="127" width="1656" height="853" key="dock-window-8" timestamp="1648072430531">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="164" y="127" width="1656" height="853" key="dock-window-8/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1648072430531" />
+    <state x="164" y="127" width="1656" height="853" key="dock-window-9" timestamp="1648072473952">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="164" y="127" width="1656" height="853" key="dock-window-9/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1648072473952" />
+    <state x="717" y="249" width="827" height="774" key="find.popup" timestamp="1652977986805">
+      <screen x="64" y="27" width="3776" height="1053" />
+    </state>
+    <state x="700" y="219" width="937" height="774" key="find.popup/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652809438710" />
+    <state x="700" y="219" width="937" height="774" key="find.popup/64.27.1856.1053/64.27.1856.1053@64.27.1856.1053" timestamp="1649445502238" />
+    <state x="700" y="219" width="937" height="774" key="find.popup/64.27.1856.1053@64.27.1856.1053" timestamp="1652884584718" />
+    <state x="717" y="249" width="827" height="774" key="find.popup/64.27.3776.1053@64.27.3776.1053" timestamp="1652977986805" />
+    <state x="680" y="324" width="613" height="465" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog" timestamp="1647643944329">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="680" y="324" width="613" height="465" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog/64.27.1856.1053/64.27.1856.1053@64.27.1856.1053" timestamp="1647643944329" />
+    <state x="709" y="334" width="556" height="445" key="refactoring.ChangeSignatureDialog" timestamp="1645631829809">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="709" y="334" width="556" height="445" key="refactoring.ChangeSignatureDialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1645631829809" />
+    <state x="658" y="252" width="673" height="677" key="run.anything.popup" timestamp="1651858475647">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="658" y="252" width="673" height="677" key="run.anything.popup/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1651858475647" />
+    <state x="658" y="252" width="673" height="677" key="run.anything.popup/64.27.1856.1053@64.27.1856.1053" timestamp="1649694450291" />
+    <state x="1272" y="252" width="1368" height="677" key="run.anything.popup/64.27.3776.1053@64.27.3776.1053" timestamp="1649332220771" />
+    <state x="243" y="116" width="1368" height="678" key="search.everywhere.popup" timestamp="1652976963322">
+      <screen x="64" y="27" width="3776" height="1053" />
+    </state>
+    <state x="2531" y="238" width="696" height="696" key="search.everywhere.popup/64.27.1856.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1651769312648" />
+    <state x="655" y="259" width="672" height="678" key="search.everywhere.popup/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1652808793431" />
+    <state x="655" y="259" width="672" height="683" key="search.everywhere.popup/64.27.1856.1053/64.27.1856.1053@64.27.1856.1053" timestamp="1652883505525" />
+    <state x="655" y="259" width="672" height="678" key="search.everywhere.popup/64.27.1856.1053@64.27.1856.1053" timestamp="1652908651724" />
+    <state x="243" y="116" width="1368" height="678" key="search.everywhere.popup/64.27.3776.1053@64.27.3776.1053" timestamp="1652976963322" />
+    <state x="298" y="293" key="vcs.ApplyPatchDifferentiatedDialog" timestamp="1648481313206">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="298" y="293" key="vcs.ApplyPatchDifferentiatedDialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1648481313206" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>content.name == SyncConstants.REQUESTS</expression-string>
+        <language-id>kotlin</language-id>
+        <custom-info>import com.kaefer.pms.sync.models.Request</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>content.values.firstOrNull() is Request</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>clazz == Request::class.java</expression-string>
+        <language-id>kotlin</language-id>
+        <custom-info>import com.kaefer.pms.sync.models.Request</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>content != null</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>action.name == UPLOAD_PICTURE_FAILED</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this is DataSheetFilterGroupColumn</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tag == &quot;ins&quot;</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this is DataSheetFilterGroupColumn &amp;&amp; this.tag == &quot;ins&quot;</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this is DataSheetFilterGroupColumn &amp;&amp; this.tag == &quot;ins&quot;</expression-string>
+        <language-id>kotlin</language-id>
+        <custom-info>import br.com.kaefer.pms.ui.components.views.columns.DataSheetFilterGroupColumn</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this is DataSheetFilterGroupColumn &amp;&amp; this.tag.toString() == &quot;ins&quot;</expression-string>
+        <language-id>kotlin</language-id>
+        <custom-info>import br.com.kaefer.pms.ui.components.views.columns.DataSheetFilterGroupColumn</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="watch">
+      <expression>
+        <expression-string>expectedAction</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>mutatedPicture.isSignature</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>mutatedPicture.syncError</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>mutatedFlexible.syncError</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>column.description</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(this as DataSheetFilterGroupColumn).tag</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this.tag</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>content.name</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>JsonSerializer.fromMap(entityProperty)</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>state.getDatasheetTemplates()</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>state.datasheets</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>DpmsApplication</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Dpms</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ObjectBox.boxStore?.boxFor(Datasheet::class.java)</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ObjectBox.boxStore?.boxFor(Datasheet::class.java).all</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ObjectBox.boxStore?.boxFor()</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ObjectBox.boxStore</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/RequestsSyncMiddleware.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="104">
+            <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/ProgressServicesSyncMiddleware.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="104">
+            <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/ProgressHistoriesSyncMiddleware.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="104">
+            <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/EstimateServicesSyncMiddleware.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="130">
+            <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/ProgressServiceHistoriesSyncMiddleware.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="156">
+            <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/ScopesSyncMiddleware.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="104">
+            <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/DatasheetsSyncMiddleware.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="130">
+            <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="50" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/ProgressSyncMiddleware.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="130">
+            <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/PictureUploadMiddleware.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/base/UploadMiddleware.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="-52">
+            <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/middlewares/rest/PictureUploadMiddlewareTest.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/base/FlexibleMiddlewareTest.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/middlewares/rest/base/FlexibleSyncMiddlewareTest.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/middlewares/rest/base/FlexibleSyncMiddlewareTest.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/middlewares/rest/base/UploadMiddlewareTest.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="2132">
+            <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/middlewares/rest/ScopesSyncMiddlewareTest.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="208">
+            <caret line="17" column="91" selection-start-line="17" selection-start-column="91" selection-end-line="17" selection-end-column="91" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/middlewares/rest/DatasheetsSyncMiddlewareTest.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="16">
+            <caret line="16" selection-start-line="16" selection-end-line="16" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/api/pms/api/InspectRoutes.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="16">
+            <caret line="36" column="72" selection-start-line="36" selection-start-column="72" selection-end-line="36" selection-end-column="72" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/database/base/BaseFetchMiddleware.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="-546" />
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/api/pms/model/SyncConstants.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="156">
+            <caret line="87" column="56" selection-start-line="87" selection-start-column="56" selection-end-line="87" selection-end-column="56" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/models/PollRoute.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="78">
+            <caret line="3" selection-start-line="3" selection-end-line="3" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/models/PollRouteQuery.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="104">
+            <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/InspectsSyncMiddleware.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="369">
+            <caret line="76" column="58" selection-start-line="76" selection-start-column="58" selection-end-line="76" selection-end-column="58" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/ui/activities/requests/RequestsBacklogActivity.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="806">
+            <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/ui/components/requests/RequestBacklogLayout.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="260">
+            <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/ui/components/requests/RequestFeed.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="208">
+            <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/models/AppState.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="4550">
+            <caret line="199" selection-start-line="199" selection-end-line="199" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/actions/ActionCreator.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="10868">
+            <caret line="452" column="35" selection-start-line="452" selection-start-column="35" selection-end-line="452" selection-end-column="35" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/api/pms/model/PMSResponse.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="208">
+            <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/models/Poll.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="26">
+            <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="48" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/models/RequestStatus.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="335">
+            <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-fr/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="171" column="48" lean-forward="true" selection-start-line="171" selection-start-column="48" selection-end-line="172" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-es/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="174" column="28" selection-start-line="174" selection-start-column="27" selection-end-line="174" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-pt/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="171" column="40" selection-start-line="171" selection-start-column="40" selection-end-line="171" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-no/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="171" column="31" selection-start-line="171" selection-start-column="31" selection-end-line="171" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/ui/components/StatusBadge.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="208">
+            <caret line="135" column="41" lean-forward="true" selection-start-line="135" selection-start-column="41" selection-end-line="135" selection-end-column="41" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-de/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="177" column="41" selection-start-line="177" selection-start-column="41" selection-end-line="177" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-zh-rCN/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="144" column="34" selection-start-line="144" selection-start-column="34" selection-end-line="144" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="183" column="43" lean-forward="true" selection-start-line="183" selection-start-column="43" selection-end-line="184" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/api/pms/model/PollRoutes.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="130">
+            <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/api/pms/api/routes/Routes.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="285">
+            <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sync/src/main/java/com/kaefer/pms/sync/api/pms/api/SyncRoutes.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="129">
+            <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/SyncMiddleware.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="363">
+            <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sync/src/test/java/com/kaefer/pms/sync/immutables/base/base_copy/DatasheetTest.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state />
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sync/src/test/java/com/kaefer/pms/sync/models/FlexibleEditableTest.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="183">
+            <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sync/src/test/java/com/kaefer/pms/sync/models/DatasheetTest.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="173">
+            <caret line="108" column="24" selection-start-line="108" selection-start-column="24" selection-end-line="108" selection-end-column="24" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/reducers/reducers/basic/PictureReducerTest.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="199">
+            <caret line="353" column="45" selection-start-line="353" selection-start-column="45" selection-end-line="353" selection-end-column="45" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/polls/PollRoutesBuilder.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="140">
+            <caret line="40" column="31" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="31" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/kaefer/pms/middlewares/rest/polls/PollRoutesFactory.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="208">
+            <caret line="12" selection-start-line="12" selection-end-line="13" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/kaefer/pms/middlewares/rest/polls/PollRoutesFactoryTest.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="261">
+            <caret line="133" column="70" selection-start-line="133" selection-start-column="70" selection-end-line="133" selection-end-column="70" />
+          </editor-state>
+          <multi-preview-state selected="">
+            <representations>
+              <list />
+            </representations>
+          </multi-preview-state>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
