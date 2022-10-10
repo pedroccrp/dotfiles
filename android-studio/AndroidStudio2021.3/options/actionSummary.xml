@@ -36,8 +36,14 @@
     <e n="Android.BuildApk">
       <i c="9" l="1662402209357" />
     </e>
+    <e n="Android.DeviceManager">
+      <i c="1" l="1665353273871" />
+    </e>
     <e n="Android.RunAndroidAvdManager">
       <i c="7" l="1655157097633" />
+    </e>
+    <e n="Android.RunAndroidSdkManager">
+      <i c="1" l="1665352671020" />
     </e>
     <e n="Android.SyncProject">
       <i c="1" l="1656008054472" />
@@ -103,7 +109,7 @@
       <i c="1" l="1646706501107" />
     </e>
     <e n="CloseContent">
-      <i c="2015" l="1665175600341" />
+      <i c="2019" l="1665354180583" />
     </e>
     <e n="CloseProject">
       <i c="1" l="1656010724482" />
@@ -175,7 +181,7 @@
       <i c="1" l="1657217671057" />
     </e>
     <e n="EditorBackSpace">
-      <i c="31914" l="1665175730447" />
+      <i c="31942" l="1665353455387" />
     </e>
     <e n="EditorBreadcrumbsHideBoth">
       <i c="1" l="1648489860192" />
@@ -220,10 +226,10 @@
       <i c="833" l="1655216750239" />
     </e>
     <e n="EditorEnter">
-      <i c="8052" l="1665175705927" />
+      <i c="8055" l="1665353449784" />
     </e>
     <e n="EditorEscape">
-      <i c="2745" l="1664930730802" />
+      <i c="2746" l="1665354269878" />
     </e>
     <e n="EditorGutterToggleGlobalLineNumbers">
       <i c="2" l="1648489834583" />
@@ -295,7 +301,7 @@
       <i c="10" l="1659981065817" />
     </e>
     <e n="EditorPaste">
-      <i c="141" l="1665175699023" />
+      <i c="142" l="1665353450666" />
     </e>
     <e n="EditorPasteFromX11">
       <i c="11" l="1661871491032" />
@@ -415,7 +421,7 @@
       <i c="510" l="1664383226500" />
     </e>
     <e n="GotoFile">
-      <i c="2294" l="1665176129405" />
+      <i c="2297" l="1665354224073" />
     </e>
     <e n="GotoImplementation">
       <i c="4211" l="1665175907297" />
@@ -583,7 +589,7 @@
       <i c="7" l="1655135337969" />
     </e>
     <e n="Run">
-      <i c="1622" l="1664931100410" />
+      <i c="1623" l="1665353367636" />
     </e>
     <e n="RunAnything">
       <i c="40" l="1663010852898" />
@@ -598,7 +604,7 @@
       <i c="9" l="1661188369999" />
     </e>
     <e n="SaveAll">
-      <i c="6150" l="1665176134948" />
+      <i c="6154" l="1665353480484" />
     </e>
     <e n="SaveDocument">
       <i c="201" l="1632838575765" />
@@ -628,10 +634,10 @@
       <i c="1" l="1649082996077" />
     </e>
     <e n="ShowProjectStructureSettings">
-      <i c="9" l="1659980428867" />
+      <i c="10" l="1665353073753" />
     </e>
     <e n="ShowSettings">
-      <i c="71" l="1662128210098" />
+      <i c="74" l="1665354209384" />
     </e>
     <e n="ShowUsages">
       <i c="2102" l="1665158866572" />
@@ -697,10 +703,10 @@
       <i c="2" l="1661538809711" />
     </e>
     <e n="Tree-selectChild">
-      <i c="2373" l="1664930746441" />
+      <i c="2374" l="1665352850799" />
     </e>
     <e n="Tree-selectNext">
-      <i c="10814" l="1665157740875" />
+      <i c="10829" l="1665352855985" />
     </e>
     <e n="Tree-selectNextExtendSelection">
       <i c="275" l="1662758404411" />
@@ -709,7 +715,7 @@
       <i c="1060" l="1665157742938" />
     </e>
     <e n="Tree-selectPrevious">
-      <i c="3594" l="1665157741712" />
+      <i c="3599" l="1665352854428" />
     </e>
     <e n="Tree-selectPreviousExtendSelection">
       <i c="91" l="1662505600499" />
@@ -952,7 +958,7 @@
       <i c="4" l="1648481287094" />
     </e>
     <e n="com.intellij.openapi.actionSystem.EmptyAction$MyDelegatingAction">
-      <i c="18220" l="1665175918055" />
+      <i c="18268" l="1665354274728" />
     </e>
     <e n="com.intellij.openapi.actionSystem.impl.ActionToolbarImpl$1">
       <i c="1" l="1648736293719" />
@@ -967,7 +973,7 @@
       <i c="27" l="1663618959174" />
     </e>
     <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
-      <i c="2417" l="1663083276704" />
+      <i c="2418" l="1665353497407" />
     </e>
     <e n="com.intellij.openapi.keymap.impl.ui.KeymapPanel$12">
       <i c="5" l="1632917842076" />
@@ -985,13 +991,13 @@
       <i c="1" l="1659980411589" />
     </e>
     <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
-      <i c="2800" l="1665176131743" />
+      <i c="2803" l="1665354228075" />
     </e>
     <e n="com.intellij.openapi.project.LightEditActionFactory$SimpleLightEditCompatibleAction">
       <i c="24" l="1662075545474" />
     </e>
     <e n="com.intellij.openapi.ui.DialogWrapper$4">
-      <i c="91" l="1665159151118" />
+      <i c="92" l="1665354275928" />
     </e>
     <e n="com.intellij.openapi.ui.DialogWrapper$5">
       <i c="30" l="1642694079409" />
@@ -1015,7 +1021,7 @@
       <i c="5" l="1660937714217" />
     </e>
     <e n="com.intellij.openapi.wm.impl.ToolWindowHeader$HideAction">
-      <i c="557" l="1665065194763" />
+      <i c="560" l="1665354185581" />
     </e>
     <e n="com.intellij.openapi.wm.impl.ToolWindowHeader$ShowOptionsAction">
       <i c="15" l="1659542584313" />
@@ -1033,10 +1039,10 @@
       <i c="1" l="1661872981335" />
     </e>
     <e n="com.intellij.ui.CommonActionsPanel$1">
-      <i c="2" l="1659444686378" />
+      <i c="4" l="1665352955137" />
     </e>
     <e n="com.intellij.ui.CommonActionsPanel$AddButton">
-      <i c="4" l="1661873065050" />
+      <i c="6" l="1665352948149" />
     </e>
     <e n="com.intellij.ui.CommonActionsPanel$EditButton">
       <i c="1" l="1635975689192" />
@@ -1114,7 +1120,7 @@
       <i c="1" l="1643898167202" />
     </e>
     <e n="com.maddyhome.idea.vim.group.NotificationService$OpenIdeaVimRcAction">
-      <i c="4" l="1655848440885" />
+      <i c="5" l="1665353400849" />
     </e>
     <e n="com.maddyhome.idea.vim.group.NotificationService$notifyAboutShortcutConflict$2">
       <i c="2" l="1655823316238" />
@@ -1123,7 +1129,7 @@
       <i c="4" l="1655930578775" />
     </e>
     <e n="com.maddyhome.idea.vim.ui.ex.ExShortcutKeyAction">
-      <i c="1444" l="1665176134930" />
+      <i c="1447" l="1665353480461" />
     </e>
     <e n="copilot.applyInlays">
       <i c="666" l="1661291002329" />

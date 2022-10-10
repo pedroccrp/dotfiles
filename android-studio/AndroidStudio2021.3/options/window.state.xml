@@ -44,9 +44,10 @@
     </layout>
   </component>
   <component name="WindowStateApplicationService">
-    <state x="1435" y="929" width="300" height="116" key="ProcessPopupWindow" timestamp="1660859591877">
-      <screen x="64" y="27" width="1856" height="1053" />
+    <state x="1418" y="929" width="311" height="116" key="ProcessPopupWindow" timestamp="1665353607382">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
+    <state x="1418" y="929" width="311" height="116" key="ProcessPopupWindow/0.27.1920.1053" timestamp="1665353607382" />
     <state x="1435" y="929" width="300" height="116" key="ProcessPopupWindow/64.27.1856.1053" timestamp="1660859591877" />
     <state x="1435" y="929" width="300" height="116" key="ProcessPopupWindow/64.27.1856.1053/1920.0.1920.1080" timestamp="1657195618686" />
     <state width="866" height="168" key="ShowUsagesActions.dimensionServiceKey" timestamp="1665065421904">

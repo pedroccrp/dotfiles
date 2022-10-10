@@ -7,6 +7,11 @@
             <ProjectPluginTracker />
           </value>
         </entry>
+        <entry key="2Fuls6RG3eFQ9E4czHCsQmoVdUF">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
       </map>
     </trackers>
   </component>
@@ -119,15 +124,14 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="NonModalCommitCustomization.IsApplied" value="true" />
-    <property name="PluginConfigurable.selectionTab" value="1" />
     <property name="SAVED_ANDROID_NPW_ASKED_LANGUAGE" value="true" />
     <property name="SAVED_ANDROID_NPW_LANGUAGE" value="Kotlin" />
     <property name="SAVED_ANDROID_PACKAGE" value="com.pedropontes" />
     <property name="SAVED_BYTECODE_LEVEL" value="8 (slower build)" />
-    <property name="SettingsSearchHistory" value="wildcard&#10;key&#10;Build&#10;import&#10;Auto" />
+    <property name="SettingsSearchHistory" value="kotlin&#10;plug&#10;wildcard&#10;key&#10;Build" />
     <property name="Source Code Editor With PreviewLayout" value="Editor only" />
     <property name="UITheme.relaunch" value="true" />
-    <property name="appcds.runOnSecondStart" value="AI-213.7172.25.2113.9014738-7c5f2ce725c6d7f0cc3124e8c255f0eeb4eed8221bd4a1b466ce2cf02e209e58" />
+    <property name="appcds.runOnSecondStart" value="AI-213.7172.25.2113.9014738-b5a3b1d2bca43bda06d2870cee3f6b833900e41cd0ded8ee75952d6c51a3ed2f" />
     <property name="ask.about.ctrl.y.shortcut.v2" value="true" />
     <property name="build.toolwindow.Build Output.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
     <property name="build.toolwindow.Sync.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
@@ -138,7 +142,7 @@
     <property name="decompiler.legal.notice.accepted" value="true" />
     <property name="defaultJdkConfigured" value="true" />
     <property name="file.chooser.recent.files" value="$USER_HOME$/oxeanbits/dpms-redux-android&#10;/usr/lib/jvm/java-8-openjdk-amd64" />
-    <property name="file.gist.reindex.count" value="15794" />
+    <property name="file.gist.reindex.count" value="15796" />
     <property name="fileTypeChangedCounter" value="7" />
     <property name="fileTypeDetectors" value="com.android.tools.idea.profilers.capture.MemoryCaptureFileType$Detector:com.android.tools.idea.sqlite.fileType.SqliteFileTypeDetector:com.intellij.ide.scratch.ScratchFileServiceImpl$Detector" />
     <property name="find.popup.splitter" value="0.5463415" />
@@ -146,16 +150,16 @@
     <property name="got.it.tooltip.reader.mode.got.it" value="1" />
     <property name="got.it.tooltip.show.diff.in.editor" value="1" />
     <property name="ide.updates.previous.build.number" value="AI-213.7172.25.2113.9014738" />
-    <property name="ideavim.statistics.timestamp" value="1665157325521" />
+    <property name="ideavim.statistics.timestamp" value="1665353202235" />
     <property name="input.method.disabler.muted" value="true" />
     <property name="installed.kotlin.plugin.version" value="213-1.7.10-release-for-android-studio-AS6777.52" />
     <property name="kotlin-gradle-user-dirs" value="$USER_HOME$/.gradle" />
-    <property name="kotlin.lastUpdateCheck" value="1665175192478" />
+    <property name="kotlin.lastUpdateCheck" value="1665354264134" />
     <property name="last_opened_file_path" value="/usr/lib/jvm/java-8-openjdk-amd64" />
     <property name="newly.installed.api.level" value="23" />
     <property name="registry.to.advanced.settings.migration.build" value="AI-213.7172.25.2113.9014738" />
-    <property name="settings.code.style.selected.tab.kotlin" value="Wrapping and Braces" />
-    <property name="studio.activity.count" value="163" />
+    <property name="settings.code.style.selected.tab.kotlin" value="Spaces" />
+    <property name="studio.activity.count" value="75" />
     <property name="studio.profilerSESSION_EXPANDED_WIDTH" value="200" />
     <property name="studio.profilerhide.network.profiler.migration.messaging" value="true" />
     <property name="tasks.pass.word.conversion.enforced" value="true" />
