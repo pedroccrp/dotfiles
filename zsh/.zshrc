@@ -53,7 +53,11 @@ dotfiles() {
 }
 
 best_release() {
-  grep -F -x -v -f <(git log "$1" --pretty=format:"%s") <(git log "$2" --pretty=format:"%s") | uniq | grep DPMS | sed 's/^/* /'
+  grep -F -x -v -f <(git log "$1" --pretty=format:"%s") <(git log "$2" --pretty=format:"%s") | uniq | grep DPMS
+}
+
+best_release_hash() {
+  git log "$2" --pretty=format:"%H - %s" | grep -f <(best_release "$1" "$2")
 }
 
 fif() {
@@ -93,3 +97,8 @@ export NVM_DIR="$HOME/.nvm"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+source "$HOME/.rvm/scripts/rvm"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

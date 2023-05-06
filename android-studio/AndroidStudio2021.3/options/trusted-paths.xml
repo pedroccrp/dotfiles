@@ -2,8 +2,16 @@
   <component name="Trusted.Paths">
     <option name="TRUSTED_PROJECT_PATHS">
       <map>
+        <entry key="$USER_HOME$/oxeanbits/docker-android" value="true" />
         <entry key="$USER_HOME$/oxeanbits/dpms-redux-android" value="true" />
       </map>
+    </option>
+  </component>
+  <component name="Trusted.Paths.Settings">
+    <option name="TRUSTED_PATHS">
+      <list>
+        <option value="$USER_HOME$/oxeanbits" />
+      </list>
     </option>
   </component>
 </application>

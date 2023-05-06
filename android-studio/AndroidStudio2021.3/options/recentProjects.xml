@@ -26,15 +26,27 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
-        <entry key="$USER_HOME$/oxeanbits/dpms-redux-android">
+        <entry key="$USER_HOME$/oxeanbits/docker-android">
           <value>
-            <RecentProjectMetaInfo frameTitle="DPMS – DpmsApplication.kt [DPMS.app.main]" opened="true" projectWorkspaceId="2Fuls6RG3eFQ9E4czHCsQmoVdUF">
+            <RecentProjectMetaInfo frameTitle="DPMS – DatasheetItemsLayoutTest.kt [DPMS.app.unitTest]" projectWorkspaceId="2Fuls6RG3eFQ9E4czHCsQmoVdUF">
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="AI-212.5712.43.2112.8512546" />
-              <option name="buildTimestamp" value="1651163269740" />
+              <option name="build" value="AI-213.7172.25.2113.9014738" />
+              <option name="buildTimestamp" value="1661978578807" />
               <frame x="0" y="27" width="1920" height="1053" extendedState="6" />
               <option name="productionCode" value="AI" />
-              <option name="projectOpenTimestamp" value="1656010733118" />
+              <option name="projectOpenTimestamp" value="1666909916080" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/oxeanbits/dpms-redux-android">
+          <value>
+            <RecentProjectMetaInfo frameTitle="DPMS – FlexibleReducer.kt [DPMS.app.main]" opened="true" projectWorkspaceId="2Fuls6RG3eFQ9E4czHCsQmoVdUF">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="AI-213.7172.25.2113.9014738" />
+              <option name="buildTimestamp" value="1661978532145" />
+              <frame x="960" y="27" width="960" height="1053" extendedState="6" />
+              <option name="productionCode" value="AI" />
+              <option name="projectOpenTimestamp" value="1666957572799" />
             </RecentProjectMetaInfo>
           </value>
         </entry>

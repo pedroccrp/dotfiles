@@ -19,6 +19,7 @@ let g:coc_global_extensions = [
     \ 'coc-svg',
     \ 'coc-tsserver',
     \ '@yaegassy/coc-volar',
+    \ 'coc-omnisharp',
 \ ]
 
 " Use tab for trigger completion with characters ahead and navigate.
@@ -106,3 +107,6 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
 
 nmap <leader>l :CocFzfList<cr>
+
+" Unity Stuff
+let g:OmniSharp_server_use_mono = 1
