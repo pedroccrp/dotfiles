@@ -154,7 +154,7 @@
     <property name="got.it.tooltip.reader.mode.got.it" value="1" />
     <property name="got.it.tooltip.show.diff.in.editor" value="1" />
     <property name="ide.updates.previous.build.number" value="AI-213.7172.25.2113.9123335" />
-    <property name="ideavim.statistics.timestamp" value="1683333039930" />
+    <property name="ideavim.statistics.timestamp" value="1683489229221" />
     <property name="input.method.disabler.muted" value="true" />
     <property name="installed.kotlin.plugin.version" value="213-1.7.20-release-for-android-studio-AS6777.52" />
     <property name="kotlin-gradle-user-dirs" value="$USER_HOME$/.gradle" />

@@ -381,6 +381,9 @@
     <e n="ExpandRegion">
       <i c="1" l="1640738311372" />
     </e>
+    <e n="ExportSettings">
+      <i c="1" l="1683489250053" />
+    </e>
     <e n="FileChooser.TogglePathShowing">
       <i c="1" l="1648586842081" />
     </e>
