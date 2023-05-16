@@ -2,17 +2,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry encoding="base64">cHJvZ3Jlc3NTZXJ2aWNlSGk=</entry>
-        <entry encoding="base64">REFUQVNIRUVU</entry>
-        <entry encoding="base64">aW5pdA==</entry>
-        <entry encoding="base64">REVMRVRF</entry>
-        <entry encoding="base64">XDxERUxFVEVfUkVDT1JEXD4=</entry>
-        <entry encoding="base64">XDx1cGRhdGVkRmxleGlibGVcPg==</entry>
-        <entry encoding="base64">Y2FuQXA=</entry>
-        <entry encoding="base64">Y2FuQ2Fu</entry>
-        <entry encoding="base64">Y2FuQw==</entry>
-        <entry encoding="base64">Y2Fu</entry>
-        <entry encoding="base64">dHlwZXM=</entry>
         <entry encoding="base64">dmFyaWFibA==</entry>
         <entry encoding="base64">Q29sdW1uVHlwZXM=</entry>
         <entry encoding="base64">IHRvIA==</entry>
@@ -34,14 +23,12 @@
         <entry encoding="base64">UmVxdWVzdFJl</entry>
         <entry encoding="base64">Y2hpbGQgd2hlbg==</entry>
         <entry encoding="base64">XDxzdGF0ZVw+</entry>
-        <entry encoding="base64">Q1JFQVRF</entry>
         <entry encoding="base64">XDxhZGRUZW1wbGF0ZUFuZEl0ZW1TdGVwc1w+</entry>
         <entry encoding="base64">ZmxleA==</entry>
         <entry encoding="base64">aXNT</entry>
         <entry encoding="base64">XDxkaXNwYXRjaFw+</entry>
         <entry encoding="base64">ZGlzcGF0Y2g=</entry>
         <entry encoding="base64">Q2FuU2VuZA==</entry>
-        <entry encoding="base64">aGFuZGxl</entry>
         <entry encoding="base64">Y2FuU2Vu</entry>
         <entry encoding="base64">dXBkYXRlZEY=</entry>
         <entry encoding="base64">XDxpc0NyZWF0ZUFub3RoZXJcPg==</entry>
@@ -52,6 +39,19 @@
         <entry encoding="base64">TG9hZGluZw==</entry>
         <entry encoding="base64">Y2hpbGQ=</entry>
         <entry encoding="base64">RFVQTElDQQ==</entry>
+        <entry encoding="base64">c2VhcmNoQnlSZQ==</entry>
+        <entry encoding="base64">QnlQYXJh</entry>
+        <entry encoding="base64">Y2xlYXJEcmE=</entry>
+        <entry encoding="base64">aGFuZGxl</entry>
+        <entry encoding="base64">dGF0dXNJZA==</entry>
+        <entry encoding="base64">V29ya2VyIFJlc3VsdCBTdWNjZXNz</entry>
+        <entry encoding="base64">U1VDQ0VTUw==</entry>
+        <entry encoding="base64">bmV4dEE=</entry>
+        <entry encoding="base64">Q1JFQVRF</entry>
+        <entry encoding="base64">RFVQTEk=</entry>
+        <entry encoding="base64">Y3JlYXRl</entry>
+        <entry encoding="base64">XDxyZXF1ZXN0U3RhdHVzSWRcPg==</entry>
+        <entry encoding="base64">UmVxdWVzdFN0YQ==</entry>
       </history-search>
       <history-cmd>
         <entry encoding="base64">LiwuKzJ0YWJO</entry>
@@ -112,128 +112,78 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
-      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Inspect.kt" timestamp="1683210964676">
-        <mark key="'" line="0" column="0" />
-        <mark key="[" line="126" column="54" />
-        <mark key="]" line="126" column="54" />
-        <mark key="." line="126" column="54" />
-        <mark key="^" line="126" column="60" />
-      </file>
-      <file name="/Dummy.lcf" timestamp="1683293351939">
+      <file name="/Dummy.txt" timestamp="1684165265204">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/middlewares/rest/ScopesSyncMiddlewareTest.kt" timestamp="1683210704601">
-        <mark key="[" line="31" column="49" />
-        <mark key="]" line="30" column="139" />
-        <mark key="^" line="30" column="139" />
-        <mark key="." line="31" column="63" />
+      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Inspect.kt" timestamp="1684249773708" />
+      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/middlewares/rest/SyncQueueMiddleware.kt" timestamp="1684248339204" />
+      <file name="/Dummy.lcf" timestamp="1683678707140">
+        <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/middlewares/rest/base/UploadMiddlewareTest.kt" timestamp="1683212122219">
-        <mark key="[" line="3" column="23" />
-        <mark key="]" line="3" column="36" />
-        <mark key="." line="3" column="35" />
-        <mark key="^" line="3" column="36" />
+      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/storage/objectbox/Queries.kt" timestamp="1683629102672">
+        <mark key="'" line="160" column="24" />
       </file>
-      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/reducers/sync/FlexibleReducer.kt" timestamp="1683308616136">
-        <mark key="'" line="104" column="16" />
+      <file name="/fragment.kt" timestamp="1684249589461">
+        <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/asyncs/synchronization/queue/BaseRouteQueueTest.kt" timestamp="1683210941882">
-        <mark key="'" line="23" column="0" />
-        <mark key="[" line="23" column="0" />
-        <mark key="]" line="23" column="0" />
-        <mark key="." line="23" column="5" />
-        <mark key="^" line="23" column="0" />
+      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/base/UpdatableModel.kt" timestamp="1684247302398" />
+      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/reducers/sync/FlexibleReducer.kt" timestamp="1684249741546">
+        <mark key="'" line="10" column="41" />
       </file>
-      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/ui/activities/base/FormActivity.kt" timestamp="1683239130830">
-        <mark key="'" line="129" column="12" />
-      </file>
-      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/BaseTest.kt" timestamp="1683211944150">
-        <mark key="[" line="463" column="77" />
-        <mark key="]" line="463" column="77" />
-        <mark key="^" line="463" column="77" />
-        <mark key="." line="463" column="76" />
-      </file>
-      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/middlewares/rest/ProgressSyncMiddlewareTest.kt" timestamp="1683211374233">
-        <mark key="[" line="42" column="50" />
-        <mark key="." line="42" column="64" />
-      </file>
-      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/middlewares/rest/InspectsSyncMiddlewareTest.kt" timestamp="1683211363186">
-        <mark key="[" line="30" column="49" />
-        <mark key="]" line="30" column="80" />
-        <mark key="." line="30" column="49" />
-      </file>
-      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/test/java/com/kaefer/pms/sync/models/ScopeTest.kt" timestamp="1683209888227">
-        <mark key="[" line="23" column="38" />
-        <mark key="]" line="24" column="26" />
-        <mark key="^" line="24" column="26" />
-        <mark key="." line="24" column="25" />
-      </file>
-      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/test/java/com/kaefer/pms/sync/models/ProgressServiceTest.kt" timestamp="1683209813964">
-        <mark key="[" line="56" column="39" />
-        <mark key="]" line="57" column="27" />
-        <mark key="^" line="57" column="27" />
-        <mark key="." line="57" column="26" />
-      </file>
-      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/models/ScopeExtensionsTest.kt" timestamp="1683212252315">
-        <mark key="[" line="29" column="45" />
-        <mark key="]" line="29" column="60" />
-        <mark key="^" line="29" column="60" />
-        <mark key="." line="29" column="59" />
-      </file>
-      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/test/java/com/kaefer/pms/sync/models/InspectTest.kt" timestamp="1683211001395">
-        <mark key="[" line="43" column="28" />
-        <mark key="]" line="44" column="25" />
-        <mark key="^" line="44" column="25" />
-        <mark key="." line="44" column="24" />
-      </file>
-      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/ui/activities/datasheets/DatasheetFormActivity.kt" timestamp="1683238951631">
+      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/middlewares/database/AppStateDatabaseMiddlewareTest.kt" timestamp="1684248496925">
         <mark key="'" line="0" column="0" />
+        <mark key="[" line="65" column="37" />
+        <mark key="]" line="65" column="54" />
+        <mark key="." line="65" column="53" />
+        <mark key="^" line="65" column="54" />
       </file>
-      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/ui/activities/base/FormActivityTest.kt" timestamp="1683291930736">
-        <mark key="'" line="25" column="49" />
-        <mark key="[" line="30" column="0" />
-        <mark key="]" line="31" column="18" />
-        <mark key="^" line="31" column="18" />
-        <mark key="." line="31" column="17" />
+      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/asyncs/synchronization/queue/BaseRouteQueueTest.kt" timestamp="1683673089947">
+        <mark key="'" line="23" column="0" />
+        <mark key="[" line="48" column="22" />
+        <mark key="]" line="48" column="22" />
+        <mark key="." line="48" column="23" />
+      </file>
+      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/asyncs/synchronization/SyncQueueWorker.kt" timestamp="1684165284579">
+        <mark key="[" line="28" column="52" />
+        <mark key="]" line="28" column="54" />
+        <mark key="." line="28" column="53" />
+        <mark key="^" line="28" column="54" />
+      </file>
+      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/actions/ActionCreator.kt" timestamp="1684249745218" />
+      <file name="/" timestamp="1683489490066">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/middlewares/rest/DatasheetsSyncMiddleware.kt" timestamp="1684246806439" />
+      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/test/java/com/kaefer/pms/sync/models/RequestTest.kt" timestamp="1684251304807">
+        <mark key="'" line="285" column="8" />
+        <mark key="[" line="290" column="47" />
+        <mark key="]" line="290" column="47" />
+        <mark key="^" line="296" column="49" />
+        <mark key="." line="290" column="47" />
+      </file>
+      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/base/FlexibleEditable.kt" timestamp="1684250967753" />
+      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/middlewares/database/AppStateDatabaseMiddleware.kt" timestamp="1684248452709">
+        <mark key="[" line="19" column="25" />
+        <mark key="]" line="19" column="42" />
+        <mark key="." line="19" column="41" />
+        <mark key="^" line="19" column="42" />
+      </file>
+      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Request.kt" timestamp="1684250822205">
+        <mark key="'" line="271" column="60" />
+        <mark key="[" line="301" column="31" />
+        <mark key="]" line="301" column="30" />
+        <mark key="." line="301" column="29" />
+        <mark key="^" line="301" column="30" />
+      </file>
+      <file name="/fragment.java" timestamp="1684249295984">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Scope.kt" timestamp="1684249858201">
+        <mark key="[" line="212" column="0" />
+        <mark key="]" line="214" column="5" />
       </file>
     </filemarks>
     <jumps>
-      <jump line="234" column="45" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/reducers/reducers/basic/InspectReducerTest.kt" />
-      <jump line="236" column="108" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/reducers/reducers/basic/InspectReducerTest.kt" />
-      <jump line="237" column="55" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/reducers/reducers/basic/InspectReducerTest.kt" />
-      <jump line="238" column="81" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/reducers/reducers/basic/InspectReducerTest.kt" />
-      <jump line="239" column="73" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/reducers/reducers/basic/InspectReducerTest.kt" />
-      <jump line="245" column="45" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/reducers/reducers/basic/InspectReducerTest.kt" />
-      <jump line="247" column="108" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/reducers/reducers/basic/InspectReducerTest.kt" />
-      <jump line="248" column="55" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/reducers/reducers/basic/InspectReducerTest.kt" />
-      <jump line="12" column="47" filename="$USER_HOME$/oxeanbits/dpms-redux-android/testcommons/src/main/java/com/kaefer/pms/testcommons/testfactory/TypesTestFactoryExtension.kt" />
-      <jump line="13" column="17" filename="$USER_HOME$/oxeanbits/dpms-redux-android/testcommons/src/main/java/com/kaefer/pms/testcommons/testfactory/TypesTestFactoryExtension.kt" />
-      <jump line="14" column="10" filename="$USER_HOME$/oxeanbits/dpms-redux-android/testcommons/src/main/java/com/kaefer/pms/testcommons/testfactory/StatusesTestFactoryExtension.kt" />
-      <jump line="15" column="8" filename="$USER_HOME$/oxeanbits/dpms-redux-android/testcommons/src/main/java/com/kaefer/pms/testcommons/testfactory/StatusesTestFactoryExtension.kt" />
-      <jump line="556" column="17" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/AndroidManifest.xml" />
-      <jump line="9" column="75" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/AndroidManifest.xml" />
-      <jump line="0" column="0" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/res/values/strings.xml" />
-      <jump line="81" column="105" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/res/values/strings.xml" />
-      <jump line="22" column="18" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/res/values/strings.xml" />
-      <jump line="21" column="34" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/res/values/strings.xml" />
-      <jump line="36" column="18" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/res/values/strings.xml" />
-      <jump line="36" column="8" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/utils/DpmsNotificationManager.kt" />
-      <jump line="0" column="0" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/res/values-zh-rCN/strings.xml" />
-      <jump line="0" column="0" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/res/values-th/strings.xml" />
-      <jump line="0" column="0" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/res/values-pt/strings.xml" />
-      <jump line="0" column="0" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/res/values-nn-rNO/strings.xml" />
-      <jump line="0" column="0" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/res/values-fr/strings.xml" />
-      <jump line="0" column="0" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/res/values-es/strings.xml" />
-      <jump line="0" column="0" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/res/values-de/strings.xml" />
-      <jump line="383" column="44" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/res/values-zh-rCN/strings.xml" />
-      <jump line="383" column="4" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/res/values-th/strings.xml" />
-      <jump line="345" column="112" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/res/values-nn-rNO/strings.xml" />
-      <jump line="38" column="29" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/middlewares/rest/PictureUploadMiddlewareTest.kt" />
-      <jump line="52" column="0" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/middlewares/rest/PictureUploadMiddlewareTest.kt" />
-      <jump line="50" column="23" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/middlewares/rest/PictureUploadMiddlewareTest.kt" />
-      <jump line="53" column="0" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/middlewares/rest/base/UploadMiddlewareTest.kt" />
-      <jump line="56" column="8" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/middlewares/rest/base/UploadMiddlewareTest.kt" />
-      <jump line="100" column="7" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/middlewares/rest/base/UploadMiddlewareTest.kt" />
       <jump line="133" column="8" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/middlewares/rest/base/UploadMiddlewareTest.kt" />
       <jump line="170" column="8" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/middlewares/rest/base/UploadMiddlewareTest.kt" />
       <jump line="62" column="20" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/ui/components/views/columns/GalleryColumn.kt" />
@@ -260,8 +210,6 @@
       <jump line="328" column="22" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/reducers/sync/FlexibleReducer.kt" />
       <jump line="327" column="12" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/reducers/sync/FlexibleReducer.kt" />
       <jump line="5" column="41" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/reducers/sync/FlexibleReducer.kt" />
-      <jump line="6" column="41" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/reducers/sync/FlexibleReducer.kt" />
-      <jump line="7" column="41" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/reducers/sync/FlexibleReducer.kt" />
       <jump line="47" column="12" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/reducers/sync/FlexibleReducer.kt" />
       <jump line="46" column="50" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/ui/components/FormComponent.kt" />
       <jump line="227" column="46" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/ui/components/FormComponent.kt" />
@@ -277,7 +225,6 @@
       <jump line="0" column="0" filename="kotlinDecompiled/Redukt.decompiled.java" />
       <jump line="26" column="815" filename="kotlinDecompiled/Redukt.decompiled.java" />
       <jump line="36" column="28" filename="kotlinDecompiled/Redukt.decompiled.java" />
-      <jump line="23" column="0" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/asyncs/synchronization/queue/BaseRouteQueueTest.kt" />
       <jump line="126" column="59" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Inspect.kt" />
       <jump line="0" column="0" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Inspect.kt" />
       <jump line="44" column="10" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/middlewares/rest/base/UploadMiddlewareTest.kt" />
@@ -298,12 +245,51 @@
       <jump line="310" column="31" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/reducers/sync/FlexibleReducer.kt" />
       <jump line="9" column="41" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/reducers/sync/FlexibleReducer.kt" />
       <jump line="104" column="16" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/reducers/sync/FlexibleReducer.kt" />
+      <jump line="28" column="10" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/storage/objectbox/SearchObjectBox.kt" />
+      <jump line="92" column="32" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/storage/objectbox/Queries.kt" />
+      <jump line="137" column="20" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/storage/objectbox/Queries.kt" />
+      <jump line="160" column="24" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/storage/objectbox/Queries.kt" />
+      <jump line="313" column="10" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/actions/ActionCreator.kt" />
+      <jump line="23" column="0" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/asyncs/synchronization/queue/BaseRouteQueueTest.kt" />
+      <jump line="191" column="4" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Scope.kt" />
+      <jump line="90" column="47" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Scope.kt" />
+      <jump line="0" column="0" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/test/java/br/com/kaefer/pms/middlewares/database/AppStateDatabaseMiddlewareTest.kt" />
+      <jump line="105" column="0" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/reducers/sync/FlexibleReducer.kt" />
+      <jump line="6" column="41" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/reducers/sync/FlexibleReducer.kt" />
+      <jump line="7" column="41" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/reducers/sync/FlexibleReducer.kt" />
+      <jump line="8" column="41" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/reducers/sync/FlexibleReducer.kt" />
+      <jump line="42" column="12" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/reducers/sync/FlexibleReducer.kt" />
+      <jump line="53" column="12" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/reducers/sync/FlexibleReducer.kt" />
+      <jump line="304" column="27" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/reducers/sync/FlexibleReducer.kt" />
+      <jump line="10" column="41" filename="$USER_HOME$/oxeanbits/dpms-redux-android/app/src/main/java/br/com/kaefer/pms/reducers/sync/FlexibleReducer.kt" />
+      <jump line="0" column="0" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Request.kt" />
+      <jump line="225" column="28" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Request.kt" />
+      <jump line="71" column="49" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Request.kt" />
+      <jump line="218" column="8" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Request.kt" />
+      <jump line="307" column="42" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Request.kt" />
+      <jump line="308" column="39" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Request.kt" />
+      <jump line="315" column="41" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Request.kt" />
+      <jump line="316" column="45" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Request.kt" />
+      <jump line="323" column="41" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Request.kt" />
+      <jump line="324" column="45" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Request.kt" />
+      <jump line="333" column="16" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Request.kt" />
+      <jump line="350" column="37" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Request.kt" />
+      <jump line="371" column="61" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Request.kt" />
+      <jump line="382" column="65" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Request.kt" />
+      <jump line="385" column="64" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Request.kt" />
+      <jump line="401" column="12" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Request.kt" />
+      <jump line="56" column="47" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Request.kt" />
+      <jump line="185" column="44" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Request.kt" />
+      <jump line="300" column="8" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Request.kt" />
+      <jump line="271" column="60" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/main/java/com/kaefer/pms/sync/models/Request.kt" />
+      <jump line="285" column="8" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/test/java/com/kaefer/pms/sync/models/RequestTest.kt" />
+      <jump line="382" column="0" filename="$USER_HOME$/oxeanbits/dpms-redux-android/sync/src/test/java/com/kaefer/pms/sync/models/RequestTest.kt" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">Q0FOQ0VMX1NZTkNfUVVFVUU=</text>
+        <text encoding="base64">Lg==</text>
       </register>
       <register name="d" type="4">
         <keys>
@@ -384,19 +370,19 @@
         </keys>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">Q0FOQ0VMX1NZTkNfUVVFVUU=</text>
+        <text encoding="base64">Lg==</text>
       </register>
       <register name="." type="4">
-        <text encoding="base64">QElnbm9yZSgpIiJGbGFreQ==</text>
+        <text encoding="base64">cmVxdWVzdGlkU3RhdHVzSQ==</text>
       </register>
       <register name="/" type="4">
-        <text encoding="base64">RFVQTElDQQ==</text>
+        <text encoding="base64">UmVxdWVzdFN0YQ==</text>
       </register>
-      <register name="0" type="4">
-        <text encoding="base64">LCByZXF1ZXN0SWQgPSAxLCBpbnNwZWN0ZWRJZCA9IDI=</text>
+      <register name="0" type="2">
+        <text encoding="base64">ICAgICAgICBhc3NlcnRGYWxzZShkdXBsaWNhdGUucGVuZGluZ0NvbmZpcm0pCg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgdmFsIHVwZGF0ZWRGbGV4aWJsZSA9IHdoZW4gKGZsZXhpYmxlKSB7CiAgICAgICAgICAgICAgICBpcyBQcm9ncmVzc1NlcnZpY2UgLT4gZmxleGlibGUuY29weShwcm9ncmVzc0lkID0gMSkKICAgICAgICAgICAgICAgIGlzIEVzdGltYXRlU2VydmljZSAtPiBmbGV4aWJsZS5jb3B5KHNjb3BlSWQgPSAxKQogICAgICAgICAgICAgICAgZWxzZSAtPiBmbGV4aWJsZQogICAgICAgICAgICB9Cgo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIDIgdG8gUmVxdWVzdFN0YXR1cygyLCBpMThuSWQgPSBSZXF1ZXN0U3RhdHVzLkNBTkNFTEVEKSwK</text>
       </register>
       <register name="q" type="4">
         <keys>
@@ -441,7 +427,7 @@
         </keys>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgYwoK</text>
+        <text encoding="base64">ICAgICAgICAgICAgZWF2Q29sdW1ucyA9IG1hcE9mKAogICAgICAgICAgICAgICAgMSB0byBFYXZDb2x1bW4oMSwgZWF2VGVtcGxhdGVJZCA9IDEsIGRlc2NyaXB0aW9uID0gImZpcnN0IiwgZGVmYXVsdFZhbHVlID0gIjEwIiksCiAgICAgICAgICAgICAgICAyIHRvIEVhdkNvbHVtbigyLCBlYXZUZW1wbGF0ZUlkID0gMSwgZGVzY3JpcHRpb24gPSAic2Vjb25kIiwgZGVmYXVsdFZhbHVlID0gbnVsbCkKICAgICAgICAgICAgKQo=</text>
       </register>
       <register name="r" type="4">
         <keys>
@@ -474,19 +460,19 @@
         </keys>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgdmFsIHVwZGF0ZWRGbGV4aWJsZSA9IHdoZW4gKGZsZXhpYmxlKSB7CiAgICAgICAgICAgICAgICBpcyBQcm9ncmVzc1NlcnZpY2UgLT4gZmxleGlibGUuY29weShwcm9ncmVzc0lkID0gMSkKICAgICAgICAgICAgICAgIGlzIEVzdGltYXRlU2VydmljZSAtPiBmbGV4aWJsZS5jb3B5KHNjb3BlSWQgPSAxKQogICAgICAgICAgICAgICAgZWxzZSAtPiBmbGV4aWJsZQogICAgICAgICAgICB9Cg==</text>
+        <text encoding="base64">ICAgICAgICBudW1iZXIgPSBudWxsCg==</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgdmFsIHVwZGF0ZWRGbGV4aWJsZSA9IHdoZW4gKGZsZXhpYmxlKSB7CiAgICAgICAgICAgICAgICBpcyBQcm9ncmVzc1NlcnZpY2UgLT4gZmxleGlibGUuY29weShwcm9ncmVzc0lkID0gMSkKICAgICAgICAgICAgICAgIGlzIEVzdGltYXRlU2VydmljZSAtPiBmbGV4aWJsZS5jb3B5KHNjb3BlSWQgPSAxKQogICAgICAgICAgICAgICAgZWxzZSAtPiBmbGV4aWJsZQogICAgICAgICAgICB9Cgo=</text>
+        <text encoding="base64">ICAgICAgICByZXF1ZXN0U3RhdHVzID0gc3RhdGUuZ2V0UmVxUwo=</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ZmxleGlibGUuZ2V0RmxleGlibGVDb2x1bW4oY29sdW1uLmRlc2NyaXB0aW9pbnNwZWN0ZWRJZG4pCg==</text>
+        <text encoding="base64">PT09PT09PQogICAgICAgIHByaXZhdGUgY29uc3QgdmFsIFJFUEVBVF9JTlRFUlZBTDogTG9uZyA9IDE1CiAgICAgICAgcHJpdmF0ZSBjb25zdCB2YWwgRkxFWElCTEVfSU5URVJWQUw6IExvbmcgPSAxNAo+Pj4+Pj4+IHVwc3RyZWFtL21hc3Rlcgo=</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICBhc3NlcnRFcXVhbHMoMywgc3V0Lmluc3BlY3Rpb24hIS5pbnNwZWN0ZWRJZCkK</text>
+        <text encoding="base64">PDw8PDw8PCBIRUFECg==</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICB2YWwgcmVxdWVzdCA9IERwbXNBcHBsaWNhdGlvbi5yZWR1a3Quc3RhdGUucmVxdWVzdHNbLTJdCg==</text>
+      <register name="7" type="4">
+        <text encoding="base64">CiAgICAgICAg</text>
       </register>
       <register name="w" type="4">
         <keys>
@@ -513,10 +499,10 @@
         </keys>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">Cgo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgdmFsIHVwZGF0ZWRGbGV4aWJsZSA9IHdoZW4gKGZsZXhpYmxlKSB7CiAgICAgICAgICAgICAgICBpcyBQcm9ncmVzc1NlcnZpY2UgLT4gZmxleGlibGUuY29weShwcm9ncmVzc0lkID0gMSkKICAgICAgICAgICAgICAgIGlzIEVzdGltYXRlU2VydmljZSAtPiBmbGV4aWJsZS5jb3B5KHNjb3BlSWQgPSAxKQogICAgICAgICAgICAgICAgZWxzZSAtPiBmbGV4aWJsZQogICAgICAgICAgICB9Cgo=</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICB2YWwgc2lnbmFsID0gQ291bnREb3duTGF0Y2goMSkK</text>
+        <text encoding="base64">ICAgICAgICAgICAgYwoK</text>
       </register>
       <register name=":" type="4">
         <text encoding="base64">dw==</text>
@@ -525,10 +511,10 @@
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search encoding="base64">RFVQTElDQQ==</last-search>
+      <last-search encoding="base64">UmVxdWVzdFN0YQ==</last-search>
       <last-substitute encoding="base64">dXBkYXRlZEY=</last-substitute>
       <last-replace encoding="base64">Zg==</last-replace>
-      <last-pattern encoding="base64">RFVQTElDQQ==</last-pattern>
+      <last-pattern encoding="base64">UmVxdWVzdFN0YQ==</last-pattern>
       <last-dir encoding="base64">MQ==</last-dir>
       <show-last encoding="base64">ZmFsc2U=</show-last>
     </search>

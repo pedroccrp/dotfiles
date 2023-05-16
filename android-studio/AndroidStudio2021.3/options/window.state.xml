@@ -4,11 +4,11 @@
     <location key="find.popup.0.0.1920.1080" x="658" y="219" />
     <location key="find.popup.0.0.3840.1080" x="717" y="249" />
     <location key="find.popup.1920.0.1920.1080" x="700" y="219" />
-    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1876" height="386" />
-    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1876" height="386" />
-    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1876" height="386" />
-    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="1876" height="386" />
-    <size key="find.popup.0.0.1920.1080" width="806" height="512" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1876" height="347" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1876" height="347" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1876" height="347" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="1876" height="347" />
+    <size key="find.popup.0.0.1920.1080" width="736" height="512" />
     <size key="GridCell.Tab.1.left.0.0.1920.1080" width="1876" height="347" />
     <size key="GridCell.Tab.1.center.0.0.1920.1080" width="1876" height="347" />
     <size key="GridCell.Tab.1.right.0.0.1920.1080" width="1876" height="347" />
@@ -33,7 +33,7 @@
     <size key="find.popup.1920.0.1920.1080" width="937" height="774" />
   </component>
   <component name="WindowManager">
-    <frame x="960" y="27" width="960" height="1053" extendedState="6" />
+    <frame x="0" y="27" width="1920" height="1053" extendedState="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
@@ -48,10 +48,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="1418" y="929" width="311" height="116" key="ProcessPopupWindow/0.27.1920.1053" timestamp="1682443324705" />
-    <state width="866" height="100" key="ShowUsagesActions.dimensionServiceKey" timestamp="1683244522352">
+    <state width="866" height="628" key="ShowUsagesActions.dimensionServiceKey" timestamp="1684251062558">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="866" height="100" key="ShowUsagesActions.dimensionServiceKey/0.27.1920.1053" timestamp="1683244522352" />
+    <state width="866" height="628" key="ShowUsagesActions.dimensionServiceKey/0.27.1920.1053" timestamp="1684251062558" />
     <state width="866" height="727" key="ShowUsagesActions.dimensionServiceKey/0.27.1920.1053/1920.0.1920.1080" timestamp="1683209645730" />
   </component>
 </application>
