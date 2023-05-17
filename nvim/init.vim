@@ -135,6 +135,7 @@ source ~/.config/nvim/plugins/easymotion.vim
 source ~/.config/nvim/plugins/eunuch.vim
 source ~/.config/nvim/plugins/exchange.vim
 source ~/.config/nvim/plugins/firenvim.vim
+source ~/.config/nvim/plugins/flutter.vim
 source ~/.config/nvim/plugins/floaterm.vim
 source ~/.config/nvim/plugins/formatter.vim
 source ~/.config/nvim/plugins/fugitive.vim

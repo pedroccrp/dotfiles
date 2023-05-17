@@ -20,6 +20,7 @@ let g:coc_global_extensions = [
     \ 'coc-tsserver',
     \ '@yaegassy/coc-volar',
     \ 'coc-omnisharp',
+    \ 'coc-flutter',
 \ ]
 
 " Use tab for trigger completion with characters ahead and navigate.

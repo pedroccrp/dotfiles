@@ -18,6 +18,8 @@ plugins=(
     npm
     fzf
     asdf
+    flutter
+    gh
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -107,3 +109,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Custom commands
 
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

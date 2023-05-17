@@ -12,6 +12,11 @@
             <ProjectPluginTracker />
           </value>
         </entry>
+        <entry key="2PTiMOnl54jlmcTMCh5DSjVKgjR">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
       </map>
     </trackers>
   </component>
@@ -134,7 +139,9 @@
     <property name="SettingsSearchHistory" value="theme&#10;kotlin&#10;plug&#10;wildcard&#10;key" />
     <property name="Source Code Editor With PreviewLayout" value="Editor only" />
     <property name="UITheme.relaunch" value="true" />
-    <property name="appcds.runOnSecondStart" value="AI-213.7172.25.2113.9123335-b150e02f1b5b6e01ff3a422a5f1f86287ad85e4de8fd6668f4c7ceb3c8fdd45d" />
+    <property name="android.gradle.sync.needed" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
+    <property name="appcds.runOnSecondStart" value="AI-213.7172.25.2113.9123335-2b62e56986beae5e7489c729a72b677240d7556984ee5432902b74ff80e7f7aa" />
     <property name="ask.about.ctrl.y.shortcut.v2" value="true" />
     <property name="build.toolwindow.Build Output.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
     <property name="build.toolwindow.Sync.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
@@ -145,7 +152,7 @@
     <property name="decompiler.legal.notice.accepted" value="true" />
     <property name="defaultJdkConfigured" value="true" />
     <property name="file.chooser.recent.files" value="$USER_HOME$/oxeanbits/zxing-android-embedded&#10;/home/curumim/oxeanbits/docker-android&#10;/usr/lib/jvm/java-8-openjdk-amd64" />
-    <property name="file.gist.reindex.count" value="15912" />
+    <property name="file.gist.reindex.count" value="15918" />
     <property name="file.history.selection.comments.splitter.proportion" value="0.5955882" />
     <property name="fileTypeChangedCounter" value="7" />
     <property name="fileTypeDetectors" value="com.android.tools.idea.profilers.capture.MemoryCaptureFileType$Detector:com.android.tools.idea.sqlite.fileType.SqliteFileTypeDetector:com.intellij.ide.scratch.ScratchFileServiceImpl$Detector" />

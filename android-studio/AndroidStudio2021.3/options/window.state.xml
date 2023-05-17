@@ -4,6 +4,7 @@
     <location key="find.popup.0.0.1920.1080" x="658" y="219" />
     <location key="find.popup.0.0.3840.1080" x="717" y="249" />
     <location key="find.popup.1920.0.1920.1080" x="700" y="219" />
+    <location key="WELCOME_SCREEN.1920.0.1920.1080" x="2880" y="300" />
     <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1876" height="386" />
     <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1876" height="386" />
     <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1876" height="386" />
@@ -53,5 +54,9 @@
     </state>
     <state width="866" height="100" key="ShowUsagesActions.dimensionServiceKey/0.27.1920.1053" timestamp="1683244522352" />
     <state width="866" height="727" key="ShowUsagesActions.dimensionServiceKey/0.27.1920.1053/1920.0.1920.1080" timestamp="1683209645730" />
+    <state x="2880" y="300" width="800" height="600" key="WELCOME_SCREEN" timestamp="1683487424368">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2880" y="300" width="800" height="600" key="WELCOME_SCREEN/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080" timestamp="1683487424368" />
   </component>
 </application>

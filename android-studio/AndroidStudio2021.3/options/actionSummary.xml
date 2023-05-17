@@ -187,7 +187,7 @@
       <i c="1" l="1657217671057" />
     </e>
     <e n="EditorBackSpace">
-      <i c="46443" l="1683308591661" />
+      <i c="46445" l="1683487592798" />
     </e>
     <e n="EditorBreadcrumbsHideBoth">
       <i c="1" l="1648489860192" />
@@ -223,7 +223,7 @@
       <i c="5" l="1656008364139" />
     </e>
     <e n="EditorDown">
-      <i c="42052" l="1683179833538" />
+      <i c="42060" l="1683487578307" />
     </e>
     <e n="EditorDownWithSelection">
       <i c="5229" l="1655217289108" />
@@ -436,7 +436,7 @@
       <i c="566" l="1683308616136" />
     </e>
     <e n="GotoFile">
-      <i c="3417" l="1683308587113" />
+      <i c="3419" l="1683487572688" />
     </e>
     <e n="GotoImplementation">
       <i c="5761" l="1683308619051" />
@@ -628,7 +628,7 @@
       <i c="19" l="1683057502001" />
     </e>
     <e n="SaveAll">
-      <i c="6819" l="1683291931652" />
+      <i c="6820" l="1683487595544" />
     </e>
     <e n="SaveDocument">
       <i c="201" l="1632838575765" />
@@ -997,7 +997,7 @@
       <i c="2" l="1633920483297" />
     </e>
     <e n="com.intellij.ide.ReopenProjectAction">
-      <i c="2" l="1666957569452" />
+      <i c="3" l="1683487423364" />
     </e>
     <e n="com.intellij.ide.actions.CollapseAllAction">
       <i c="2" l="1660135594409" />
@@ -1069,7 +1069,7 @@
       <i c="1" l="1659980411589" />
     </e>
     <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
-      <i c="4334" l="1683309207468" />
+      <i c="4335" l="1683487573918" />
     </e>
     <e n="com.intellij.openapi.project.LightEditActionFactory$SimpleLightEditCompatibleAction">
       <i c="24" l="1662075545474" />
