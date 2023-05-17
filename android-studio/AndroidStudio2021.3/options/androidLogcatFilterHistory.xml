@@ -1,8 +1,9 @@
 <application>
   <component name="AndroidLogcatFilterHistory">
-    <option name="mostRecentlyUsed" value="package:mine has" />
+    <option name="mostRecentlyUsed" value="" />
     <option name="nonFavorites">
       <list>
+        <option value="package:mine SUCCESS" />
         <option value="package:mine has" />
         <option value="package:mine" />
         <option value="package:mine Redukt" />
@@ -22,7 +23,6 @@
         <option value="package:mine Formula" />
         <option value="package:mine has spen" />
         <option value="package:mine edukt" />
-        <option value="package:mine Red" />
       </list>
     </option>
   </component>

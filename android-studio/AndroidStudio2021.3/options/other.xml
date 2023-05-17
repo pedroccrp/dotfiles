@@ -12,11 +12,6 @@
             <ProjectPluginTracker />
           </value>
         </entry>
-        <entry key="2PTiMOnl54jlmcTMCh5DSjVKgjR">
-          <value>
-            <ProjectPluginTracker />
-          </value>
-        </entry>
       </map>
     </trackers>
   </component>
@@ -124,11 +119,11 @@
     <property name="GradleSupport.hidePassedTests" value="true" />
     <property name="GradleSupport.scrollToStackTrace" value="true" />
     <property name="GradleSupport.showInternalTestNodes" value="false" />
-    <property name="InstalledPluginsSearchHistory" value="idea&#10;tab&#10;i&#10;font&#10;fo" />
+    <property name="InstalledPluginsSearchHistory" value="settings s&#10;settings&#10;setting&#10;settin&#10;sett" />
     <property name="JUnitSupport.hidePassedTests" value="false" />
     <property name="KEYMAP" value="rena&#10;rename&#10;github&#10;usage&#10;go to" />
     <property name="LOG_FILTER_HISTORY" value="curl&#10;SYNC&#10;DEBUG&#10;_APPLY&#10;Changed" />
-    <property name="MarketplacePluginsSearchHistory" value="/tag:theme /sortBy:rating&#10;/tag:theme&#10;VIM&#10;id&#10;idea" />
+    <property name="MarketplacePluginsSearchHistory" value="settings sync&#10;settings syn&#10;settings sy&#10;settings s&#10;/tag:theme /sortBy:rating" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="NonModalCommitCustomization.IsApplied" value="true" />
@@ -136,12 +131,10 @@
     <property name="SAVED_ANDROID_NPW_LANGUAGE" value="Kotlin" />
     <property name="SAVED_ANDROID_PACKAGE" value="com.pedropontes" />
     <property name="SAVED_BYTECODE_LEVEL" value="8 (slower build)" />
-    <property name="SettingsSearchHistory" value="theme&#10;kotlin&#10;plug&#10;wildcard&#10;key" />
+    <property name="SettingsSearchHistory" value="mirror&#10;fi&#10;sync&#10;Login&#10;theme" />
     <property name="Source Code Editor With PreviewLayout" value="Editor only" />
     <property name="UITheme.relaunch" value="true" />
-    <property name="android.gradle.sync.needed" value="true" />
-    <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
-    <property name="appcds.runOnSecondStart" value="AI-213.7172.25.2113.9123335-2b62e56986beae5e7489c729a72b677240d7556984ee5432902b74ff80e7f7aa" />
+    <property name="appcds.runOnSecondStart" value="AI-213.7172.25.2113.9123335-b150e02f1b5b6e01ff3a422a5f1f86287ad85e4de8fd6668f4c7ceb3c8fdd45d" />
     <property name="ask.about.ctrl.y.shortcut.v2" value="true" />
     <property name="build.toolwindow.Build Output.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
     <property name="build.toolwindow.Sync.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
@@ -152,7 +145,7 @@
     <property name="decompiler.legal.notice.accepted" value="true" />
     <property name="defaultJdkConfigured" value="true" />
     <property name="file.chooser.recent.files" value="$USER_HOME$/oxeanbits/zxing-android-embedded&#10;/home/curumim/oxeanbits/docker-android&#10;/usr/lib/jvm/java-8-openjdk-amd64" />
-    <property name="file.gist.reindex.count" value="15918" />
+    <property name="file.gist.reindex.count" value="15913" />
     <property name="file.history.selection.comments.splitter.proportion" value="0.5955882" />
     <property name="fileTypeChangedCounter" value="7" />
     <property name="fileTypeDetectors" value="com.android.tools.idea.profilers.capture.MemoryCaptureFileType$Detector:com.android.tools.idea.sqlite.fileType.SqliteFileTypeDetector:com.intellij.ide.scratch.ScratchFileServiceImpl$Detector" />
@@ -161,16 +154,16 @@
     <property name="got.it.tooltip.reader.mode.got.it" value="1" />
     <property name="got.it.tooltip.show.diff.in.editor" value="1" />
     <property name="ide.updates.previous.build.number" value="AI-213.7172.25.2113.9123335" />
-    <property name="ideavim.statistics.timestamp" value="1683489229221" />
+    <property name="ideavim.statistics.timestamp" value="1684165265204" />
     <property name="input.method.disabler.muted" value="true" />
     <property name="installed.kotlin.plugin.version" value="213-1.7.20-release-for-android-studio-AS6777.52" />
     <property name="kotlin-gradle-user-dirs" value="$USER_HOME$/.gradle" />
-    <property name="kotlin.lastUpdateCheck" value="1683291873216" />
+    <property name="kotlin.lastUpdateCheck" value="1684165262022" />
     <property name="last_opened_file_path" value="/usr/lib/jvm/java-8-openjdk-amd64" />
     <property name="newly.installed.api.level" value="23" />
     <property name="registry.to.advanced.settings.migration.build" value="AI-213.7172.25.2113.9123335" />
     <property name="settings.code.style.selected.tab.kotlin" value="Spaces" />
-    <property name="studio.activity.count" value="0" />
+    <property name="studio.activity.count" value="21" />
     <property name="studio.profilerSESSION_EXPANDED_WIDTH" value="200" />
     <property name="studio.profilerhide.network.profiler.migration.messaging" value="true" />
     <property name="tasks.pass.word.conversion.enforced" value="true" />

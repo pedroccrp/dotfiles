@@ -1,11 +1,7 @@
 <application>
   <component name="UpdatesConfigurable">
     <option name="LAST_BUILD_CHECKED" value="AI-213.7172.25.2113.9123335" />
-<<<<<<< Updated upstream
-    <option name="LAST_TIME_CHECKED" value="1683489224223" />
-=======
-    <option name="LAST_TIME_CHECKED" value="1683485699041" />
->>>>>>> Stashed changes
+    <option name="LAST_TIME_CHECKED" value="1684200062640" />
     <option name="THIRD_PARTY_PLUGINS_ALLOWED" value="true" />
     <option name="UPDATE_CHANNEL_TYPE" value="release" />
   </component>

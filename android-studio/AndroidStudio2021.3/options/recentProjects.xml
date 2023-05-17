@@ -40,13 +40,13 @@
         </entry>
         <entry key="$USER_HOME$/oxeanbits/dpms-redux-android">
           <value>
-            <RecentProjectMetaInfo frameTitle="DPMS – FlexibleReducer.kt [DPMS.app.main]" opened="true" projectWorkspaceId="2PTiMOnl54jlmcTMCh5DSjVKgjR">
+            <RecentProjectMetaInfo frameTitle="DPMS – SyncQueueWorker.kt [DPMS.app.main]" opened="true" projectWorkspaceId="2Fuls6RG3eFQ9E4czHCsQmoVdUF">
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="AI-213.7172.25.2113.9123335" />
-              <option name="buildTimestamp" value="1664506861718" />
-              <frame x="960" y="27" width="960" height="1053" extendedState="6" />
+              <option name="build" value="AI-213.7172.25.2113.9014738" />
+              <option name="buildTimestamp" value="1661978532145" />
+              <frame x="0" y="27" width="1920" height="1053" extendedState="6" />
               <option name="productionCode" value="AI" />
-              <option name="projectOpenTimestamp" value="1683487424376" />
+              <option name="projectOpenTimestamp" value="1666957572799" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
