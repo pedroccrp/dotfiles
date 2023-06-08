@@ -20,6 +20,9 @@ plugins=(
     asdf
     flutter
     gh
+    ruby
+    rails
+    docker
 )
 
 source $ZSH/oh-my-zsh.sh
