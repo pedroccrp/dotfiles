@@ -12,6 +12,10 @@ Plug 'tpope/vim-commentary'
 
 let mapleader = " "
 
+vnoremap < <gv
+vnoremap > >gv
+vnoremap = =gv
+
 " ----------
 " Options
 " ----------
