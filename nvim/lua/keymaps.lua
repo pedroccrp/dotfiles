@@ -1,10 +1,8 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-print('aaa')
-
 vim.keymap.set('n', '<leader>ve', ':e ~/.config/nvim/init.lua<CR>')
-vim.keymap.set('n', '<leader>vs', ':source ~/.config/nvim/init.lua<CR>')
+-- vim.keymap.set('n', '<leader>vs', ':source ~/.config/nvim/init.lua<CR>')
 
 vim.keymap.set('n', '<leader>k', ':nohlsearch<CR>')
 vim.keymap.set('n', '<leader>Q', ':bufdo bdelete<CR>')
