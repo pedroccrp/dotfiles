@@ -1,0 +1,39 @@
+" ----------
+" Plugins
+" ----------
+
+Plug 'tpope/vim-surround'
+Plug 'preservim/nerdtree'
+Plug 'tpope/vim-commentary'
+
+" ----------
+" Remaps
+" ----------
+
+let mapleader = " "
+
+" ----------
+" Options
+" ----------
+
+set relativenumber
+
+set hlsearch
+set ignorecase
+set smartcase
+set incsearch
+set wrapscan
+
+set history=10000
+set scrolloff=5 sidescrolloff=10
+set clipboard=unnamedplus,unnamed,ideaput
+
+" ----------
+" Actions
+" ----------
+
+nmap K :action NextTab<CR>
+nmap J :action PreviousTab<CR>
+nmap <leader>q :action CloseActiveTab<CR>
+
+nmap <leader>vs :source ~/.ideavimrc<CR>
