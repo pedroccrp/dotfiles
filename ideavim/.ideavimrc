@@ -16,10 +16,13 @@ vnoremap < <gv
 vnoremap > >gv
 vnoremap = =gv
 
+nnoremap <leader>k :nohlsearch<CR>
+
 " ----------
 " Options
 " ----------
 
+set number
 set relativenumber
 
 set hlsearch
