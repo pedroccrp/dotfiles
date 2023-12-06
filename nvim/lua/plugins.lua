@@ -11,6 +11,9 @@ use {
     }
 }
 
+--
+use('ggandor/leap.nvim')
+
 -- LSP and Code Highlight
 use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 use('nvim-treesitter/nvim-treesitter-context')
@@ -38,6 +41,9 @@ use('morhetz/gruvbox')
 
 -- Git
 use('tpope/vim-fugitive')
+use('lewis6991/gitsigns.nvim')
+use('airblade/vim-gitgutter')
+use {'akinsho/git-conflict.nvim', tag = "*"}
 
 -- Buffer and Status Lines
 use { 'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons' }
@@ -60,6 +66,7 @@ use('karb94/neoscroll.nvim')
 -- Code Editting
 use('numToStr/Comment.nvim')
 use({ "kylechui/nvim-surround", tag = "*" })
+use('mg979/vim-visual-multi')
 
 -- Terminal Integration
 use({
