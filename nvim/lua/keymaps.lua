@@ -7,6 +7,8 @@ vim.keymap.set('n', '<leader>ve', ':e ~/.config/nvim/init.lua<CR>')
 vim.keymap.set('n', '<leader>k', ':nohlsearch<CR>')
 vim.keymap.set('n', '<leader>Q', ':bufdo bdelete<CR>')
 
+vim.keymap.set('n', 'yp', ':let @+=expand(\'%\').\':\'.line(\'.\')<CR>', { silent = true })
+
 -- Allow gf to open non-existent files
 vim.keymap.set('', 'gf', ':edit <cfile><CR>')
 
