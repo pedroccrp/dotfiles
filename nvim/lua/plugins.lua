@@ -11,8 +11,11 @@ use {
     }
 }
 
---
-use('ggandor/leap.nvim')
+-- Movement
+use('easymotion/vim-easymotion')
+
+-- Formatting
+use({"cappyzawa/trim.nvim"})
 
 -- LSP and Code Highlight
 use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
