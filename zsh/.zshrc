@@ -61,7 +61,7 @@ dotfiles() {
 }
 
 best_release() {
-  grep -F -x -v -f <(git log "$1" --pretty=format:"%s") <(git log "$2" --pretty=format:"%s") | uniq | grep DPMS
+  grep -F -x -v -f <(git log "$1" --pretty=format:"%s" | sed 's/ (#[0-9]*)//g') <(git log "$2" --pretty=format:"%s" | sed 's/ (#[0-9]*)//g') | uniq | grep DPMS
 }
 
 best_release_hash() {
