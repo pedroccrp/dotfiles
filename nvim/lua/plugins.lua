@@ -26,13 +26,13 @@ use {
     branch = 'v2.x',
     requires = {
         { 'neovim/nvim-lspconfig' },
+        { 'williamboman/mason-lspconfig.nvim' },
         {
             'williamboman/mason.nvim',
             run = function()
                 pcall(vim.cmd, 'MasonUpdate')
             end,
         },
-        { 'williamboman/mason-lspconfig.nvim' },
         { 'hrsh7th/nvim-cmp' },
         { 'hrsh7th/cmp-nvim-lsp' },
         { 'L3MON4D3/LuaSnip' }
@@ -79,3 +79,9 @@ use({
     end,
 })
 use("alexghergh/nvim-tmux-navigation")
+
+-- Other
+use('nvim-tree/nvim-web-devicons')
+use('norcalli/nvim-colorizer.lua')
+use('windwp/nvim-ts-autotag')
+use('windwp/nvim-autopairs')
