@@ -3,14 +3,6 @@ local use = require('packer').use
 -- Package Manager
 use('wbthomason/packer.nvim')
 
--- FZF
-use {
-    'nvim-telescope/telescope.nvim',
-    requires = {
-        { 'nvim-lua/plenary.nvim' }
-    }
-}
-
 -- Movement
 use('easymotion/vim-easymotion')
 
@@ -23,7 +15,7 @@ use('nvim-treesitter/nvim-treesitter-context')
 
 use {
     'VonHeikemen/lsp-zero.nvim',
-    branch = 'v2.x',
+    branch = 'v3.x',
     requires = {
         { 'neovim/nvim-lspconfig' },
         { 'williamboman/mason-lspconfig.nvim' },
@@ -36,6 +28,14 @@ use {
         { 'hrsh7th/nvim-cmp' },
         { 'hrsh7th/cmp-nvim-lsp' },
         { 'L3MON4D3/LuaSnip' }
+    }
+}
+
+-- FZF
+use {
+    'nvim-telescope/telescope.nvim',
+    requires = {
+        { 'nvim-lua/plenary.nvim' }
     }
 }
 
@@ -72,12 +72,7 @@ use({ "kylechui/nvim-surround", tag = "*" })
 use('mg979/vim-visual-multi')
 
 -- Terminal Integration
-use({
-    'voldikss/vim-floaterm',
-    config = function()
-        require('user.plugins.floaterm')
-    end,
-})
+use('voldikss/vim-floaterm')
 use("alexghergh/nvim-tmux-navigation")
 
 -- Other
