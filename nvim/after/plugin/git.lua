@@ -2,10 +2,6 @@
 vim.keymap.set('n', '<leader>gb', ':Git blame<CR>')
 vim.keymap.set('n', '<leader>gs', ':Git status<CR>')
 
--- Gitgutter
-vim.keymap.set('n', '<leader>hp', ':GitGutterPrevHunk<CR>')
-vim.keymap.set('n', '<leader>hn', ':GitGutterNextHunk<CR>')
-
 require('git-conflict').setup()
 
 require('gitsigns').setup {

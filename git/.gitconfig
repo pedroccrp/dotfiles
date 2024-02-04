@@ -10,3 +10,4 @@
 	cmd = nvim -f -c \"Gvdiffsplit!\" \"$MERGED\"
 [merge]
 	tool = fugitive
+	conflictstyle = diff3
