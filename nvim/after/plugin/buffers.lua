@@ -19,6 +19,6 @@ bufferline.setup {
 }
 
 -- Buffer Movement
-vim.keymap.set('n', 'J', ':bp<CR>')
-vim.keymap.set('n', 'K', ':bn<CR>')
-vim.keymap.set('n', '<leader>q', ':bd<CR>')
+vim.keymap.set('n', 'J', ':bp<CR>', { silent = true })
+vim.keymap.set('n', 'K', ':bn<CR>', { silent = true })
+vim.keymap.set('n', '<leader>q', ':bd<CR>', { silent = true })

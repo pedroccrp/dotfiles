@@ -44,6 +44,9 @@ require('mason-lspconfig').setup({
     end,
   }
 })
+-- require("mason-null-ls").setup({
+--     ensure_installed = {}
+-- })
 
 local cmp = require('cmp')
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
@@ -63,4 +66,7 @@ cmp.setup({
     ['<Tab>'] = cmp.mapping.confirm({ select = true }),
     ['<S-Tab>'] = nil,
   }),
+  experimental = {
+    ghost_text = true
+  }
 })

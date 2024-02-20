@@ -24,4 +24,4 @@ vim.cmd([[
   augroup end
 ]])
 
-vim.keymap.set('n', '<leader>n', ':NvimTreeFindFileToggle<CR>')
+vim.keymap.set('n', '<leader>n', ':NvimTreeFindFileToggle<CR>', { silent = true })
