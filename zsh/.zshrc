@@ -131,4 +131,4 @@ zinit light zsh-users/zsh-completions
 # Custom commands
 
 # On Startup
-if [ "$TMUX" = "" ]; then tmux; fi
+if [ "$TMUX" = "" ]; then tmux attach || tmux; fi
