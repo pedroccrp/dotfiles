@@ -1,5 +1,5 @@
 require('packer-setup')
-require('plugins')
+require('plugins-installer')
 require('options')
 require('keymaps')
 require('misc')

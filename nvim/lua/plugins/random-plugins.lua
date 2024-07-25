@@ -1,48 +1,10 @@
 local use = require('packer').use
 
--- Package Manager
-use('wbthomason/packer.nvim')
-
 -- Movement
 use('easymotion/vim-easymotion')
 
 -- Formatting
 use({ "cappyzawa/trim.nvim" })
-
--- LSP and Code Highlight
-use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
-use('nvim-treesitter/nvim-treesitter-context')
-
-use {
-  'VonHeikemen/lsp-zero.nvim',
-  branch = 'v3.x',
-  requires = {
-    { 'neovim/nvim-lspconfig' },
-    { 'williamboman/mason-lspconfig.nvim' },
-    {
-      'williamboman/mason.nvim',
-      run = function()
-        pcall(vim.cmd, 'MasonUpdate')
-      end,
-    },
-    { 'hrsh7th/nvim-cmp' },
-    { 'hrsh7th/cmp-nvim-lsp' },
-    { 'L3MON4D3/LuaSnip' }
-  }
-}
-
-use("nvimtools/none-ls.nvim")
-
-use {
-  "jay-babu/mason-null-ls.nvim",
-  event = { "BufReadPre", "BufNewFile" },
-  dependencies = {
-    "williamboman/mason.nvim",
-    "nvimtools/none-ls.nvim",
-  },
-  config = function()
-  end,
-}
 
 -- FZF
 use {

@@ -13,7 +13,9 @@ local select_one_or_multi = function(prompt_bufnr)
   end
 end
 
-require('telescope').setup {
+local telescope = require('telescope')
+
+telescope.setup {
   defaults = {
     mappings = {
       i = {
@@ -22,6 +24,8 @@ require('telescope').setup {
     }
   }
 }
+
+telescope.load_extension('lsp_handlers')
 
 local builtin = require('telescope.builtin')
 
