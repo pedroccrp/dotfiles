@@ -33,12 +33,12 @@ lsp_zero.on_attach(function(_, bufnr)
   vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
   -- vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 
-  vim.keymap.set({ "n", "v" }, "<leader>vf", function ()
+  vim.keymap.set({ "n", "v" }, "<leader>vf", function()
     local disable_filetypes = { c = true, cpp = true }
     conform.format({
-        timeout_ms = 1000,
-        lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype],
-        async = false,
+      timeout_ms = 1000,
+      lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype],
+      async = false,
     })
   end, { desc = 'Format file or range (in visual mode)' })
 end)
@@ -47,6 +47,7 @@ conform.setup({
   formatters_by_ft = {
     lua = { 'stylua' },
     kotlin = { 'ktlint' },
+    dart = { 'dcm' },
   }
 })
 
@@ -66,7 +67,7 @@ require('mason-lspconfig').setup({
 })
 require('mason-tool-installer').setup({
   ensure_installed = {
-    "ktlint",
+    "ktlint"
   }
 })
 
@@ -85,15 +86,15 @@ cmp.setup({
   formatting = {
     format = lspkind.cmp_format({
       mode = 'symbol', -- show only symbol annotations
-      maxwidth = 50, -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
+      maxwidth = 50,   -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
       -- can also be a function to dynamically calculate max width such as
       -- maxwidth = function() return math.floor(0.45 * vim.o.columns) end,
-      ellipsis_char = '...', -- when popup menu exceed maxwidth, the truncated part would show ellipsis_char instead (must define maxwidth first)
+      ellipsis_char = '...',    -- when popup menu exceed maxwidth, the truncated part would show ellipsis_char instead (must define maxwidth first)
       show_labelDetails = true, -- show labelDetails in menu. Disabled by default
 
       -- The function below will be called before any actual modifications from lspkind
       -- so that you can provide more controls on popup customization. (See [#30](https://github.com/onsails/lspkind-nvim/pull/30))
-      before = function (_, vim_item)
+      before = function(_, vim_item)
         return vim_item
       end
     })
