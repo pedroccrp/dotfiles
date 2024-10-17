@@ -1,2 +1,11 @@
-vim.api.nvim_set_var('flutter_show_log_on_run', 'hidden')
-vim.api.nvim_set_var('flutter_autoscroll', '1')
+local lsp = require('lsp-zero')
+local dart_lsp = lsp.build_options('dartls', {})
+
+require('flutter-tools').setup({
+  lsp = {
+    capabilities = dart_lsp.capabilities
+  },
+  dev_log = {
+    enabled = false
+  }
+})

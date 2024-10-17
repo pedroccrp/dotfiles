@@ -16,22 +16,19 @@ vim.fn.sign_define('DiagnosticSignWarn', { text = '', texthl = 'DiagnosticSig
 vim.fn.sign_define('DiagnosticSignInfo', { text = '', texthl = 'DiagnosticSignInfo' })
 vim.fn.sign_define('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSignHint' })
 
-vim.keymap.set('n', 'gl', '<cmd>lua vim.diagnostic.open_float()<cr>')
-vim.keymap.set('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<cr>')
-vim.keymap.set('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<cr>')
-
 lsp_zero.on_attach(function(_, bufnr)
   local opts = { buffer = bufnr, remap = false }
 
-  vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
-  vim.keymap.set("n", "gr", function() vim.lsp.buf.references() end, opts)
-  vim.keymap.set("n", "gi", function() vim.lsp.buf.implementation() end, opts)
-  -- vim.keymap.set("n", "<leader>vf", function() vim.lsp.buf.format() end, opts)
+  lsp_zero.default_keymaps({ buffer = bufnr })
+
+  vim.keymap.set('n', 'gl', '<cmd>lua vim.diagnostic.open_float()<cr>')
+  vim.keymap.set('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<cr>')
+  vim.keymap.set('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<cr>')
+
+
   vim.keymap.set("n", "<leader>vws", function() vim.lsp.buf.workspace_symbol() end, opts)
   vim.keymap.set("n", "<leader>vca", function() vim.lsp.buf.code_action() end, opts)
-  -- vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
   vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
-  -- vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 
   vim.keymap.set({ "n", "v" }, "<leader>vf", function()
     local disable_filetypes = { c = true, cpp = true }
@@ -53,9 +50,10 @@ conform.setup({
 
 -- https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guides/integrate-with-mason-nvim.md
 require('mason').setup({})
+
 require('mason-lspconfig').setup({
   ensure_installed = {
-    kotlin_language_server = {}
+    'kotlin_language_server'
   },
   handlers = {
     lsp_zero.default_setup,
