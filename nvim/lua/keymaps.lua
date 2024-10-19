@@ -21,6 +21,9 @@ vim.keymap.set('v', '>', '>gv', { silent = true })
 vim.keymap.set('v', 'y', 'myy`y', { silent = true })
 vim.keymap.set('v', 'Y', 'myY`y', { silent = true })
 
+-- Don't override clipboard when deleting characters
+vim.keymap.set('n', 'x', '"_x')
+
 -- When text is wrapped, move by terminal rows, not lines, unless a count is provided
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })

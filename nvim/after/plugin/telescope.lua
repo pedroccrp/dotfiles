@@ -20,16 +20,20 @@ telescope.setup {
     mappings = {
       i = {
         ['<CR>'] = select_one_or_multi,
+      },
+      n = {
+        ['<CR>'] = select_one_or_multi,
       }
     }
   }
 }
 
 telescope.load_extension('lsp_handlers')
+telescope.load_extension('fzf')
 
 local builtin = require('telescope.builtin')
 
-vim.keymap.set('n', '<leader>f', function() builtin.find_files({ hidden = true }) end, {})
--- vim.keymap.set('n', '<leader>gf', function() builtin.git_files({ hidden = true }) end, {})
-vim.keymap.set('n', '<leader>r', function() builtin.live_grep({ hidden = true }) end, {})
-vim.keymap.set('n', '<leader>gr', function() builtin.grep_string({ hidden = true }) end, {})
+vim.keymap.set('n', '<leader>ff', function() builtin.find_files({ hidden = true }) end, {})
+vim.keymap.set('n', '<leader>fb', function() builtin.buffers({ hidden = true }) end, {})
+vim.keymap.set('n', '<leader>fg', function() builtin.git_files({ hidden = true }) end, {})
+vim.keymap.set('n', '<leader>fr', function() builtin.live_grep({ hidden = true }) end, {})
