@@ -35,5 +35,12 @@ use("williamboman/mason-lspconfig.nvim")
 use("stevearc/conform.nvim")
 use("zapling/mason-conform.nvim")
 
+use({
+  "mfussenegger/nvim-dap",
+  "jay-babu/mason-nvim-dap.nvim",
+  "nvim-neotest/nvim-nio",
+  "rcarriga/nvim-dap-ui",
+})
+
 use("onsails/lspkind.nvim")
 use("gbrlsnchs/telescope-lsp-handlers.nvim")

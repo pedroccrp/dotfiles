@@ -30,3 +30,7 @@ require("mason-conform").setup({
   },
   automatic_installation = true,
 })
+
+require("mason-nvim-dap").setup({
+  ensure_installed = {},
+})
