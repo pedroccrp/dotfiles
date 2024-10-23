@@ -39,6 +39,7 @@ use({
   "mfussenegger/nvim-dap",
   "jay-babu/mason-nvim-dap.nvim",
   "nvim-neotest/nvim-nio",
+  "theHamsta/nvim-dap-virtual-text",
   "rcarriga/nvim-dap-ui",
 })
 
