@@ -1,7 +1,9 @@
-local use = require('packer').use
+local use = require("packer").use
 
-use {
+use({
   "akinsho/flutter-tools.nvim",
   requires = { "nvim-lua/plenary.nvim", "stevearc/dressing.nvim" },
-  config = true
-}
+  config = true,
+})
+
+use("reisub0/hot-reload.vim")
