@@ -1,24 +1,24 @@
-require('Comment').setup()
+require("Comment").setup()
 require("nvim-surround").setup({})
 
-require('multicursors').setup {
+require("multicursors").setup({
   DEBUG_MODE = false,
-  create_commands = true,   -- create Multicursor user commands
-  updatetime = 50,          -- selections get updated if this many milliseconds nothing is typed in the insert mode see :help updatetime
-  nowait = true,            -- see :help :map-nowait
+  create_commands = true, -- create Multicursor user commands
+  updatetime = 50, -- selections get updated if this many milliseconds nothing is typed in the insert mode see :help updatetime
+  nowait = true, -- see :help :map-nowait
   mode_keys = {
-    append = 'a',
-    change = 'c',
-    extend = 'e',
-    insert = 'i',
-  },   -- set bindings to start these modes
+    append = "a",
+    change = "c",
+    extend = "e",
+    insert = "i",
+  }, -- set bindings to start these modes
   normal_keys = normal_keys,
   insert_keys = insert_keys,
   extend_keys = extend_keys,
   -- see :help hydra-config.hint
   hint_config = {
-    border = 'none',
-    position = 'bottom',
+    border = "none",
+    position = "bottom",
   },
   -- accepted values:
   -- -1 true: generate hints
@@ -34,8 +34,16 @@ require('multicursors').setup {
       column_count = nil,
       -- maximum width of a column.
       max_hint_length = 25,
-    }
+    },
   },
-}
+})
 
-vim.keymap.set('n', '<leader>m', ':MCstart<CR>', { silent = true })
+vim.keymap.set("n", "<leader>m", ":MCstart<CR>", { silent = true })
+
+vim.api.nvim_create_autocmd("TextYankPost", {
+  desc = "Highlight when yanking text",
+  group = vim.api.nvim_create_augroup("hihlight_yank", { clear = true }),
+  callback = function()
+    vim.highlight.on_yank({ timeout = 100 })
+  end,
+})

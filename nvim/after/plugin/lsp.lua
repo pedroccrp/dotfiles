@@ -15,10 +15,12 @@ vim.fn.sign_define("DiagnosticSignWarn", { text = "", texthl = "DiagnosticSig
 vim.fn.sign_define("DiagnosticSignInfo", { text = "", texthl = "DiagnosticSignInfo" })
 vim.fn.sign_define("DiagnosticSignHint", { text = "", texthl = "DiagnosticSignHint" })
 
-lsp_zero.on_attach(function(_, bufnr)
+lsp_zero.on_attach(function(client, bufnr)
   local opts = { buffer = bufnr, remap = false }
 
   lsp_zero.default_keymaps({ buffer = bufnr })
+
+  client.server_capabilities.semanticTokensProvider = nil
 
   vim.keymap.set("n", "gl", "<cmd>lua vim.diagnostic.open_float()<cr>")
   vim.keymap.set("n", "[d", "<cmd>lua vim.diagnostic.goto_prev()<cr>")
