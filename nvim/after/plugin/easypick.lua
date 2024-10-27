@@ -8,7 +8,7 @@ easypick.setup({
     -- diff current branch with base_branch and show files that changed with respective diffs in preview
     {
       name = "changed_files",
-      command = "git diff --name-only",
+      command = "git diff --name-only --relative",
       previewer = easypick.previewers.branch_diff({ base_branch = base_branch }),
     },
 

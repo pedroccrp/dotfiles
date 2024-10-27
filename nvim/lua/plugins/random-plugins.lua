@@ -84,3 +84,5 @@ use({
   end,
   ft = { "markdown" },
 })
+
+use("mbbill/undotree")
