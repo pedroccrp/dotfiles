@@ -1,4 +1,3 @@
-require("secrets")
 require("packer-setup")
 require("plugins-installer")
 require("options")

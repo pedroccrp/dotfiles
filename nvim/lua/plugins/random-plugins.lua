@@ -38,6 +38,12 @@ use({
   end,
 })
 
+use({
+  "ThePrimeagen/harpoon",
+  branch = "harpoon2",
+  requires = { { "nvim-lua/plenary.nvim" } },
+})
+
 -- Scroll
 use("karb94/neoscroll.nvim")
 
