@@ -6,6 +6,7 @@ conform.setup({
     javascript = { "prettierd", "prettier", stop_after_first = true },
     ruby = { "rubocop" },
     dart = { "dart_format" },
+    kotlin = { "ktlint" },
   },
   formatters = {
     rubocop = {
@@ -14,9 +15,6 @@ conform.setup({
   },
 })
 
-vim.api.nvim_create_autocmd("BufWritePre", {
-  pattern = "*",
-  callback = function(args)
-    conform.format({ bufnr = args.buf })
-  end,
-})
+vim.keymap.set("n", "<leader>cf", function()
+  conform.format({ lsp_fallback = true, timeout_ms = 5000 })
+end)

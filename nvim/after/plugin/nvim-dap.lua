@@ -1,8 +1,8 @@
 local dap = require("dap")
-local ui = require("dapui")
+-- local ui = require("dapui")
 local dap_virtual = require("nvim-dap-virtual-text")
 
-ui.setup()
+-- ui.setup()
 dap_virtual.setup()
 
 dap.configurations.dart = {
@@ -49,23 +49,23 @@ dap.adapters.flutter = {
 vim.keymap.set("n", "<leader>db", dap.toggle_breakpoint)
 vim.keymap.set("n", "<leader>dc", dap.continue)
 vim.keymap.set("n", "<leader>dd", dap.disconnect)
-vim.keymap.set("n", "<leader>?", function()
-  require("dapui").eval(nil, { enter = true })
-end)
-
--- Set proper UI
-dap.listeners.before.attach.dapui_config = function()
-  ui.open()
-end
-dap.listeners.before.launch.dapui_config = function()
-  ui.open()
-end
-dap.listeners.before.event_terminated.dapui_config = function()
-  ui.close()
-end
-dap.listeners.before.event_exited.dapui_config = function()
-  ui.close()
-end
+-- vim.keymap.set("n", "<leader>?", function()
+--   require("dapui").eval(nil, { enter = true })
+-- end)
+--
+-- -- Set proper UI
+-- dap.listeners.before.attach.dapui_config = function()
+--   ui.open()
+-- end
+-- dap.listeners.before.launch.dapui_config = function()
+--   ui.open()
+-- end
+-- dap.listeners.before.event_terminated.dapui_config = function()
+--   ui.close()
+-- end
+-- dap.listeners.before.event_exited.dapui_config = function()
+--   ui.close()
+-- end
 
 -- Customize breakpoint symbol and color
 vim.api.nvim_set_hl(0, "blue", { fg = "#3d59a1" })
