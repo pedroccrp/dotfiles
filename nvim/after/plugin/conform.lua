@@ -10,7 +10,8 @@ conform.setup({
   },
   formatters = {
     rubocop = {
-      args = { "-A", "--stderr", "--force-exclusion", "--stdin", "$FILENAME" },
+      command = "bundle",
+      args = { "exec", "rubocop", "-A", "--stderr", "--force-exclusion", "--stdin", "$FILENAME" },
     },
   },
 })
