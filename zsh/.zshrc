@@ -98,6 +98,23 @@ j() {
     fi
 }
 
+optimize_mysql_tables() {
+  local container_name="$1"
+  local mysql_password="$2"
+
+  if [[ -z "$container_name" || -z "$mysql_password" ]]; then
+    echo "Usage: optimize_mysql_tables <container_name> <mysql_password>"
+    return 1
+  fi
+
+  for table in $(docker exec -it "$container_name" mysql -uroot -p"$mysql_password" -sss -e "SELECT CONCAT(table_schema, '.', table_name) FROM information_schema.tables WHERE table_schema NOT IN ('mysql', 'information_schema', 'performance_schema') AND TABLE_TYPE='BASE TABLE' ORDER BY data_free DESC;"); do
+    echo "Optimizing table: $table"
+    docker exec -it "$container_name" mysql -uroot -p"$mysql_password" -sss -e "OPTIMIZE TABLE $table;"
+  done
+
+  echo "All tables optimized!"
+}
+
 #----------------------------------------------------------------------------------------------------
 # Miscellaneous
 #----------------------------------------------------------------------------------------------------
