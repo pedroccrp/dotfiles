@@ -20,8 +20,8 @@ use({
 use({ "axkirillov/easypick.nvim", requires = "nvim-telescope/telescope.nvim" })
 
 -- Color Schemes
--- use('morhetz/gruvbox')
-use("folke/tokyonight.nvim")
+-- use("folke/tokyonight.nvim")
+use("rose-pine/neovim")
 
 -- Buffer and Status Lines
 use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })

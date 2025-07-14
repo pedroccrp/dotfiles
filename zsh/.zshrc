@@ -14,7 +14,6 @@ VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
 plugins=(
     git
     zsh-autosuggestions
-    # zsh-vi-mode
     npm
     fzf
     asdf
@@ -23,6 +22,7 @@ plugins=(
     ruby
     rails
     docker
+    zsh-diff-so-fancy
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -123,8 +123,6 @@ autoload -Uz _zinit
 zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
-
-
 
 # Custom commands
 
