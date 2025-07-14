@@ -1,4 +1,5 @@
 local bufferline = require("bufferline")
+local bufferline_cycle_windowless = require("bufferline-cycle-windowless")
 
 bufferline.setup({
   options = {
@@ -18,9 +19,16 @@ bufferline.setup({
   },
 })
 
+bufferline_cycle_windowless.setup({
+  default_enabled = true,
+})
+
 -- Buffer Movement
-vim.keymap.set("n", "J", ":bp<CR>", { silent = true })
-vim.keymap.set("n", "K", ":bn<CR>", { silent = true })
+-- vim.keymap.set("n", "J", ":bp<CR>", { silent = true })
+-- vim.keymap.set("n", "K", ":bn<CR>", { silent = true })
 vim.keymap.set("n", "<leader>o", ":e#<CR>", { silent = true })
 vim.keymap.set("n", "<leader>q", ":bd<CR>", { silent = true })
 vim.keymap.set("n", "<leader>Q", ":%bd|e#|bd#<CR>", { silent = true })
+
+vim.api.nvim_set_keymap("n", "K", "<CMD>BufferLineCycleWindowlessNext<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "J", "<CMD>BufferLineCycleWindowlessPrev<CR>", { noremap = true, silent = true })

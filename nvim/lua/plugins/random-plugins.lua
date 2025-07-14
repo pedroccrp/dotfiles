@@ -26,6 +26,7 @@ use("rose-pine/neovim")
 -- Buffer and Status Lines
 use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
 use({ "nvim-lualine/lualine.nvim", requires = { "nvim-tree/nvim-web-devicons", opt = true } })
+use({ "roobert/bufferline-cycle-windowless.nvim", requires = { { "akinsho/bufferline.nvim" } } })
 
 -- File Explorer
 use({
