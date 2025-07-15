@@ -6,8 +6,11 @@
 [alias]
 	mr = push -u origin HEAD
     lg = log --graph --oneline --all
+	dsf = diff --color
 [mergetool "fugitive"]
 	cmd = nvim -f -c \"Gvdiffsplit!\" \"$MERGED\"
 [merge]
 	tool = fugitive
 	conflictstyle = diff3
+[pager]
+	dsf = diff-so-fancy | less --tabs=4 -RFXS
