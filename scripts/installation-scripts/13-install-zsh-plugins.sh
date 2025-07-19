@@ -6,4 +6,5 @@ fi
 yay -S --needed --noconfirm \
   zsh-vi-mode \
   zsh-completions \
-  zsh-syntax-highlighting
+  zsh-syntax-highlighting \
+  spaceship-prompt
