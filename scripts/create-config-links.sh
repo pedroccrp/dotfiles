@@ -6,3 +6,5 @@ ln -sf $DOTFILES/nvim $HOME/.config/nvim
 ln -sf $DOTFILES/zsh/.zshrc $HOME/.zshrc
 if [ -d $HOME/.config/kitty ]; then rm -rf $HOME/.config/kitty; fi
 ln -sf $DOTFILES/kitty $HOME/.config/kitty
+if [ -d $HOME/.config/sway ]; then rm -rf $HOME/.config/sway; fi
+ln -sf $DOTFILES/sway $HOME/.config/sway
