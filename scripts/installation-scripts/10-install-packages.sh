@@ -12,6 +12,10 @@ base_packages=(
   ripgrep
 )
 
+network_packages=(
+  network-manager-applet
+)
+
 bluetooth_packages=(
 	bluez
 	bluez-utils
@@ -28,9 +32,13 @@ audio_pakages=(
 
 desktop_packages=(
 	sway
+  swaybg
+  waybar
 	ly
-  rofi
+  wofi
   ranger
+  nautilus
+  brightnessctl
 )
 
 dev_packages=(
@@ -45,13 +53,17 @@ dev_packages=(
 	tmux
 )
 
+font_packages=(
+  ttf-firacode-nerd
+)
+
 packages=(
 	firefox
 	bitwarden-cli
 )
 
 echo "Installing packages..."
-yes | pacman -S --needed ${base_packages[@]} ${bluetooth_packages[@]} ${audio_pakages[@]} ${desktop_packages[@]} ${dev_packages[@]} ${packages[@]}
+yes | pacman -S --needed ${base_packages[@]} ${network_packages[@]} ${bluetooth_packages[@]} ${audio_pakages[@]} ${desktop_packages[@]} ${dev_packages[@]} ${font_packages[@]} ${packages[@]}
 
 # Install YAY
 if ! command -v yay >/dev/null 2>&1; then
