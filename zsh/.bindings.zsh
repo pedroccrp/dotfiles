@@ -1,5 +1,9 @@
 bindkey -v
 
+# Used to remove the delay when pressing escape
+# but can break other keybindings, make sure to check
+KEYTIMEOUT=5
+
 # Emacs-style bindings in vi insert mode
 bindkey -M viins '^A' beginning-of-line
 bindkey -M viins '^E' end-of-line
@@ -22,5 +26,15 @@ zle -N down-line-or-beginning-search
 
 bindkey -M viins '^[[A' up-line-or-beginning-search
 bindkey -M viins '^[[B' down-line-or-beginning-search
+bindkey -M viins '' up-line-or-beginning-search
+bindkey -M viins '' down-line-or-beginning-search
+bindkey -M viins '^[k' up-line-or-beginning-search
+bindkey -M viins '^[j' down-line-or-beginning-search
 
 bindkey -M viins '^R' fzf-history-widget
+
+# Autosuggest
+bindkey -M viins '^@' autosuggest-accept
+bindkey -M viins '' autosuggest-accept
+bindkey -M viins '' undefined-key
+bindkey -M viins '' forward-word
