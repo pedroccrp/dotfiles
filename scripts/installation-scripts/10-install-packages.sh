@@ -7,6 +7,7 @@ base_packages=(
 	base-devel
   unzip
   xclip
+  wl-clipboard
   fzf
   ripgrep
 )
@@ -28,6 +29,7 @@ audio_pakages=(
 desktop_packages=(
 	sway
 	ly
+  rofi
 )
 
 dev_packages=(
