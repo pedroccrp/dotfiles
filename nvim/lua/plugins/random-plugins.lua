@@ -59,7 +59,6 @@ use({
 })
 
 -- Terminal Integration
-use("voldikss/vim-floaterm")
 use("alexghergh/nvim-tmux-navigation")
 
 -- Other
