@@ -30,6 +30,7 @@ desktop_packages=(
 	sway
 	ly
   rofi
+  ranger
 )
 
 dev_packages=(
@@ -39,6 +40,7 @@ dev_packages=(
 	go
   gcc
 	git
+  lazygit
 	github-cli
 	tmux
 )

@@ -8,4 +8,5 @@ yay -S --needed --noconfirm \
   asdf-vm \
   autojump \
   flameshot \
-  scrcpy
+  scrcpy \
+  indicator-sound-switcher
