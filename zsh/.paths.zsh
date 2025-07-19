@@ -5,6 +5,8 @@ path=(
 
 fpath=(
   $fpath
+  /usr/share/zsh/functions/Zle
+  /usr/share/zsh/site-functions
 )
 
 typeset -U path fpath
