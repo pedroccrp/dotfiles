@@ -11,3 +11,5 @@ ln -sf $DOTFILES/sway $HOME/.config/sway
 if [ -d $HOME/.xkb/symbols ]; then rm -rf $HOME/.xkb/symbols; fi
 mkdir -p ~/.xkb/symbols
 ln -sf $DOTFILES/xkb/br_custom $HOME/.xkb/symbols/br_custom
+if [ -d $HOME/.config/waybar ]; then rm -rf $HOME/.config/waybar; fi
+ln -sf $DOTFILES/waybar $HOME/.config/waybar
