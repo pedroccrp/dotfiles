@@ -1,5 +1,9 @@
 local use = require("packer").use
 
 use({
-  "Exafunction/codeium.vim",
+  "Exafunction/windsurf.nvim",
+  requires = {
+    "nvim-lua/plenary.nvim",
+    "hrsh7th/nvim-cmp",
+  },
 })
