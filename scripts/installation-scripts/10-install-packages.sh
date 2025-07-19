@@ -5,6 +5,10 @@ fi
 
 base_packages=(
 	base-devel
+  unzip
+  xclip
+  fzf
+  ripgrep
 )
 
 bluetooth_packages=(
@@ -28,8 +32,10 @@ desktop_packages=(
 
 dev_packages=(
 	zsh
+  curl
 	openssh
 	go
+  gcc
 	git
 	github-cli
 	tmux
@@ -41,7 +47,7 @@ packages=(
 )
 
 echo "Installing packages..."
-yes | pacman -S --needed ${base_packages[@]} ${bluetooth_packages[@]} ${audio_pakages[@]} ${desktop_packages[@]} ${dev_packages[@]} ${packages[@]} 2>/dev/null
+yes | pacman -S --needed ${base_packages[@]} ${bluetooth_packages[@]} ${audio_pakages[@]} ${desktop_packages[@]} ${dev_packages[@]} ${packages[@]}
 
 # Install YAY
 if ! command -v yay >/dev/null 2>&1; then
@@ -54,4 +60,3 @@ if ! command -v yay >/dev/null 2>&1; then
 else
     echo "Yay already installed!"
 fi
-
