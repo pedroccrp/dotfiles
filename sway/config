@@ -15,9 +15,9 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 
 # ~~~~~~~~~~~~~~~~~~~ Input configuration ~~~~~~~~~~~~~~~~~~~
 
-input * {
-    xkb_layout br
-    xkb_variant abnt2
+input type:keyboard {
+    xkb_layout br_custom
+    xkb_variant abnt2_custom
 }
 
 input type:touchpad {

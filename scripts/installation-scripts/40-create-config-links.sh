@@ -8,3 +8,6 @@ if [ -d $HOME/.config/kitty ]; then rm -rf $HOME/.config/kitty; fi
 ln -sf $DOTFILES/kitty $HOME/.config/kitty
 if [ -d $HOME/.config/sway ]; then rm -rf $HOME/.config/sway; fi
 ln -sf $DOTFILES/sway $HOME/.config/sway
+if [ -d $HOME/.xkb/symbols ]; then rm -rf $HOME/.xkb/symbols; fi
+mkdir -p ~/.xkb/symbols
+ln -sf $DOTFILES/xkb/br_custom $HOME/.xkb/symbols/br_custom
