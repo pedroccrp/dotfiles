@@ -4,7 +4,7 @@ if ! command -v yay >/dev/null 2>&1; then
 fi
 
 yay -S --needed --noconfirm \
-  zsh-vi-mode \
   zsh-completions \
   zsh-syntax-highlighting \
+  zsh-autosuggestions \
   spaceship-prompt

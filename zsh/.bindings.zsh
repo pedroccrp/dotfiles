@@ -22,3 +22,5 @@ zle -N down-line-or-beginning-search
 
 bindkey -M viins '^[[A' up-line-or-beginning-search
 bindkey -M viins '^[[B' down-line-or-beginning-search
+
+bindkey -M viins '^R' fzf-history-widget
