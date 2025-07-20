@@ -64,11 +64,14 @@
     "format": "  {:%d %b | %H:%M} 󰥔 "
   },
   "cpu": {
+    "interval": 3,
     "format": "  {usage}%",
     "tooltip": true
   },
   "memory": {
-    "format": "  {}%"
+    "tooltip": false,
+    "interval": 3,
+    "format": "  {used:0.1f}/{total:0.1f} Gib"
   },
   "temperature": {
     "tooltip": false,
