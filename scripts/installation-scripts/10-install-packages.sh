@@ -6,6 +6,7 @@ fi
 base_packages=(
 	base-devel
   unzip
+  zip
   xclip
   wl-clipboard
   fzf
@@ -51,10 +52,19 @@ dev_packages=(
   lazygit
 	github-cli
 	tmux
+  clang
+  cmake
+  ninja
+  xz
+  mesa
+  glibc
+  bzip2
 )
 
 font_packages=(
   ttf-firacode-nerd
+  ttf-terminus-nerd
+  ttf-ubuntu-mono-nerd
 )
 
 packages=(
