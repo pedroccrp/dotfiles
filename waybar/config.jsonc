@@ -45,17 +45,20 @@
 
   },
   "sway/mode": {
+    "tooltip": false,
     "format": "{}"
   },
   "sway/window": {
+    "tooltip": false,
     "format": "{title}",
     "max-length": 50
   },
   "tray": {
-    "spacing": 10,
-    "tooltip": false
+    "tooltip": false,
+    "spacing": 10
   },
   "clock": {
+    "tooltip": false,
     "format": "  {:%d %b | %H:%M} 󰥔 "
   },
   "cpu": {
@@ -66,18 +69,20 @@
     "format": "  {}%"
   },
   "temperature": {
+    "tooltip": false,
     "critical-threshold": 80,
     "format": "{temperatureC}°C {icon}",
     "format-icons": ["", "", ""]
   },
   "backlight": {
+    "tooltip": false,
     "format": "{icon} {percent}%",
     "format-icons": ["󱩏 ", "󱩑 ", "󱩓 ", "󱩕 "]
   },
   "network": {
+    "tooltip": false,
     "format-wifi": "  {essid} ({signalStrength}%)",
     "format-ethernet": "{ipaddr}/{cidr} ",
-    "tooltip": false,
     "tooltip-format": "{ifname} via {gwaddr}",
     "format-linked": "  {ifname} (No IP)",
     "format-disconnected": "  Disconnected",
@@ -85,6 +90,7 @@
     "on-right-click": "hyprctl dispatch exec '[float]' '$TERMINAL -e nmtui'"
   },
   "pulseaudio": {
+    "tooltip": false,
     "format": "{icon}{volume}% {format_source}",
     "format-bluetooth": "{icon}{volume}%  {format_source}",
     "format-bluetooth-muted": "󰝟 {volume}%  {format_source}",
