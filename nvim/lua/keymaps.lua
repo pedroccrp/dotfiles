@@ -5,7 +5,6 @@ vim.keymap.set('n', '<leader>ve', ':e ~/.config/nvim/init.lua<CR>', { silent = t
 -- vim.keymap.set('n', '<leader>vs', ':source ~/.config/nvim/init.lua<CR>', { silent = true })
 
 vim.keymap.set('n', '<leader>k', ':nohlsearch<CR>', { silent = true })
-vim.keymap.set('n', '<leader>Q', ':bufdo bdelete<CR>', { silent = true })
 
 vim.keymap.set('n', 'yp', ':let @+=expand(\'%\').\':\'.line(\'.\')<CR>', { silent = true })
 
