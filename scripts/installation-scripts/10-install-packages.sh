@@ -65,6 +65,8 @@ font_packages=(
   ttf-firacode-nerd
   ttf-terminus-nerd
   ttf-ubuntu-mono-nerd
+  ttf-iosevka-nerd
+  ttf-iosevkaterm-nerd
 )
 
 packages=(
