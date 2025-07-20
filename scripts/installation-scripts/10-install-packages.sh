@@ -5,6 +5,7 @@ fi
 
 base_packages=(
 	base-devel
+  xdg-desktop-portal
   unzip
   zip
   xclip
@@ -70,6 +71,9 @@ font_packages=(
 )
 
 packages=(
+  grim
+  slurp
+  swappy
 	firefox
 	bitwarden-cli
 )

@@ -7,6 +7,5 @@ yay -S --needed --noconfirm \
   neofetch \
   asdf-vm \
   autojump \
-  flameshot \
   scrcpy \
   indicator-sound-switcher

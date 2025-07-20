@@ -108,7 +108,7 @@ bindsym --locked $mod+F8 exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
 bindsym --locked $mod+F2 exec brightnessctl set 5%-
 bindsym --locked $mod+F3 exec brightnessctl set 5%+
 
-# bindsym $mod+Shift+s exec "QT_QPA_PLATFORM=xcb flameshot gui"
+bindsym $mod+Shift+s exec grim -g "$(slurp)" - | swappy -f -
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Layout ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
