@@ -1,5 +1,7 @@
 require("Comment").setup()
 require("nvim-surround").setup({})
+require('nvim-ts-autotag').setup()
+require('nvim-autopairs').setup()
 
 -- require("multicursors").setup({
 --   DEBUG_MODE = false,
