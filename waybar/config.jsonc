@@ -32,17 +32,19 @@
     "all-outputs": true,
     "format": "{name}{icon}",
     "format-icons": {
-        "1": ". ",
-        "2": ". ",
-        "urgent": "",
-        "default": ".",
-        "high-priority-named": ["1", "2"]
+      "1": ". ",
+      "2": ". ",
+      "urgent": "",
+      "default": ".",
+      "high-priority-named": [
+        "1",
+        "2"
+      ]
     },
     "persistent-workspaces": {
       "1": [],
       "2": []
     }
-
   },
   "sway/mode": {
     "tooltip": false,
@@ -72,12 +74,21 @@
     "tooltip": false,
     "critical-threshold": 80,
     "format": "{temperatureC}°C {icon}",
-    "format-icons": ["", "", ""]
+    "format-icons": [
+      "",
+      "",
+      ""
+    ]
   },
   "backlight": {
     "tooltip": false,
     "format": "{icon} {percent}%",
-    "format-icons": ["󱩏 ", "󱩑 ", "󱩓 ", "󱩕 "]
+    "format-icons": [
+      "󱩏 ",
+      "󱩑 ",
+      "󱩓 ",
+      "󱩕 "
+    ]
   },
   "network": {
     "tooltip": false,
