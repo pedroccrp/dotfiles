@@ -1,17 +1,26 @@
-@define-color primary #ac82e9;
-@define-color text-primary #141216;
+@define-color primary #da9fe0;
+@define-color text-primary #1b121c;
 @define-color text-focused #ffffff;
+@define-color text-workspace-active #ffffff;
 
 * {
-  font-family: IosevkaTerm Nerd Font;
-  font-weight: 800;
-  font-size: 14px;
+  font-family: Firacode Nerd Font;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 window#waybar {
   background-color: transparent;
 }
 
+window#waybar.empty #window {
+  transition-duration: 0ms;
+  border: none;
+  background: none;
+}
+
+#mode,
+#window,
 #battery,
 #network,
 #clock,
@@ -22,29 +31,58 @@ window#waybar {
 #memory,
 #temperature,
 #backlight,
-#pulseaudio {
-  background-color: @primary;
+#pulseaudio,
+tooltip {
   color: @text-primary;
+  background-color: @primary;
 
-  padding: 4px 8px;
-
+  padding: 2px 18px;
   border-radius: 15px;
-  border-style: none;
 
   transition-duration: 120ms;
 }
 
-#workspaces button {
-  transition-duration: 100ms;
-  min-width: 0;
-  font-weight: bold;
+tooltip label {
   color: @text-primary;
-  padding: 0px;
-  margin-right: 0.2cm;
-  margin-left: 0.2cm;
+  background: transparent;
+  text-decoration: none;
+  text-shadow: none;
 }
 
-#workspaces button.focused {
+#mode:hover,
+#window:hover,
+#workspaces:hover,
+#battery:hover,
+#network:hover,
+#clock:hover,
+#custom-applauncher:hover,
+#tray:hover,
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#backlight:hover,
+#pulseaudio:hover {
   color: @text-focused;
+}
+
+#workspaces button {
+  padding: 0px;
+  margin-right: 10px;
+  margin-left: 10px;
+  transition-duration: 120ms;
+  border: none;
+}
+
+#workspaces button:hover {
+  color: @text-focused;
+  background: none;
+  border: none;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+  color: @text-workspace-active;
   font-weight: bold;
 }

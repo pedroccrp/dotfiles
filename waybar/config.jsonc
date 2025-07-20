@@ -6,10 +6,12 @@
   "reload_style_on_change": true,
   "margin-bottom": 0,
   "margin-top": 10,
-  "margin-right": 100,
-  "margin-left": 100,
+  "margin-right": 10,
+  "margin-left": 10,
   "modules-left": [
-    "sway/workspaces"
+    "sway/workspaces",
+    "sway/mode",
+    "sway/window"
   ],
   "modules-center": [
     "clock"
@@ -17,7 +19,7 @@
   "modules-right": [
     "memory",
     "cpu",
-    "temperature",
+    // "temperature",
     "backlight",
     "pulseaudio",
     "network",
@@ -26,9 +28,28 @@
   ],
   "sway/workspaces": {
     "disable-scroll": true,
-    "all-outputs": false,
-    "tooltip": false,
-    "format": "{name}"
+    "disable-click": false,
+    "all-outputs": true,
+    "format": "{name}{icon}",
+    "format-icons": {
+        "1": ". ",
+        "2": ". ",
+        "urgent": "",
+        "default": ".",
+        "high-priority-named": ["1", "2"]
+    },
+    "persistent-workspaces": {
+      "1": [],
+      "2": []
+    }
+
+  },
+  "sway/mode": {
+    "format": "{}"
+  },
+  "sway/window": {
+    "format": "{title}",
+    "max-length": 50
   },
   "tray": {
     "spacing": 10,
