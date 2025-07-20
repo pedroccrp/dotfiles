@@ -124,11 +124,10 @@
       "warning": 30,
       "critical": 15
     },
+    "interval": 1,
+    // Use `cat /sys/class/power_supply/{name}/status` to get battery status
     "format": "{icon} {capacity}%",
-    "format-charging": "󰂄 {capacity}%",
-    "format-plugged": "󰂄 {capacity}%",
-    "format-alt": "{icon} {time}",
-    "format-full": "󱈑 {capacity}%",
+    "format-charging": "  {capacity}%",
     "format-icons": [
       "󱊡",
       "󱊢",
