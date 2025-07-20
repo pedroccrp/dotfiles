@@ -16,6 +16,7 @@ base_packages=(
 
 network_packages=(
   network-manager-applet
+  iw
 )
 
 bluetooth_packages=(
@@ -76,6 +77,7 @@ packages=(
   slurp
   swappy
 	firefox
+  vlc
 	bitwarden-cli
 )
 

@@ -5,6 +5,7 @@ fi
 
 yay -S --needed --noconfirm \
   neofetch \
+  stremio \
   asdf-vm \
   autojump \
   scrcpy \
