@@ -35,6 +35,7 @@ audio_pakages=(
 desktop_packages=(
 	sway
   swaybg
+  autotiling
   waybar
 	ly
   wofi
