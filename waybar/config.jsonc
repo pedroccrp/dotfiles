@@ -22,7 +22,7 @@
     // "temperature",
     "backlight",
     "pulseaudio",
-    "network",
+    "custom/network",
     "battery",
     "tray"
   ],
@@ -61,7 +61,7 @@
   },
   "clock": {
     "tooltip": false,
-    "format": "  {:%d %b | %H:%M} 󰥔 "
+    "format": "  {:%d %b | %H:%M}  "
   },
   "cpu": {
     "interval": 3,
@@ -93,15 +93,11 @@
       "󱩕 "
     ]
   },
-  "network": {
-    "tooltip": false,
-    "format-wifi": "  {essid} ({signalStrength}%)",
-    "format-ethernet": "{ipaddr}/{cidr} ",
-    "tooltip-format": "{ifname} via {gwaddr}",
-    "format-linked": "  {ifname} (No IP)",
-    "format-disconnected": "  Disconnected",
-    "format-alt": "{ifname}: {ipaddr}/{cidr}",
-    "on-right-click": "hyprctl dispatch exec '[float]' '$TERMINAL -e nmtui'"
+  "custom/network": {
+    "exec": "$HOME/.config/waybar/scripts/custom-network.sh",
+    "interval": 5,
+    "return-type": "json",
+    "tooltip": true
   },
   "pulseaudio": {
     "tooltip": false,
