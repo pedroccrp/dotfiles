@@ -1,14 +1,15 @@
-function update_git_info() {
-  local branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
-  if [[ -n $branch ]]; then
-    GIT_INFO=" on %F{magenta}$branch%f"
-  else
-    GIT_INFO=""
+setopt prompt_subst
+
+function git_prompt() {
+  if git rev-parse --is-inside-work-tree &>/dev/null; then
+    local branch=$(git symbolic-ref --short HEAD 2>/dev/null)
+    if [ -z "$branch" ]; then
+      branch=$(git rev-parse --short HEAD 2>/dev/null)
+      [ -n "$branch" ] && branch="detached@$branch"
+    fi
+    echo " on %F{magenta}${branch}%f"
   fi
 }
 
-autoload -Uz add-zsh-hook
-add-zsh-hook precmd update_git_info
-
-PROMPT="%F{cyan}%n@%m%f %F{blue}%~%f${GIT_INFO}
-%(?.%F{green}➜.%F{red}➜)%f "
+PROMPT='%F{cyan}%n@%m%f %F{blue}%~%f$(git_prompt)
+%(?.%F{green}➜ .%F{red}➜ )%f '
