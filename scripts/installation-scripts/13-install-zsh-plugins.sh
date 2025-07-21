@@ -6,5 +6,4 @@ fi
 yay -S --needed --noconfirm \
   zsh-completions \
   zsh-syntax-highlighting \
-  zsh-autosuggestions \
-  spaceship-prompt
+  zsh-autosuggestions
