@@ -34,9 +34,8 @@ audio_pakages=(
 )
 
 desktop_packages=(
-	sway
-  swaybg
-  autotiling
+  hyprland
+  xdg-desktop-portal-hyprland
   waybar
 	ly
   wofi
