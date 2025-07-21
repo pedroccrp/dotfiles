@@ -35,6 +35,7 @@ audio_pakages=(
 
 desktop_packages=(
   hyprland
+  hyprpaper
   xdg-desktop-portal-hyprland
   waybar
 	ly
@@ -61,6 +62,7 @@ dev_packages=(
   mesa
   glibc
   bzip2
+  docker
 )
 
 font_packages=(

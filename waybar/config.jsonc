@@ -9,9 +9,8 @@
   "margin-right": 10,
   "margin-left": 10,
   "modules-left": [
-    "sway/workspaces",
-    "sway/mode",
-    "sway/window"
+    "hyprland/workspaces",
+    "hyprland/window"
   ],
   "modules-center": [
     "clock"
@@ -26,31 +25,35 @@
     "battery",
     "tray"
   ],
-  "sway/workspaces": {
-    "disable-scroll": true,
-    "disable-click": false,
-    "all-outputs": true,
+  // "hyprland/workspaces": {
+  //   "disable-scroll": true,
+  //   "disable-click": false,
+  //   "all-outputs": true,
+  //   "format": "{name}{icon}",
+  //   "format-icons": {
+  //     "1": ". ",
+  //     "2": ". ",
+  //     "urgent": "",
+  //     "default": ".",
+  //     "high-priority-named": [
+  //       "1",
+  //       "2"
+  //     ]
+  //   },
+  //   "persistent-workspaces": {
+  //     "1": [],
+  //     "2": []
+  //   }
+  // },
+  "hyprland/workspaces": {
     "format": "{name}{icon}",
     "format-icons": {
-      "1": ". ",
+      "1": ". ",
       "2": ". ",
-      "urgent": "",
-      "default": ".",
-      "high-priority-named": [
-        "1",
-        "2"
-      ]
-    },
-    "persistent-workspaces": {
-      "1": [],
-      "2": []
+      "default": "."
     }
   },
-  "sway/mode": {
-    "tooltip": false,
-    "format": "{}"
-  },
-  "sway/window": {
+  "hyprland/window": {
     "tooltip": false,
     "format": "{title}",
     "max-length": 50
