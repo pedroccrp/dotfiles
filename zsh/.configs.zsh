@@ -1,5 +1,7 @@
 setopt extended_glob null_glob
 
+WORDCHARS='*?[]~=&;!#$%^(){}<>'
+
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ History ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
