@@ -12,6 +12,7 @@ base_packages=(
   wl-clipboard
   fzf
   ripgrep
+  tldr
 )
 
 network_packages=(
