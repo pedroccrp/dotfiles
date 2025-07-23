@@ -13,6 +13,7 @@ base_packages=(
   fzf
   ripgrep
   tldr
+  lsof
 )
 
 network_packages=(
