@@ -48,6 +48,7 @@ desktop_packages=(
 )
 
 dev_packages=(
+  strace
 	zsh
   curl
 	openssh
