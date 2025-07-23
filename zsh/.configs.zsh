@@ -12,6 +12,8 @@ setopt hist_ignore_dups
 setopt hist_ignore_space
 setopt share_history
 
+source /etc/profile.d/autojump.sh
+
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completion ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 autoload -Uz compinit
 
