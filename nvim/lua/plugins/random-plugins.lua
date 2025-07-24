@@ -90,3 +90,5 @@ use("mbbill/undotree")
 -- Indent Lines and Bracket Colors
 use("lukas-reineke/indent-blankline.nvim")
 use("hiphish/rainbow-delimiters.nvim")
+
+use("folke/which-key.nvim")

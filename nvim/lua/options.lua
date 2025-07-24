@@ -45,3 +45,5 @@ vim.opt.redrawtime = 10000
 
 vim.opt.signcolumn = 'yes:2'
 vim.opt.colorcolumn = '80'
+
+vim.opt.timeout = false
