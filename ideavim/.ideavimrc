@@ -3,8 +3,9 @@
 " ----------
 
 Plug 'tpope/vim-surround'
-Plug 'preservim/nerdtree'
 Plug 'tpope/vim-commentary'
+Plug 'machakann/vim-highlightedyank'
+Plug 'easymotion/vim-easymotion'
 
 " ----------
 " Remaps
@@ -30,6 +31,9 @@ set ignorecase
 set smartcase
 set incsearch
 set wrapscan
+set quickscope
+set which-key
+set notimeout
 
 set history=10000
 set scrolloff=5 sidescrolloff=10
@@ -41,6 +45,8 @@ set clipboard=unnamedplus,unnamed,ideaput
 
 nmap K :action NextTab<CR>
 nmap J :action PreviousTab<CR>
-nmap <leader>q :action CloseActiveTab<CR>
+nmap <leader>q :close<CR>
+
+nmap <Leader>ff :action com.fuzzyfilesearch.SearchAllFiles<CR>
 
 nmap <leader>vs :source ~/.ideavimrc<CR>
