@@ -47,3 +47,10 @@ end, {})
 vim.keymap.set("n", "<leader>fr", function()
   builtin.live_grep({ hidden = true })
 end, {})
+vim.keymap.set("n", "<leader>fk", function()
+  local word = vim.fn.expand("<cword>")
+  builtin.live_grep({
+    default_text = word,
+    hidden = true,
+  })
+end, {})

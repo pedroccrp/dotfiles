@@ -4,12 +4,12 @@ require("mason").setup({})
 
 require("mason-lspconfig").setup({
   ensure_installed = {
-    "ast_grep", -- works for multiple languages
     "dockerls",
     "jsonls",
     "solargraph",
     "sqlls",
     "eslint",
+    "rust_analyzer",
   },
   handlers = {
     lsp_zero.default_setup,
