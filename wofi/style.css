@@ -1,72 +1,68 @@
+@define-color primary #1b121c;
+@define-color text-primary #cccccc;
+@define-color text-focused #ff7777;
+@define-color border #991111;
+
 * {
-  font-family: Maple Mono;
-  background: transparent;
-  color: #d8cab8;
+  font-family: Fira Code Mono Nerd Font;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 #window {
-  color: #d8cab8;
-  border-color: #d8cab8;
+  padding: 12px;
+
+  background-color: @primary;
+  color: @text-primary;
+
+  border-color: @border;
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
+}
 
-  /*Linear gradient background instead of standard background, because it makes cleaner border-radius cuts, issa bug :p*/
-  background-image: linear-gradient(to bottom, #141216 100%);
-  border-radius: 14px;
-}
-#scroll {
-  border-top-style: solid;
-  border-width: 1px;
-  border-color: #d8cab8;
-}
 #inner-box {
-  padding-top: 12px;
+  padding-top: 16px;
 }
-#entry {
-  border-style: none;
-  border-color: #d8cab8;
-  color: #d8cab8;
-  padding: 6px;
-  margin-bottom: 8px;
-  margin-left: 12px;
-  margin-right: 12;
 
-  border-radius: 12px;
+#entry {
+  color: @text-primary;
+
+  padding: 15px 6px;
+
+  margin-left: 12px;
+  margin-right: 12px;
+
+  border-style: none;
+  outline-style: none;
 }
 
 #entry:selected {
-  background: #27232b;
-  color: #d8cab8;
-  font-weight: bold;
-  outline: none;
+  background: @primary;
+
+  border-style: solid;
+  border-color: @border;
+  border-width: 1.5px;
 }
 
 #input {
-  background-color: #141216;
-  color: #d8cab8;
-  border-color: #d8cab8;
+  background-color: @primary;
+  color: @text-primary;
 
   border-style: none;
-  border-bottom-style: solid;
-  border-width: 1px;
-
-  font-style: normal;
-
-  border-radius: 8;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-style: dotted;
+  border-color: @border;
 
   padding: 12px;
   margin: 8px;
 }
+
 #input:focus {
-  background: #27232b;
-  background-color: #27232b;
-  border-color: #ac82e9;
-  font-style: italic;
+  border-style: none;
+  outline: none;
+  box-shadow: none;
 }
 
 #img {
   padding: 4px;
-  margin-right: 6px;
+  margin-right: 10px;
 }

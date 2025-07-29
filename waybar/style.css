@@ -1,7 +1,7 @@
 @define-color primary #1b121c;
 @define-color text-primary #fafafa;
 @define-color text-focused #ff7777;
-@define-color border #551111;
+@define-color border #991111;
 
 * {
   font-family: Firacode Nerd Font;
