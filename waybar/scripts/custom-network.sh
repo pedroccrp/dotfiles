@@ -20,7 +20,7 @@ ping_output=$(ping -c 1 -W 1 8.8.8.8 2>/dev/null)
 ping_time=$(echo "$ping_output" | awk -F'=' '/time=/{print $4}' | cut -d' ' -f1)
 
 if [[ -z "$ping_time" ]]; then
-  echo "{\"text\": \"$icon  $ssid (no internet)\", \"tooltip\": \"SSID: $ssid\nIP: $ip\nSignal: $signal%\n(No internet connection)\"}"
+  echo "{\"text\": \"$icon No Internet)\", \"tooltip\": \"SSID: $ssid\nIP: $ip\nSignal: $signal%\n(No internet connection)\"}"
 else
-  echo "{\"text\": \"$icon  $ssid\", \"tooltip\": \"SSID: $ssid\nIP: $ip\nSignal: $signal%\nPing: $ping_time ms\"}"
+  echo "{\"text\": \"$icon \", \"tooltip\": \"SSID: $ssid\nIP: $ip\nSignal: $signal%\nPing: $ping_time ms\"}"
 fi

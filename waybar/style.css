@@ -1,7 +1,7 @@
-@define-color primary #da9fe0;
-@define-color text-primary #1b121c;
-@define-color text-focused #ffffff;
-@define-color text-workspace-active #ffffff;
+@define-color primary #1b121c;
+@define-color text-primary #fafafa;
+@define-color text-focused #ff7777;
+@define-color border #551111;
 
 * {
   font-family: Firacode Nerd Font;
@@ -36,8 +36,11 @@ tooltip {
   color: @text-primary;
   background-color: @primary;
 
-  padding: 2px 18px;
-  border-radius: 15px;
+  padding: 4px 12px;
+  border: solid;
+  border-width: 2px;
+  border-color: @border;
+  border-radius: 5px;
 
   transition-duration: 120ms;
 }
@@ -70,6 +73,7 @@ tooltip label {
   margin-left: 10px;
   transition-duration: 120ms;
   border: none;
+  color: @text-primary;
 }
 
 #workspaces button:hover {
@@ -82,6 +86,6 @@ tooltip label {
 
 #workspaces button.focused,
 #workspaces button.active {
-  color: @text-workspace-active;
+  color: @text-focused;
   font-weight: bold;
 }

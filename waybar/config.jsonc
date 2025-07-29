@@ -16,41 +16,21 @@
     "clock"
   ],
   "modules-right": [
-    "memory",
-    "cpu",
+    // "memory",
+    // "cpu",
     // "temperature",
-    "backlight",
-    "pulseaudio",
+    // "backlight",
+    // "pulseaudio",
     "custom/network",
     "battery",
     "tray"
   ],
-  // "hyprland/workspaces": {
-  //   "disable-scroll": true,
-  //   "disable-click": false,
-  //   "all-outputs": true,
-  //   "format": "{name}{icon}",
-  //   "format-icons": {
-  //     "1": ". ",
-  //     "2": ". ",
-  //     "urgent": "",
-  //     "default": ".",
-  //     "high-priority-named": [
-  //       "1",
-  //       "2"
-  //     ]
-  //   },
-  //   "persistent-workspaces": {
-  //     "1": [],
-  //     "2": []
-  //   }
-  // },
   "hyprland/workspaces": {
     "format": "{name}{icon}",
     "format-icons": {
       "1": ". ",
       "2": ". ",
-      "default": "."
+      "default": ". "
     }
   },
   "hyprland/window": {
@@ -60,11 +40,12 @@
   },
   "tray": {
     "tooltip": false,
+    "icon-size": 14,
     "spacing": 10
   },
   "clock": {
     "tooltip": false,
-    "format": "  {:%d %b | %H:%M}  "
+    "format": "{:%d %b | %H:%M}"
   },
   "cpu": {
     "interval": 3,
