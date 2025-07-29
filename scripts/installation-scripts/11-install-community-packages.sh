@@ -9,4 +9,6 @@ yay -S --needed --noconfirm \
   asdf-vm \
   autojump \
   scrcpy \
-  indicator-sound-switcher
+  indicator-sound-switcher \
+  postman-bin \
+  librewolf-bin

@@ -80,7 +80,6 @@ packages=(
   grim
   slurp
   swappy
-	firefox
   vlc
 	bitwarden-cli
 )
