@@ -48,6 +48,7 @@ desktop_packages=(
   nautilus
   brightnessctl
   nwg-look
+  firefox
 )
 
 dev_packages=(
