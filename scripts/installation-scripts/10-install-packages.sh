@@ -6,6 +6,8 @@ fi
 base_packages=(
 	base-devel
   xdg-desktop-portal
+  xdg-desktop-portal-gtk
+  xdg-desktop-portal-hyprland
   unzip
   zip
   xclip
@@ -38,7 +40,6 @@ audio_pakages=(
 desktop_packages=(
   hyprland
   hyprpaper
-  xdg-desktop-portal-hyprland
   waybar
   ly
   wofi
