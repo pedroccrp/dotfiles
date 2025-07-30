@@ -40,24 +40,26 @@ desktop_packages=(
   hyprpaper
   xdg-desktop-portal-hyprland
   waybar
-	ly
+  ly
   wofi
+  mako
   ranger
   nautilus
   brightnessctl
+  nwg-look
 )
 
 dev_packages=(
   strace
-	zsh
+  zsh
   curl
-	openssh
-	go
+  openssh
+  go
   gcc
-	git
+  git
   lazygit
-	github-cli
-	tmux
+  github-cli
+  tmux
   clang
   cmake
   ninja
@@ -78,8 +80,6 @@ font_packages=(
 
 packages=(
   grim
-  slurp
-  swappy
   vlc
 	bitwarden-cli
 )

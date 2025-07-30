@@ -11,4 +11,5 @@ yay -S --needed --noconfirm \
   scrcpy \
   indicator-sound-switcher \
   postman-bin \
+  flameshot-git \
   librewolf-bin
