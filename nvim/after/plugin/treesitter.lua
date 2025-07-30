@@ -13,6 +13,8 @@ require("nvim-treesitter.configs").setup({
     "rust",
     "ruby",
     "kotlin",
+    "markdown",
+    "markdown_inline",
   },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)

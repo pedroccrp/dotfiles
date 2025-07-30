@@ -26,6 +26,10 @@ lsp_zero.on_attach(function(client, bufnr)
   vim.keymap.set("n", "[d", "<cmd>lua vim.diagnostic.goto_prev()<cr>")
   vim.keymap.set("n", "]d", "<cmd>lua vim.diagnostic.goto_next()<cr>")
 
+  vim.keymap.set('n', 'gr', require('telescope.builtin').lsp_references, opts)
+  vim.keymap.set('n', 'gd', require('telescope.builtin').lsp_definitions, opts)
+  vim.keymap.set('n', 'gi', require('telescope.builtin').lsp_implementations, opts)
+
   vim.keymap.set("n", "gh", function()
     vim.lsp.buf.hover()
   end, opts)
