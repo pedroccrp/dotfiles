@@ -4,6 +4,7 @@ if ! command -v yay >/dev/null 2>&1; then
 fi
 
 yay -S --needed --noconfirm \
+  android-sdk-cmdline-tools-latest \
   neofetch \
   stremio \
   asdf-vm \
