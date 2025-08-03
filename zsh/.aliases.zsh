@@ -2,10 +2,11 @@ alias reload="source $HOME/.zshrc"
 
 alias la="ls -lAh"
 
-alias pbcopy="xclip -selection clipboard"
-alias pbpaste="xclip -selection clipboard -o"
+alias pbcopy="wl-copy"
+alias pbpaste="wl-paste"
 
 alias vim=nvim
+alias v=nvim
 
 alias gfa="git fetch --all --prune --prune-tags --tags"
 alias gco="git checkout"
