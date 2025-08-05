@@ -2,6 +2,8 @@ partial alphanumeric_keys
 xkb_symbols "abnt2_custom" {
     include "br(abnt2)"
 
-    key <AC01> { [ a, A, backslash, backslash ] }; // a key
-    key <AC02> { [ s, S, bar, bar ] };             // 's' key
+    key <AC01> { [ a, A, backslash, backslash ] };
+    key <AC02> { [ s, S, bar, bar ] };
+    key <AE09> { [ 9, parenleft, braceleft, bracketleft ] };
+    key <AE10> { [ 0, parenright, braceright, bracketright ] };
 };
