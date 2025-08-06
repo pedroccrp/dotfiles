@@ -23,3 +23,11 @@ function zsh_cursor_reset {
 }
 autoload -Uz add-zsh-hook
 add-zsh-hook zshexit zsh_cursor_reset
+
+function vi-yank-to-clipboard() {
+  zle vi-yank
+  print -rn -- "$CUTBUFFER" | wl-copy
+}
+
+zle -N vi-yank-to-clipboard
+bindkey -M vicmd 'y' vi-yank-to-clipboard
