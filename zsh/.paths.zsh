@@ -16,5 +16,8 @@ typeset -U path fpath
 path=($^path(N-/))
 fpath=($^fpath(N-/))
 
+# The default java path is messing with asdf java
+path=(${path:#/usr/lib/jvm/default/bin})
+
 export path
 export fpath
