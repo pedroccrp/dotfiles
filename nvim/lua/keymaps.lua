@@ -1,6 +1,9 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- The ':' is to weird to use on the keyboard
+vim.keymap.set({ 'n', 'v' }, '<leader>e', ':')
+
 vim.keymap.set('n', '<leader>ve', ':e ~/.config/nvim/init.lua<CR>', { silent = true })
 -- vim.keymap.set('n', '<leader>vs', ':source ~/.config/nvim/init.lua<CR>', { silent = true })
 
