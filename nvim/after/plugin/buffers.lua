@@ -23,9 +23,6 @@ bufferline_cycle_windowless.setup({
   default_enabled = true,
 })
 
--- Buffer Movement
--- vim.keymap.set("n", "J", ":bp<CR>", { silent = true })
--- vim.keymap.set("n", "K", ":bn<CR>", { silent = true })
 vim.keymap.set("n", "<leader>o", ":e#<CR>", { silent = true })
 vim.keymap.set("n", "<leader>q", ":bp | sp | bn | bd<CR>", { silent = true })
 vim.keymap.set("n", "<leader>Q", ":%bd|e#|bd#<CR>", { silent = true })
