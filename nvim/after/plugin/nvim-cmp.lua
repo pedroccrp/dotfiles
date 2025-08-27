@@ -15,10 +15,8 @@ cmp.setup({
   sources = {
     { name = "path" },
     { name = "nvim_lsp" },
-    { name = "nvim_lua" },
     { name = "luasnip" },
     { name = "buffer", keyword_length = 3 },
-    { name = "codeium" },
   },
   mapping = cmp.mapping.preset.insert({
     ["<C-d>"] = cmp.mapping.scroll_docs(-4),
@@ -27,7 +25,6 @@ cmp.setup({
     ["<C-n>"] = cmp.mapping.select_next_item(),
     ["<C-k>"] = cmp.mapping.select_prev_item(),
     ["<C-j>"] = cmp.mapping.select_next_item(),
-    -- ["<C-Space>"] = cmp.mapping.complete(),
     ["<C-e>"] = cmp.mapping.abort(),
     ["<Tab>"] = cmp.mapping.confirm({ select = false }),
     ["<CR>"] = cmp.mapping.confirm({ select = false }),
