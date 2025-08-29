@@ -16,6 +16,8 @@ base_packages=(
   ripgrep
   tldr
   lsof
+  rsync
+  reflector
 )
 
 network_packages=(
