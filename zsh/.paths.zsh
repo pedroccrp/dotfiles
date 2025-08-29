@@ -2,6 +2,7 @@ path=(
   $path
   ${ASDF_DATA_DIR:-$HOME/.asdf}/shims
   /opt/android-sdk/emulator
+  $HOME/.local/bin
 )
 
 fpath=(
