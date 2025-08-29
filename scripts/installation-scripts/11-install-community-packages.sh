@@ -14,3 +14,4 @@ yay -S --needed --noconfirm \
   postman-bin \
   flameshot-git \
   timeshift \
+  waybar-module-pacman-updates-git

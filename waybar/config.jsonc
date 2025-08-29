@@ -22,6 +22,7 @@
     // "backlight",
     // "pulseaudio",
     // "custom/network",
+    "custom/updates",
     "battery",
     "tray"
   ],
@@ -82,6 +83,16 @@
     "interval": 5,
     "return-type": "json",
     "tooltip": true
+  },
+  "custom/updates": {
+    "format": "{}{icon}",
+    "return-type": "json",
+    "format-icons": {
+      "has-updates": " 󱍷",
+      "updated": "󰩐"
+    },
+    "exec-if": "which waybar-module-pacman-updates",
+    "exec": "waybar-module-pacman-updates --no-zero-output"
   },
   "pulseaudio": {
     "tooltip": false,
