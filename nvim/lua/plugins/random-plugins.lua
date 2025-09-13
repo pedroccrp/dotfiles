@@ -92,3 +92,6 @@ use("lukas-reineke/indent-blankline.nvim")
 use("hiphish/rainbow-delimiters.nvim")
 
 use("folke/which-key.nvim")
+
+-- Scrollbar
+use("petertriho/nvim-scrollbar")

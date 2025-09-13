@@ -43,3 +43,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     vim.highlight.on_yank({ timeout = 100 })
   end,
 })
+
+-- Scrollbar
+require("scrollbar").setup()
+require("scrollbar.handlers.gitsigns").setup()
