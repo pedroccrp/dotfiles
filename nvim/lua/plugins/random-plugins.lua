@@ -91,3 +91,6 @@ use("mbbill/undotree")
 -- Indent Lines and Bracket Colors
 use("lukas-reineke/indent-blankline.nvim")
 use("p00f/nvim-ts-rainbow")
+
+-- Scrollbar
+use("petertriho/nvim-scrollbar")
