@@ -50,11 +50,10 @@ require("rose-pine").setup({
     },
 
     palette = {
-        -- Override the builtin palette per variant
-        -- moon = {
-        --     base = '#18191a',
-        --     overlay = '#363738',
-        -- },
+        moon = {
+            base = '#000000',
+            overlay = '#000000',
+        },
     },
 
 	-- NOTE: Highlight groups are extended (merged) by default. Disable this
@@ -79,10 +78,4 @@ require("rose-pine").setup({
     end,
 })
 
--- vim.cmd("colorscheme rose-pine")
--- vim.cmd("colorscheme rose-pine-main")
 vim.cmd("colorscheme rose-pine-moon")
--- vim.cmd("colorscheme rose-pine-dawn")
-
--- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
--- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
