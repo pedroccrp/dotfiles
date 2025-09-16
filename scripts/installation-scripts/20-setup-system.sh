@@ -15,14 +15,5 @@ echo "Starting bluetooth services..."
 systemctl enable bluetooth
 systemctl start bluetooth
 
-# Set default shell
-chsh -s /bin/zsh
-
-# Download tmux plugin manager
-if [ ! -d ~/.tmux/plugins/tpm ]; then
-  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-  ~/.tmux/plugins/tpm/bin/install_plugins
-fi
-
 # Needed for later android development
 sudo chown -R $USER:$USER /opt/android-sdk
