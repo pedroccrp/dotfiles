@@ -11,6 +11,7 @@ base_packages=(
   unzip
   zip
   xclip
+  xorg-xinput
   wl-clipboard
   fzf
   ripgrep
@@ -18,6 +19,7 @@ base_packages=(
   lsof
   rsync
   reflector
+  htop
 )
 
 network_packages=(
