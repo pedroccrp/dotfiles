@@ -17,3 +17,6 @@ systemctl start bluetooth
 
 # Needed for later android development
 sudo chown -R $USER:$USER /opt/android-sdk
+
+sudo systemctl enable docker.service
+sudo usermod -aG docker $USER
