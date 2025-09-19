@@ -8,3 +8,4 @@ source /usr/share/fzf/completion.zsh
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Personal ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 source $HOME/dotfiles/zsh/custom-plugins/vi-mode.zsh
+source $HOME/dotfiles/zsh/custom-plugins/tmux-session-kill.zsh
