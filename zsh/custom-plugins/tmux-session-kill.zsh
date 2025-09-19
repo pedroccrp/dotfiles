@@ -24,5 +24,9 @@ tmux_ctrl_d_widget() {
 }
 
 stty eof ''
+
 zle -N tmux_ctrl_d_widget
+
 bindkey '^D' tmux_ctrl_d_widget
+bindkey -M vicmd '^D' tmux_ctrl_d_widget
+bindkey -M viins '^D' tmux_ctrl_d_widget

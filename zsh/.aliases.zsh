@@ -74,3 +74,8 @@ optimize_mysql_tables() {
 
   echo "All tables optimized!"
 }
+
+tdefault() {
+  tmuxp load -d $DOTFILES/tmux/sessions/_default.yaml > /dev/null
+  tmux attach -t Default
+}

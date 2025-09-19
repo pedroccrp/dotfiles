@@ -1,0 +1,6 @@
+session_name: Default
+windows:
+  - window_name: Random
+    window_index: 1
+    panes:
+      - ""
