@@ -1,0 +1,13 @@
+session_name: DPMS API
+start_directory: $HOME/oxeanbits/dpms-api-norway
+windows:
+  - window_name: Editor
+    window_index: 1
+    panes:
+      - nvim
+  - window_name: Server/Console
+    window_index: 2
+    layout: even-horizontal
+    panes:
+      - ""
+      - ""

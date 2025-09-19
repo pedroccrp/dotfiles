@@ -1,0 +1,9 @@
+session_name: DPMS Mobile
+start_directory: $HOME/oxeanbits/dpms-mobile-norway
+windows:
+  - window_name: Editor/Gradlew
+    window_index: 1
+    layout: even-horizontal
+    panes:
+      - nvim
+      - ""

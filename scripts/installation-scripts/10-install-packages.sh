@@ -66,6 +66,7 @@ dev_packages=(
   lazygit
   github-cli
   tmux
+  tmuxp
   clang
   cmake
   ninja
