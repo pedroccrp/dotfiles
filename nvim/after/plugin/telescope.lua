@@ -25,6 +25,19 @@ telescope.setup({
         ["<CR>"] = select_one_or_multi,
       },
     },
+    path_display = {
+      filename_first = {
+        reverse_directories = true,
+      },
+    },
+    file_ignore_patterns = {
+      "^bin/",
+      "^obj/",
+      "/bin/",
+      "/obj/",
+      "^.git/",
+      "/.git/",
+    },
   },
 })
 
