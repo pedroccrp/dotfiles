@@ -1,5 +1,5 @@
 tmux_ctrl_d() {
-  if [ "$(tmux display-message -p -t "$TMUX_PANE" "#{pane_popup}" 2>/dev/null)" = "1" ]; then
+  if [ "$IS_TMUX_POPUP" = "1" ]; then
     exit
   fi
 
