@@ -7,3 +7,6 @@ yay -S --needed --noconfirm \
   zsh-completions \
   zsh-syntax-highlighting \
   zsh-autosuggestions
+
+git clone git@github.com:bilelmoussaoui/flatpak-zsh-completion.git \
+          ~/.local/share/zsh/plugins/flatpak-zsh-completion
