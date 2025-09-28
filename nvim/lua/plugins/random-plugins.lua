@@ -74,17 +74,6 @@ use({
   },
 })
 
-use({
-  "iamcco/markdown-preview.nvim",
-  run = "cd app && npm install",
-  setup = function()
-    vim.g.mkdp_filetypes = {
-      "markdown",
-    }
-  end,
-  ft = { "markdown" },
-})
-
 use("mbbill/undotree")
 
 -- Indent Lines and Bracket Colors
@@ -95,3 +84,14 @@ use("folke/which-key.nvim")
 
 -- Scrollbar
 use("petertriho/nvim-scrollbar")
+
+-- Markdown
+use("OXY2DEV/markview.nvim")
+-- use {
+--   "OXY2DEV/markview.nvim",
+--   config = function()
+--     require("markview").setup {
+--       -- your config here
+--     }
+--   end
+-- }
