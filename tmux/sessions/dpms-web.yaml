@@ -1,0 +1,14 @@
+session_name: DPMS WEB
+start_directory: $HOME/oxeanbits/dpms-front-norway
+windows:
+  - window_name: Editor
+    window_index: 1
+    panes:
+      - nvim
+  - window_name: Server
+    window_index: 2
+    layout: even-horizontal
+    panes:
+      - yarn start
+      - yarn watch_sass
+      - rails s -p 3030

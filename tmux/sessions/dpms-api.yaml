@@ -11,3 +11,8 @@ windows:
     panes:
       - ""
       - ""
+  - window_name: Helpers
+    window_index: 3
+    start_directory: $HOME/oxeanbits/dpms-helpers
+    panes:
+      - ""
