@@ -75,6 +75,7 @@ dev_packages=(
   glibc
   bzip2
   docker
+  kitty
 )
 
 font_packages=(
@@ -88,21 +89,7 @@ font_packages=(
 packages=(
   grim
   vlc
-  bitwarden-cli
 )
 
 echo "Installing packages..."
 yes | pacman -S --noconfirm --needed ${base_packages[@]} ${network_packages[@]} ${bluetooth_packages[@]} ${audio_pakages[@]} ${desktop_packages[@]} ${dev_packages[@]} ${font_packages[@]} ${packages[@]}
-
-# Install YAY
-if ! command -v yay >/dev/null 2>&1; then
-    echo "Installing yay..."
-    git clone https://aur.archlinux.org/yay.git /tmp/yay &>/dev/null
-    cd /tmp/yay &>/dev/null
-    chown $USER:$USER . -R
-    makepkg -si 2>/dev/null
-    cd - &>/dev/null
-    yay -Syu
-else
-    echo "Yay already installed!"
-fi

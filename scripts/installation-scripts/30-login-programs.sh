@@ -1,6 +1,3 @@
-echo "Logging into Bitwarden..."
-bw login
-
 echo "Logging into gh..."
 gh auth login -p ssh -h GitHub.com
 

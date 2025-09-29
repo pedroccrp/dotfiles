@@ -1,5 +1,18 @@
+# Install YAY
 if ! command -v yay >/dev/null 2>&1; then
-  echo "Please install yay first!"
+    echo "Installing yay..."
+    git clone https://aur.archlinux.org/yay.git /tmp/yay &>/dev/null
+    cd /tmp/yay &>/dev/null
+    chown $USER:$USER . -R
+    makepkg -si 2>/dev/null
+    cd - &>/dev/null
+    yay -Syu
+else
+    echo "Yay already installed!"
+fi
+
+if ! command -v yay >/dev/null 2>&1; then
+  echo "Some error happened with installation, please check yay first!"
   exit
 fi
 
