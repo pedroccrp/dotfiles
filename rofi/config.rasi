@@ -1,0 +1,71 @@
+configuration {
+  show-icons: true;
+}
+
+* {
+  primary: #1b121c;
+  text-primary: #cccccc;
+  text-secondary: #ff7777;
+  border: #991111;
+
+  font: "FiraCode Nerd Font Mono 12";
+}
+
+window {
+  padding: 12px;
+  background-color: @primary;
+  text-color: @text-primary;
+
+  border: 2px;
+  border-color: @border;
+  children: [ "inputbar", "listview" ];
+}
+
+inputbar {
+  children: [entry];
+
+  margin: 8px;
+  padding: 12px;
+  background-color: @primary;
+  text-color: @text-primary;
+
+  border: 0;
+}
+
+entry {
+  placeholder: "Search applications...";
+  text-color: @text-primary;
+}
+
+element {
+  padding: 15px 12px;
+}
+
+element-icon {
+  size: 30px;
+  margin: 0 10px 0 0;
+}
+
+element-text {
+    vertical-align: 0.5;
+}
+
+element.normal.normal, element.alternate.normal {
+  text-color: @text-primary;
+  background-color: @primary;
+}
+
+element.selected.normal {
+  border: 1.5px;
+  border-color: @border;
+  text-color: @text-secondary;
+  background-color: @primary;
+}
+
+listview {
+  scrollbar: false;
+  lines: 10;
+  padding: 15px 0;
+  border: 1px 0px 0px 0px;
+  border-color: @border;
+}

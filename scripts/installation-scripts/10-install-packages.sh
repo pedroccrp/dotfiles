@@ -46,7 +46,7 @@ desktop_packages=(
   hyprpaper
   waybar
   ly
-  wofi
+  rofi
   mako
   ranger
   nautilus

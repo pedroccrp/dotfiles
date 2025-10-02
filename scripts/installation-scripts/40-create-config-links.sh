@@ -15,7 +15,7 @@ mkdir -p ~/.xkb/symbols
 ln -sf $DOTFILES/xkb/br_custom $HOME/.xkb/symbols/br_custom
 if [ -d $HOME/.config/waybar ]; then rm -rf $HOME/.config/waybar; fi
 ln -sf $DOTFILES/waybar $HOME/.config/waybar
-if [ -d $HOME/.config/wofi ]; then rm -rf $HOME/.config/wofi; fi
-ln -sf $DOTFILES/wofi $HOME/.config/wofi
+if [ -d $HOME/.config/rofi ]; then rm -rf $HOME/.config/rofi; fi
+ln -sf $DOTFILES/rofi $HOME/.config/rofi
 if [ -d $HOME/.config/mako ]; then rm -rf $HOME/.config/mako; fi
 ln -sf $DOTFILES/mako $HOME/.config/mako
