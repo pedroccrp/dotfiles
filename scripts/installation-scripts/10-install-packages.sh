@@ -69,7 +69,6 @@ dev_packages=(
   tmux
   tmuxp
   clang
-  cmake
   ninja
   xz
   mesa
