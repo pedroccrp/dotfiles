@@ -60,6 +60,7 @@ dev_packages=(
   strace
   zsh
   curl
+  wget
   openssh
   go
   gcc
