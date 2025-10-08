@@ -20,6 +20,7 @@ base_packages=(
   rsync
   reflector
   htop
+  bc
 )
 
 network_packages=(
