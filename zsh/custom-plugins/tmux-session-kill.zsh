@@ -1,6 +1,6 @@
 tmux_ctrl_d() {
-  if [ "$IS_TMUX_POPUP" = "1" ]; then
-    exit
+  if [ "$IS_TMUX_POPUP" = "1" ] || [ -z "$TMUX" ]; then
+      exit
   fi
 
   session_count=$(tmux list-sessions 2>/dev/null | wc -l)
