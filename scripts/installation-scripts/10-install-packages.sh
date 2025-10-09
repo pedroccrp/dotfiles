@@ -90,6 +90,7 @@ font_packages=(
 packages=(
   grim
   vlc
+  kooha # screen recorder
 )
 
 echo "Installing packages..."
