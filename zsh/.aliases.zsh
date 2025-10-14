@@ -17,6 +17,7 @@ alias gap="git add -p"
 alias gss="git status"
 alias gcm="git commit"
 alias gpp="git push origin HEAD"
+alias gpl="git pull"
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Methods ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
