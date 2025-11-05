@@ -20,7 +20,6 @@ use({
 use({ "axkirillov/easypick.nvim", requires = "nvim-telescope/telescope.nvim" })
 
 -- Color Schemes
--- use("folke/tokyonight.nvim")
 use("rose-pine/neovim")
 
 -- Buffer and Status Lines
@@ -78,7 +77,6 @@ use("mbbill/undotree")
 
 -- Indent Lines and Bracket Colors
 use("lukas-reineke/indent-blankline.nvim")
-use("hiphish/rainbow-delimiters.nvim")
 
 use("folke/which-key.nvim")
 
@@ -87,11 +85,3 @@ use("petertriho/nvim-scrollbar")
 
 -- Markdown
 use("OXY2DEV/markview.nvim")
--- use {
---   "OXY2DEV/markview.nvim",
---   config = function()
---     require("markview").setup {
---       -- your config here
---     }
---   end
--- }
