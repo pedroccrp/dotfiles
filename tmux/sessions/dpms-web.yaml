@@ -11,4 +11,3 @@ windows:
     panes:
       - yarn start
       - yarn watch_sass
-      - rails s -p 3030
