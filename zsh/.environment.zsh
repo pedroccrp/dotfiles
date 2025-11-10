@@ -4,6 +4,7 @@ export VISUAL="nvim"
 export BROWSER="firefox"
 
 export DOTFILES=$HOME/dotfiles
+export NOTES=$HOME/notes
 export ZSH=$DOTFILES/zsh
 export ZSH_PLUGINS=$ZSH/plugins
 export ANDROID_HOME=/opt/android-sdk
