@@ -85,6 +85,8 @@ font_packages=(
   ttf-ubuntu-mono-nerd
   ttf-iosevka-nerd
   ttf-iosevkaterm-nerd
+  noto-fonts-cjk
+  noto-fonts-emoji
 )
 
 packages=(
