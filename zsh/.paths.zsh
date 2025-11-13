@@ -1,6 +1,6 @@
 path=(
-  $path
   ${ASDF_DATA_DIR:-$HOME/.asdf}/shims
+  $path
   /opt/android-sdk/emulator
   $HOME/.local/bin
   $HOME/.yarn/bin

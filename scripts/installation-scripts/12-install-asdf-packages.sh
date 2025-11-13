@@ -7,8 +7,12 @@ asdf plugin add java
 asdf plugin add kotlin
 asdf plugin add cmake
 
-asdf install python latest
-asdf install nodejs latest
-asdf install ruby latest
-asdf install cmake 3.22.1
-asdf install cmake latest
+# Setting them as system versions to prevent conflicts with packages dependencies
+asdf set -u nodejs system
+asdf set -u yarn system
+asdf set -u ruby system
+asdf set -u python system
+asdf set -u flutter system
+asdf set -u java system
+asdf set -u kotlin system
+asdf set -u cmake system
