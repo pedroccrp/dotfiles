@@ -1,4 +1,5 @@
 require('copilot').setup({
+  copilot_node_command = "/usr/bin/node",
   suggestion = {
     enabled = true,
     auto_trigger = true,
@@ -15,3 +16,5 @@ require('copilot').setup({
     },
   },
 })
+
+require("copilot_cmp").setup()
