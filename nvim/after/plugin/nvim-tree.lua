@@ -15,6 +15,11 @@ require('nvim-tree').setup({
       -- inline_arrows = false,
     },
   },
+  actions = {
+    open_file = {
+      quit_on_open = true,
+    },
+  },
 })
 
 vim.cmd([[
