@@ -17,3 +17,6 @@ systemctl start bluetooth
 
 sudo systemctl enable docker.service
 sudo usermod -aG docker $USER
+
+sudo systemctl enable ly@tty2.service
+sudo systemctl start ly@tty2.service
