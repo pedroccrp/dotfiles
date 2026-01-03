@@ -26,6 +26,7 @@ base_packages=(
 network_packages=(
   network-manager-applet
   iw
+  ufw
 )
 
 bluetooth_packages=(
