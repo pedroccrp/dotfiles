@@ -94,6 +94,8 @@ packages=(
   grim
   vlc
   kooha # screen recorder
+  hyprshot # screenshot tool
+  swappy # screenshot annotation tool
 )
 
 echo "Installing packages..."

@@ -25,7 +25,6 @@ yay -S --needed --noconfirm \
   scrcpy \
   indicator-sound-switcher \
   postman-bin \
-  flameshot-git \
   timeshift \
   waybar-module-pacman-updates-git \
   hyprshade
