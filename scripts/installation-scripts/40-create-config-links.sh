@@ -19,3 +19,5 @@ if [ -d $HOME/.config/rofi ]; then rm -rf $HOME/.config/rofi; fi
 ln -sf $DOTFILES/rofi $HOME/.config/rofi
 if [ -d $HOME/.config/mako ]; then rm -rf $HOME/.config/mako; fi
 ln -sf $DOTFILES/mako $HOME/.config/mako
+if [ -d $HOME/.config/lazygit ]; then rm -rf $HOME/.config/lazygit; fi
+ln -sf $DOTFILES/lazygit $HOME/.config/lazygit
