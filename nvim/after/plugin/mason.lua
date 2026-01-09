@@ -1,5 +1,3 @@
-local lsp_zero = require("lsp-zero")
-
 require("mason").setup({})
 
 require("mason-lspconfig").setup({
@@ -11,33 +9,41 @@ require("mason-lspconfig").setup({
     "eslint",
     "rust_analyzer",
     "bashls",
-  },
-  handlers = {
-    lsp_zero.default_setup,
-
-    bashls = function()
-      require("lspconfig").bashls.setup({
-        filetypes = { "sh", "zsh" },
-      })
-    end,
-
-    lua_ls = function()
-      local lua_opts = lsp_zero.nvim_lua_ls()
-      require("lspconfig").lua_ls.setup(lua_opts)
-    end,
+    "lua_ls",
   },
 })
 
-require("mason-conform").setup({
-  ensure_installed = {
-    "prettier",
-    "stylua",
-    "eslint_d",
-    "dart_format",
-  },
-  automatic_installation = true,
+vim.lsp.config("ruby_lsp", {
+  cmd = { "bundle", "exec", "ruby-lsp" },
 })
 
-require("mason-nvim-dap").setup({
-  ensure_installed = {},
+vim.lsp.config("bashls", {
+  filetypes = { "sh", "zsh" },
+})
+
+vim.lsp.config("lua_ls", {
+  settings = {
+    Lua = {
+      diagnostics = { globals = { "vim" } },
+    },
+  },
+})
+
+vim.lsp.config("dockerls", {})
+vim.lsp.config("jsonls", {})
+vim.lsp.config("sqlls", {})
+vim.lsp.config("eslint", {})
+vim.lsp.config("rust_analyzer", {})
+
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
+vim.lsp.config("*", { capabilities = capabilities })
+
+require("conform").setup({
+  formatters_by_ft = {
+    lua = { "stylua" },
+    javascript = { "eslint" },
+    typescript = { "eslint" },
+    dart = { "dart_format" },
+  },
 })
