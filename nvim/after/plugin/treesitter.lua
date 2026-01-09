@@ -37,17 +37,16 @@ require("nvim-treesitter.configs").setup({
 })
 
 local hooks = require("ibl.hooks")
-local base_blend = 100
 
 hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
   vim.api.nvim_set_hl(0, "IblIndent", { fg = "#333333", nocombine = true })
-  vim.api.nvim_set_hl(0, "IblScope",  { fg = "#dddddd", bold = true, nocombine = true })
+  vim.api.nvim_set_hl(0, "IblScope", { fg = "#dddddd", bold = true, nocombine = true })
 end)
 
 require("ibl").setup({
   indent = {
-    char = "│",                -- use your preferred glyph
-    highlight = { "IblIndent" }
+    char = "│", -- use your preferred glyph
+    highlight = { "IblIndent" },
   },
   scope = {
     enabled = true,
