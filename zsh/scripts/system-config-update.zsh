@@ -55,10 +55,28 @@ _update_packages_ui() {
     done
   done
 
-  tput cuu $((LOG_LINES + HEADER_LINES + 1))
-  printf '\r'
-  tput el
+  for _ in $(seq 1 $((LOG_LINES + HEADER_LINES + 1))); do
+    tput cuu 1
+    printf '\r'
+    tput el
+  done
+
   printf "%s==> %s [completed]%s\n" "$BOLD" "$title" "$RESET"
+}
+
+_start_sudo_keepalive() {
+  if [[ -n "${SUDO_KEEPALIVE_PID-}" ]] && kill -0 "$SUDO_KEEPALIVE_PID" 2>/dev/null; then
+    return 0
+  fi
+
+  sudo -v || return 1
+  (while true; do
+    sleep 60
+    sudo -v
+  done) &
+  SUDO_KEEPALIVE_PID=$!
+
+  trap 'kill "${SUDO_KEEPALIVE_PID}" 2>/dev/null || true' EXIT
 }
 
 update_config_files() {
@@ -108,12 +126,26 @@ update_pacman_packages() {
 }
 
 update_yay_packages() {
-    yay -Sua \
-      --noconfirm \
-      --noprogressbar \
-      --ignore gcc14 \
-      --ignore gcc14-libs \
-      --ignore gcc14-fortran
+  if [[ -t 1 ]]; then
+    printf "The AUR update via yay can take a long time. Proceed? [y/N] "
+    read -r answer
+    case "$answer" in
+    [Yy]*) ;;
+    *)
+      echo "Skipping yay updates."
+      return 0
+      ;;
+    esac
+  fi
+
+  _start_sudo_keepalive || return 1
+
+  yay -Sua \
+    --noconfirm \
+    --noprogressbar \
+    --ignore gcc14 \
+    --ignore gcc14-libs \
+    --ignore gcc14-fortran
 }
 
 update_system() {
