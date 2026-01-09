@@ -7,6 +7,8 @@ conform.setup({
     ruby = { "rubocop" },
     dart = { "dart_format" },
     kotlin = { "ktlint" },
+    sh = { "shfmt" },
+    zsh = { "shfmt" },
   },
   formatters = {
     rubocop = {
