@@ -14,26 +14,19 @@ _update_packages_ui() {
   shift
   local cmd=( "$@" )
 
-  local start_ts
-  start_ts=$(date +%s)
-
   _print_header() {
-    local now elapsed
-    now=$(date +%s)
-    elapsed=$(( now - start_ts ))
-
     tput cuu $(( LOG_LINES + HEADER_LINES + 1 ))
     printf '\r'
     tput el
-    printf "%s==> %s [elapsed: %02d:%02d]%s\n" \
-      "$BOLD" "$title" $(( elapsed / 60 )) $(( elapsed % 60 )) "$RESET"
+    printf "%s==> %s%s\n" \
+      "$BOLD" "$title" "$RESET"
     printf '\r'
     tput el
     echo "-----------------------------------------------"
   }
 
   _preprint_lines() {
-    printf "%s==> %s [elapsed: 00:00]%s\n" "$BOLD" "$title" "$RESET"
+    printf "%s==> %s%s\n" "$BOLD" "$title" "$RESET"
     echo "-----------------------------------------------"
 
     for _ in $(seq 0 $LOG_LINES); do
@@ -65,9 +58,7 @@ _update_packages_ui() {
   tput cuu $(( LOG_LINES + HEADER_LINES + 1 ))
   printf '\r'
   tput el
-  printf "%s==> %s [completed in %02d:%02d]%s\n" \
-    "$BOLD" "$title" $(( ( $(date +%s) - start_ts ) / 60 )) \
-    $(( ( $(date +%s) - start_ts ) % 60 )) "$RESET"
+  printf "%s==> %s [completed]%s\n" "$BOLD" "$title" "$RESET"
 }
 
 update_config_files() {
