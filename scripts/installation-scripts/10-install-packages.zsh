@@ -1,8 +1,3 @@
-if [ $(id -u) -ne 0 ]
-  then echo Please run this script as root or using sudo!
-  exit
-fi
-
 base_packages=(
   base-devel
   xdg-desktop-portal
