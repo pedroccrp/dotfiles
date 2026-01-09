@@ -108,13 +108,9 @@ update_pacman_packages() {
 }
 
 update_yay_packages() {
-  _update_packages_ui \
-    "Updating all packages with yay" \
     yay -Sua \
       --noconfirm \
       --noprogressbar \
-      --answerclean None \
-      --answerdiff None \
       --ignore gcc14 \
       --ignore gcc14-libs \
       --ignore gcc14-fortran
@@ -129,4 +125,6 @@ update_system() {
   run_installation_scripts || return
   update_pacman_packages || return
   update_yay_packages
+
+  echo "System update completed successfully."
 }
