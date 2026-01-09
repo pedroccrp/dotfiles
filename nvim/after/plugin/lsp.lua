@@ -44,3 +44,7 @@ lsp_zero.on_attach(function(client, bufnr)
     vim.lsp.buf.rename()
   end, opts)
 end)
+
+vim.lsp.config("ruby_lsp", {
+  cmd = { "bundle", "exec", "ruby-lsp" },
+})

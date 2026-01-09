@@ -4,18 +4,12 @@ conform.setup({
   formatters_by_ft = {
     lua = { "stylua" },
     javascript = { "prettierd", "prettier", stop_after_first = true },
-    ruby = { "rubocop" },
     dart = { "dart_format" },
     kotlin = { "ktlint" },
     sh = { "shfmt" },
     zsh = { "shfmt" },
   },
-  formatters = {
-    rubocop = {
-      command = "bundle",
-      args = { "exec", "rubocop", "-A", "--stderr", "--force-exclusion", "--stdin", "$FILENAME" },
-    },
-  },
+  formatters = {},
 })
 
 vim.keymap.set("n", "<leader>cf", function()

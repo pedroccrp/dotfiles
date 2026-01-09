@@ -6,7 +6,7 @@ require("mason-lspconfig").setup({
   ensure_installed = {
     "dockerls",
     "jsonls",
-    "solargraph",
+    "ruby_lsp",
     "sqlls",
     "eslint",
     "rust_analyzer",
@@ -33,7 +33,6 @@ require("mason-conform").setup({
     "prettier",
     "stylua",
     "eslint_d",
-    "rubocop",
     "dart_format",
   },
   automatic_installation = true,
