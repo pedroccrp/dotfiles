@@ -1,19 +1,18 @@
-if [ $(id -u) -ne 0 ]
-  then echo Please run this script as root or using sudo!
-  exit
+if (( EUID != 0 )); then
+  sudo -v || return 1
 fi
 
 # Audio
 # https://wiki.archlinux.org/title/Sound_system
 echo "Unmuting audio..."
-amixer sset Master unmute &>/dev/null
-amixer sset Speaker unmute &>/dev/null
-amixer sset Headphone unmute &>/dev/null
+sudo amixer sset Master unmute &>/dev/null
+sudo amixer sset Speaker unmute &>/dev/null
+sudo amixer sset Headphone unmute &>/dev/null
 
 # Bluetooth
 echo "Starting bluetooth services..."
-systemctl enable bluetooth
-systemctl start bluetooth
+sudo systemctl enable bluetooth
+sudo systemctl start bluetooth
 
 sudo systemctl enable docker.service
 sudo usermod -aG docker $USER

@@ -1,3 +1,7 @@
+if (( EUID != 0 )); then
+  sudo -v || return 1
+fi
+
 base_packages=(
   base-devel
   xdg-desktop-portal
@@ -94,4 +98,4 @@ packages=(
 )
 
 echo "Installing packages..."
-yes | pacman -S --noconfirm --needed ${base_packages[@]} ${network_packages[@]} ${bluetooth_packages[@]} ${audio_pakages[@]} ${desktop_packages[@]} ${dev_packages[@]} ${font_packages[@]} ${packages[@]}
+sudo pacman -S --noconfirm --needed ${base_packages[@]} ${network_packages[@]} ${bluetooth_packages[@]} ${audio_pakages[@]} ${desktop_packages[@]} ${dev_packages[@]} ${font_packages[@]} ${packages[@]}
