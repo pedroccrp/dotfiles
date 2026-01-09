@@ -77,6 +77,7 @@ dev_packages=(
   bzip2
   docker
   kitty
+  shfmt # shell formatter
 )
 
 font_packages=(

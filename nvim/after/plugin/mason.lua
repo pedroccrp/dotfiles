@@ -11,7 +11,6 @@ require("mason-lspconfig").setup({
     "eslint",
     "rust_analyzer",
     "bashls",
-    "shfmt",
   },
   handlers = {
     lsp_zero.default_setup,
