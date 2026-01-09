@@ -12,10 +12,10 @@ _update_packages_ui() {
 
   local title="$1"
   shift
-  local cmd=( "$@" )
+  local cmd=("$@")
 
   _print_header() {
-    tput cuu $(( LOG_LINES + HEADER_LINES + 1 ))
+    tput cuu $((LOG_LINES + HEADER_LINES + 1))
     printf '\r'
     tput el
     printf "%s==> %s%s\n" \
@@ -37,8 +37,8 @@ _update_packages_ui() {
   _preprint_lines
 
   stdbuf -oL -eL "${cmd[@]}" 2>&1 | while IFS= read -r line; do
-    buffer+=( "$line" )
-    (( ${#buffer[@]} > LOG_LINES )) && buffer=( "${buffer[@]:1}" )
+    buffer+=("$line")
+    ((${#buffer[@]} > LOG_LINES)) && buffer=("${buffer[@]:1}")
 
     _print_header
 
@@ -55,7 +55,7 @@ _update_packages_ui() {
     done
   done
 
-  tput cuu $(( LOG_LINES + HEADER_LINES + 1 ))
+  tput cuu $((LOG_LINES + HEADER_LINES + 1))
   printf '\r'
   tput el
   printf "%s==> %s [completed]%s\n" "$BOLD" "$title" "$RESET"
@@ -72,7 +72,7 @@ update_config_files() {
 }
 
 run_installation_scripts() {
-  if (( EUID != 0 )); then
+  if ((EUID != 0)); then
     sudo -v || return 1
   fi
 
@@ -98,7 +98,7 @@ run_installation_scripts() {
 }
 
 update_pacman_packages() {
-  if (( EUID != 0 )); then
+  if ((EUID != 0)); then
     sudo -v || return 1
   fi
 
@@ -117,7 +117,7 @@ update_yay_packages() {
 }
 
 update_system() {
-  if (( EUID != 0 )); then
+  if ((EUID != 0)); then
     sudo -v || return 1
   fi
 
