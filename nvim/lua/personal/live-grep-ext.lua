@@ -4,6 +4,7 @@ local conf = require("telescope.config").values
 local make_entry = require("telescope.make_entry")
 local sorters = require("telescope.sorters")
 local utils = require("telescope.utils")
+local actions = require("telescope.actions")
 
 local flatten = vim.tbl_flatten
 
@@ -60,6 +61,14 @@ M.live_grep_ext = function(opts)
       finder = live_grepper,
       previewer = conf.grep_previewer(opts),
       sorter = sorters.get_generic_fuzzy_sorter(opts),
+
+      attach_mappings = function(_, map)
+        map("i", "<Up>", actions.cycle_history_prev)
+        map("i", "<C-p>", actions.cycle_history_prev)
+        map("i", "<Down>", actions.cycle_history_next)
+        map("i", "<C-n>", actions.cycle_history_next)
+        return true
+      end,
     })
     :find()
 end
