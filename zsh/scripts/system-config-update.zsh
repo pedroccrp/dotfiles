@@ -126,6 +126,10 @@ update_yay_packages() {
 }
 
 update_system() {
+  if (( EUID != 0 )); then
+    sudo -v || return 1
+  fi
+
   update_config_files || return
   run_installation_scripts || return
   update_pacman_packages || return
