@@ -18,7 +18,7 @@ end
 
 local M = {}
 
-M.live_grep_ext = function(opts)
+M.live_grep_filtered = function(opts)
   opts = opts or {}
 
   local vimgrep_arguments = opts.vimgrep_arguments or conf.vimgrep_arguments
@@ -35,16 +35,16 @@ M.live_grep_ext = function(opts)
       return nil
     end
 
-    local text, ext = prompt:match("^(.-)%s%s(%S+)$")
+    local text, file = prompt:match("^(.-)%s%s(.+)$")
 
     local final_prompt = prompt
     local final_args = args
 
-    if text and ext and not text:match("%s$") then
+    if text and file and not text:match("%s$") then
       final_prompt = text
       final_args = vim.list_extend(vim.deepcopy(args), {
-        "--glob",
-        "*." .. ext,
+        "--iglob",
+        "*" .. file .. "*",
       })
     end
 
@@ -57,7 +57,7 @@ M.live_grep_ext = function(opts)
 
   pickers
     .new(opts, {
-      prompt_title = "Live Grep (text␠␠ext)",
+      prompt_title = "Live Grep (text␠␠filename)",
       finder = live_grepper,
       previewer = conf.grep_previewer(opts),
       sorter = sorters.get_generic_fuzzy_sorter(opts),
