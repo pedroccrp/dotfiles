@@ -38,12 +38,3 @@ vim.lsp.config("rust_analyzer", {})
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 vim.lsp.config("*", { capabilities = capabilities })
-
-require("conform").setup({
-  formatters_by_ft = {
-    lua = { "stylua" },
-    javascript = { "eslint" },
-    typescript = { "eslint" },
-    dart = { "dart_format" },
-  },
-})
