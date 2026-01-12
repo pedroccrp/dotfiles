@@ -31,7 +31,3 @@ vim.api.nvim_create_autocmd("LspAttach", {
     vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
   end,
 })
-
-vim.lsp.config("ruby_lsp", {
-  cmd = { "bundle", "exec", "ruby-lsp" },
-})

@@ -14,7 +14,7 @@ require("mason-lspconfig").setup({
 })
 
 vim.lsp.config("ruby_lsp", {
-  cmd = { "bundle", "exec", "ruby-lsp" },
+  cmd = { "ruby-lsp" },
 })
 
 vim.lsp.config("bashls", {
