@@ -9,8 +9,19 @@ conform.setup({
     sh = { "shfmt" },
     zsh = { "shfmt" },
     html = { "prettierd" },
+    gdscript = { "gdformat" },
   },
-  formatters = {},
+  formatters = {
+    gdformat = {
+      command = "gdformat",
+      args = {
+        "-",
+        "--use-spaces=4",
+        "--line-length=120",
+      },
+      stdin = true,
+    },
+  },
 })
 
 vim.keymap.set("n", "<leader>cf", function()
