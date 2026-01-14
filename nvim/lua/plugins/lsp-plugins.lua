@@ -23,6 +23,7 @@ use({
   end,
 })
 use("williamboman/mason-lspconfig.nvim")
+use("WhoIsSethDaniel/mason-tool-installer.nvim")
 
 use("stevearc/conform.nvim")
 
