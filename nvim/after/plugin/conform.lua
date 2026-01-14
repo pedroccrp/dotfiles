@@ -8,6 +8,7 @@ conform.setup({
     kotlin = { "ktlint" },
     sh = { "shfmt" },
     zsh = { "shfmt" },
+    html = { "prettierd" },
   },
   formatters = {},
 })
