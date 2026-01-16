@@ -2,6 +2,7 @@ local use = require("packer").use
 
 -- Movement
 use("easymotion/vim-easymotion")
+use("chentoast/marks.nvim")
 
 -- Formatting
 use({ "cappyzawa/trim.nvim" })
