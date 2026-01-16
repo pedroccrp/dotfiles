@@ -44,9 +44,6 @@ use({
   requires = { { "nvim-lua/plenary.nvim" } },
 })
 
--- Scroll
-use("karb94/neoscroll.nvim")
-
 -- Code Editing
 use("numToStr/Comment.nvim")
 use({ "kylechui/nvim-surround", tag = "*" })
