@@ -49,10 +49,10 @@ lualine.setup({
   },
   sections = {
     lualine_a = { "mode" },
-    lualine_b = { "branch", "diff", "diagnostics", "filename" },
+    lualine_b = { "filetype", "filename" },
     lualine_c = { "require'nvim-navic'.get_location()" },
     lualine_x = { "searchcount", "selectioncount" },
-    lualine_y = { "filetype", "progress" },
+    lualine_y = { "diagnostics", "diff", "branch", "progress" },
     lualine_z = { "location" },
   },
   inactive_sections = {
