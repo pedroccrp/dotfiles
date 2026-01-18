@@ -4,6 +4,7 @@ path=(
   /opt/android-sdk/emulator
   $HOME/.local/bin
   $HOME/.yarn/bin
+  $HOME/.opencode/bin
 )
 
 fpath=(

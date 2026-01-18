@@ -21,3 +21,11 @@ if [ -d $HOME/.config/mako ]; then rm -rf $HOME/.config/mako; fi
 ln -sf $DOTFILES/mako $HOME/.config/mako
 if [ -d $HOME/.config/lazygit ]; then rm -rf $HOME/.config/lazygit; fi
 ln -sf $DOTFILES/lazygit $HOME/.config/lazygit
+if [ ! -d $HOME/.config/opencode ]; then mkdir -p $HOME/.config/opencode; fi
+if [ -d $HOME/.config/opencode/opencode.jsonc ]; then rm -rf $HOME/.config/opencode/opencode.jsonc; fi
+if [ -d $HOME/.config/opencode/opencode.json ]; then rm -rf $HOME/.config/opencode/opencode.json; fi
+ln -sf $DOTFILES/opencode/opencode.jsonc $HOME/.config/opencode/opencode.jsonc
+if [ -d $HOME/.config/opencode/AGENTS.md ]; then rm -rf $HOME/.config/opencode/AGENTS.md; fi
+ln -sf $DOTFILES/opencode/AGENTS.md $HOME/.config/opencode/AGENTS.md
+if [ -d $HOME/.config/opencode/agents ]; then rm -rf $HOME/.config/opencode/agents; fi
+ln -sf $DOTFILES/opencode/agents $HOME/.config/opencode/agents
