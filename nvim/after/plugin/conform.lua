@@ -10,6 +10,7 @@ conform.setup({
     zsh = { "shfmt" },
     html = { "prettierd" },
     gdscript = { "gdformat" },
+    typescript = { "prettierd", "prettier", stop_after_first = true },
   },
   formatters = {
     gdformat = {
