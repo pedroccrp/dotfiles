@@ -22,6 +22,19 @@ vim.lsp.config("gdscript", {
 })
 vim.lsp.enable("gdscript")
 
+vim.lsp.config("angularls", {
+  cmd = {
+    "ngserver",
+    "--stdio",
+    "--tsProbeLocations",
+    vim.fn.stdpath("data") .. "/mason/packages/angular-language-server/node_modules",
+    "--ngProbeLocations",
+    vim.fn.getcwd(),
+  },
+  root_markers = { "angular.json", "project.json" },
+})
+vim.lsp.enable("angularls")
+
 -- Diagnostic configurations
 vim.diagnostic.config({
   signs = true,
