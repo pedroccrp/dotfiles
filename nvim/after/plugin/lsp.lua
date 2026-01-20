@@ -1,6 +1,6 @@
 -- LSP configurations
 vim.lsp.config("ruby_lsp", {
-  cmd = { "ruby-lsp" },
+  cmd = { "bundle", "exec", "ruby-lsp" },
 })
 
 vim.lsp.config("bashls", {
