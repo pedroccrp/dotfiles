@@ -93,6 +93,7 @@ font_packages=(
 packages=(
   grim
   vlc
+  vlc-plugin-ffmpeg
   kooha    # screen recorder
   hyprshot # screenshot tool
   swappy   # screenshot annotation tool
