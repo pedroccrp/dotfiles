@@ -1,4 +1,4 @@
-if (( EUID != 0 )); then
+if ((EUID != 0)); then
   sudo -v || return 1
 fi
 
@@ -93,9 +93,9 @@ font_packages=(
 packages=(
   grim
   vlc
-  kooha # screen recorder
+  kooha    # screen recorder
   hyprshot # screenshot tool
-  swappy # screenshot annotation tool
+  swappy   # screenshot annotation tool
 )
 
 echo "Installing packages..."
