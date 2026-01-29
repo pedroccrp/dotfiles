@@ -70,13 +70,16 @@ _start_sudo_keepalive() {
   fi
 
   sudo -v || return 1
-  (while true; do
-    sleep 60
-    sudo -v
-  done) &
-  SUDO_KEEPALIVE_PID=$!
 
-  trap 'kill "${SUDO_KEEPALIVE_PID}" 2>/dev/null || true' EXIT
+  (
+    while true; do
+      sleep 30
+      sudo -v || exit 0
+    done
+  ) &
+
+  SUDO_KEEPALIVE_PID=$!
+  export SUDO_KEEPALIVE_PID
 }
 
 update_config_files() {
@@ -116,13 +119,7 @@ run_installation_scripts() {
 }
 
 update_pacman_packages() {
-  if ((EUID != 0)); then
-    sudo -v || return 1
-  fi
-
-  _update_packages_ui \
-    "Updating all packages with pacman" \
-    sudo pacman -Syu --noconfirm --noprogressbar
+  sudo pacman -Syu --noconfirm --noprogressbar
 }
 
 update_yay_packages() {
@@ -138,20 +135,19 @@ update_yay_packages() {
     esac
   fi
 
-  _start_sudo_keepalive || return 1
-
   yay -Sua \
     --noconfirm \
     --noprogressbar \
+    --batchinstall \
     --ignore gcc14 \
     --ignore gcc14-libs \
     --ignore gcc14-fortran
 }
 
 update_system() {
-  if ((EUID != 0)); then
-    sudo -v || return 1
-  fi
+  _start_sudo_keepalive || return 1
+
+  trap 'kill "$SUDO_KEEPALIVE_PID" 2>/dev/null' EXIT
 
   update_config_files || return
   run_installation_scripts || return
