@@ -1,0 +1,17 @@
+session_name: Digitalize Admin
+start_directory: $HOME/oxeanbits/digitalize-admin
+windows:
+  - window_name: Editor
+    window_index: 1
+    panes:
+      - nvim
+  - window_name: Codex
+    window_index: 2
+    panes:
+      - ~/.asdf/installs/nodejs/24.4.1/bin/codex
+  - window_name: Serve/Extra
+    window_index: 3
+    layout: even-horizontal
+    panes:
+      - ""
+      - ""
