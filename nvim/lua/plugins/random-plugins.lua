@@ -39,6 +39,9 @@ use({
   end,
 })
 
+-- Code Navigation and Symbols
+use("stevearc/aerial.nvim")
+
 use({
   "ThePrimeagen/harpoon",
   branch = "harpoon2",
