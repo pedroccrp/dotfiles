@@ -46,7 +46,7 @@
   },
   "clock": {
     "tooltip": false,
-    "format": "{:%d %b | %H:%M}"
+    "format": "{:%a | %d %b | %H:%M}"
   },
   "cpu": {
     "interval": 3,
