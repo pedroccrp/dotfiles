@@ -45,6 +45,8 @@ audio_pakages=(
 desktop_packages=(
   hyprland
   hyprpaper
+  hyprlock
+  hypridle
   waybar
   ly
   rofi
