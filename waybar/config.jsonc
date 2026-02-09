@@ -45,8 +45,14 @@
     "spacing": 10
   },
   "clock": {
-    "tooltip": false,
-    "format": "{:%a | %d %b | %H:%M}"
+    "format": "{:%a | %d %b | %H:%M}",
+    "interval": 1,
+    "tooltip-format": "<tt>{calendar}</tt>",
+    "calendar": {
+      "format": {
+        "today": "<span color='#7aa2f7'><b>{}</b></span>"
+      }
+    }
   },
   "cpu": {
     "interval": 3,
