@@ -20,6 +20,8 @@ base_packages=(
   reflector
   htop
   bc
+  gtk-layer-shell
+  python-gobject
 )
 
 network_packages=(

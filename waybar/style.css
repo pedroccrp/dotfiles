@@ -33,6 +33,7 @@ window#waybar.empty #window {
 #temperature,
 #backlight,
 #pulseaudio,
+#custom-power,
 tooltip {
   color: @text-primary;
   background-color: @primary;
@@ -65,7 +66,8 @@ tooltip label {
 #memory:hover,
 #temperature:hover,
 #backlight:hover,
-#pulseaudio:hover {
+#pulseaudio:hover,
+#custom-power:hover {
   color: @text-focused;
 }
 
@@ -90,4 +92,9 @@ tooltip label {
 #workspaces button.active {
   color: @text-focused;
   font-weight: bold;
+}
+
+/* Nudges padding to get proper alignment with nerd font icons */
+#custom-power {
+  padding-left: 10px;
 }
