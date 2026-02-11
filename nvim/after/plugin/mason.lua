@@ -18,5 +18,6 @@ require("mason-lspconfig").setup({
     "rust_analyzer",
     "bashls",
     "lua_ls",
+    "kotlin_lsp",
   },
 })
