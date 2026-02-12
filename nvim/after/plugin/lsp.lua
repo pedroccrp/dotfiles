@@ -35,6 +35,13 @@ vim.lsp.config("angularls", {
 })
 vim.lsp.enable("angularls")
 
+vim.lsp.config("dartls", {
+  cmd = { "/usr/bin/dart", "language-server", "--protocol=lsp" },
+  filetypes = { "dart" },
+  root_markers = { "pubspec.yaml", ".git" },
+})
+vim.lsp.enable("dartls")
+
 -- Diagnostic configurations
 vim.diagnostic.config({
   signs = true,
