@@ -4,7 +4,7 @@ echo "Installing required packages..."
 
 sudo apt update
 
-sudo apt install -y zsh zsh-autosuggestions zsh-syntax-highlighting fzf
+sudo apt install -y zsh-autosuggestions zsh-syntax-highlighting fzf
 
 sudo apt install -y git curl wget unzip
 
