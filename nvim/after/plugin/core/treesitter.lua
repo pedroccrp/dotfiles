@@ -1,13 +1,13 @@
 local helpers = require("helpers")
 
 local treesitter = helpers.safe_require("nvim-treesitter")
-local treesitter_configs = helpers.safe_require("nvim-treesitter.configs")
+local treesitter_config = helpers.safe_require("nvim-treesitter.config")
 local ibl = helpers.safe_require("ibl")
 local ibl_hooks = helpers.safe_require("ibl.hooks")
 
-if not treesitter or not treesitter_configs or not ibl or not ibl_hooks then return end
+if not treesitter or not treesitter_config or not ibl or not ibl_hooks then return end
 
-treesitter_configs.setup({
+treesitter.setup({
   ensure_installed = {
     "vimdoc",
     "vim",
@@ -23,6 +23,14 @@ treesitter_configs.setup({
     "ruby",
     "markdown",
     "markdown_inline",
+    "zsh",
+    "bash",
+    "go",
+    "html",
+    "css",
+    "json",
+    "yaml",
+    "toml",
   },
   sync_install = false,
   auto_install = true,
