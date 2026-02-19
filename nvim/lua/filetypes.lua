@@ -3,8 +3,12 @@ local filetype_map = {
     markdown = { 'md', 'markdown' },
     python = { 'pyw' },
     javascript = { 'jsx' },
+    javascriptreact = { 'jsx' },
+    typescript = { 'tsx' },
+    typescriptreact = { 'tsx' },
     html = { 'htm' },
     tmux = { 'tmux.conf' },
+    gdscript = { 'gd', 'gdscript', 'gdscript3' },
 }
 
 local function set_filetype()
