@@ -5,6 +5,29 @@ local lualine = helpers.safe_require("lualine")
 
 if not navic or not lualine then return end
 
+local macro_reg = ""
+
+vim.api.nvim_create_autocmd("RecordingEnter", {
+  callback = function()
+    macro_reg = vim.fn.reg_recording()
+    lualine.refresh({ statusline = true })
+  end,
+})
+
+vim.api.nvim_create_autocmd("RecordingLeave", {
+  callback = function()
+    macro_reg = ""
+    lualine.refresh({ statusline = true })
+  end,
+})
+
+local function macro_recording()
+  if macro_reg == "" then
+    return ""
+  end
+  return "RECORDING MACRO @" .. macro_reg
+end
+
 navic.setup({
   highlight = true,
   separator = " > ",
@@ -19,7 +42,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
   end,
 })
 
-local lualine = require("lualine")
 lualine.setup({
   options = {
     icons_enabled = true,
@@ -56,9 +78,9 @@ lualine.setup({
   sections = {
     lualine_a = { "mode" },
     lualine_b = { "filetype", "filename" },
-    lualine_c = { "require'nvim-navic'.get_location()" },
+    lualine_c = { navic.get_location },
     lualine_x = { "searchcount", "selectioncount" },
-    lualine_y = { "diagnostics", "diff", "branch", "progress" },
+    lualine_y = { "diagnostics", "diff", "branch", macro_recording },
     lualine_z = { "location" },
   },
   inactive_sections = {
