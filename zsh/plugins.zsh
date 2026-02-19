@@ -3,7 +3,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~ Manual ~~~~~~~~~~~~~~~~~~~~~~~~~
-source $HOME/.local/share/zsh/plugins/flatpak-zsh-completion/flatpak.plugin.zsh
+if [ -z "$SSH_CONNECTION" ]; then
+  source $HOME/.local/share/zsh/plugins/flatpak-zsh-completion/flatpak.plugin.zsh
+fi
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FzF ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 source /usr/share/fzf/key-bindings.zsh
