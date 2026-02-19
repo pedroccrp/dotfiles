@@ -82,6 +82,7 @@ dev_packages=(
   docker
   kitty
   shfmt # shell formatter
+  fd
 )
 
 font_packages=(
