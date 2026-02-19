@@ -1,4 +1,3 @@
--- LSP configurations
 vim.lsp.config("ruby_lsp", {
   cmd = { "bundle", "exec", "ruby-lsp" },
 })
@@ -42,7 +41,6 @@ vim.lsp.config("dartls", {
 })
 vim.lsp.enable("dartls")
 
--- Diagnostic configurations
 vim.diagnostic.config({
   signs = true,
 })
@@ -52,7 +50,6 @@ vim.fn.sign_define("DiagnosticSignWarn", { text = "", texthl = "DiagnosticSig
 vim.fn.sign_define("DiagnosticSignInfo", { text = "", texthl = "DiagnosticSignInfo" })
 vim.fn.sign_define("DiagnosticSignHint", { text = "", texthl = "DiagnosticSignHint" })
 
--- Keybindings for LSP functions
 vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(event)
     local client = vim.lsp.get_client_by_id(event.data.client_id)
@@ -78,7 +75,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
   end,
 })
 
--- Capabilities
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 vim.lsp.config("*", { capabilities = capabilities })

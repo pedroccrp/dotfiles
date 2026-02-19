@@ -32,7 +32,7 @@ lualine.setup({
       statusline = 1000,
       tabline = 1000,
       winbar = 1000,
-      refresh_time = 16, -- ~60fps
+      refresh_time = 16,
       events = {
         "WinEnter",
         "BufEnter",

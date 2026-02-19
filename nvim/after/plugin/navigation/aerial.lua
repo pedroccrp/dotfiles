@@ -1,7 +1,3 @@
-require("which-key").setup({
-  delay = 800,
-})
-
 require("aerial").setup({
   keymaps = {
     ["<TAB>"] = "actions.scroll",
