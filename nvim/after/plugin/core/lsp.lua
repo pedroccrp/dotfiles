@@ -1,5 +1,7 @@
 local helpers = require("helpers")
 
+if helpers.is_remote_terminal() then return end
+
 local cmp_nvim_lsp = helpers.safe_require("cmp_nvim_lsp")
 local telescope = helpers.safe_require("telescope")
 

@@ -1,5 +1,7 @@
 local helpers = require("helpers")
 
+if helpers.is_remote_terminal() then return end
+
 local copilot = helpers.safe_require("copilot")
 local copilot_cmp = helpers.safe_require("copilot_cmp")
 

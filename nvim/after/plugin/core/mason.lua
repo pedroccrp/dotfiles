@@ -1,5 +1,7 @@
 local helpers = require("helpers")
 
+if helpers.is_remote_terminal() then return end
+
 local mason = helpers.safe_require("mason")
 local mason_tool_installer = helpers.safe_require("mason-tool-installer")
 local mason_lspconfig = helpers.safe_require("mason-lspconfig")
