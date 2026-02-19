@@ -1,4 +1,11 @@
-require('copilot').setup({
+local helpers = require("helpers")
+
+local copilot = helpers.safe_require("copilot")
+local copilot_cmp = helpers.safe_require("copilot_cmp")
+
+if not copilot or not copilot_cmp then return end
+
+copilot.setup({
   copilot_node_command = "/usr/bin/node",
   suggestion = {
     enabled = true,
@@ -17,4 +24,4 @@ require('copilot').setup({
   },
 })
 
-require("copilot_cmp").setup()
+copilot_cmp.setup()

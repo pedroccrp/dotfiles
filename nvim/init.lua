@@ -1,5 +1,6 @@
 require("packer-setup")
 require("plugins-installer")
+require("helpers")
 require("options")
 require("keymaps")
 require("filetypes")

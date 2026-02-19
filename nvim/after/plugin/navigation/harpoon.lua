@@ -1,4 +1,10 @@
-local harpoon = require("harpoon")
+local helpers = require("helpers")
+
+local harpoon = helpers.safe_require("harpoon")
+local telescope = helpers.safe_require("telescope")
+local telescope_config = helpers.safe_require("telescope.config")
+
+if not harpoon or not telescope or not telescope_config then return end
 
 harpoon:setup({
   settings = {
@@ -21,17 +27,17 @@ vim.keymap.set("n", "<C-S-N>", function()
   harpoon:list():next()
 end)
 
-local conf = require("telescope.config").values
+local conf = telescope_config.values
 local function toggle_telescope(harpoon_files)
   local file_paths = {}
   for _, item in ipairs(harpoon_files.items) do
     table.insert(file_paths, item.value)
   end
 
-  require("telescope.pickers")
+  telescope.pickers
     .new({}, {
       prompt_title = "Harpoon",
-      finder = require("telescope.finders").new_table({
+      finder = telescope.finders.new_table({
         results = file_paths,
       }),
       previewer = conf.file_previewer({}),

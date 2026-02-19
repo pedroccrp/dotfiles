@@ -1,8 +1,13 @@
-local cmp = require("cmp")
-local luasnip = require("luasnip")
-local lspkind = require("lspkind")
+local helpers = require("helpers")
 
-require("luasnip/loaders/from_vscode").lazy_load()
+local cmp = helpers.safe_require("cmp")
+local luasnip = helpers.safe_require("luasnip")
+local luasnip_loaders = helpers.safe_require("luasnip/loaders/from_vscode")
+local lspkind = helpers.safe_require("lspkind")
+
+if not cmp or not luasnip or not luasnip_loaders or not lspkind then return end
+
+luasnip_loaders.lazy_load()
 vim.opt.completeopt = "menu,menuone,noselect"
 
 cmp.setup({

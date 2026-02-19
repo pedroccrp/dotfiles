@@ -1,4 +1,9 @@
-require('nvim-tree').setup({
+local helpers = require("helpers")
+
+local nvim_tree = helpers.safe_require("nvim-tree")
+if not nvim_tree then return end
+
+nvim_tree.setup({
   git = {
     ignore = false,
   },

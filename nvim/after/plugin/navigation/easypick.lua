@@ -1,4 +1,7 @@
-local easypick = require("easypick")
+local helpers = require("helpers")
+
+local easypick = helpers.safe_require("easypick")
+if not easypick then return end
 
 local get_default_branch = "git rev-parse --symbolic-full-name refs/remotes/origin/HEAD | sed 's!.*/!!'"
 local base_branch = vim.fn.system(get_default_branch) or "master"

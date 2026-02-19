@@ -1,3 +1,8 @@
+local helpers = require("helpers")
+
+local conform = helpers.safe_require("conform")
+if not conform then return end
+
 local conform = require("conform")
 
 conform.setup({

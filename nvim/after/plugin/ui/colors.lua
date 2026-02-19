@@ -1,6 +1,13 @@
-require('colorizer').setup()
+local helpers = require("helpers")
 
-require("rose-pine").setup({
+local colorizer = helpers.safe_require("colorizer")
+local rose_pine = helpers.safe_require("rose-pine")
+
+if not colorizer or not rose_pine then return end
+
+colorizer.setup()
+
+rose_pine.setup({
     variant = "auto",
     dark_variant = "main",
     dim_inactive_windows = false,

@@ -1,3 +1,8 @@
+local helpers = require("helpers")
+
+local telescope = helpers.safe_require("telescope")
+if not telescope then return end
+
 local select_one_or_multi = function(prompt_bufnr)
   local picker = require("telescope.actions.state").get_current_picker(prompt_bufnr)
   local multi = picker:get_multi_selection()
@@ -12,8 +17,6 @@ local select_one_or_multi = function(prompt_bufnr)
     require("telescope.actions").select_default(prompt_bufnr)
   end
 end
-
-local telescope = require("telescope")
 
 telescope.setup({
   defaults = {

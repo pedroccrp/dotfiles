@@ -1,4 +1,7 @@
-local nvim_tmux_nav = require('nvim-tmux-navigation')
+local helpers = require("helpers")
+
+local nvim_tmux_nav = helpers.safe_require("nvim-tmux-navigation")
+if not nvim_tmux_nav then return end
 
 nvim_tmux_nav.setup {}
 

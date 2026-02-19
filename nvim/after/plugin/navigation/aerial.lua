@@ -1,4 +1,9 @@
-require("aerial").setup({
+local helpers = require("helpers")
+
+local aerial = helpers.safe_require("aerial")
+if not aerial then return end
+
+aerial.setup({
   keymaps = {
     ["<TAB>"] = "actions.scroll",
   },

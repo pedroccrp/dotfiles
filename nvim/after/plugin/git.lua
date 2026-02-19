@@ -1,3 +1,5 @@
+local helpers = require("helpers")
+
 -- Fugitive
 vim.keymap.set("n", "<leader>gb", ":Git blame<CR>")
 vim.keymap.set("n", "<leader>gs", ":Git status<CR>")
@@ -8,9 +10,14 @@ vim.keymap.set("n", "<leader>hr", ":GitGutterUndoHunk<CR>")
 vim.keymap.set("n", "<leader>gn", ":GitGutterNextHunk<CR>")
 vim.keymap.set("n", "<leader>gp", ":GitGutterPrevHunk<CR>")
 
-require("git-conflict").setup()
+local git_conflict = helpers.safe_require("git-conflict")
+local gitsigns = helpers.safe_require("gitsigns")
 
-require("gitsigns").setup({
+if not git_conflict or not gitsigns then return end
+
+git_conflict.setup()
+
+gitsigns.setup({
   signs = {
     add = { text = "│" },
     change = { text = "│" },
@@ -19,18 +26,18 @@ require("gitsigns").setup({
     changedelete = { text = "~" },
     untracked = { text = "┆" },
   },
-  signcolumn = true, -- Toggle with `:Gitsigns toggle_signs`
-  numhl = false, -- Toggle with `:Gitsigns toggle_numhl`
-  linehl = false, -- Toggle with `:Gitsigns toggle_linehl`
-  word_diff = false, -- Toggle with `:Gitsigns toggle_word_diff`
+  signcolumn = true,
+  numhl = false,
+  linehl = false,
+  word_diff = false,
   watch_gitdir = {
     follow_files = true,
   },
   attach_to_untracked = true,
-  current_line_blame = true, -- Toggle with `:Gitsigns toggle_current_line_blame`
+  current_line_blame = true,
   current_line_blame_opts = {
     virt_text = true,
-    virt_text_pos = "eol", -- 'eol' | 'overlay' | 'right_align'
+    virt_text_pos = "eol",
     delay = 1000,
     ignore_whitespace = false,
     virt_text_priority = 100,
@@ -38,10 +45,9 @@ require("gitsigns").setup({
   current_line_blame_formatter = "<author>, <author_time:%Y-%m-%d> - <summary>",
   sign_priority = 6,
   update_debounce = 100,
-  status_formatter = nil, -- Use default
-  max_file_length = 40000, -- Disable if file is longer than this (in lines)
+  status_formatter = nil,
+  max_file_length = 40000,
   preview_config = {
-    -- Options passed to nvim_open_win
     border = "single",
     style = "minimal",
     relative = "cursor",

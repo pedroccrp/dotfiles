@@ -1,4 +1,9 @@
-require("noice").setup({
+local helpers = require("helpers")
+
+local noice = helpers.safe_require("noice")
+if not noice then return end
+
+noice.setup({
   lsp = {
     override = {
       ["vim.lsp.util.convert_input_to_markdown_lines"] = true,

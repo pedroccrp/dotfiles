@@ -1,4 +1,10 @@
-local navic = require("nvim-navic")
+local helpers = require("helpers")
+
+local navic = helpers.safe_require("nvim-navic")
+local lualine = helpers.safe_require("lualine")
+
+if not navic or not lualine then return end
+
 navic.setup({
   highlight = true,
   separator = " > ",

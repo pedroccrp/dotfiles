@@ -1,5 +1,9 @@
-local bufferline = require("bufferline")
-local bufferline_cycle_windowless = require("bufferline-cycle-windowless")
+local helpers = require("helpers")
+
+local bufferline = helpers.safe_require("bufferline")
+local bufferline_cycle_windowless = helpers.safe_require("bufferline-cycle-windowless")
+
+if not bufferline or not bufferline_cycle_windowless then return end
 
 bufferline.setup({
   options = {
@@ -23,6 +27,7 @@ bufferline_cycle_windowless.setup({
   default_enabled = true,
 })
 
+vim.keymap.set("n", "<leader>o", ":e#<CR>", { silent = true })
 vim.keymap.set("n", "<leader>q", ":bp | sp | bn | bd<CR>", { silent = true })
 vim.keymap.set("n", "<leader>Q", ":%bd|e#|bd#<CR>", { silent = true })
 
