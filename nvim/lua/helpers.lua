@@ -13,4 +13,10 @@ function M.safe_require(module)
   return require(module)
 end
 
+function _G.is_remote_terminal()
+  return vim.env.SSH_CLIENT ~= nil
+      or vim.env.SSH_TTY ~= nil
+      or vim.env.SSH_CONNECTION ~= nil
+end
+
 return M
