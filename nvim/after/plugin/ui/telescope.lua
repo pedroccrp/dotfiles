@@ -46,11 +46,6 @@ telescope.setup({
 
 telescope.load_extension("lsp_handlers")
 telescope.load_extension("fzf")
-telescope.load_extension("flutter")
-
-vim.keymap.set("n", "<leader>ft", function()
-  telescope.extensions.flutter.commands()
-end, {})
 
 local builtin = require("telescope.builtin")
 
