@@ -56,7 +56,7 @@ from pathlib import Path
 import colorsys
 
 colors_path = Path.home() / ".cache" / "wal" / "colors.json"
-dest_path = Path.home() / ".config" / "hypr" / "wal.conf"
+dest_path = Path.home() / ".cache" / "wal" / "hypr.conf"
 tmux_colors_path = Path.home() / "dotfiles" / "tmux" / "wal-colors.conf"
 derived_path = Path.home() / ".cache" / "wal" / "colors-derived.json"
 

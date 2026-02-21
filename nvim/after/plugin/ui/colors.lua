@@ -154,7 +154,7 @@ local function apply_wal_highlights()
     vim.api.nvim_set_hl(0, "Number", { fg = warn, bg = bg })
 end
 
-local wal_path = vim.fn.expand("~/.config/nvim/wal.lua")
+local wal_path = vim.fn.expand("~/.cache/wal/nvim.lua")
 local last_wal_mtime = 0
 
 local function load_wal()

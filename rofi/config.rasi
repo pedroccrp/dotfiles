@@ -6,7 +6,7 @@ configuration {
   font: "FiraCode Nerd Font Mono 12";
 }
 
-@import "~/.config/rofi/wal.rasi"
+@import "~/.cache/wal/rofi.rasi"
 
 window {
   padding: 12px;
