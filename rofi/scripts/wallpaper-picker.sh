@@ -21,10 +21,19 @@ if [ -z "$wallpapers" ]; then
 	exit 0
 fi
 
-selection=$(printf '%s\n' "$wallpapers" | rofi -dmenu -i -p "Wallpapers")
+mapfile -t wallpaper_paths < <(printf '%s\n' "$wallpapers")
 
-if [ -z "$selection" ]; then
+labels=$(printf '%s\n' "$wallpapers" | python "$HOME/dotfiles/scripts/wallpaper/format-wallpaper-labels.py")
+
+selection_index=$(printf '%s\n' "$labels" | rofi -dmenu -i -p "Wallpapers" -format i)
+
+if [ -z "$selection_index" ]; then
 	exit 0
 fi
 
-bash "$HOME/dotfiles/scripts/wallpaper/apply-wallpaper.sh" "$selection"
+selected_path="${wallpaper_paths[$selection_index]}"
+if [ -z "$selected_path" ]; then
+	exit 0
+fi
+
+bash "$HOME/dotfiles/scripts/wallpaper/apply-wallpaper.sh" "$selected_path"
