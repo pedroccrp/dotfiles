@@ -46,7 +46,7 @@ copy_wal_file() {
 copy_wal_file "$HOME/.cache/wal/rofi.rasi" "$HOME/.config/rofi/wal.rasi"
 copy_wal_file "$HOME/.cache/wal/waybar.css" "$HOME/.config/waybar/wal.css"
 copy_wal_file "$HOME/.cache/wal/colors-kitty.conf" "$HOME/.config/kitty/wal.conf"
-copy_wal_file "$HOME/.cache/wal/tmux.conf" "$HOME/dotfiles/tmux/wal.conf"
+copy_wal_file "$HOME/.cache/wal/tmux.conf" "$HOME/dotfiles/tmux/wal-colors.conf"
 copy_wal_file "$HOME/.cache/wal/nvim.lua" "$HOME/.config/nvim/wal.lua"
 
 python - <<'PY'
