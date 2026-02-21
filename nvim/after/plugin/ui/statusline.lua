@@ -42,10 +42,52 @@ vim.api.nvim_create_autocmd("LspAttach", {
   end,
 })
 
-lualine.setup({
+local function get_wal_color(index, fallback)
+  return vim.g["terminal_color_" .. index] or fallback
+end
+
+local function build_lualine_theme()
+  local fg = get_wal_color(15, "#ffffff")
+  local bg = get_wal_color(0, "#111111")
+  local accent = get_wal_color(4, "#8888ff")
+  local muted = get_wal_color(8, "#666666")
+  local warn = get_wal_color(3, "#ffd75f")
+  local error = get_wal_color(1, "#ff5f5f")
+
+  return {
+    normal = {
+      a = { fg = bg, bg = accent, gui = "bold" },
+      b = { fg = fg, bg = bg },
+      c = { fg = fg, bg = "none" },
+    },
+    insert = {
+      a = { fg = bg, bg = warn, gui = "bold" },
+      b = { fg = fg, bg = bg },
+      c = { fg = fg, bg = "none" },
+    },
+    visual = {
+      a = { fg = bg, bg = error, gui = "bold" },
+      b = { fg = fg, bg = bg },
+      c = { fg = fg, bg = "none" },
+    },
+    replace = {
+      a = { fg = bg, bg = error, gui = "bold" },
+      b = { fg = fg, bg = bg },
+      c = { fg = fg, bg = "none" },
+    },
+    inactive = {
+      a = { fg = muted, bg = "none" },
+      b = { fg = muted, bg = "none" },
+      c = { fg = muted, bg = "none" },
+    },
+  }
+end
+
+local function setup_lualine()
+  lualine.setup({
   options = {
     icons_enabled = true,
-    theme = "auto",
+    theme = build_lualine_theme(),
     component_separators = { left = "", right = "" },
     section_separators = { left = "", right = "" },
     disabled_filetypes = {
@@ -95,4 +137,14 @@ lualine.setup({
   winbar = {},
   inactive_winbar = {},
   extensions = {},
+  })
+end
+
+setup_lualine()
+
+vim.api.nvim_create_autocmd("User", {
+  pattern = "WalColorsUpdated",
+  callback = function()
+    setup_lualine()
+  end,
 })
