@@ -1,6 +1,6 @@
-* {
+* {{
   primary: {background};
   text-primary: {foreground};
   text-secondary: {color1};
   border: {color1};
-}
+}}

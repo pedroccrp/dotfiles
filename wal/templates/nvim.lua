@@ -1,4 +1,4 @@
-local colors = {
+local colors = {{
   background = "{background}",
   foreground = "{foreground}",
   color0 = "{color0}",
@@ -17,7 +17,7 @@ local colors = {
   color13 = "{color13}",
   color14 = "{color14}",
   color15 = "{color15}",
-}
+}}
 
 vim.g.terminal_color_0 = colors.color0
 vim.g.terminal_color_1 = colors.color1
@@ -36,9 +36,9 @@ vim.g.terminal_color_13 = colors.color13
 vim.g.terminal_color_14 = colors.color14
 vim.g.terminal_color_15 = colors.color15
 
-vim.api.nvim_set_hl(0, "Normal", { fg = colors.foreground, bg = colors.background })
-vim.api.nvim_set_hl(0, "NormalFloat", { fg = colors.foreground, bg = colors.background })
-vim.api.nvim_set_hl(0, "LineNr", { fg = colors.color8, bg = colors.background })
-vim.api.nvim_set_hl(0, "CursorLineNr", { fg = colors.color4, bg = colors.background, bold = true })
-vim.api.nvim_set_hl(0, "StatusLine", { fg = colors.foreground, bg = colors.color0 })
-vim.api.nvim_set_hl(0, "StatusLineNC", { fg = colors.color7, bg = colors.color0 })
+vim.api.nvim_set_hl(0, "Normal", {{ fg = colors.foreground, bg = colors.background }})
+vim.api.nvim_set_hl(0, "NormalFloat", {{ fg = colors.foreground, bg = colors.background }})
+vim.api.nvim_set_hl(0, "LineNr", {{ fg = colors.color8, bg = colors.background }})
+vim.api.nvim_set_hl(0, "CursorLineNr", {{ fg = colors.color4, bg = colors.background, bold = true }})
+vim.api.nvim_set_hl(0, "StatusLine", {{ fg = colors.foreground, bg = colors.color0 }})
+vim.api.nvim_set_hl(0, "StatusLineNC", {{ fg = colors.color7, bg = colors.color0 }})
