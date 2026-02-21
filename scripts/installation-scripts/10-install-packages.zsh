@@ -34,6 +34,7 @@ bluetooth_packages=(
   bluez
   bluez-utils
   bluez-deprecated-tools
+  blueman
 )
 
 audio_pakages=(
