@@ -93,6 +93,7 @@ end
 local function apply_wal_highlights()
     local wal = load_wal_colors()
     local bg = "none"
+    local bg_color = wal and wal.special and wal.special.background or get_wal_color(0, "#000000")
     local fg = wal and wal.special and wal.special.foreground or get_wal_color(15, "#ffffff")
     local muted = wal and wal.colors and wal.colors.color8 or get_wal_color(8, "#666666")
     local accent = wal and wal.colors and wal.colors.color4 or get_wal_color(4, "#8888ff")
@@ -141,6 +142,8 @@ local function apply_wal_highlights()
     vim.api.nvim_set_hl(0, "ScrollbarGitAdd", { fg = ok, bg = bg })
     vim.api.nvim_set_hl(0, "ScrollbarGitChange", { fg = warn, bg = bg })
     vim.api.nvim_set_hl(0, "ScrollbarGitDelete", { fg = error, bg = bg })
+
+    vim.api.nvim_set_hl(0, "NotifyBackground", { bg = bg_color })
 
     vim.api.nvim_set_hl(0, "String", { fg = ok, bg = bg })
     vim.api.nvim_set_hl(0, "Function", { fg = accent, bg = bg })
