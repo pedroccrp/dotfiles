@@ -11,5 +11,11 @@ function git_prompt() {
   fi
 }
 
+function ssh_prompt_prefix() {
+  if [ -n "$SSH_CONNECTION" ] || [ -n "$SSH_TTY" ]; then
+    echo "%F{red}%B[SSH]%b%f "
+  fi
+}
+
 PROMPT='%F{cyan}%n@%m%f %F{blue}%~%f$(git_prompt)
-%(?.%F{green}➜ .%F{red}➜ )%f '
+$(ssh_prompt_prefix)%(?.%F{green}➜ .%F{red}➜ )%f '
