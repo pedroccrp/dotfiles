@@ -3,7 +3,7 @@
   "permission": {
     "*": "ask",
     "read": "allow",
-    "global": "allow",
+    "glob": "allow",
     "grep": "allow",
     "list": "allow"
   }
