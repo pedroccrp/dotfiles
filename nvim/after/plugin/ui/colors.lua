@@ -1,84 +1,26 @@
 local helpers = require("helpers")
 
-local colorizer = helpers.safe_require("colorizer")
-local rose_pine = helpers.safe_require("rose-pine")
+vim.cmd("colorscheme default")
 
-if not colorizer or not rose_pine then return end
+local fallback_palette = {
+    background = "#191724",
+    foreground = "#e0def4",
+    muted = "#6e6a86",
+    accent = "#9ccfd8",
+    warn = "#f6c177",
+    error = "#eb6f92",
+    ok = "#9ccfd8",
+    type = "#c4a7e7",
+    ui_bg = "#26233a",
+    ui_border = "#403d52",
+}
 
-colorizer.setup()
-
-rose_pine.setup({
-    variant = "auto",
-    dark_variant = "main",
-    dim_inactive_windows = false,
-    extend_background_behind_borders = true,
-
-    enable = {
-        terminal = true,
-        legacy_highlights = true,
-        migrations = true,
-    },
-
-    styles = {
-        bold = true,
-        italic = false,
-        transparency = true,
-    },
-
-    groups = {
-        border = "muted",
-        link = "iris",
-        panel = "surface",
-
-        error = "love",
-        hint = "iris",
-        info = "foam",
-        note = "pine",
-        todo = "rose",
-        warn = "gold",
-
-        git_add = "foam",
-        git_change = "rose",
-        git_delete = "love",
-        git_dirty = "rose",
-        git_ignore = "muted",
-        git_merge = "iris",
-        git_rename = "pine",
-        git_stage = "iris",
-        git_text = "rose",
-        git_untracked = "subtle",
-
-        h1 = "iris",
-        h2 = "foam",
-        h3 = "rose",
-        h4 = "gold",
-        h5 = "pine",
-        h6 = "foam",
-    },
-
-    palette = {
-        moon = {
-            base = '#000000',
-            overlay = '#000000',
-        },
-    },
-
-    highlight_groups = {
-    },
-
-    before_highlight = function(group, highlight, palette)
-    end,
-})
-
-vim.cmd("colorscheme rose-pine-moon")
-
-local function load_wal_colors()
-    local colors_path = vim.fn.expand("~/.cache/wal/colors.json")
-    if vim.fn.filereadable(colors_path) ~= 1 then
+local function read_json(path)
+    if vim.fn.filereadable(path) ~= 1 then
         return nil
     end
 
-    local ok, data = pcall(vim.fn.json_decode, table.concat(vim.fn.readfile(colors_path), "\n"))
+    local ok, data = pcall(vim.fn.json_decode, table.concat(vim.fn.readfile(path), "\n"))
     if not ok or type(data) ~= "table" then
         return nil
     end
@@ -86,24 +28,27 @@ local function load_wal_colors()
     return data
 end
 
-local function get_wal_color(index, fallback)
-    return vim.g["terminal_color_" .. index] or fallback
+local function load_wal_derived()
+    return read_json(vim.fn.expand("~/.cache/wal/colors-derived.json"))
 end
 
 local function apply_wal_highlights()
-    local wal = load_wal_colors()
+    local wal = load_wal_derived()
     local bg = "none"
-    local bg_color = wal and wal.special and wal.special.background or get_wal_color(0, "#000000")
-    local fg = wal and wal.special and wal.special.foreground or get_wal_color(15, "#ffffff")
-    local muted = wal and wal.colors and wal.colors.color8 or get_wal_color(8, "#666666")
-    local accent = wal and wal.colors and wal.colors.color4 or get_wal_color(4, "#8888ff")
-    local warn = wal and wal.colors and wal.colors.color3 or get_wal_color(3, "#ffd75f")
-    local error = wal and wal.colors and wal.colors.color1 or get_wal_color(1, "#ff5f5f")
-    local ok = wal and wal.colors and wal.colors.color2 or get_wal_color(2, "#5fff87")
-    local colorcolumn = wal and wal.colors and wal.colors.color0 or get_wal_color(0, "#111111")
+    local bg_color = wal and wal.background or fallback_palette.background
+    local fg = wal and wal.foreground or fallback_palette.foreground
+    local muted = wal and wal.muted or fallback_palette.muted
+    local accent = wal and wal.accent or fallback_palette.accent
+    local warn = wal and wal.warn or fallback_palette.warn
+    local error = fallback_palette.error
+    local ok = wal and wal.secondary or fallback_palette.ok
+    local ui_bg = wal and wal.ui_bg or fallback_palette.ui_bg
+    local ui_border = wal and wal.ui_border or fallback_palette.ui_border
+    local colorcolumn = ui_border
+    local type_color = wal and wal.secondary or fallback_palette.type
 
     vim.api.nvim_set_hl(0, "Normal", { fg = fg, bg = bg })
-    vim.api.nvim_set_hl(0, "NormalFloat", { fg = fg, bg = bg })
+    vim.api.nvim_set_hl(0, "NormalFloat", { fg = fg, bg = ui_bg })
     vim.api.nvim_set_hl(0, "SignColumn", { fg = muted, bg = bg })
     vim.api.nvim_set_hl(0, "LineNr", { fg = muted, bg = bg })
     vim.api.nvim_set_hl(0, "CursorLineNr", { fg = accent, bg = bg, bold = true })
@@ -113,6 +58,10 @@ local function apply_wal_highlights()
     vim.api.nvim_set_hl(0, "TabLineFill", { fg = muted, bg = bg })
     vim.api.nvim_set_hl(0, "WinSeparator", { fg = muted, bg = bg })
     vim.api.nvim_set_hl(0, "ColorColumn", { bg = colorcolumn })
+    vim.api.nvim_set_hl(0, "Pmenu", { fg = fg, bg = ui_bg })
+    vim.api.nvim_set_hl(0, "PmenuSel", { fg = fg, bg = ui_border, bold = true })
+    vim.api.nvim_set_hl(0, "PmenuSbar", { bg = ui_bg })
+    vim.api.nvim_set_hl(0, "PmenuThumb", { bg = ui_border })
 
     vim.api.nvim_set_hl(0, "BufferLineFill", { bg = bg })
     vim.api.nvim_set_hl(0, "BufferLineBackground", { fg = muted, bg = bg })
@@ -132,7 +81,6 @@ local function apply_wal_highlights()
     vim.api.nvim_set_hl(0, "BufferLineCloseButton", { fg = muted, bg = bg })
     vim.api.nvim_set_hl(0, "BufferLineCloseButtonSelected", { fg = fg, bg = bg })
     vim.api.nvim_set_hl(0, "BufferLineCloseButtonVisible", { fg = muted, bg = bg })
-
     vim.api.nvim_set_hl(0, "ScrollbarHandle", { fg = muted, bg = bg })
     vim.api.nvim_set_hl(0, "ScrollbarSearch", { fg = accent, bg = bg })
     vim.api.nvim_set_hl(0, "ScrollbarError", { fg = error, bg = bg })
@@ -148,7 +96,7 @@ local function apply_wal_highlights()
     vim.api.nvim_set_hl(0, "String", { fg = ok, bg = bg })
     vim.api.nvim_set_hl(0, "Function", { fg = accent, bg = bg })
     vim.api.nvim_set_hl(0, "Keyword", { fg = warn, bg = bg })
-    vim.api.nvim_set_hl(0, "Type", { fg = get_wal_color(6, "#88dddd"), bg = bg })
+    vim.api.nvim_set_hl(0, "Type", { fg = type_color, bg = bg })
     vim.api.nvim_set_hl(0, "Comment", { fg = muted, bg = bg })
     vim.api.nvim_set_hl(0, "Constant", { fg = warn, bg = bg })
     vim.api.nvim_set_hl(0, "Number", { fg = warn, bg = bg })

@@ -3,7 +3,9 @@ local helpers = require("helpers")
 local bufferline = helpers.safe_require("bufferline")
 local bufferline_cycle_windowless = helpers.safe_require("bufferline-cycle-windowless")
 
-if not bufferline or not bufferline_cycle_windowless then return end
+if not bufferline or not bufferline_cycle_windowless then
+  return
+end
 
 bufferline.setup({
   options = {

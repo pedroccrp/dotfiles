@@ -32,8 +32,6 @@ use({
   },
 })
 
-use("rose-pine/neovim")
-
 use("nvim-tree/nvim-web-devicons")
 
 use("petertriho/nvim-scrollbar")
