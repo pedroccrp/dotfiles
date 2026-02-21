@@ -12,7 +12,11 @@ setopt hist_ignore_dups
 setopt hist_ignore_space
 setopt share_history
 
-source /etc/profile.d/autojump.sh
+if [ -f /usr/share/autojump/autojump.zsh ]; then
+  source /usr/share/autojump/autojump.zsh
+elif [ -f /etc/profile.d/autojump.sh ]; then
+  source /etc/profile.d/autojump.sh
+fi
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completion ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 autoload -Uz compinit
