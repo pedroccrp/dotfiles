@@ -5,6 +5,8 @@
     "read": "allow",
     "glob": "allow",
     "grep": "allow",
-    "list": "allow"
+    "list": "allow",
+    "todoread": "allow",
+    "todowrite": "allow"
   }
 }
