@@ -71,3 +71,5 @@ rose_pine.setup({
 })
 
 vim.cmd("colorscheme rose-pine-moon")
+
+pcall(dofile, vim.fn.expand("~/.config/nvim/wal.lua"))

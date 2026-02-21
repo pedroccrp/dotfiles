@@ -1,7 +1,4 @@
-@define-color primary #1b121c;
-@define-color text-primary #fafafa;
-@define-color text-focused #ff7777;
-@define-color border #991111;
+@import "../wal.css";
 
 * {
   font-family: Firacode Nerd Font;

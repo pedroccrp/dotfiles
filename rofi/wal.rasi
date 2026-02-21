@@ -1,0 +1,6 @@
+* {
+  primary: #1b121c;
+  text-primary: #cccccc;
+  text-secondary: #ff7777;
+  border: #991111;
+}

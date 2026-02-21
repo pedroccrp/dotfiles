@@ -1,0 +1,4 @@
+@define-color primary {background};
+@define-color text-primary {foreground};
+@define-color text-focused {color1};
+@define-color border {color1};

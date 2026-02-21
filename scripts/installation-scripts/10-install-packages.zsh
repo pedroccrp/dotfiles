@@ -58,6 +58,7 @@ desktop_packages=(
   brightnessctl
   nwg-look
   firefox
+  python-pywal
 )
 
 dev_packages=(
