@@ -60,6 +60,12 @@ def lighten(rgb, amount=0.1):
     return colorsys.hls_to_rgb(h, l, s)
 
 
+def darken(rgb, amount=0.15):
+    h, l, s = colorsys.rgb_to_hls(*rgb)
+    l = clamp(l - amount)
+    return colorsys.hls_to_rgb(h, l, s)
+
+
 def ensure_min_luminance(rgb, min_lum=0.20):
     if luminance(rgb) >= min_lum:
         return rgb
@@ -67,6 +73,23 @@ def ensure_min_luminance(rgb, min_lum=0.20):
     while luminance(colorsys.hls_to_rgb(h, l, s)) < min_lum and l < 1.0:
         l = clamp(l + 0.05)
     return colorsys.hls_to_rgb(h, l, s)
+
+
+def ensure_contrast(rgb, background_rgb, min_ratio=7.0):
+    if contrast_ratio(rgb, background_rgb) >= min_ratio:
+        return rgb
+
+    bg_lum = luminance(background_rgb)
+    h, l, s = colorsys.rgb_to_hls(*rgb)
+    step = 0.05 if bg_lum < 0.5 else -0.05
+
+    for _ in range(20):
+        l = clamp(l + step)
+        candidate = colorsys.hls_to_rgb(h, l, s)
+        if contrast_ratio(candidate, background_rgb) >= min_ratio:
+            return candidate
+
+    return rgb
 
 
 def is_green_hue(rgb):
@@ -108,11 +131,13 @@ def derive_palette(data):
     fg_best = fg_rgb
     if contrast_ratio(fg_alt, bg_rgb) > contrast_ratio(fg_best, bg_rgb):
         fg_best = fg_alt
-    if contrast_ratio(fg_best, bg_rgb) < 4.5:
-        fg_best = ensure_min_luminance(fg_best, min_lum=0.35)
+    if contrast_ratio(fg_best, bg_rgb) < 7.0:
+        fg_best = ensure_min_luminance(fg_best, min_lum=0.55)
+        fg_best = ensure_contrast(fg_best, bg_rgb, min_ratio=7.0)
 
     ui_bg = lighten(bg_rgb, 0.08)
     ui_border = lighten(bg_rgb, 0.18)
+    inactive_rgb = darken(muted_rgb, 0.20)
 
     return {
         "background": rgb_to_hex(bg_rgb),
@@ -124,6 +149,7 @@ def derive_palette(data):
         "urgent": rgb_to_hex(urgent_rgb),
         "ui_bg": rgb_to_hex(ui_bg),
         "ui_border": rgb_to_hex(ui_border),
+        "inactive": rgb_to_hex(inactive_rgb),
     }
 
 
@@ -157,6 +183,7 @@ def write_tmux_conf(path: Path, derived):
         f"set -g @wal_muted \"{derived['muted']}\"",
         f"set -g @wal_accent \"{derived['accent']}\"",
         f"set -g @wal_warn \"{derived['warn']}\"",
+        f"set -g @wal_inactive \"{derived['inactive']}\"",
     ]
 
     path.parent.mkdir(parents=True, exist_ok=True)
