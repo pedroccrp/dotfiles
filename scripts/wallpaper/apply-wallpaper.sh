@@ -85,6 +85,10 @@ reload_apps() {
 			tmux refresh-client -S >/dev/null 2>&1 || true
 		fi
 	fi
+
+	if command -v makoctl >/dev/null 2>&1 && pgrep -x mako >/dev/null 2>&1; then
+		makoctl reload >/dev/null 2>&1 || true
+	fi
 }
 
 ensure_wallpaper_path

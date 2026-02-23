@@ -8,23 +8,13 @@ layer=overlay
 width=300
 height=110
 
-background-color=#1b121c
+include=~/.cache/wal/mako.conf
 
 border-size=2
 border-radius=5
 
 icons=0
 max-icon-size=64
-
-[urgency=low]
-border-color=#fafafa
-
-[urgency=normal]
-border-color=#991111
-
-[urgency=high]
-border-color=#ff1111
-default-timeout=0
 
 [category=mpd]
 default-timeout=2000
