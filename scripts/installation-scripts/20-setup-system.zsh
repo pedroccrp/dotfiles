@@ -6,13 +6,6 @@ if (( EUID != 0 )); then
   sudo -v || exit 1
 fi
 
-# Audio
-# https://wiki.archlinux.org/title/Sound_system
-echo "Unmuting audio..."
-sudo amixer sset Master unmute &>/dev/null
-sudo amixer sset Speaker unmute &>/dev/null
-sudo amixer sset Headphone unmute &>/dev/null
-
 # Bluetooth
 echo "Starting bluetooth services..."
 sudo systemctl enable bluetooth
