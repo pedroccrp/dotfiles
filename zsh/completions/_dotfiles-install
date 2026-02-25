@@ -1,0 +1,18 @@
+#compdef dotfiles-install install.zsh
+
+_arguments \
+  '(-h --help)'{-h,--help}'[show help]' \
+  '--target[install target]:target:(arch ubuntu)' \
+  '--profile[install profile]:profile:(desktop laptop server minimal)' \
+  '--gpu[gpu selection]:gpu:(nvidia none)' \
+  '--yes[assume yes where applicable]' \
+  '--dry-run[print what would run]' \
+  '--link[create config symlinks]' \
+  '--no-link[skip config symlinks]' \
+  '--with-asdf[enable asdf plugin setup]' \
+  '--without-asdf[disable asdf plugin setup]' \
+  '--with-android[enable android/sdk steps]' \
+  '--without-android[disable android/sdk steps]' \
+  '--with-opencode[enable opencode install]' \
+  '--without-opencode[disable opencode install]' \
+  '--force[reserved for future use]'

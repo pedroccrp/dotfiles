@@ -12,6 +12,7 @@ fpath=(
   /usr/share/zsh/functions/Zle
   /usr/share/zsh/site-functions
   %HOME/.docker/completions
+  $DOTFILES/zsh/completions
 )
 
 typeset -U path fpath
