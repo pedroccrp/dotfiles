@@ -24,15 +24,19 @@ fi
 
 echo "Yay already installed!"
 
-yay -S --needed --noconfirm \
-  android-sdk-cmdline-tools-latest \
-  neofetch \
-  stremio \
+light_packages=(
   asdf-vm \
   autojump \
-  scrcpy \
   indicator-sound-switcher \
-  postman-bin \
+  scrcpy \
   timeshift \
-  waybar-module-pacman-updates-git \
-  hyprshade
+  waybar-module-pacman-updates-git
+)
+
+heavy_packages=(
+  android-sdk-cmdline-tools-latest \
+  stremio \
+  postman-bin
+)
+
+yay -S --needed --noconfirm ${light_packages[@]} ${heavy_packages[@]}
