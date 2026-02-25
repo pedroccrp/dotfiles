@@ -5,11 +5,6 @@ elif [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
   source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~ Manual ~~~~~~~~~~~~~~~~~~~~~~~~~
-if [ -z "$SSH_CONNECTION" ]; then
-  source $HOME/.local/share/zsh/plugins/flatpak-zsh-completion/flatpak.plugin.zsh
-fi
-
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FzF ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 if [ -f /usr/share/fzf/key-bindings.zsh ]; then
   source /usr/share/fzf/key-bindings.zsh
