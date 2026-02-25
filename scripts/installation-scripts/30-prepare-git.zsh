@@ -1,3 +1,7 @@
+#!/usr/bin/env zsh
+
+set -euo pipefail
+
 echo "Logging into gh..."
 gh auth login -p ssh -h GitHub.com
 

@@ -1,3 +1,7 @@
+#!/usr/bin/env zsh
+
+set -euo pipefail
+
 sudo chown -R $USER:$USER /opt/android-sdk
 
 sdkmanager --install "build-tools;36.0.0"

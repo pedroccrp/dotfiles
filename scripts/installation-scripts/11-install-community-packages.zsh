@@ -1,3 +1,7 @@
+#!/usr/bin/env zsh
+
+set -euo pipefail
+
 # Install YAY
 if ! command -v yay >/dev/null 2>&1; then
     echo "Installing yay..."
@@ -13,7 +17,7 @@ fi
 
 if ! command -v yay >/dev/null 2>&1; then
   echo "Some error happened with installation, please check yay first!"
-  exit
+  exit 1
 fi
 
 yay -S --needed --noconfirm \

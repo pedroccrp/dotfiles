@@ -1,3 +1,7 @@
+#!/usr/bin/env zsh
+
+set -euo pipefail
+
 DOTFILES=$HOME/dotfiles
 
 ln -sf $DOTFILES/tmux/.tmux.conf $HOME/.tmux.conf

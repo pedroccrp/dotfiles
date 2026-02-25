@@ -1,4 +1,10 @@
-mkdir $HOME/notes
+#!/usr/bin/env zsh
 
+set -euo pipefail
+
+mkdir -p "$HOME/notes"
 mkdir -p ~/.docker/completions
-docker completion zsh > ~/.docker/completions/_docker
+
+if command -v docker >/dev/null 2>&1; then
+  docker completion zsh > ~/.docker/completions/_docker
+fi

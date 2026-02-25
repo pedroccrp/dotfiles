@@ -1,5 +1,9 @@
+#!/usr/bin/env zsh
+
+set -euo pipefail
+
 if (( EUID != 0 )); then
-  sudo -v || return 1
+  sudo -v || exit 1
 fi
 
 # Audio

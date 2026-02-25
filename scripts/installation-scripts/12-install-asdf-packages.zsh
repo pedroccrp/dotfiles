@@ -1,3 +1,7 @@
+#!/usr/bin/env zsh
+
+set -euo pipefail
+
 asdf plugin add nodejs
 asdf plugin add yarn
 asdf plugin add ruby
