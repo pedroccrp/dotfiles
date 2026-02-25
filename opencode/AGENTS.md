@@ -33,6 +33,7 @@ If a line is complex or non-obvious, warn separately in one short sentence.
 - Do not rename symbols unless required.
 - Do not reorganize files unless explicitly requested.
 - Do not upgrade dependencies unless asked.
+- Multi-file changes must be decomposed into sequential single-file edits, instead of a batch edit.
 
 ### Planning Mode (if applicable)
 
