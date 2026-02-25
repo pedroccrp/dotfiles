@@ -2,21 +2,17 @@
 
 set -euo pipefail
 
-asdf plugin add nodejs
-asdf plugin add yarn
-asdf plugin add ruby
-asdf plugin add python
-asdf plugin add flutter
-asdf plugin add java
-asdf plugin add kotlin
-asdf plugin add cmake
+add_asdf_plugin_with_system_default() {
+    local plugin="$1"
+    asdf plugin add "$plugin" 2>/dev/null || true
+    asdf set -u "$plugin" system 2>/dev/null || true
+}
 
-# Setting them as system versions to prevent conflicts with packages dependencies
-asdf set -u nodejs system
-asdf set -u yarn system
-asdf set -u ruby system
-asdf set -u python system
-asdf set -u flutter system
-asdf set -u java system
-asdf set -u kotlin system
-asdf set -u cmake system
+add_asdf_plugin_with_system_default nodejs
+add_asdf_plugin_with_system_default yarn
+add_asdf_plugin_with_system_default ruby
+add_asdf_plugin_with_system_default python
+add_asdf_plugin_with_system_default flutter
+add_asdf_plugin_with_system_default java
+add_asdf_plugin_with_system_default kotlin
+add_asdf_plugin_with_system_default cmake
