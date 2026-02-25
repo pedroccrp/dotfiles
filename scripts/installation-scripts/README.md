@@ -78,7 +78,6 @@ Arch scripts (`scripts/installation-scripts/`):
 - `11-install-community-packages.zsh`: install `yay` and AUR packages
 - `12-install-asdf-packages.zsh`: add asdf plugins and set them to `system`
 - `13-install-zsh-plugins.zsh`: install zsh plugin packages
-- `14-install-tmux-plugins.zsh`: install TPM and tmux plugins
 - `15-install-dev-tools.zsh`: extra dev tools (Android sdkmanager, ruby-lsp, opencode)
 - `20-setup-system.zsh`: system services and defaults (bluetooth/docker/ly/ufw)
 - `30-prepare-git.zsh`: `gh auth login` + global git config (personal)

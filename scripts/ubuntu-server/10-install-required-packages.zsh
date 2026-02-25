@@ -18,8 +18,4 @@ sudo apt install -y python3 python3-pip nodejs npm ruby
 
 sudo apt install -y tmux
 
-if [ ! -d ~/.tmux/plugins/tpm ]; then
-  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-fi
-
 echo "Done!"
