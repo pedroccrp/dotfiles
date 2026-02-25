@@ -91,6 +91,12 @@ dev_packages=(
   fd
 )
 
+programming_language_packages=(
+  nodejs
+  npm
+  ruby
+)
+
 font_packages=(
   ttf-firacode-nerd
   ttf-terminus-nerd
@@ -111,4 +117,4 @@ packages=(
 )
 
 echo "Installing packages..."
-sudo pacman -S --noconfirm --needed ${base_packages[@]} ${network_packages[@]} ${bluetooth_packages[@]} ${audio_packages[@]} ${desktop_packages[@]} ${dev_packages[@]} ${font_packages[@]} ${packages[@]}
+sudo pacman -S --noconfirm --needed ${base_packages[@]} ${network_packages[@]} ${bluetooth_packages[@]} ${audio_packages[@]} ${desktop_packages[@]} ${dev_packages[@]} ${programming_language_packages[@]} ${font_packages[@]} ${packages[@]}
