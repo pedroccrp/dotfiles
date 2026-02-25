@@ -2,23 +2,27 @@
 
 set -euo pipefail
 
-# Install YAY
-if ! command -v yay >/dev/null 2>&1; then
+install_yay() {
+    local tmpdir
+    tmpdir=$(mktemp -d)
+    trap "rm -rf $tmpdir" EXIT
+
     echo "Installing yay..."
-    git clone https://aur.archlinux.org/yay.git /tmp/yay &>/dev/null
-    cd /tmp/yay &>/dev/null
-    chown $USER:$USER . -R
-    makepkg -si 2>/dev/null
-    cd - &>/dev/null
-    yay -Syu
-else
-    echo "Yay already installed!"
+    git clone https://aur.archlinux.org/yay.git "$tmpdir/yay" >&2
+    chown "$USER:$USER" "$tmpdir/yay" -R
+    (cd "$tmpdir/yay" && makepkg -si --noconfirm --needed) || return 1
+}
+
+if ! command -v yay >/dev/null 2>&1; then
+    install_yay
 fi
 
 if ! command -v yay >/dev/null 2>&1; then
-  echo "Some error happened with installation, please check yay first!"
-  exit 1
+    echo "Some error happened with installation, please check yay first!" >&2
+    exit 1
 fi
+
+echo "Yay already installed!"
 
 yay -S --needed --noconfirm \
   android-sdk-cmdline-tools-latest \
