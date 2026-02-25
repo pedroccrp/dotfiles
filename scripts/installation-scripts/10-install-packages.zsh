@@ -41,7 +41,7 @@ bluetooth_packages=(
   blueman
 )
 
-audio_pakages=(
+audio_packages=(
   alsa-lib
   alsa-utils
   pipewire
@@ -111,4 +111,4 @@ packages=(
 )
 
 echo "Installing packages..."
-sudo pacman -S --noconfirm --needed ${base_packages[@]} ${network_packages[@]} ${bluetooth_packages[@]} ${audio_pakages[@]} ${desktop_packages[@]} ${dev_packages[@]} ${font_packages[@]} ${packages[@]}
+sudo pacman -S --noconfirm --needed ${base_packages[@]} ${network_packages[@]} ${bluetooth_packages[@]} ${audio_packages[@]} ${desktop_packages[@]} ${dev_packages[@]} ${font_packages[@]} ${packages[@]}
