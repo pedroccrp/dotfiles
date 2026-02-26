@@ -1,21 +1,27 @@
-setopt prompt_subst
+_git_prompt_cache=""
+_ssh_prompt_cache=""
 
-function git_prompt() {
+function _update_prompt_cache() {
   if git rev-parse --is-inside-work-tree &>/dev/null; then
     local branch=$(git symbolic-ref --short HEAD 2>/dev/null)
     if [ -z "$branch" ]; then
       branch=$(git rev-parse --short HEAD 2>/dev/null)
       [ -n "$branch" ] && branch="detached@$branch"
     fi
-    echo " on %F{magenta}${branch}%f"
+    _git_prompt_cache=" on %F{magenta}${branch}%f"
+  else
+    _git_prompt_cache=""
   fi
-}
 
-function ssh_prompt_prefix() {
   if [ -n "$SSH_CONNECTION" ] || [ -n "$SSH_TTY" ]; then
-    echo "%F{red}%B[SSH]%b%f "
+    _ssh_prompt_cache="%F{red}%B[SSH]%b%f "
+  else
+    _ssh_prompt_cache=""
   fi
+
+  PROMPT='%F{cyan}%n@%m%f %F{blue}%~%f'"$_git_prompt_cache"'
+'"$_ssh_prompt_cache"'%(?.%F{green}➜ .%F{red}➜ )%f '
 }
 
-PROMPT='%F{cyan}%n@%m%f %F{blue}%~%f$(git_prompt)
-$(ssh_prompt_prefix)%(?.%F{green}➜ .%F{red}➜ )%f '
+autoload -Uz add-zsh-hook
+add-zsh-hook precmd _update_prompt_cache
