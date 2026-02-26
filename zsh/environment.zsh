@@ -3,6 +3,10 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="firefox"
 
+if [ -n "$SSH_CONNECTION" ] || [ -n "$SSH_TTY" ]; then
+  export TERM=xterm-256color
+fi
+
 export DOTFILES=$HOME/dotfiles
 export NOTES=$HOME/notes
 export ZSH=$DOTFILES/zsh
