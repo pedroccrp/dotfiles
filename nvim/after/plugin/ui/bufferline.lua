@@ -2,13 +2,19 @@ local helpers = require("helpers")
 
 local bufferline = helpers.safe_require("bufferline")
 local bufferline_cycle_windowless = helpers.safe_require("bufferline-cycle-windowless")
+local nvim_web_devicons = helpers.safe_require("nvim-web-devicons")
 
-if not bufferline or not bufferline_cycle_windowless then
+if not bufferline or not bufferline_cycle_windowless or not nvim_web_devicons then
   return
 end
 
 bufferline.setup({
   options = {
+    color_icons = true,
+    get_element_icon = function(element)
+      local icon, _ = nvim_web_devicons.get_icon_by_filetype(element.filetype, { default = false })
+      return icon
+    end,
     offsets = {
       {
         filetype = "NvimTree",
