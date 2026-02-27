@@ -22,7 +22,6 @@ mason_lspconfig.setup({
   ensure_installed = {
     "dockerls",
     "jsonls",
-    "ruby_lsp",
     "sqlls",
     "eslint",
     "rust_analyzer",

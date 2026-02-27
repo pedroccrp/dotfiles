@@ -8,8 +8,9 @@ local telescope = helpers.safe_require("telescope")
 if not cmp_nvim_lsp or not telescope then return end
 
 vim.lsp.config("ruby_lsp", {
-  cmd = { "ruby-lsp" },
+  cmd = { "ruby", "-S", "ruby-lsp" },
 })
+vim.lsp.enable("ruby_lsp")
 
 vim.lsp.config("bashls", {
   filetypes = { "sh", "zsh" },
