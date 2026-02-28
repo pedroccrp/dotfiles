@@ -114,6 +114,7 @@ packages=(
   kooha    # screen recorder
   hyprshot # screenshot tool
   swappy   # screenshot annotation tool
+  oculante # image viewer
 )
 
 echo "Installing packages..."
