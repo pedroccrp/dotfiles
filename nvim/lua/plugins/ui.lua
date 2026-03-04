@@ -18,6 +18,7 @@ use({
     require("nvim-tree").setup({})
   end,
 })
+use("stevearc/oil.nvim")
 
 use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
 use({ "roobert/bufferline-cycle-windowless.nvim", requires = { "akinsho/bufferline.nvim" } })
