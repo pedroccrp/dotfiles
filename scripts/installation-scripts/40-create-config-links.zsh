@@ -39,8 +39,3 @@ if [ -d $HOME/.config/opencode/AGENTS.md ]; then rm -rf $HOME/.config/opencode/A
 ln -sf $DOTFILES/opencode/AGENTS.md $HOME/.config/opencode/AGENTS.md
 if [ -d $HOME/.config/opencode/agents ]; then rm -rf $HOME/.config/opencode/agents; fi
 ln -sf $DOTFILES/opencode/agents $HOME/.config/opencode/agents
-mkdir -p $HOME/.config/zen
-if [ -f $HOME/.config/zen/user.js ]; then rm -f $HOME/.config/zen/user.js; fi
-ln -sf $DOTFILES/zen/user.js $HOME/.config/zen/user.js
-if [ -d $HOME/.config/zen/chrome ]; then rm -rf $HOME/.config/zen/chrome; fi
-ln -sf $DOTFILES/zen/chrome $HOME/.config/zen/chrome
