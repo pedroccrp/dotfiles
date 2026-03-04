@@ -31,3 +31,9 @@ copy_default "$DEFAULTS_DIR/colors-kitty.conf" "$CACHE_DIR/colors-kitty.conf"
 copy_default "$DEFAULTS_DIR/hypr.conf" "$CACHE_DIR/hypr.conf"
 copy_default "$DEFAULTS_DIR/tmux.conf" "$CACHE_DIR/tmux.conf"
 copy_default "$DEFAULTS_DIR/mako.conf" "$CACHE_DIR/mako.conf"
+
+if command -v gsettings >/dev/null 2>&1; then
+  gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark' >/dev/null 2>&1 || true
+  gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark' >/dev/null 2>&1 || true
+  gsettings set org.gnome.desktop.interface icon-theme 'breeze-dark' >/dev/null 2>&1 || true
+fi

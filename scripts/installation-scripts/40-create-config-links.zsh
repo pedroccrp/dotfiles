@@ -25,6 +25,12 @@ if [ -d $HOME/.config/mako ]; then rm -rf $HOME/.config/mako; fi
 ln -sf $DOTFILES/mako $HOME/.config/mako
 if [ -d $HOME/.config/lazygit ]; then rm -rf $HOME/.config/lazygit; fi
 ln -sf $DOTFILES/lazygit $HOME/.config/lazygit
+mkdir -p $HOME/.config/gtk-3.0
+mkdir -p $HOME/.config/gtk-4.0
+if [ -f $HOME/.config/gtk-3.0/settings.ini ] || [ -L $HOME/.config/gtk-3.0/settings.ini ]; then rm -f $HOME/.config/gtk-3.0/settings.ini; fi
+if [ -f $HOME/.config/gtk-4.0/settings.ini ] || [ -L $HOME/.config/gtk-4.0/settings.ini ]; then rm -f $HOME/.config/gtk-4.0/settings.ini; fi
+ln -sf $DOTFILES/colors/default/gtk-3.0-settings.ini $HOME/.config/gtk-3.0/settings.ini
+ln -sf $DOTFILES/colors/default/gtk-4.0-settings.ini $HOME/.config/gtk-4.0/settings.ini
 if [ ! -d $HOME/.config/opencode ]; then mkdir -p $HOME/.config/opencode; fi
 if [ -d $HOME/.config/opencode/opencode.jsonc ]; then rm -rf $HOME/.config/opencode/opencode.jsonc; fi
 if [ -d $HOME/.config/opencode/opencode.json ]; then rm -rf $HOME/.config/opencode/opencode.json; fi
