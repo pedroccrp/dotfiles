@@ -7,6 +7,14 @@
     "grep": "allow",
     "list": "allow",
     "todoread": "allow",
-    "todowrite": "allow"
+    "todowrite": "allow",
+    "bash": {
+      "*": "ask",
+      "ls *": "allow",
+      "cat *": "allow",
+      "echo *": "allow",
+      "pwd": "allow",
+      "cd *": "allow"
+    }
   }
 }
