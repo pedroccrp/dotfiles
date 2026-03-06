@@ -6,7 +6,6 @@ if (( EUID != 0 )); then
   sudo -v || exit 1
 fi
 
-# Bluetooth
 echo "Starting bluetooth services..."
 sudo systemctl enable bluetooth
 sudo systemctl start bluetooth

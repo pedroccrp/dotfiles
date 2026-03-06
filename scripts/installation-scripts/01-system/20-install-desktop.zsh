@@ -6,7 +6,7 @@ if ((EUID != 0)); then
   sudo -v || exit 1
 fi
 
-base_packages=(
+system=(
   base-devel
   xdg-desktop-portal
   xdg-desktop-portal-gtk
@@ -28,20 +28,20 @@ base_packages=(
   python-gobject
 )
 
-network_packages=(
+network=(
   network-manager-applet
   iw
   ufw
 )
 
-bluetooth_packages=(
+bluetooth=(
   bluez
   bluez-utils
   bluez-deprecated-tools
   blueman
 )
 
-audio_packages=(
+audio=(
   alsa-lib
   alsa-utils
   pipewire
@@ -49,7 +49,7 @@ audio_packages=(
   pavucontrol
 )
 
-desktop_packages=(
+desktop=(
   hyprland
   hyprpaper
   hyprlock
@@ -66,7 +66,7 @@ desktop_packages=(
   python-pywal
 )
 
-dev_packages=(
+dev_tools=(
   strace
   zsh
   curl
@@ -87,35 +87,40 @@ dev_packages=(
   bzip2
   docker
   kitty
-  shfmt # shell formatter
+  shfmt
   fd
 )
 
-programming_language_packages=(
+languages=(
   nodejs
   npm
   ruby
 )
 
-font_packages=(
+fonts=(
   ttf-firacode-nerd
-  ttf-terminus-nerd
-  ttf-ubuntu-mono-nerd
-  ttf-iosevka-nerd
-  ttf-iosevkaterm-nerd
   noto-fonts-cjk
   noto-fonts-emoji
 )
 
-packages=(
+media=(
   grim
   vlc
   vlc-plugin-ffmpeg
-  kooha    # screen recorder
-  hyprshot # screenshot tool
-  swappy   # screenshot annotation tool
-  oculante # image viewer
+  kooha
+  hyprshot
+  swappy
+  oculante
 )
 
 echo "Installing packages..."
-sudo pacman -S --noconfirm --needed ${base_packages[@]} ${network_packages[@]} ${bluetooth_packages[@]} ${audio_packages[@]} ${desktop_packages[@]} ${dev_packages[@]} ${programming_language_packages[@]} ${font_packages[@]} ${packages[@]}
+sudo pacman -S --noconfirm --needed \
+  "${system[@]}" \
+  "${network[@]}" \
+  "${bluetooth[@]}" \
+  "${audio[@]}" \
+  "${desktop[@]}" \
+  "${dev_tools[@]}" \
+  "${languages[@]}" \
+  "${fonts[@]}" \
+  "${media[@]}"

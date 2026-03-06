@@ -23,20 +23,3 @@ if ! command -v yay >/dev/null 2>&1; then
 fi
 
 echo "Yay already installed!"
-
-light_packages=(
-  asdf-vm \
-  autojump \
-  indicator-sound-switcher \
-  scrcpy \
-  timeshift \
-  waybar-module-pacman-updates-git
-)
-
-heavy_packages=(
-  android-sdk-cmdline-tools-latest \
-  stremio \
-  postman-bin
-)
-
-yay -S --needed --noconfirm ${light_packages[@]} ${heavy_packages[@]}

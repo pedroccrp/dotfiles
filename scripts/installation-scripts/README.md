@@ -67,23 +67,28 @@ exec zsh
 - `--with-asdf` / `--without-asdf`
 - `--with-android` / `--without-android`
 - `--with-opencode` / `--without-opencode`
+- `--with-ruby-lsp` / `--without-ruby-lsp`
+- `--with-heavy-aur` / `--without-heavy-aur`
 - `--dry-run`
 
 ## What Each Script Does
 
 Arch scripts (`scripts/installation-scripts/`):
 
-- `00-install-basic-packages.zsh`: basic packages (currently also installs NVIDIA dkms + headers)
-- `10-install-packages.zsh`: main pacman packages for desktop setup (Hyprland, tools, fonts, etc.)
-- `11-install-community-packages.zsh`: install `yay` and AUR packages
-- `12-install-asdf-packages.zsh`: add asdf plugins and set them to `system`
-- `13-install-zsh-plugins.zsh`: install zsh plugin packages
-- `15-install-dev-tools.zsh`: extra dev tools (Android sdkmanager, ruby-lsp, opencode)
-- `20-setup-system.zsh`: system services and defaults (bluetooth/docker/ly/ufw)
-- `30-prepare-git.zsh`: `gh auth login` + global git config (personal)
-- `40-create-config-links.zsh`: symlink dotfiles into `$HOME` / `$HOME/.config`
-- `41-create-extra-folders.zsh`: create extra folders and docker completion
-- `42-sync-default-colors.zsh`: populate default color cache files (idempotent)
+- `01-system/00-install-yay.zsh`: install `yay`
+- `01-system/10-install-core.zsh`: core packages (`neovim` and optional NVIDIA bits)
+- `01-system/20-install-desktop.zsh`: main pacman package sets for workstation profiles
+- `02-packages/10-install-aur.zsh`: AUR packages (light by default, heavy with `--with-heavy`)
+- `02-packages/20-install-asdf-plugins.zsh`: add asdf plugins and set them to `system`
+- `02-packages/30-install-shell-plugins.zsh`: install zsh plugin packages
+- `03-configuration/10-configure-git.zsh`: `gh auth login` + global git config (personal)
+- `03-configuration/20-configure-services.zsh`: services and defaults (bluetooth/docker/ly/ufw)
+- `03-configuration/30-create-symlinks.zsh`: symlink dotfiles into `$HOME` / `$HOME/.config`
+- `03-configuration/35-create-extra-folders.zsh`: create extra folders
+- `03-configuration/40-configure-completions.zsh`: generate docker zsh completion
+- `04-theming/10-sync-colors.zsh`: populate default color cache files (idempotent)
+- `04-theming/20-configure-pacman-hooks.zsh`: link pacman hooks from dotfiles
+- `05-optional/10-install-dev-tools.zsh`: optional dev tools (`--with-android`, `--with-ruby-lsp`, `--with-opencode`)
 
 Ubuntu scripts (`scripts/ubuntu-server/`):
 
@@ -93,5 +98,5 @@ Ubuntu scripts (`scripts/ubuntu-server/`):
 
 ## Safety Notes
 
-- `40-create-config-links.zsh` currently removes some existing config dirs before linking; expect it to overwrite local state.
-- `20-setup-system.zsh` enables UFW with default deny and enables a display manager service on tty2; be careful when running on remote machines.
+- `03-configuration/30-create-symlinks.zsh` removes existing paths before linking; expect it to overwrite local state.
+- `03-configuration/20-configure-services.zsh` enables UFW with default deny and enables a display manager service on tty2; be careful when running on remote machines.

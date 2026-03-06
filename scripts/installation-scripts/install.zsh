@@ -21,15 +21,20 @@ Options:
   --no-link
   --with-asdf            run asdf plugin setup (default: off)
   --without-asdf
-  --with-android         run android/sdk steps (default: off)
+  --with-android         install android sdk (default: off)
   --without-android
   --with-opencode        install opencode (default: off)
   --without-opencode
+  --with-ruby-lsp        install ruby lsp (default: off)
+  --without-ruby-lsp
+  --with-heavy-aur       install heavy AUR packages (default: off)
+  --without-heavy-aur
   --force                reserved for future use
   -h, --help             show this help
 
 Examples:
   zsh scripts/installation-scripts/install.zsh --target arch --profile desktop --gpu nvidia --link --with-asdf --with-opencode
+  zsh scripts/installation-scripts/install.zsh --target arch --profile desktop --link --with-heavy-aur
   zsh scripts/installation-scripts/install.zsh --target ubuntu --profile server --link
 
 Notes:
@@ -60,6 +65,8 @@ gpu="none"
 with_android=false
 with_opencode=false
 with_asdf=false
+with_ruby_lsp=false
+with_heavy_aur=false
 
 while (( $# )); do
   case "$1" in
@@ -102,6 +109,18 @@ while (( $# )); do
       ;;
     --without-asdf)
       with_asdf=false
+      ;;
+    --with-ruby-lsp)
+      with_ruby_lsp=true
+      ;;
+    --without-ruby-lsp)
+      with_ruby_lsp=false
+      ;;
+    --with-heavy-aur)
+      with_heavy_aur=true
+      ;;
+    --without-heavy-aur)
+      with_heavy_aur=false
       ;;
     --link)
       do_link=true
@@ -162,7 +181,8 @@ _section() {
 _section "Plan"
 _say "==> dotfiles=$DOTFILES"
 _say "==> target=$target profile=$profile gpu=$gpu"
-_say "==> link=$do_link dry_run=$dry_run yes=$assume_yes asdf=$with_asdf android=$with_android opencode=$with_opencode force=$force"
+_say "==> link=$do_link dry_run=$dry_run yes=$assume_yes"
+_say "==> asdf=$with_asdf android=$with_android opencode=$with_opencode ruby_lsp=$with_ruby_lsp heavy_aur=$with_heavy_aur"
 
 if [[ "$target" == "ubuntu" ]]; then
   _section "Ubuntu/Debian"
@@ -176,41 +196,70 @@ if [[ "$target" == "ubuntu" ]]; then
   exit 0
 fi
 
-_section "Arch"
-if [[ "$gpu" == "nvidia" ]]; then
-  _run_zsh "$DOTFILES/scripts/installation-scripts/00-install-basic-packages.zsh"
-fi
+_section "01-system"
+
+_run_zsh "$DOTFILES/scripts/installation-scripts/01-system/00-install-yay.zsh"
+_run_zsh "$DOTFILES/scripts/installation-scripts/01-system/10-install-core.zsh" "$gpu"
 
 if [[ "$profile" == "desktop" || "$profile" == "laptop" ]]; then
-  _run_zsh "$DOTFILES/scripts/installation-scripts/10-install-packages.zsh"
-  _run_zsh "$DOTFILES/scripts/installation-scripts/11-install-community-packages.zsh"
-
-  if $with_asdf; then
-    _run_zsh "$DOTFILES/scripts/installation-scripts/12-install-asdf-packages.zsh"
-  fi
-
-  _run_zsh "$DOTFILES/scripts/installation-scripts/13-install-zsh-plugins.zsh"
-else
-  _say "Skipping workstation package/AUR/zsh-plugin scripts for profile '$profile'."
+  _run_zsh "$DOTFILES/scripts/installation-scripts/01-system/20-install-desktop.zsh"
 fi
 
-_run_zsh "$DOTFILES/scripts/installation-scripts/30-prepare-git.zsh"
+_section "02-packages"
 
-_run_zsh "$DOTFILES/scripts/installation-scripts/14-install-tmux-plugins.zsh"
+if [[ "$profile" == "desktop" || "$profile" == "laptop" ]]; then
+  if $with_heavy_aur; then
+    _run_zsh "$DOTFILES/scripts/installation-scripts/02-packages/10-install-aur.zsh" --with-heavy
+  else
+    _run_zsh "$DOTFILES/scripts/installation-scripts/02-packages/10-install-aur.zsh"
+  fi
 
-if $with_android || $with_opencode; then
-  _run_zsh "$DOTFILES/scripts/installation-scripts/15-install-dev-tools.zsh"
+  if $with_asdf; then
+    _run_zsh "$DOTFILES/scripts/installation-scripts/02-packages/20-install-asdf-plugins.zsh"
+  fi
+
+  _run_zsh "$DOTFILES/scripts/installation-scripts/02-packages/30-install-shell-plugins.zsh"
+else
+  _say "Skipping workstation package scripts for profile '$profile'."
+fi
+
+_section "03-configuration"
+
+_run_zsh "$DOTFILES/scripts/installation-scripts/03-configuration/10-configure-git.zsh"
+
+if [[ "$profile" == "desktop" || "$profile" == "laptop" ]]; then
+  _run_zsh "$DOTFILES/scripts/installation-scripts/03-configuration/20-configure-services.zsh"
 fi
 
 if $do_link; then
-  _run_zsh "$DOTFILES/scripts/installation-scripts/40-create-config-links.zsh"
+  _run_zsh "$DOTFILES/scripts/installation-scripts/03-configuration/30-create-symlinks.zsh"
 fi
 
-_run_zsh "$DOTFILES/scripts/installation-scripts/41-create-extra-folders.zsh"
-_run_zsh "$DOTFILES/scripts/installation-scripts/42-sync-default-colors.zsh"
+_run_zsh "$DOTFILES/scripts/installation-scripts/03-configuration/35-create-extra-folders.zsh"
+_run_zsh "$DOTFILES/scripts/installation-scripts/03-configuration/40-configure-completions.zsh"
+
+_section "04-theming"
+
+_run_zsh "$DOTFILES/scripts/installation-scripts/04-theming/10-sync-colors.zsh"
 
 if [[ "$profile" == "desktop" || "$profile" == "laptop" ]]; then
-  _run_zsh "$DOTFILES/scripts/installation-scripts/20-setup-system.zsh"
+  _run_zsh "$DOTFILES/scripts/installation-scripts/04-theming/20-configure-pacman-hooks.zsh"
+fi
+
+_section "05-optional"
+
+if $with_android || $with_opencode || $with_ruby_lsp; then
+  dev_tools_args=()
+  if $with_android; then
+    dev_tools_args+=(--with-android)
+  fi
+  if $with_opencode; then
+    dev_tools_args+=(--with-opencode)
+  fi
+  if $with_ruby_lsp; then
+    dev_tools_args+=(--with-ruby-lsp)
+  fi
+  _run_zsh "$DOTFILES/scripts/installation-scripts/05-optional/10-install-dev-tools.zsh" "${dev_tools_args[@]}"
 fi
 
 _say ""
