@@ -18,3 +18,5 @@ alias gss="git status"
 alias gcm="git commit"
 alias gpp="git push origin HEAD"
 alias gpl="git pull"
+
+alias bw='/usr/bin/node /usr/lib/node_modules/@bitwarden/cli/build/bw.js'
