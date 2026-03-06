@@ -1,0 +1,8 @@
+#compdef update_system update_system_full
+
+_arguments \
+  '--profile[update profile]:profile:(desktop laptop server minimal)' \
+  '--gpu[gpu selection]:gpu:(nvidia none)' \
+  '--with-heavy-aur[include heavy AUR packages]' \
+  '--with-asdf[configure asdf plugins]' \
+  '--no-link[skip symlink refresh]'

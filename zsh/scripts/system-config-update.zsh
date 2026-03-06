@@ -255,3 +255,12 @@ update_system() {
 
   echo "System update completed successfully."
 }
+
+update_system_full() {
+  update_system \
+    --profile desktop \
+    --gpu nvidia \
+    --with-heavy-aur \
+    --with-asdf \
+    "$@"
+}
