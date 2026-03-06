@@ -91,11 +91,7 @@ dev_tools=(
   fd
 )
 
-languages=(
-  nodejs
-  npm
-  ruby
-)
+languages=()
 
 fonts=(
   ttf-firacode-nerd
