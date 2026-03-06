@@ -1,0 +1,80 @@
+#compdef timeshift
+
+_timeshift() {
+  local -a commands options snapshots devices
+
+  commands=(
+    '--check:Create snapshot if scheduled'
+    '--create:Create snapshot (even if not scheduled)'
+    '--restore:Restore snapshot'
+    '--delete:Delete snapshot'
+    '--delete-all:Delete all snapshots'
+    '--list-snapshots:List snapshots'
+    '--list-devices:List devices'
+  )
+
+  options=(
+    '--snapshot:Specify snapshot to restore/delete'
+    '--comments:Set snapshot description'
+    '--tags:Add tags to snapshot'
+    '--target-device:Specify target device'
+    '--grub-device:Specify device for installing GRUB2'
+    '--skip-grub:Skip GRUB2 reinstall'
+    '--snapshot-device:Specify backup device'
+    '--yes:Answer YES to all confirmation'
+    '--btrfs:Switch to BTRFS mode'
+    '--rsync:Switch to RSYNC mode'
+    '--debug:Show additional debug messages'
+    '--verbose:Show rsync output'
+    '--quiet:Hide rsync output'
+    '--scripted:Run in non-interactive mode'
+    '--help:Show all options'
+    '--version:Print version number'
+  )
+
+  local -a tags_options
+  tags_options=(
+    'O:Ondemand'
+    'B:Boot'
+    'H:Hourly'
+    'D:Daily'
+    'W:Weekly'
+    'M:Monthly'
+  )
+
+  local curcontext=$curcontext state line
+  local -A opt_args
+
+  _arguments -C \
+    '1:command:->command' \
+    '*::options:->options' && return 0
+
+  case $state in
+    command)
+      _describe 'command' commands
+      ;;
+    options)
+      case $line[1] in
+        --check|--create|--list-snapshots|--list-devices)
+          _describe 'option' options
+          ;;
+        --restore|--delete)
+          _describe 'option' options
+          local -a snap
+          snap=(${(f)"$(sudo timeshift --list 2>/dev/null | tail -n +3 | head -n -1 | awk '{print $2}')"})
+          if (( $#snap )); then
+            _describe 'snapshot' snap
+          fi
+          ;;
+        --tags)
+          _describe 'tag' tags_options
+          ;;
+        *)
+          _describe 'option' options
+          ;;
+      esac
+      ;;
+  esac
+}
+
+_timeshift "$@"
