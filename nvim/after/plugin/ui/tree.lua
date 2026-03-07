@@ -24,6 +24,9 @@ nvim_tree.setup({
       quit_on_open = true,
     },
   },
+  filters = {
+    custom = { ".gd.uid" },
+  },
 })
 
 vim.cmd([[
