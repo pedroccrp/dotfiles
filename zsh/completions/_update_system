@@ -1,8 +1,9 @@
 #compdef update_system update_system_full
 
 _arguments \
-  '--profile[update profile]:profile:(desktop laptop server minimal)' \
-  '--gpu[gpu selection]:gpu:(nvidia none)' \
-  '--with-heavy-aur[include heavy AUR packages]' \
-  '--with-asdf[configure asdf plugins]' \
-  '--no-link[skip symlink refresh]'
+  '--profile[system profile]:profile:(desktop laptop server minimal)' \
+  '--gpu[GPU driver]:gpu:(nvidia none)' \
+  '--with-heavy-aur[install heavy AUR packages during installation]' \
+  '--with-asdf[configure asdf plugins during installation]' \
+  '--with-aur-updates[update AUR packages (yay -Sua)]' \
+  '--no-link[skip config symlink refresh]'

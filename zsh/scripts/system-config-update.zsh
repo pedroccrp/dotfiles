@@ -172,18 +172,6 @@ update_yay_packages() {
     return 0
   fi
 
-  if [[ -t 1 ]]; then
-    printf "The AUR update via yay can take a long time. Proceed? [y/N] "
-    read -r answer
-    case "$answer" in
-    [Yy]*) ;;
-    *)
-      echo "Skipping yay updates."
-      return 0
-      ;;
-    esac
-  fi
-
   yay -Sua \
     --noconfirm \
     --noprogressbar \
@@ -198,6 +186,7 @@ update_system() {
   local gpu="none"
   local with_heavy_aur="false"
   local with_asdf="false"
+  local with_aur_updates="false"
   local do_link="true"
 
   while (( $# )); do
@@ -216,12 +205,15 @@ update_system() {
       --with-asdf)
         with_asdf="true"
         ;;
+      --with-aur-updates)
+        with_aur_updates="true"
+        ;;
       --no-link)
         do_link="false"
         ;;
       *)
         echo "Unknown option: $1"
-        echo "Usage: update_system [--profile desktop|laptop|server|minimal] [--gpu nvidia|none] [--with-heavy-aur] [--with-asdf] [--no-link]"
+        echo "Usage: update_system [--profile desktop|laptop|server|minimal] [--gpu nvidia|none] [--with-heavy-aur] [--with-asdf] [--with-aur-updates] [--no-link]"
         return 1
         ;;
     esac
@@ -250,7 +242,8 @@ update_system() {
 
   update_config_files || return
   update_pacman_packages || return
-  update_yay_packages
+  [[ "$with_aur_updates" == "true" ]] && update_yay_packages
+  compinit || return
   run_installation_scripts "$profile" "$gpu" "$with_heavy_aur" "$with_asdf" "$do_link" || return
 
   echo "System update completed successfully."
