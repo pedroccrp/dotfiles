@@ -3,8 +3,6 @@ local helpers = require("helpers")
 local conform = helpers.safe_require("conform")
 if not conform then return end
 
-local conform = require("conform")
-
 conform.setup({
   formatters_by_ft = {
     lua = { "stylua" },
@@ -33,3 +31,11 @@ conform.setup({
 vim.keymap.set("n", "<leader>cf", function()
   conform.format({ lsp_fallback = true, timeout_ms = 5000 })
 end)
+
+-- Format on save specific languages
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = { "*.gd" },
+  callback = function(args)
+    require("conform").format({ bufnr = args.buf })
+  end,
+})
