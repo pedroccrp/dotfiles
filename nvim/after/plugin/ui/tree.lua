@@ -1,14 +1,16 @@
 local helpers = require("helpers")
 
 local nvim_tree = helpers.safe_require("nvim-tree")
-if not nvim_tree then return end
+if not nvim_tree then
+  return
+end
 
 nvim_tree.setup({
   git = {
     ignore = false,
   },
   renderer = {
-    highlight_opened_files = 'none',
+    highlight_opened_files = "none",
     group_empty = true,
     icons = {
       show = {
@@ -36,4 +38,4 @@ vim.cmd([[
   augroup end
 ]])
 
-vim.keymap.set('n', '<leader>n', ':NvimTreeFindFileToggle<CR>', { silent = true })
+vim.keymap.set("n", "<leader>n", ":NvimTreeFindFileToggle<CR>", { silent = true })
