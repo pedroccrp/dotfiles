@@ -242,10 +242,6 @@ _section "04-theming"
 
 _run_zsh "$DOTFILES/scripts/installation-scripts/04-theming/10-sync-colors.zsh"
 
-if [[ "$profile" == "desktop" || "$profile" == "laptop" ]]; then
-  _run_zsh "$DOTFILES/scripts/installation-scripts/04-theming/20-configure-pacman-hooks.zsh"
-fi
-
 _section "05-optional"
 
 if $with_android || $with_opencode || $with_ruby_lsp; then

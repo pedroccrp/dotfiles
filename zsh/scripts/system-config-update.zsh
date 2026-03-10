@@ -154,16 +154,19 @@ run_installation_scripts() {
   _update_packages_ui \
     "Syncing default colors" \
     zsh "$DOTFILES/scripts/installation-scripts/04-theming/10-sync-colors.zsh"
-
-  if [[ "$profile" == "desktop" || "$profile" == "laptop" ]]; then
-    _update_packages_ui \
-      "Configuring pacman hooks" \
-      zsh "$DOTFILES/scripts/installation-scripts/04-theming/20-configure-pacman-hooks.zsh"
-  fi
 }
 
 update_pacman_packages() {
   sudo pacman -Syu --noconfirm --noprogressbar
+}
+
+timeshift_backup() {
+  if ! command -v timeshift >/dev/null 2>&1; then
+    echo "Skipping timeshift: timeshift is not installed."
+    return 0
+  fi
+
+  sudo timeshift --create --comments "system update" --tags D
 }
 
 update_yay_packages() {
@@ -187,6 +190,7 @@ update_system() {
   local with_heavy_aur="false"
   local with_asdf="false"
   local with_aur_updates="false"
+  local with_timeshift="false"
   local do_link="true"
 
   while (( $# )); do
@@ -208,12 +212,15 @@ update_system() {
       --with-aur-updates)
         with_aur_updates="true"
         ;;
+      --with-timeshift)
+        with_timeshift="true"
+        ;;
       --no-link)
         do_link="false"
         ;;
       *)
         echo "Unknown option: $1"
-        echo "Usage: update_system [--profile desktop|laptop|server|minimal] [--gpu nvidia|none] [--with-heavy-aur] [--with-asdf] [--with-aur-updates] [--no-link]"
+        echo "Usage: update_system [--profile desktop|laptop|server|minimal] [--gpu nvidia|none] [--with-heavy-aur] [--with-asdf] [--with-aur-updates] [--with-timeshift] [--no-link]"
         return 1
         ;;
     esac
@@ -239,6 +246,8 @@ update_system() {
   _start_sudo_keepalive || return 1
 
   trap 'kill "$SUDO_KEEPALIVE_PID" 2>/dev/null' EXIT
+
+  [[ "$with_timeshift" == "true" ]] && timeshift_backup
 
   update_config_files || return
   update_pacman_packages || return

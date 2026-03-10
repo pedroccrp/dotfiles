@@ -6,4 +6,5 @@ _arguments \
   '--with-heavy-aur[install heavy AUR packages during installation]' \
   '--with-asdf[configure asdf plugins during installation]' \
   '--with-aur-updates[update AUR packages (yay -Sua)]' \
+  '--with-timeshift[create timeshift snapshot before update]' \
   '--no-link[skip config symlink refresh]'
