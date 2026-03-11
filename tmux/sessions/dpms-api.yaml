@@ -9,10 +9,10 @@ windows:
     window_index: 2
     layout: even-horizontal
     panes:
-      - ""
-      - ""
+      - pane
+      - pane
   - window_name: Helpers
     window_index: 3
     start_directory: $HOME/oxeanbits/dpms-helpers
     panes:
-      - ""
+      - pane

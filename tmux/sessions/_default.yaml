@@ -3,4 +3,4 @@ windows:
   - window_name: Random
     window_index: 1
     panes:
-      - ""
+      - pane

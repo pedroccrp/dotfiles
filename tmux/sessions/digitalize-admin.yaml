@@ -13,5 +13,5 @@ windows:
     window_index: 3
     layout: even-horizontal
     panes:
-      - ""
-      - ""
+      - pane
+      - pane
