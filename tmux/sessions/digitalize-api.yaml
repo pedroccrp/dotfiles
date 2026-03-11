@@ -13,5 +13,7 @@ windows:
     window_index: 3
     layout: even-horizontal
     panes:
-      - ""
-      - ""
+      - shell_command:
+        - docker start mongo1 mongo2 mongo3 ; clear
+        - "rails s -b 0.0.0.0"
+      - pane
