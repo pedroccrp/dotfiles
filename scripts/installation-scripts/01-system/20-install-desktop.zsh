@@ -32,6 +32,8 @@ network=(
   network-manager-applet
   iw
   ufw
+  wireguard-tools
+  openresolv
 )
 
 bluetooth=(
