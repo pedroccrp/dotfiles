@@ -18,4 +18,6 @@ sudo apt install -y python3 python3-pip nodejs npm ruby
 
 sudo apt install -y tmux
 
+sudo apt install -y wireguard
+
 echo "Done!"
