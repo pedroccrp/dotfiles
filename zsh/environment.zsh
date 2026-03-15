@@ -2,6 +2,7 @@ export MYVIMRC="~/.vim/vimrc"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="firefox"
+export MANPAGER="nvim +Man!"
 
 if [ -n "$SSH_CONNECTION" ] || [ -n "$SSH_TTY" ]; then
   export TERM=xterm-256color
