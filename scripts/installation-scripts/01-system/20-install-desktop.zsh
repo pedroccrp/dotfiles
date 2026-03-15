@@ -91,6 +91,7 @@ dev_tools=(
   kitty
   shfmt
   fd
+  jq
 )
 
 languages=()
