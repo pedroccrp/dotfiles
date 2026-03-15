@@ -18,7 +18,7 @@ system=(
   wl-clipboard
   fzf
   ripgrep
-  tldr
+  tealdeer
   lsof
   rsync
   reflector
