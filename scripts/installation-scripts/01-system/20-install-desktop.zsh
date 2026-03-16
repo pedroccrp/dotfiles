@@ -108,7 +108,7 @@ media=(
   vlc-plugin-ffmpeg
   kooha
   hyprshot
-  swappy
+  satty
   oculante
 )
 
