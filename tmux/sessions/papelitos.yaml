@@ -1,0 +1,11 @@
+session_name: Papelitos
+start_directory: $HOME/projects/papelitos
+windows:
+  - window_name: Editor
+    window_index: 1
+    panes:
+      - nvim --listen /tmp/godot.nvim
+  - window_name: Extra
+    window_index: 2
+    panes:
+      - pane
