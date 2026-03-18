@@ -55,13 +55,91 @@ _update_packages_ui() {
     done
   done
 
+  local cmd_status=${pipestatus[1]:-0}
+
   for _ in $(seq 1 $((LOG_LINES + HEADER_LINES + 1))); do
     tput cuu 1
     printf '\r'
     tput el
   done
 
-  printf "%s==> %s [completed]%s\n" "$BOLD" "$title" "$RESET"
+  _record_update_result "$title" "$cmd_status"
+
+  if ((cmd_status == 0)); then
+    printf "%s==> %s [completed]%s\n" "$BOLD" "$title" "$RESET"
+  else
+    printf "%s==> %s [failed]%s\n" "$BOLD" "$title" "$RESET"
+  fi
+
+  return "$cmd_status"
+}
+
+typeset -ga UPDATE_STEP_TITLES=()
+typeset -ga UPDATE_STEP_CODES=()
+
+_reset_update_results() {
+  UPDATE_STEP_TITLES=()
+  UPDATE_STEP_CODES=()
+}
+
+_record_update_result() {
+  local title="$1"
+  local code="$2"
+
+  UPDATE_STEP_TITLES+=("$title")
+  UPDATE_STEP_CODES+=("$code")
+}
+
+_run_update_step() {
+  local title="$1"
+  shift
+
+  "$@"
+  local step_code=$?
+
+  _record_update_result "$title" "$step_code"
+  return "$step_code"
+}
+
+_print_update_results() {
+  local BOLD RESET GREEN RED
+
+  if [[ -t 1 ]]; then
+    BOLD=$(tput bold)
+    RESET=$(tput sgr0)
+    GREEN=$(tput setaf 2)
+    RED=$(tput setaf 1)
+  else
+    BOLD=""
+    RESET=""
+    GREEN=""
+    RED=""
+  fi
+
+  local total=${#UPDATE_STEP_TITLES[@]}
+  local succeeded=0
+  local failed=0
+
+  echo
+  printf "%s==> Results%s\n" "$BOLD" "$RESET"
+  echo "-----------------------------------------------"
+
+  local i code status_label
+  for ((i = 1; i <= total; i++)); do
+    code=${UPDATE_STEP_CODES[i]}
+    if ((code == 0)); then
+      status_label="${GREEN}OK${RESET}"
+      ((succeeded++))
+    else
+      status_label="${RED}FAIL (${code})${RESET}"
+      ((failed++))
+    fi
+
+    printf "- [%s] %s\n" "$status_label" "${UPDATE_STEP_TITLES[i]}"
+  done
+
+  echo "-----------------------------------------------"
+  printf "Succeeded: %d | Failed: %d | Total: %d\n" "$succeeded" "$failed" "$total"
 }
 
 _start_sudo_keepalive() {
@@ -85,11 +163,14 @@ _start_sudo_keepalive() {
 update_config_files() {
   cd $DOTFILES || return 1
 
+  local step_failed=0
+
   _update_packages_ui \
     "Fetching dotfiles updates" \
-    git pull
+    git pull || step_failed=1
 
   cd - >/dev/null
+  return "$step_failed"
 }
 
 run_installation_scripts() {
@@ -98,6 +179,7 @@ run_installation_scripts() {
   local with_heavy_aur="$3"
   local with_asdf="$4"
   local do_link="$5"
+  local step_failed=0
 
   if ((EUID != 0)); then
     sudo -v || return 1
@@ -105,55 +187,57 @@ run_installation_scripts() {
 
   _update_packages_ui \
     "Ensuring yay is installed" \
-    zsh "$DOTFILES/scripts/installation-scripts/01-system/00-install-yay.zsh"
+    zsh "$DOTFILES/scripts/installation-scripts/01-system/00-install-yay.zsh" || step_failed=1
 
   _update_packages_ui \
     "Installing core packages" \
-    zsh "$DOTFILES/scripts/installation-scripts/01-system/10-install-core.zsh" "$gpu"
+    zsh "$DOTFILES/scripts/installation-scripts/01-system/10-install-core.zsh" "$gpu" || step_failed=1
 
   if [[ "$profile" == "desktop" || "$profile" == "laptop" ]]; then
     _update_packages_ui \
       "Installing desktop packages" \
-      zsh "$DOTFILES/scripts/installation-scripts/01-system/20-install-desktop.zsh"
+      zsh "$DOTFILES/scripts/installation-scripts/01-system/20-install-desktop.zsh" || step_failed=1
 
     if [[ "$with_heavy_aur" == "true" ]]; then
       _update_packages_ui \
         "Installing AUR packages (with heavy)" \
-        zsh "$DOTFILES/scripts/installation-scripts/02-packages/10-install-aur.zsh" --with-heavy
+        zsh "$DOTFILES/scripts/installation-scripts/02-packages/10-install-aur.zsh" --with-heavy || step_failed=1
     else
       _update_packages_ui \
         "Installing AUR packages" \
-        zsh "$DOTFILES/scripts/installation-scripts/02-packages/10-install-aur.zsh"
+        zsh "$DOTFILES/scripts/installation-scripts/02-packages/10-install-aur.zsh" || step_failed=1
     fi
 
     if [[ "$with_asdf" == "true" ]]; then
       _update_packages_ui \
         "Configuring asdf plugins" \
-        zsh "$DOTFILES/scripts/installation-scripts/02-packages/20-install-asdf-plugins.zsh"
+        zsh "$DOTFILES/scripts/installation-scripts/02-packages/20-install-asdf-plugins.zsh" || step_failed=1
     fi
 
     _update_packages_ui \
       "Installing shell plugins" \
-      zsh "$DOTFILES/scripts/installation-scripts/02-packages/30-install-shell-plugins.zsh"
+      zsh "$DOTFILES/scripts/installation-scripts/02-packages/30-install-shell-plugins.zsh" || step_failed=1
   fi
 
   if [[ "$do_link" == "true" ]]; then
     _update_packages_ui \
       "Refreshing config symlinks" \
-      zsh "$DOTFILES/scripts/installation-scripts/03-configuration/30-create-symlinks.zsh"
+      zsh "$DOTFILES/scripts/installation-scripts/03-configuration/30-create-symlinks.zsh" || step_failed=1
   fi
 
   _update_packages_ui \
     "Creating extra folders" \
-    zsh "$DOTFILES/scripts/installation-scripts/03-configuration/35-create-extra-folders.zsh"
+    zsh "$DOTFILES/scripts/installation-scripts/03-configuration/35-create-extra-folders.zsh" || step_failed=1
 
   _update_packages_ui \
     "Configuring shell completions" \
-    zsh "$DOTFILES/scripts/installation-scripts/03-configuration/40-configure-completions.zsh"
+    zsh "$DOTFILES/scripts/installation-scripts/03-configuration/40-configure-completions.zsh" || step_failed=1
 
   _update_packages_ui \
     "Syncing default colors" \
-    zsh "$DOTFILES/scripts/installation-scripts/04-theming/10-sync-colors.zsh"
+    zsh "$DOTFILES/scripts/installation-scripts/04-theming/10-sync-colors.zsh" || step_failed=1
+
+  return "$step_failed"
 }
 
 update_pacman_packages() {
@@ -192,6 +276,7 @@ update_system() {
   local with_aur_updates="false"
   local with_timeshift="false"
   local do_link="true"
+  local update_failed=0
 
   while (( $# )); do
     case "$1" in
@@ -244,16 +329,28 @@ update_system() {
   esac
 
   _start_sudo_keepalive || return 1
+  _reset_update_results
 
   trap 'kill "$SUDO_KEEPALIVE_PID" 2>/dev/null' EXIT
 
-  [[ "$with_timeshift" == "true" ]] && timeshift_backup
+  if [[ "$with_timeshift" == "true" ]]; then
+    _run_update_step "Creating timeshift backup" timeshift_backup || update_failed=1
+  fi
 
-  update_config_files || return
-  update_pacman_packages || return
-  [[ "$with_aur_updates" == "true" ]] && update_yay_packages
-  compinit || return
-  run_installation_scripts "$profile" "$gpu" "$with_heavy_aur" "$with_asdf" "$do_link" || return
+  update_config_files || update_failed=1
+  _run_update_step "Updating pacman packages" update_pacman_packages || update_failed=1
+  if [[ "$with_aur_updates" == "true" ]]; then
+    _run_update_step "Updating AUR packages" update_yay_packages || update_failed=1
+  fi
+  _run_update_step "Initializing completions" compinit || update_failed=1
+  run_installation_scripts "$profile" "$gpu" "$with_heavy_aur" "$with_asdf" "$do_link" || update_failed=1
+
+  _print_update_results
+
+  if ((update_failed != 0)); then
+    echo "System update completed with failures."
+    return 1
+  fi
 
   echo "System update completed successfully."
 }
