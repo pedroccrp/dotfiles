@@ -93,6 +93,7 @@ dev_tools=(
   fd
   jq
   the_silver_searcher
+  python-setuptools # Needed for indicator-sound-switcher
 )
 
 languages=()
