@@ -92,6 +92,7 @@ dev_tools=(
   shfmt
   fd
   jq
+  the_silver_searcher
 )
 
 languages=()
