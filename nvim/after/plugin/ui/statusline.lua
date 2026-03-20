@@ -170,7 +170,7 @@ local function setup_lualine()
   },
   sections = {
     lualine_a = { "mode" },
-    lualine_b = { "filetype", "filename" },
+    lualine_b = { "filename" },
     lualine_c = {
       {
         navic_location,
@@ -180,8 +180,8 @@ local function setup_lualine()
         color = "Normal",
       },
     },
-    lualine_x = { "searchcount", "selectioncount" },
-    lualine_y = { "diagnostics", "diff", "branch", macro_recording },
+    lualine_x = { "searchcount", "selectioncount", macro_recording },
+    lualine_y = { "diagnostics", "diff", "branch", "filetype" },
     lualine_z = { "location" },
   },
   inactive_sections = {
