@@ -94,6 +94,7 @@ dev_tools=(
   jq
   the_silver_searcher
   python-setuptools # Needed for indicator-sound-switcher
+  python-build # Needed for some libs
 )
 
 languages=()
