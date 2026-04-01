@@ -226,6 +226,7 @@ fi
 _section "03-configuration"
 
 _run_zsh "$DOTFILES/scripts/installation-scripts/03-configuration/10-configure-git.zsh"
+_run_zsh "$DOTFILES/scripts/installation-scripts/03-configuration/15-sync-submodules.zsh"
 
 if [[ "$profile" == "desktop" || "$profile" == "laptop" ]]; then
   _run_zsh "$DOTFILES/scripts/installation-scripts/03-configuration/20-configure-services.zsh"
@@ -236,6 +237,11 @@ if $do_link; then
 fi
 
 _run_zsh "$DOTFILES/scripts/installation-scripts/03-configuration/35-create-extra-folders.zsh"
+
+if [[ "$profile" == "desktop" || "$profile" == "laptop" ]]; then
+  _run_zsh "$DOTFILES/scripts/installation-scripts/03-configuration/45-configure-zen-profile.zsh"
+fi
+
 _run_zsh "$DOTFILES/scripts/installation-scripts/03-configuration/40-configure-completions.zsh"
 
 _section "04-theming"

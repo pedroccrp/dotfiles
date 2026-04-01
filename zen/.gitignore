@@ -1,0 +1,8 @@
+*
+!.gitignore
+!user.js
+!chrome/
+chrome/*
+!chrome/userChrome.css
+!chrome/mods/
+!chrome/mods/**

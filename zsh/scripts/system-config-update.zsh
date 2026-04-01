@@ -169,6 +169,10 @@ update_config_files() {
     "Fetching dotfiles updates" \
     git pull || step_failed=1
 
+  _update_packages_ui \
+    "Syncing git submodules" \
+    zsh "$DOTFILES/scripts/installation-scripts/03-configuration/15-sync-submodules.zsh" || step_failed=1
+
   cd - >/dev/null
   return "$step_failed"
 }
