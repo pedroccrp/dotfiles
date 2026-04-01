@@ -4,3 +4,6 @@ user_pref("zen.view.compact.hide-toolbar", true);
 user_pref("zen.view.compact.enable-at-startup", false);
 user_pref("zen.view.use-single-toolbar", false);
 user_pref("zen.welcome-screen.seen", true);
+user_pref("browser.translations.automaticallyPopup", false);
+user_pref("signon.rememberSignons", false);
+user_pref("services.sync.engine.passwords", false);
