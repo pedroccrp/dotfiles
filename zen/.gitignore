@@ -1,8 +1,12 @@
 *
 !.gitignore
 !user.js
+!containers.json
+!zen-themes.json
+!zen-keyboard-shortcuts.json
 !chrome/
 chrome/*
 !chrome/userChrome.css
-!chrome/mods/
-!chrome/mods/**
+!chrome/zen-themes.css
+!chrome/zen-themes/
+!chrome/zen-themes/**
