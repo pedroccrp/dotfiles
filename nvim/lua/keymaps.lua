@@ -47,3 +47,5 @@ vim.keymap.set('i', '<A-j>', '<Esc>:move .+1<CR>==gi', { silent = true })
 vim.keymap.set('i', '<A-k>', '<Esc>:move .-2<CR>==gi', { silent = true })
 vim.keymap.set('x', '<A-j>', ":move '>+1<CR>gv-gv", { silent = true })
 vim.keymap.set('x', '<A-k>', ":move '<-2<CR>gv-gv", { silent = true })
+
+vim.keymap.set('n', '<BS>', ':e#<CR>', { silent = true, desc = "Go to alternate buffer"})
