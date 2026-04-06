@@ -1,5 +1,5 @@
-session_name: Digitalize Admin
-start_directory: $HOME/oxeanbits/digitalize-admin
+session_name: Digitalize Front
+start_directory: $HOME/oxeanbits/digitalize-front
 windows:
   - window_name: Editor
     window_index: 1
@@ -14,5 +14,5 @@ windows:
     layout: even-horizontal
     panes:
       - shell_command:
-        - "flutter run -d web-server --web-port 5000"
+        - "flutter run -d web-server --web-port 5001"
       - pane
