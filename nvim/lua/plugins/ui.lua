@@ -20,9 +20,6 @@ use({
 })
 use("stevearc/oil.nvim")
 
-use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
-use({ "roobert/bufferline-cycle-windowless.nvim", requires = { "akinsho/bufferline.nvim" } })
-
 use({ "nvim-lualine/lualine.nvim", requires = { "nvim-tree/nvim-web-devicons", opt = true } })
 
 use({
