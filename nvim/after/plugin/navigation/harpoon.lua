@@ -14,6 +14,7 @@ harpoon:setup({
 })
 
 vim.keymap.set("n", "<leader>a", function()
+  vim.print(string.format("Added file %s to harpoon list", vim.fn.expand('%:t')))
   harpoon:list():add()
 end)
 vim.keymap.set("n", "<C-e>", function()
