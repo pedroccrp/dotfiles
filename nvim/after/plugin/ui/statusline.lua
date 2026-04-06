@@ -87,7 +87,7 @@ local function build_lualine_theme()
   return {
     normal = {
       a = { fg = fg, bg = accent, gui = "bold" },
-      b = { fg = fg, bg = muted, gui = "bold" },
+      b = { fg = fg, bg = info, gui = "bold" },
       c = { fg = fg, bg = "none" },
       x = { fg = fg, bg = "none" },
       y = { fg = fg, bg = "none" },
@@ -95,7 +95,7 @@ local function build_lualine_theme()
     },
     insert = {
       a = { fg = fg, bg = warn, gui = "bold" },
-      b = { fg = fg, bg = muted, gui = "bold" },
+      b = { fg = fg, bg = info, gui = "bold" },
       c = { fg = fg, bg = "none" },
       x = { fg = fg, bg = "none" },
       y = { fg = fg, bg = "none" },
@@ -103,7 +103,7 @@ local function build_lualine_theme()
     },
     visual = {
       a = { fg = fg, bg = error, gui = "bold" },
-      b = { fg = fg, bg = muted, gui = "bold" },
+      b = { fg = fg, bg = info, gui = "bold" },
       c = { fg = fg, bg = "none" },
       x = { fg = fg, bg = "none" },
       y = { fg = fg, bg = "none" },
@@ -111,7 +111,7 @@ local function build_lualine_theme()
     },
     replace = {
       a = { fg = fg, bg = info, gui = "bold" },
-      b = { fg = fg, bg = muted, gui = "bold" },
+      b = { fg = fg, bg = info, gui = "bold" },
       c = { fg = fg, bg = "none" },
       x = { fg = fg, bg = "none" },
       y = { fg = fg, bg = "none" },
@@ -119,7 +119,7 @@ local function build_lualine_theme()
     },
     inactive = {
       a = { fg = muted, bg = "none" },
-      b = { fg = muted, bg = "none" },
+      b = { fg = fg, bg = muted, gui = "bold" },
       c = { fg = muted, bg = "none" },
       x = { fg = muted, bg = "none" },
       y = { fg = muted, bg = "none" },
@@ -188,7 +188,7 @@ local function setup_lualine()
     },
     inactive_sections = {
       lualine_a = {},
-      lualine_b = {},
+      lualine_b = { "filename" },
       lualine_c = {},
       lualine_x = {},
       lualine_y = {},
