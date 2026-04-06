@@ -65,3 +65,6 @@ vim.keymap.set("n", "<leader>fk", function()
     hidden = true,
   })
 end, {})
+vim.keymap.set("n", "<leader>fh", function()
+  builtin.help_tags()
+end, {})
