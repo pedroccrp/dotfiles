@@ -3,7 +3,9 @@ local helpers = require("helpers")
 local navic = helpers.safe_require("nvim-navic")
 local lualine = helpers.safe_require("lualine")
 
-if not navic or not lualine then return end
+if not navic or not lualine then
+  return
+end
 
 local macro_reg = ""
 
@@ -136,66 +138,66 @@ end
 
 local function setup_lualine()
   lualine.setup({
-  options = {
-    icons_enabled = true,
-    theme = build_lualine_theme(),
-    component_separators = { left = "", right = "" },
-    section_separators = { left = "", right = "" },
-    disabled_filetypes = {
-      statusline = {},
-      winbar = {},
-    },
-    ignore_focus = {},
-    always_divide_middle = true,
-    always_show_tabline = true,
-    globalstatus = false,
-    refresh = {
-      statusline = 1000,
-      tabline = 1000,
-      winbar = 1000,
-      refresh_time = 16,
-      events = {
-        "WinEnter",
-        "BufEnter",
-        "BufWritePost",
-        "SessionLoadPost",
-        "FileChangedShellPost",
-        "VimResized",
-        "Filetype",
-        "CursorMoved",
-        "CursorMovedI",
-        "ModeChanged",
+    options = {
+      icons_enabled = true,
+      theme = build_lualine_theme(),
+      component_separators = { left = "", right = "" },
+      section_separators = { left = "", right = "" },
+      disabled_filetypes = {
+        statusline = {},
+        winbar = {},
+      },
+      ignore_focus = {},
+      always_divide_middle = true,
+      always_show_tabline = true,
+      globalstatus = false,
+      refresh = {
+        statusline = 1000,
+        tabline = 1000,
+        winbar = 1000,
+        refresh_time = 16,
+        events = {
+          "WinEnter",
+          "BufEnter",
+          "BufWritePost",
+          "SessionLoadPost",
+          "FileChangedShellPost",
+          "VimResized",
+          "Filetype",
+          "CursorMoved",
+          "CursorMovedI",
+          "ModeChanged",
+        },
       },
     },
-  },
-  sections = {
-    lualine_a = { "mode" },
-    lualine_b = { "filename" },
-    lualine_c = {
-      {
-        navic_location,
-        cond = function()
-          return navic_location() ~= ""
-        end,
-        color = "Normal",
+    sections = {
+      lualine_a = { "mode" },
+      lualine_b = { "filename" },
+      lualine_c = {
+        {
+          navic_location,
+          cond = function()
+            return navic_location() ~= ""
+          end,
+          color = "Normal",
+        },
       },
+      lualine_x = { "searchcount", "selectioncount", macro_recording },
+      lualine_y = { "diagnostics", "diff", "branch", "filetype" },
+      lualine_z = { "location" },
     },
-    lualine_x = { "searchcount", "selectioncount", macro_recording },
-    lualine_y = { "diagnostics", "diff", "branch", "filetype" },
-    lualine_z = { "location" },
-  },
-  inactive_sections = {
-    lualine_a = {},
-    lualine_b = {},
-    lualine_c = {},
-    lualine_x = {},
-    lualine_y = {},
-    lualine_z = {},
-  },
-  tabline = {},
-  winbar = {},
-  inactive_winbar = {},
-  extensions = {},
+    inactive_sections = {
+      lualine_a = {},
+      lualine_b = {},
+      lualine_c = {},
+      lualine_x = {},
+      lualine_y = {},
+      lualine_z = {},
+    },
+    tabline = {},
+    winbar = {},
+    inactive_winbar = {},
+    extensions = {},
   })
 end
 
