@@ -21,7 +21,6 @@ cmp.setup({
     { name = "nvim_lsp" },
     { name = "luasnip" },
     { name = "buffer", keyword_length = 3 },
-    { name = "copilot" },
   },
   mapping = cmp.mapping.preset.insert({
     ["<C-d>"] = cmp.mapping.scroll_docs(-4),
