@@ -1,12 +1,7 @@
 vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(event)
-    local client = vim.lsp.get_client_by_id(event.data.client_id)
     local buffer = event.buf
     local opts = { buffer = buffer }
-
-    if client then
-      client.server_capabilities.semanticTokensProvider = nil
-    end
 
     vim.keymap.set("n", "gl", vim.diagnostic.open_float, opts)
     vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)
