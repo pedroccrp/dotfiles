@@ -172,7 +172,7 @@ local function setup_lualine()
     },
     sections = {
       lualine_a = { "mode" },
-      lualine_b = { "filename" },
+      lualine_b = { { "filename", newfile_status = true, path = 1 } },
       lualine_c = {
         {
           navic_location,
