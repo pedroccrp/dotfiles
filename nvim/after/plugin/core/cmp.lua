@@ -5,7 +5,9 @@ local luasnip = helpers.safe_require("luasnip")
 local luasnip_loaders = helpers.safe_require("luasnip/loaders/from_vscode")
 local lspkind = helpers.safe_require("lspkind")
 
-if not cmp or not luasnip or not luasnip_loaders or not lspkind then return end
+if not cmp or not luasnip or not luasnip_loaders or not lspkind then
+  return
+end
 
 luasnip_loaders.lazy_load()
 vim.opt.completeopt = "menu,menuone,noselect"
@@ -17,9 +19,9 @@ cmp.setup({
     end,
   },
   sources = {
-    { name = "path" },
     { name = "nvim_lsp" },
     { name = "luasnip" },
+    { name = "path" },
     { name = "buffer", keyword_length = 3 },
   },
   mapping = cmp.mapping.preset.insert({
