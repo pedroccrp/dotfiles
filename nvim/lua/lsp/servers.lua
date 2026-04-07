@@ -22,19 +22,6 @@ vim.lsp.config("gdscript", {
   root_markers = { "project.godot", ".git" },
 })
 
-vim.lsp.config("angularls", {
-  cmd = {
-    "ngserver",
-    "--stdio",
-    "--tsProbeLocations",
-    vim.fn.stdpath("data") .. "/mason/packages/angular-language-server/node_modules",
-    "--ngProbeLocations",
-    vim.fn.getcwd(),
-  },
-  root_markers = { "angular.json", "project.json" },
-  filetypes = { "typescript", "html" },
-})
-
 vim.lsp.config("dartls", {
   cmd = { "dart", "language-server", "--protocol=lsp" },
   filetypes = { "dart" },
@@ -44,5 +31,4 @@ vim.lsp.config("dartls", {
 vim.lsp.enable("ruby_lsp")
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("gdscript")
-vim.lsp.enable("angularls")
 vim.lsp.enable("dartls")
