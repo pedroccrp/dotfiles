@@ -34,7 +34,7 @@ end)
 
 -- Format on save specific languages
 vim.api.nvim_create_autocmd("BufWritePre", {
-  pattern = { "*.gd" },
+  pattern = { "*.gd", "*.lua" },
   callback = function(args)
     require("conform").format({ bufnr = args.buf })
   end,

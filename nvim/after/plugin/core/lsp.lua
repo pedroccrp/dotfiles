@@ -1,16 +1,20 @@
 local helpers = require("helpers")
 
-if helpers.is_remote_terminal() then return end
+if helpers.is_remote_terminal() then
+  return
+end
 
 local cmp_nvim_lsp = helpers.safe_require("cmp_nvim_lsp")
 local telescope = helpers.safe_require("telescope")
 
-if not cmp_nvim_lsp or not telescope then return end
+if not cmp_nvim_lsp or not telescope then
+  return
+end
 
 vim.lsp.config("ruby_lsp", {
   cmd = { "ruby", "-S", "ruby-lsp" },
+  filetypes = { "rb" },
 })
-vim.lsp.enable("ruby_lsp")
 
 vim.lsp.config("bashls", {
   filetypes = { "sh", "zsh" },
@@ -22,6 +26,7 @@ vim.lsp.config("lua_ls", {
       diagnostics = { globals = { "vim" } },
     },
   },
+  filetypes = { "lua" },
 })
 
 vim.lsp.config("gdscript", {
@@ -29,7 +34,6 @@ vim.lsp.config("gdscript", {
   filetypes = { "gd", "gdscript", "gdscript3" },
   root_markers = { "project.godot", ".git" },
 })
-vim.lsp.enable("gdscript")
 
 vim.lsp.config("angularls", {
   cmd = {
@@ -41,14 +45,19 @@ vim.lsp.config("angularls", {
     vim.fn.getcwd(),
   },
   root_markers = { "angular.json", "project.json" },
+  filetypes = { "js" },
 })
-vim.lsp.enable("angularls")
 
 vim.lsp.config("dartls", {
   cmd = { "dart", "language-server", "--protocol=lsp" },
   filetypes = { "dart" },
   root_markers = { "pubspec.yaml", ".git" },
 })
+
+vim.lsp.enable("ruby_lsp")
+vim.lsp.enable("lua_ls")
+vim.lsp.enable("gdscript")
+vim.lsp.enable("angularls")
 vim.lsp.enable("dartls")
 
 vim.diagnostic.config({
@@ -85,6 +94,5 @@ vim.api.nvim_create_autocmd("LspAttach", {
   end,
 })
 
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
 vim.lsp.config("*", { capabilities = capabilities })

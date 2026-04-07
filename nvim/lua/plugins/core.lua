@@ -16,7 +16,6 @@ use("L3MON4D3/LuaSnip")
 use("saadparwaiz1/cmp_luasnip")
 use("rafamadriz/friendly-snippets")
 
-use("neovim/nvim-lspconfig")
 use({
   "williamboman/mason.nvim",
   cond = not helpers.is_remote_terminal(),
