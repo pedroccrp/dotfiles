@@ -13,11 +13,11 @@ end
 
 vim.lsp.config("ruby_lsp", {
   cmd = { "ruby", "-S", "ruby-lsp" },
-  filetypes = { "rb" },
+  filetypes = { "ruby", "eruby" },
 })
 
 vim.lsp.config("bashls", {
-  filetypes = { "sh", "zsh" },
+  filetypes = { "sh", "bash", "zsh" },
 })
 
 vim.lsp.config("lua_ls", {
@@ -45,7 +45,7 @@ vim.lsp.config("angularls", {
     vim.fn.getcwd(),
   },
   root_markers = { "angular.json", "project.json" },
-  filetypes = { "js" },
+  filetypes = { "typescript", "html" },
 })
 
 vim.lsp.config("dartls", {
