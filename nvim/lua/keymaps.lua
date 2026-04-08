@@ -5,6 +5,7 @@ vim.keymap.set({ "n", "v" }, "<leader>e", ":", { desc = "Enter command mode" })
 
 vim.keymap.set("n", "<leader>k", ":nohlsearch<CR>", { silent = true, desc = "Clear search highlight" })
 vim.keymap.set("n", "<leader>x", ":!xdg-open %<cr><cr>", { desc = "Open file externally" })
+vim.keymap.set("n", "<leader>Q", ":%bdelete<CR>", { silent = true, desc = "Delete all active buffers" })
 
 vim.keymap.set("n", "yp", ":let @+=expand('%').':'.line('.')<CR>", { silent = true, desc = "Copy file path with line number" })
 
