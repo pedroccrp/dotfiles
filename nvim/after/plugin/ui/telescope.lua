@@ -31,19 +31,27 @@ local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", function()
   builtin.find_files({ hidden = true })
 end, {})
+
 vim.keymap.set("n", "<leader>fb", function()
   builtin.buffers({ hidden = true })
 end, {})
+
 vim.keymap.set("n", "<leader>fr", function()
   require("personal.live-grep-filtered").live_grep_filtered()
 end, {})
-vim.keymap.set("n", "<leader>fk", function()
+
+vim.keymap.set("n", "<leader>fw", function()
   local word = vim.fn.expand("<cword>")
   builtin.live_grep({
     default_text = word,
     hidden = true,
   })
 end, {})
+
+vim.keymap.set("n", "<leader>fk", function()
+  builtin.keymaps({ hidden = true })
+end, {})
+
 vim.keymap.set("n", "<leader>fh", function()
   builtin.help_tags()
 end, {})
