@@ -1,7 +1,9 @@
 local helpers = require("helpers")
 
 local oil = helpers.safe_require("oil")
-if not oil then return end
+if not oil then
+  return
+end
 
 oil.setup({
   -- Oil will take over directory buffers (e.g. `vim .` or `:e src/`)
@@ -207,3 +209,5 @@ oil.setup({
     border = nil,
   },
 })
+
+vim.keymap.set("n", "<leader>o", ":Oil<CR>")
