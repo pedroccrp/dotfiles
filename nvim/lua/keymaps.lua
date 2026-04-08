@@ -7,7 +7,12 @@ vim.keymap.set("n", "<leader>k", ":nohlsearch<CR>", { silent = true, desc = "Cle
 vim.keymap.set("n", "<leader>x", ":!xdg-open %<cr><cr>", { desc = "Open file externally" })
 vim.keymap.set("n", "<leader>Q", ":%bdelete<CR>", { silent = true, desc = "Delete all active buffers" })
 
-vim.keymap.set("n", "yp", ":let @+=expand('%').':'.line('.')<CR>", { silent = true, desc = "Copy file path with line number" })
+vim.keymap.set(
+  "n",
+  "yp",
+  ":let @+=expand('%').':'.line('.')<CR>",
+  { silent = true, desc = "Copy file path with line number" }
+)
 
 vim.keymap.set("", "gf", ":edit <cfile><CR>", { silent = true, desc = "Open file under cursor (create if missing)" })
 
@@ -20,7 +25,12 @@ vim.keymap.set("v", "Y", "myY`y", { silent = true, desc = "Yank line without mov
 vim.keymap.set("n", "x", '"_x', { desc = "Delete without affecting registers" })
 
 vim.keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true, desc = "Move up by display line" })
-vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true, desc = "Move down by display line" })
+vim.keymap.set(
+  "n",
+  "j",
+  "v:count == 0 ? 'gj' : 'j'",
+  { expr = true, silent = true, desc = "Move down by display line" }
+)
 
 vim.keymap.set("v", "p", '"_dP', { silent = true, desc = "Paste without overwriting register" })
 
