@@ -8,3 +8,4 @@ user_pref("zen.welcome-screen.seen", true);
 user_pref("browser.translations.automaticallyPopup", false);
 user_pref("signon.rememberSignons", false);
 user_pref("services.sync.engine.passwords", false);
+user_pref("zen.ctrlTab.show-pending-tabs", true);
