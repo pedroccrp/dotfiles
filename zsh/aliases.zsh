@@ -15,7 +15,6 @@ alias gcB='git checkout -B'
 alias gcp="git cherry-pick"
 alias gap="git add -p"
 alias gss="git status --short"
-alias gds="git diff --stat"
 alias gcm="git commit"
 alias gpp="git push origin HEAD"
 alias gpl="git pull"
