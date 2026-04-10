@@ -17,4 +17,11 @@ git config --global core.editor "nvim"
 
 git config --global pull.rebase true
 
+echo "Setting up smtp for git..."
+
+git config --global sendemail.smtpserver smtp.gmail.com
+git config --global sendemail.smtpuser pontescpedro@gmail.com
+git config --global sendemail.smtpserverport 465
+git config --global sendemail.smtpencryption ssl
+
 echo "Done."

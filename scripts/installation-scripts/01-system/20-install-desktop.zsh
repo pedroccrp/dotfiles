@@ -96,6 +96,9 @@ dev_tools=(
   python-setuptools # Needed for indicator-sound-switcher
   python-build # Needed for some libs
   stylua
+  perl-io-socket-ssl # Needed for git send-email
+  perl-authen-sasl # Needed for git send-email
+  perl-net-smtp-ssl # Needed for git send-email
 )
 
 languages=()
