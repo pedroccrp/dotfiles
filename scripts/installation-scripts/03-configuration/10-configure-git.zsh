@@ -6,7 +6,7 @@ echo "Logging into gh..."
 gh auth login -p ssh -h GitHub.com
 
 git config --global user.email "pontescpedro@gmail.com"
-git config --global user.name "pedroccrp"
+git config --global user.name "Pedro Pontes"
 git config --global core.editor "nvim"
 
 git config --global pull.rebase true
