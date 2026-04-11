@@ -99,6 +99,7 @@ dev_tools=(
   perl-io-socket-ssl # Needed for git send-email
   perl-authen-sasl # Needed for git send-email
   perl-net-smtp-ssl # Needed for git send-email
+  codespell # Linux Kernel development
 )
 
 languages=()
