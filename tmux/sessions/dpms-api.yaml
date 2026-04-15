@@ -5,14 +5,18 @@ windows:
     window_index: 1
     panes:
       - nvim
-  - window_name: Server/Console
+  - window_name: AI
     window_index: 2
+    panes:
+      - pane
+  - window_name: Server/Console
+    window_index: 3
     layout: even-horizontal
     panes:
       - pane
       - pane
   - window_name: Helpers
-    window_index: 3
+    window_index: 4
     start_directory: $HOME/oxeanbits/dpms-helpers
     panes:
       - pane
