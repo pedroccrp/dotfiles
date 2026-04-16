@@ -13,12 +13,27 @@ telescope.setup({
       },
     },
     file_ignore_patterns = {
-      "^bin/",
-      "^obj/",
-      "/bin/",
-      "/obj/",
-      "^.git/",
-      "/.git/",
+      "node_modules",
+      "log",
+      "tmp",
+      "vendor",
+    },
+    vimgrep_arguments = {
+      "rg",
+      "--color=never",
+      "--no-heading",
+      "--with-filename",
+      "--line-number",
+      "--column",
+      "--smart-case",
+
+      "--glob=!node_modules/*",
+      "--glob=!log/*",
+      "--glob=!tmp/*",
+      "--glob=!vendor/*",
+      "--glob=!*.log",
+
+      "--max-filesize=1M",
     },
   },
 })
