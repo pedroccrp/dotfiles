@@ -100,6 +100,8 @@ dev_tools=(
   perl-authen-sasl # Needed for git send-email
   perl-net-smtp-ssl # Needed for git send-email
   codespell # Linux Kernel development
+  man-db
+  man-pages
 )
 
 languages=()
