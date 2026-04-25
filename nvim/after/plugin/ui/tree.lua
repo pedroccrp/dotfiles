@@ -7,7 +7,7 @@ end
 
 nvim_tree.setup({
   git = {
-    ignore = false,
+    ignore = true,
   },
   renderer = {
     highlight_opened_files = "none",
@@ -27,7 +27,15 @@ nvim_tree.setup({
     },
   },
   filters = {
-    custom = { ".gd.uid" },
+    custom = {
+      "\\.gd.uid$",
+      "\\.cmd$",
+      "\\.o$",
+      "\\.ko$",
+      "\\.mod$",
+      "\\.order$",
+      "\\.symvers$",
+    },
   },
 })
 
