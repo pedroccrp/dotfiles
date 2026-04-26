@@ -9,3 +9,4 @@ user_pref("browser.translations.automaticallyPopup", false);
 user_pref("signon.rememberSignons", false);
 user_pref("services.sync.engine.passwords", false);
 user_pref("zen.ctrlTab.show-pending-tabs", true);
+user_pref("accessibility.typeaheadfind", false);
