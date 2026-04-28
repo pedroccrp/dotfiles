@@ -37,7 +37,7 @@ local function apply_wal_highlights()
     local bg = "none"
     local bg_color = wal and wal.background or fallback_palette.background
     local fg = wal and wal.foreground or fallback_palette.foreground
-    local muted = wal and wal.muted or fallback_palette.muted
+    local muted = wal and (wal.muted_text or wal.muted) or fallback_palette.muted
     local accent = wal and wal.accent or fallback_palette.accent
     local warn = wal and wal.warn or fallback_palette.warn
     local error = fallback_palette.error

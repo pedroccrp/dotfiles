@@ -75,51 +75,109 @@ local function load_wal_derived()
   return read_json(vim.fn.expand("~/.cache/wal/colors-derived.json"))
 end
 
+local function hex_to_rgb(hex)
+  local value = (hex or "#000000"):gsub("#", "")
+  if #value ~= 6 then
+    return { 0, 0, 0 }
+  end
+  local r = tonumber(value:sub(1, 2), 16) or 0
+  local g = tonumber(value:sub(3, 4), 16) or 0
+  local b = tonumber(value:sub(5, 6), 16) or 0
+  return {
+    r / 255,
+    g / 255,
+    b / 255,
+  }
+end
+
+local function luminance(rgb)
+  local function adjust(c)
+    if c <= 0.03928 then
+      return c / 12.92
+    end
+    return ((c + 0.055) / 1.055) ^ 2.4
+  end
+
+  local r = adjust(rgb[1])
+  local g = adjust(rgb[2])
+  local b = adjust(rgb[3])
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b
+end
+
+local function contrast_ratio(hex1, hex2)
+  local l1 = luminance(hex_to_rgb(hex1)) + 0.05
+  local l2 = luminance(hex_to_rgb(hex2)) + 0.05
+  if l1 > l2 then
+    return l1 / l2
+  end
+  return l2 / l1
+end
+
+local function readable_on_color(bg, preferred)
+  local min_ratio = 4.5
+  if preferred and contrast_ratio(preferred, bg) >= min_ratio then
+    return preferred
+  end
+
+  local white = "#ffffff"
+  local black = "#000000"
+  if contrast_ratio(white, bg) >= contrast_ratio(black, bg) then
+    return white
+  end
+  return black
+end
+
 local function build_lualine_theme()
   local wal = load_wal_derived()
   local fg = wal and wal.foreground or "#e0def4"
   local accent = wal and wal.accent or "#9ccfd8"
-  local muted = wal and wal.muted or "#6e6a86"
+  local muted = wal and (wal.muted_text or wal.muted) or "#6e6a86"
+  local muted_ui = wal and wal.muted or "#6e6a86"
   local warn = wal and wal.warn or "#f6c177"
   local error = wal and wal.urgent or "#eb6f92"
   local info = wal and wal.secondary or "#c4a7e7"
+  local on_accent = readable_on_color(accent, wal and wal.on_accent)
+  local on_warn = readable_on_color(warn, wal and wal.on_warn)
+  local on_error = readable_on_color(error, wal and wal.on_urgent)
+  local on_info = readable_on_color(info, wal and wal.on_secondary)
+  local on_muted = readable_on_color(muted_ui, wal and wal.on_muted)
 
   return {
     normal = {
-      a = { fg = fg, bg = accent, gui = "bold" },
-      b = { fg = fg, bg = info, gui = "bold" },
+      a = { fg = on_accent, bg = accent, gui = "bold" },
+      b = { fg = on_info, bg = info, gui = "bold" },
       c = { fg = fg, bg = "none" },
       x = { fg = fg, bg = "none" },
       y = { fg = fg, bg = "none" },
-      z = { fg = fg, bg = accent, gui = "bold" },
+      z = { fg = on_accent, bg = accent, gui = "bold" },
     },
     insert = {
-      a = { fg = fg, bg = warn, gui = "bold" },
-      b = { fg = fg, bg = info, gui = "bold" },
+      a = { fg = on_warn, bg = warn, gui = "bold" },
+      b = { fg = on_info, bg = info, gui = "bold" },
       c = { fg = fg, bg = "none" },
       x = { fg = fg, bg = "none" },
       y = { fg = fg, bg = "none" },
-      z = { fg = fg, bg = warn, gui = "bold" },
+      z = { fg = on_warn, bg = warn, gui = "bold" },
     },
     visual = {
-      a = { fg = fg, bg = error, gui = "bold" },
-      b = { fg = fg, bg = info, gui = "bold" },
+      a = { fg = on_error, bg = error, gui = "bold" },
+      b = { fg = on_info, bg = info, gui = "bold" },
       c = { fg = fg, bg = "none" },
       x = { fg = fg, bg = "none" },
       y = { fg = fg, bg = "none" },
-      z = { fg = fg, bg = error, gui = "bold" },
+      z = { fg = on_error, bg = error, gui = "bold" },
     },
     replace = {
-      a = { fg = fg, bg = info, gui = "bold" },
-      b = { fg = fg, bg = info, gui = "bold" },
+      a = { fg = on_info, bg = info, gui = "bold" },
+      b = { fg = on_info, bg = info, gui = "bold" },
       c = { fg = fg, bg = "none" },
       x = { fg = fg, bg = "none" },
       y = { fg = fg, bg = "none" },
-      z = { fg = fg, bg = info, gui = "bold" },
+      z = { fg = on_info, bg = info, gui = "bold" },
     },
     inactive = {
       a = { fg = muted, bg = "none" },
-      b = { fg = fg, bg = muted, gui = "bold" },
+      b = { fg = on_muted, bg = muted_ui, gui = "bold" },
       c = { fg = muted, bg = "none" },
       x = { fg = muted, bg = "none" },
       y = { fg = muted, bg = "none" },
