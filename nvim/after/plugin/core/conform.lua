@@ -1,7 +1,9 @@
 local helpers = require("helpers")
 
 local conform = helpers.safe_require("conform")
-if not conform then return end
+if not conform then
+  return
+end
 
 conform.setup({
   formatters_by_ft = {
@@ -36,6 +38,6 @@ end)
 vim.api.nvim_create_autocmd("BufWritePre", {
   pattern = { "*.gd", "*.lua" },
   callback = function(args)
-    require("conform").format({ bufnr = args.buf })
+    conform.format({ bufnr = args.buf })
   end,
 })
