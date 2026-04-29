@@ -31,3 +31,14 @@ setup("dartls", {
   cmd = { "dart", "language-server", "--protocol=lsp" },
   root_markers = { "pubspec.yaml", ".git" },
 })
+
+setup("kotlin_lsp", {
+  filetypes = { "kotlin" },
+  root_markers = {
+    "settings.gradle.kts",
+    "settings.gradle",
+    "build.gradle.kts",
+    "build.gradle",
+    ".git",
+  },
+})
