@@ -42,3 +42,8 @@ setup("kotlin_lsp", {
     ".git",
   },
 })
+
+setup("rust_analyzer", {
+  filetypes = { "rust" },
+  root_markers = { "Cargo.toml", ".git" },
+})
