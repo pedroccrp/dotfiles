@@ -108,8 +108,8 @@ languages=()
 
 fonts=(
   ttf-firacode-nerd
-  noto-fonts-cjk
-  noto-fonts-emoji
+  noto-fonts-cjk # Ensure Japanese/Chinese glyphs
+  noto-fonts-emoji # Ensure emojis exist
 )
 
 media=(
