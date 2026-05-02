@@ -35,7 +35,7 @@ sync_wal_templates() {
 
 run_pywal() {
 	if command -v wal >/dev/null 2>&1; then
-		wal -i "$wallpaper_path" -n
+		wal -i "$wallpaper_path" -n -s -t
 	else
 		printf '%s\n' "pywal (wal) not found. Skipping color generation."
 	fi
