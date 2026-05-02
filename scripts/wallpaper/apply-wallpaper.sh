@@ -86,6 +86,31 @@ reload_apps() {
 		fi
 	fi
 
+	if command -v kitty >/dev/null 2>&1 && pgrep -x kitty >/dev/null 2>&1; then
+		kitty_applied=false
+
+		if [ -n "${KITTY_LISTEN_ON:-}" ]; then
+			if kitty @ --to "$KITTY_LISTEN_ON" set-colors --all --configured "$wal_cache_dir/colors-kitty.conf" >/dev/null 2>&1; then
+				kitty_applied=true
+			else
+				printf '%s\n' "kitty live color reload failed (socket: $KITTY_LISTEN_ON)" >&2
+			fi
+		fi
+
+		for socket_path in /tmp/kitty-"$USER"-*; do
+			[ -S "$socket_path" ] || continue
+			if kitty @ --to "unix:$socket_path" set-colors --all --configured "$wal_cache_dir/colors-kitty.conf" >/dev/null 2>&1; then
+				kitty_applied=true
+			else
+				printf '%s\n' "kitty live color reload failed (socket: unix:$socket_path)" >&2
+			fi
+		done
+
+		if [ "$kitty_applied" = false ]; then
+			printf '%s\n' "kitty live color reload skipped: no reachable kitty sockets" >&2
+		fi
+	fi
+
 	if command -v makoctl >/dev/null 2>&1 && pgrep -x mako >/dev/null 2>&1; then
 		makoctl reload >/dev/null 2>&1 || true
 	fi
