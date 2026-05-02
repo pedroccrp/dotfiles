@@ -10,13 +10,23 @@ setup("ruby_lsp", {
 })
 
 setup("bashls", {
+  cmd = { "bash-language-server", "start" },
   filetypes = { "sh", "bash", "zsh" },
 })
 
 setup("lua_ls", {
+  cmd = { "lua-language-server" },
+  filetypes = { "lua" },
+  root_markers = {
+    ".luarc.json",
+    ".luarc.jsonc",
+    ".git",
+  },
   settings = {
     Lua = {
-      diagnostics = { globals = { "vim" } },
+      diagnostics = {
+        globals = { "vim" },
+      },
     },
   },
 })
@@ -29,10 +39,15 @@ setup("gdscript", {
 
 setup("dartls", {
   cmd = { "dart", "language-server", "--protocol=lsp" },
-  root_markers = { "pubspec.yaml", ".git" },
+  filetypes = { "dart" },
+  root_markers = {
+    "pubspec.yaml",
+    ".git",
+  },
 })
 
 setup("kotlin_lsp", {
+  cmd = { "kotlin-lsp" },
   filetypes = { "kotlin" },
   root_markers = {
     "settings.gradle.kts",
@@ -44,6 +59,19 @@ setup("kotlin_lsp", {
 })
 
 setup("rust_analyzer", {
+  cmd = { "rust-analyzer" },
   filetypes = { "rust" },
   root_markers = { "Cargo.toml", ".git" },
+  settings = {
+    ["rust-analyzer"] = {
+      cargo = {
+        buildScripts = {
+          enable = true,
+        },
+      },
+      procMacro = {
+        enable = true,
+      },
+    },
+  },
 })
