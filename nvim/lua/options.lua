@@ -1,3 +1,7 @@
+-- Prevent startup blink when wal colors load (colors.lua applies correct colors later)
+vim.opt.background = "dark"
+vim.api.nvim_set_hl(0, "Normal", { fg = "#e0def4", bg = "none" })
+
 vim.opt.number = true
 vim.opt.relativenumber = true
 
