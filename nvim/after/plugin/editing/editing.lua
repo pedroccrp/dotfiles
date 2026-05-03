@@ -14,7 +14,7 @@ nvim_autopairs.setup()
 
 vim.api.nvim_create_autocmd("TextYankPost", {
   desc = "Highlight when yanking text",
-  group = vim.api.nvim_create_augroup("hihlight_yank", { clear = true }),
+  group = vim.api.nvim_create_augroup("highlight_yank", { clear = true }),
   callback = function()
     vim.highlight.on_yank({ timeout = 100 })
   end,
