@@ -1,5 +1,6 @@
 local helpers = require("helpers")
 
+-- Fallback colorscheme when wal colors aren't set up
 vim.cmd("colorscheme default")
 
 local fallback_palette = {
