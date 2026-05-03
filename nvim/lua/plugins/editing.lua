@@ -10,14 +10,4 @@ use({
 })
 
 use("windwp/nvim-autopairs")
-use({
-  "windwp/nvim-ts-autotag",
-  ft = {
-    "html",
-    "javascriptreact",
-    "typescriptreact",
-    "vue",
-    "svelte",
-    "xml",
-  },
-})
+use("windwp/nvim-ts-autotag")
