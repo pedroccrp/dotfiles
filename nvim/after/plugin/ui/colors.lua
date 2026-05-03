@@ -82,6 +82,9 @@ local function apply_wal_highlights()
     vim.api.nvim_set_hl(0, "Comment", { fg = muted, bg = bg })
     vim.api.nvim_set_hl(0, "Constant", { fg = warn, bg = bg })
     vim.api.nvim_set_hl(0, "Number", { fg = warn, bg = bg })
+
+    local on_accent = wal and wal.on_accent or fg
+    vim.api.nvim_set_hl(0, "YankHighlight", { fg = on_accent, bg = accent, bold = true })
 end
 
 local wal_path = vim.fn.expand("~/.cache/wal/nvim.lua")
