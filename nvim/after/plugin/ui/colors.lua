@@ -45,7 +45,6 @@ local function apply_wal_highlights()
     local ok = wal and wal.secondary or fallback_palette.ok
     local ui_bg = wal and wal.ui_bg or fallback_palette.ui_bg
     local ui_border = wal and wal.ui_border or fallback_palette.ui_border
-    local colorcolumn = ui_border
     local type_color = wal and wal.secondary or fallback_palette.type
 
     vim.api.nvim_set_hl(0, "Normal", { fg = fg, bg = bg })
@@ -58,7 +57,8 @@ local function apply_wal_highlights()
     vim.api.nvim_set_hl(0, "TabLine", { fg = muted, bg = bg })
     vim.api.nvim_set_hl(0, "TabLineFill", { fg = muted, bg = bg })
     vim.api.nvim_set_hl(0, "WinSeparator", { fg = muted, bg = bg })
-    vim.api.nvim_set_hl(0, "ColorColumn", { bg = colorcolumn })
+    vim.api.nvim_set_hl(0, "ColorColumn", { bg = muted })
+
     vim.api.nvim_set_hl(0, "Pmenu", { fg = fg, bg = ui_bg })
     vim.api.nvim_set_hl(0, "PmenuSel", { fg = fg, bg = ui_border, bold = true })
     vim.api.nvim_set_hl(0, "PmenuSbar", { bg = ui_bg })
