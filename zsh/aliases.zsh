@@ -8,7 +8,7 @@ alias pbpaste="wl-paste"
 alias vim=nvim
 alias v=nvim
 
-alias gfa="git fetch --all --prune --prune-tags --tags"
+alias gfa="git fetch --all --prune --tags"
 alias gco="git checkout"
 alias gcb='git checkout -b'
 alias gcB='git checkout -B'
