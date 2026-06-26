@@ -2,8 +2,10 @@ alias reload="source $HOME/.zshrc"
 
 alias la="ls -lAh"
 
-alias pbcopy="wl-copy"
-alias pbpaste="wl-paste"
+if [[ "$(uname)" != "Darwin" ]]; then
+  alias pbcopy="wl-copy"
+  alias pbpaste="wl-paste"
+fi
 
 alias vim=nvim
 alias v=nvim

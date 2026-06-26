@@ -16,6 +16,8 @@ if [ -f /usr/share/autojump/autojump.zsh ]; then
   source /usr/share/autojump/autojump.zsh
 elif [ -f /etc/profile.d/autojump.sh ]; then
   source /etc/profile.d/autojump.sh
+elif [ -f /opt/homebrew/etc/profile.d/autojump.sh ]; then
+  source /opt/homebrew/etc/profile.d/autojump.sh
 fi
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completion ~~~~~~~~~~~~~~~~~~~~~~~~~~~
