@@ -13,7 +13,6 @@ if [[ "${1:-}" == "--with-heavy" || "${1:-}" == "-y" ]]; then
 fi
 
 light_packages=(
-  asdf-vm
   autojump
   indicator-sound-switcher
   scrcpy

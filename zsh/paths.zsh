@@ -1,5 +1,4 @@
 path=(
-  ${ASDF_DATA_DIR:-$HOME/.asdf}/shims
   $path
   /opt/android-sdk/emulator
   $HOME/.local/bin
@@ -21,7 +20,7 @@ typeset -U path fpath
 path=($^path(N-/))
 fpath=($^fpath(N-/))
 
-# The default java path is messing with asdf java
+# The default java path was messing with asdf java (didn't check after changing to mise)
 path=(${path:#/usr/lib/jvm/default/bin})
 
 export path

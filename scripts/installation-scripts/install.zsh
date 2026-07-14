@@ -19,8 +19,6 @@ Options:
   --dry-run              print what would run
   --link                 create config symlinks (default: off)
   --no-link
-  --with-asdf            run asdf plugin setup (default: off)
-  --without-asdf
   --with-android         install android sdk (default: off)
   --without-android
   --with-opencode        install opencode (default: off)
@@ -33,7 +31,7 @@ Options:
   -h, --help             show this help
 
 Examples:
-  zsh scripts/installation-scripts/install.zsh --target arch --profile desktop --gpu nvidia --link --with-asdf --with-opencode
+  zsh scripts/installation-scripts/install.zsh --target arch --profile desktop --gpu nvidia --link --with-opencode
   zsh scripts/installation-scripts/install.zsh --target arch --profile desktop --link --with-heavy-aur
   zsh scripts/installation-scripts/install.zsh --target ubuntu --profile server --link
 
@@ -64,7 +62,6 @@ gpu="none"
 
 with_android=false
 with_opencode=false
-with_asdf=false
 with_ruby_lsp=false
 with_heavy_aur=false
 
@@ -103,12 +100,6 @@ while (( $# )); do
       ;;
     --without-opencode)
       with_opencode=false
-      ;;
-    --with-asdf)
-      with_asdf=true
-      ;;
-    --without-asdf)
-      with_asdf=false
       ;;
     --with-ruby-lsp)
       with_ruby_lsp=true
@@ -182,7 +173,7 @@ _section "Plan"
 _say "==> dotfiles=$DOTFILES"
 _say "==> target=$target profile=$profile gpu=$gpu"
 _say "==> link=$do_link dry_run=$dry_run yes=$assume_yes"
-_say "==> asdf=$with_asdf android=$with_android opencode=$with_opencode ruby_lsp=$with_ruby_lsp heavy_aur=$with_heavy_aur"
+_say "==> android=$with_android opencode=$with_opencode ruby_lsp=$with_ruby_lsp heavy_aur=$with_heavy_aur"
 
 if [[ "$target" == "ubuntu" ]]; then
   _section "Ubuntu/Debian"
@@ -212,10 +203,6 @@ if [[ "$profile" == "desktop" || "$profile" == "laptop" ]]; then
     _run_zsh "$DOTFILES/scripts/installation-scripts/02-packages/10-install-aur.zsh" --with-heavy
   else
     _run_zsh "$DOTFILES/scripts/installation-scripts/02-packages/10-install-aur.zsh"
-  fi
-
-  if $with_asdf; then
-    _run_zsh "$DOTFILES/scripts/installation-scripts/02-packages/20-install-asdf-plugins.zsh"
   fi
 
   _run_zsh "$DOTFILES/scripts/installation-scripts/02-packages/30-install-shell-plugins.zsh"

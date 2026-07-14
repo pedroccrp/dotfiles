@@ -29,3 +29,8 @@ else
     compinit -C -d ~/.zcompdump
     touch ~/.zcompdump
 fi
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Mise ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+eval "$(mise activate zsh)"
+eval "$(mise completion zsh)"

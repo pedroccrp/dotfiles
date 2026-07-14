@@ -9,7 +9,7 @@ link() {
     local dest="$2"
     local parent
     parent=$(dirname "$dest")
-    
+
     mkdir -p "$parent"
     [[ -e "$dest" || -L "$dest" ]] && rm -rf "$dest"
     ln -sf "$src" "$dest"
@@ -31,3 +31,4 @@ link "$DOTFILES/colors/default/gtk-4.0-settings.ini" "$HOME/.config/gtk-4.0/sett
 link "$DOTFILES/opencode/opencode.jsonc" "$HOME/.config/opencode/opencode.jsonc"
 link "$DOTFILES/opencode/AGENTS.md" "$HOME/.config/opencode/AGENTS.md"
 link "$DOTFILES/opencode/agents" "$HOME/.config/opencode/agents"
+link "$DOTFILES/mise/config.toml" "$HOME/.config/mise/config.toml"

@@ -181,8 +181,7 @@ run_installation_scripts() {
   local profile="$1"
   local gpu="$2"
   local with_heavy_aur="$3"
-  local with_asdf="$4"
-  local do_link="$5"
+  local do_link="$4"
   local step_failed=0
 
   if ((EUID != 0)); then
@@ -210,12 +209,6 @@ run_installation_scripts() {
       _update_packages_ui \
         "Installing AUR packages" \
         zsh "$DOTFILES/scripts/installation-scripts/02-packages/10-install-aur.zsh" || step_failed=1
-    fi
-
-    if [[ "$with_asdf" == "true" ]]; then
-      _update_packages_ui \
-        "Configuring asdf plugins" \
-        zsh "$DOTFILES/scripts/installation-scripts/02-packages/20-install-asdf-plugins.zsh" || step_failed=1
     fi
 
     _update_packages_ui \
@@ -276,7 +269,6 @@ update_system() {
   local profile="desktop"
   local gpu="none"
   local with_heavy_aur="false"
-  local with_asdf="false"
   local with_aur_updates="false"
   local with_timeshift="false"
   local do_link="true"
@@ -295,9 +287,6 @@ update_system() {
       --with-heavy-aur)
         with_heavy_aur="true"
         ;;
-      --with-asdf)
-        with_asdf="true"
-        ;;
       --with-aur-updates)
         with_aur_updates="true"
         ;;
@@ -309,7 +298,7 @@ update_system() {
         ;;
       *)
         echo "Unknown option: $1"
-        echo "Usage: update_system [--profile desktop|laptop|server|minimal] [--gpu nvidia|none] [--with-heavy-aur] [--with-asdf] [--with-aur-updates] [--with-timeshift] [--no-link]"
+        echo "Usage: update_system [--profile desktop|laptop|server|minimal] [--gpu nvidia|none] [--with-heavy-aur] [--with-aur-updates] [--with-timeshift] [--no-link]"
         return 1
         ;;
     esac
@@ -347,7 +336,7 @@ update_system() {
     _run_update_step "Updating AUR packages" update_yay_packages || update_failed=1
   fi
   _run_update_step "Initializing completions" compinit || update_failed=1
-  run_installation_scripts "$profile" "$gpu" "$with_heavy_aur" "$with_asdf" "$do_link" || update_failed=1
+  run_installation_scripts "$profile" "$gpu" "$with_heavy_aur" "$do_link" || update_failed=1
 
   _print_update_results
 
@@ -364,6 +353,5 @@ update_system_full() {
     --profile desktop \
     --gpu nvidia \
     --with-heavy-aur \
-    --with-asdf \
     "$@"
 }

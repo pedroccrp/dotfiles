@@ -12,7 +12,7 @@ zsh scripts/installation-scripts/install.zsh \
   --profile desktop \
   --gpu none \
   --link \
-  --with-asdf \
+
   --with-opencode
 ```
 
@@ -24,7 +24,7 @@ zsh scripts/installation-scripts/install.zsh \
   --profile desktop \
   --gpu nvidia \
   --link \
-  --with-asdf \
+
   --with-opencode
 ```
 
@@ -64,7 +64,6 @@ exec zsh
 - `--profile` `desktop|laptop|server|minimal`
 - `--gpu` `nvidia|none`
 - `--link` / `--no-link` (default is `--no-link`)
-- `--with-asdf` / `--without-asdf`
 - `--with-android` / `--without-android`
 - `--with-opencode` / `--without-opencode`
 - `--with-ruby-lsp` / `--without-ruby-lsp`
@@ -79,7 +78,6 @@ Arch scripts (`scripts/installation-scripts/`):
 - `01-system/10-install-core.zsh`: core packages (`neovim` and optional NVIDIA bits)
 - `01-system/20-install-desktop.zsh`: main pacman package sets for workstation profiles
 - `02-packages/10-install-aur.zsh`: AUR packages (light by default, heavy with `--with-heavy`)
-- `02-packages/20-install-asdf-plugins.zsh`: add asdf plugins and set them to `system`
 - `02-packages/30-install-shell-plugins.zsh`: install zsh plugin packages
 - `03-configuration/10-configure-git.zsh`: `gh auth login` + global git config (personal)
 - `03-configuration/20-configure-services.zsh`: services and defaults (bluetooth/docker/ly/ufw)
