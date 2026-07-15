@@ -103,6 +103,7 @@ dev_tools=(
   man-db
   man-pages
   mise
+  git-delta
 )
 
 languages=()
