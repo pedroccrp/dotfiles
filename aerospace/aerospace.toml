@@ -1,0 +1,59 @@
+config-version = 2
+start-at-login = true
+auto-reload-config = true
+
+default-root-container-layout = 'tiles'
+default-root-container-orientation = 'auto'
+
+[gaps]
+inner.horizontal = 5
+inner.vertical = 5
+outer.left = 8
+outer.bottom = 8
+outer.top = 8
+outer.right = 8
+
+persistent-workspaces = ["1", "2", "3", "4"]
+
+[mode.main.binding]
+# App launching
+cmd-enter = 'exec-and-forget open -na kitty'
+
+# Window operations
+cmd-shift-r = 'reload-config'
+
+# Focus (vim-style)
+cmd-h = 'focus left'
+cmd-j = 'focus down'
+cmd-k = 'focus up'
+cmd-l = 'focus right'
+
+# Move window
+cmd-shift-h = 'move left'
+cmd-shift-j = 'move down'
+cmd-shift-k = 'move up'
+cmd-shift-l = 'move right'
+
+# Workspace switching
+cmd-1 = 'workspace 1'
+cmd-2 = 'workspace 2'
+cmd-3 = 'workspace 3'
+cmd-4 = 'workspace 4'
+
+# Move window to workspace
+cmd-shift-1 = 'move-node-to-workspace 1'
+cmd-shift-2 = 'move-node-to-workspace 2'
+cmd-shift-3 = 'move-node-to-workspace 3'
+cmd-shift-4 = 'move-node-to-workspace 4'
+
+# Screenshot
+cmd-shift-s = 'exec-and-forget screencapture -i -p'
+
+# Enter service mode
+cmd-semicolon = 'mode service'
+
+[mode.service.binding]
+f = ['fullscreen', 'mode main']
+v = ['layout floating tiling', 'mode main']
+r = ['flatten-workspace-tree', 'mode main']
+esc = 'mode main'
