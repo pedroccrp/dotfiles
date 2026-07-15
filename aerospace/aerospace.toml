@@ -19,7 +19,6 @@ alt-enter = 'exec-and-forget open -na kitty'
 alt-b = 'exec-and-forget open -na "Google Chrome"'
 
 # Window operations
-alt-q = 'close'
 alt-v = 'layout floating tiling'
 alt-f = 'fullscreen'
 alt-r = 'reload-config'
