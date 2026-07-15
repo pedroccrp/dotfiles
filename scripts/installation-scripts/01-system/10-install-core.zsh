@@ -8,7 +8,6 @@ fi
 
 packages=(
   neovim
-  mise
 )
 
 gpu="${1:-none}"

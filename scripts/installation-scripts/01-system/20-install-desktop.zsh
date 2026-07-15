@@ -102,6 +102,7 @@ dev_tools=(
   codespell # Linux Kernel development
   man-db
   man-pages
+  mise
 )
 
 languages=()
