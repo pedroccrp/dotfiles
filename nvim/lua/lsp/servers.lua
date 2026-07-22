@@ -47,14 +47,15 @@ setup("dartls", {
 })
 
 setup("kotlin_lsp", {
-  cmd = { "kotlin-lsp" },
+  cmd = { "intellij-server", "--stdio" },
   filetypes = { "kotlin" },
   root_markers = {
-    "settings.gradle.kts",
     "settings.gradle",
-    "build.gradle.kts",
+    "settings.gradle.kts",
+    "pom.xml",
     "build.gradle",
-    ".git",
+    "build.gradle.kts",
+    "workspace.json",
   },
 })
 
