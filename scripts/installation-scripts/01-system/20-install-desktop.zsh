@@ -104,6 +104,7 @@ dev_tools=(
   man-pages
   mise
   git-delta
+  tree-sitter-cli
 )
 
 languages=()
