@@ -1,0 +1,17 @@
+hl.config({
+	input = {
+		kb_layout = "br_custom",
+		kb_variant = "abnt2_custom",
+		kb_options = "caps:escape",
+		sensitivity = -0.3,
+		accel_profile = "flat",
+		follow_mouse = 1,
+		mouse_refocus = false,
+		numlock_by_default = true,
+		touchpad = {
+			natural_scroll = true,
+		},
+	},
+})
+
+hl.device({ name = "ven_04f3:00-04f3:3259-touchpad", sensitivity = 1.0 })
