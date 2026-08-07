@@ -49,14 +49,35 @@ setup("dartls", {
 setup("kotlin_lsp", {
   cmd = { "intellij-server", "--stdio" },
   filetypes = { "kotlin" },
-  root_markers = {
-    "settings.gradle",
-    "settings.gradle.kts",
-    "pom.xml",
-    "build.gradle",
-    "build.gradle.kts",
-    "workspace.json",
-  },
+  root_dir = function(bufnr, on_dir)
+    local filename = vim.api.nvim_buf_get_name(bufnr)
+
+    local root = vim.fs.root(filename, {
+      "settings.gradle.kts",
+      "settings.gradle",
+    })
+
+    while root do
+      local parent = vim.fs.dirname(root)
+
+      if parent == root then
+        break
+      end
+
+      local parent_settings = vim.uv.fs_stat(parent .. "/settings.gradle.kts")
+        or vim.uv.fs_stat(parent .. "/settings.gradle")
+
+      if not parent_settings then
+        break
+      end
+
+      root = parent
+    end
+
+    if root then
+      on_dir(root)
+    end
+  end,
 })
 
 setup("rust_analyzer", {
