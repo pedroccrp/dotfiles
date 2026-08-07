@@ -20,4 +20,6 @@ sudo apt install -y tmux
 
 sudo apt install -y wireguard
 
+sudo apt install -y apache2-utils
+
 echo "Done!"
