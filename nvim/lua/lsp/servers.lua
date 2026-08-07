@@ -112,3 +112,36 @@ setup("ts_ls", {
     ".git",
   },
 })
+
+setup("yamlls", {
+  cmd = { "yaml-language-server", "--stdio" },
+
+  filetypes = {
+    "yaml",
+    "yaml.docker-compose",
+    "yaml.gitlab",
+    "yaml.helm-values",
+  },
+
+  root_markers = {
+    ".git",
+    ".yamllint",
+    ".yamlfmt",
+    ".prettierrc",
+    ".prettierrc.json",
+    ".prettierrc.yaml",
+    ".prettierrc.yml",
+    "package.json",
+  },
+
+  settings = {
+    yaml = {
+      validate = true,
+      completion = true,
+      hover = true,
+      format = {
+        enable = true,
+      },
+    },
+  },
+})
