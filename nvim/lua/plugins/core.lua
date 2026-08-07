@@ -5,6 +5,7 @@ use({
   "nvim-treesitter/nvim-treesitter",
   run = ":TSUpdate",
 })
+use("nvim-treesitter/nvim-treesitter-context")
 use("SmiteshP/nvim-navic")
 
 use("hrsh7th/nvim-cmp")
