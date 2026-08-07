@@ -117,11 +117,10 @@ fonts=(
 
 media=(
   grim
+  flameshot
   vlc
   vlc-plugin-ffmpeg
   kooha
-  hyprshot
-  satty
   oculante
 )
 

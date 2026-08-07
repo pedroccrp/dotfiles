@@ -68,7 +68,4 @@ hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tru
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
 
 -- Screenshot
-hl.bind(
-	mainMod .. " + SHIFT + S",
-	hl.dsp.exec_cmd("hyprshot --raw -m region | satty --filename - --floating-hack --early-exit --copy-command wl-copy")
-)
+hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("flameshot gui"))

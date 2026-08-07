@@ -77,3 +77,9 @@ hl.config({
 		disable_hyprland_logo = true,
 	},
 })
+
+hl.window_rule({
+	name = "flameshot-float",
+	match = { class = "flameshot" },
+	float = true,
+})
