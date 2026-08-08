@@ -24,6 +24,24 @@ zen.setup({
   },
 })
 
-vim.keymap.set("n", "<leader>z", "<cmd>ZenMode<CR>", {
+local disabled = {
+  oil = true,
+  help = true,
+  alpha = true,
+  lazy = true,
+  mason = true,
+  qf = true,
+}
+
+local function toggle_zen()
+  if disabled[vim.bo.filetype] then
+    vim.notify("Zen Mode is not available for " .. vim.bo.filetype .. " buffers.", vim.log.levels.WARN)
+    return
+  end
+
+  vim.cmd("ZenMode")
+end
+
+vim.keymap.set("n", "<leader>z", toggle_zen, {
   desc = "Zen Mode",
 })
