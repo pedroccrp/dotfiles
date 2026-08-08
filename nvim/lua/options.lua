@@ -22,7 +22,7 @@ vim.opt.breakindent = true
 
 vim.opt.list = true
 vim.opt.listchars = { tab = "▸ ", trail = "·" }
-vim.opt.fillchars:append({ eob = " " })
+vim.opt.fillchars:append({ eob = " ", vert = "┊", horiz = "┄" })
 
 vim.opt.mouse = "a"
 
