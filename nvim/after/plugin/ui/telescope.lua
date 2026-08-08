@@ -13,6 +13,8 @@ telescope.setup({
       },
     },
     file_ignore_patterns = {
+      "^.git/",
+      "/.git/",
       "^node_modules/",
       "/node_modules/",
       "^log/",
@@ -62,11 +64,11 @@ telescope.load_extension("fzf")
 local builtin = require("telescope.builtin")
 
 vim.keymap.set("n", "<leader>ff", function()
-  builtin.find_files({ hidden = true })
+  builtin.find_files({ hidden = true, no_ignore = true })
 end, {})
 
 vim.keymap.set("n", "<leader>fb", function()
-  builtin.buffers({ hidden = true })
+  builtin.buffers()
 end, {})
 
 vim.keymap.set("n", "<leader>fr", function()
@@ -75,16 +77,17 @@ end, {})
 
 vim.keymap.set("n", "<leader>fw", function()
   local word = vim.fn.expand("<cword>")
-  builtin.live_grep({
-    default_text = word,
-    hidden = true,
-  })
+  builtin.live_grep({ default_text = word })
 end, {})
 
 vim.keymap.set("n", "<leader>fk", function()
-  builtin.keymaps({ hidden = true })
+  builtin.keymaps({ only_buf = true })
 end, {})
 
 vim.keymap.set("n", "<leader>fh", function()
   builtin.help_tags()
+end, {})
+
+vim.keymap.set("n", "<leader>fm", function()
+  builtin.marks()
 end, {})
