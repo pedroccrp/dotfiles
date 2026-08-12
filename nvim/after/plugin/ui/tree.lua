@@ -6,9 +6,6 @@ if not nvim_tree then
 end
 
 nvim_tree.setup({
-  git = {
-    ignore = true,
-  },
   renderer = {
     highlight_opened_files = "none",
     group_empty = true,
@@ -27,6 +24,8 @@ nvim_tree.setup({
     },
   },
   filters = {
+    git_ignored = false,
+    dotfiles = false,
     custom = {
       "\\.gd.uid$",
       "\\.cmd$",
