@@ -6,12 +6,15 @@ if not nvim_tree then
 end
 
 nvim_tree.setup({
+  view = {
+    width = 80,
+  },
   renderer = {
-    highlight_opened_files = "none",
+    highlight_opened_files = "name",
     group_empty = true,
     icons = {
       show = {
-        folder_arrow = false,
+        folder_arrow = true,
       },
     },
     indent_markers = {
