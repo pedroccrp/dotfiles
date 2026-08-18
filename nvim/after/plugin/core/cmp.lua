@@ -25,8 +25,8 @@ cmp.setup({
     { name = "buffer", keyword_length = 3 },
   },
   mapping = cmp.mapping.preset.insert({
-    ["<C-d>"] = cmp.mapping.scroll_docs(-4),
-    ["<C-u>"] = cmp.mapping.scroll_docs(4),
+    ["<C-d>"] = cmp.mapping.scroll_docs(4),
+    ["<C-u>"] = cmp.mapping.scroll_docs(-4),
     ["<C-p>"] = cmp.mapping.select_prev_item(),
     ["<C-n>"] = cmp.mapping.select_next_item(),
     ["<C-k>"] = cmp.mapping.select_prev_item(),
@@ -42,13 +42,38 @@ cmp.setup({
       maxwidth = 50,
       ellipsis_char = "...",
       show_labelDetails = true,
-      symbol_map = {},
-      before = function(_, vim_item)
+      before = function(entry, vim_item)
+        vim_item.menu = ({
+          nvim_lsp = "[LSP]",
+          luasnip = "[Snippet]",
+          path = "[Path]",
+          buffer = "[Buffer]",
+        })[entry.source.name]
+
         return vim_item
       end,
     }),
   },
   experimental = {
     ghost_text = false,
+  },
+  window = {
+    completion = {
+      border = "rounded",
+      max_height = 0,
+      side_padding = 1,
+      scrollbar = false,
+    },
+    documentation = {
+      border = "rounded",
+    },
+  },
+  view = {
+    docs = {
+      auto_open = true,
+    },
+    entries = {
+      vertical_positioning = "auto",
+    },
   },
 })
