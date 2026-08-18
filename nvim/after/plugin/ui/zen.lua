@@ -15,9 +15,6 @@ zen.setup({
     width = 130,
   },
   plugins = {
-    twilight = {
-      enabled = true,
-    },
     gitsigns = {
       enabled = true,
     },

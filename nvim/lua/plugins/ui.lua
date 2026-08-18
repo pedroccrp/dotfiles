@@ -36,17 +36,5 @@ use("OXY2DEV/markview.nvim")
 
 use("cappyzawa/trim.nvim")
 
-use({
-  "folke/twilight.nvim",
-  config = function()
-    require("configs.twilight")
-  end,
-})
-
-use({
-  "folke/zen-mode.nvim",
-  requires = { "folke/twilight.nvim" },
-  config = function()
-    require("configs.zen")
-  end,
-})
+use("folke/twilight.nvim")
+use("folke/zen-mode.nvim")
