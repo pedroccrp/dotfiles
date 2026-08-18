@@ -86,6 +86,8 @@ local function apply_wal_highlights()
 
   local on_accent = wal and wal.on_accent or fg
   vim.api.nvim_set_hl(0, "YankHighlight", { fg = on_accent, bg = accent, bold = true })
+
+  vim.api.nvim_set_hl(0, "TreesitterContext", { bg = bg })
 end
 
 local wal_path = vim.fn.expand("~/.cache/wal/nvim.lua")
