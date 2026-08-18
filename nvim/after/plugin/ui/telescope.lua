@@ -46,6 +46,7 @@ telescope.setup({
       "--line-number",
       "--column",
       "--smart-case",
+      "--hidden",
 
       "--glob=!node_modules/*",
       "--glob=!log/*",
