@@ -57,6 +57,19 @@ telescope.setup({
       "--max-filesize=1M",
     },
   },
+  pickers = {
+    find_files = {
+      find_command = {
+        "fd",
+        "--type",
+        "f",
+        "--hidden",
+        "--exclude",
+        ".git",
+        "--strip-cwd-prefix",
+      },
+    },
+  },
 })
 
 telescope.load_extension("lsp_handlers")
