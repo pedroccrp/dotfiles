@@ -9,7 +9,7 @@ which_key.setup({
   delay = 800,
   win = {
     wo = {
-      winblend = 100,
+      winblend = 0,
     },
   },
 })
