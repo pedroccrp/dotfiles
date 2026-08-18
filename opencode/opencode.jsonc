@@ -8,12 +8,16 @@
     "list": "allow",
     "todoread": "allow",
     "todowrite": "allow",
+    "websearch": "allow",
+    "webfetch": "allow",
+    "question": "allow",
     "bash": {
       "*": "ask",
       "ls *": "allow",
       "cat *": "allow",
+      "grep *": "allow",
       "echo *": "allow",
-      "pwd": "allow",
+      "pwd *": "allow",
       "cd *": "allow"
     }
   }
