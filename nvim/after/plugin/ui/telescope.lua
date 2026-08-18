@@ -69,6 +69,22 @@ telescope.setup({
         "--strip-cwd-prefix",
       },
     },
+    git_changed_files = {
+      find_command = {
+        "git",
+        "diff",
+        "--name-only",
+        "--relative",
+      },
+    },
+    git_untracked_files = {
+      find_command = {
+        "git",
+        "ls-files",
+        "--others",
+        "--exclude-standard",
+      },
+    },
   },
 })
 
@@ -76,6 +92,10 @@ telescope.load_extension("lsp_handlers")
 telescope.load_extension("fzf")
 
 local builtin = require("telescope.builtin")
+local pickers = require("telescope.pickers")
+local finders = require("telescope.finders")
+local previewers = require("telescope.previewers")
+local sorters = require("telescope.sorters")
 
 vim.keymap.set("n", "<leader>ff", function()
   builtin.find_files({ hidden = true })
@@ -109,3 +129,25 @@ end, {})
 vim.keymap.set("n", "<leader>fm", function()
   builtin.marks()
 end, {})
+
+vim.keymap.set("n", "<leader>fg", function()
+  pickers
+    .new({}, {
+      prompt_title = "Changed Files",
+      finder = finders.new_oneshot_job({ "git", "diff", "--name-only", "--relative" }, {}),
+      sorter = sorters.get_fuzzy_file(),
+      previewer = previewers.git_file_diff.new({}),
+    })
+    :find()
+end)
+
+vim.keymap.set("n", "<leader>fG", function()
+  require("telescope.builtin").find_files({
+    find_command = {
+      "git",
+      "ls-files",
+      "--others",
+      "--exclude-standard",
+    },
+  })
+end)
