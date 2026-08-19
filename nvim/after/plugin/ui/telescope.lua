@@ -12,31 +12,14 @@ telescope.setup({
         reverse_directories = true,
       },
     },
-    file_ignore_patterns = {
-      "^.git/",
-      "/.git/",
-      "^node_modules/",
-      "/node_modules/",
-      "^log/",
-      "/log/",
-      "^tmp/",
-      "/tmp/",
-      "vendor/",
-      "%.cmd$",
-      "%.o$",
-      "%.a$",
-      "%.so$",
-      "%.ko$",
-      "%.mod$",
-      "%.order$",
-      "%.symvers$",
-      "^modules%.order$",
-      "^Module%.symvers$",
-      "^%.tmp_",
-      "%.d$",
-      "%.gcno$",
-      "%.gcda$",
-      "%.gd.uid$",
+    layout_strategy = "horizontal",
+    layout_config = {
+      horizontal = {
+        height = 0.95,
+        preview_cutoff = 100,
+        prompt_position = "bottom",
+        width = 0.95,
+      },
     },
     vimgrep_arguments = {
       "rg",
@@ -48,15 +31,29 @@ telescope.setup({
       "--smart-case",
       "--hidden",
 
+      -- Large/generated directories
       "--glob=!node_modules/*",
       "--glob=!log/*",
       "--glob=!tmp/*",
-      "--glob=!vendor/*",
-      "--glob=!*.log",
+
+      -- Build artifacts
+      "--glob=!*.cmd",
+      "--glob=!*.o",
+      "--glob=!*.a",
+      "--glob=!*.so",
+      "--glob=!*.ko",
+      "--glob=!*.mod",
+      "--glob=!*.order",
+      "--glob=!*.symvers",
+      "--glob=!.tmp_*",
+      "--glob=!*.gcno",
+      "--glob=!*.gcda",
+      "--glob=!*.gd.uid",
 
       "--max-filesize=1M",
     },
   },
+
   pickers = {
     find_files = {
       find_command = {
@@ -64,25 +61,44 @@ telescope.setup({
         "--type",
         "f",
         "--hidden",
+
+        -- Large/generated directories
         "--exclude",
         ".git",
+        "--exclude",
+        "node_modules",
+        "--exclude",
+        "log",
+        "--exclude",
+        "tmp",
+
+        -- Build artifacts
+        "--exclude",
+        "*.cmd",
+        "--exclude",
+        "*.o",
+        "--exclude",
+        "*.a",
+        "--exclude",
+        "*.so",
+        "--exclude",
+        "*.ko",
+        "--exclude",
+        "*.mod",
+        "--exclude",
+        "*.order",
+        "--exclude",
+        "*.symvers",
+        "--exclude",
+        ".tmp_*",
+        "--exclude",
+        "*.gcno",
+        "--exclude",
+        "*.gcda",
+        "--exclude",
+        "*.gd.uid",
+
         "--strip-cwd-prefix",
-      },
-    },
-    git_changed_files = {
-      find_command = {
-        "git",
-        "diff",
-        "--name-only",
-        "--relative",
-      },
-    },
-    git_untracked_files = {
-      find_command = {
-        "git",
-        "ls-files",
-        "--others",
-        "--exclude-standard",
       },
     },
   },
@@ -102,8 +118,19 @@ vim.keymap.set("n", "<leader>ff", function()
 end, {})
 
 vim.keymap.set("n", "<leader>fF", function()
-  builtin.find_files({ hidden = true, no_ignore = true })
-end, {})
+  builtin.find_files({
+    find_command = {
+      "fd",
+      "--type",
+      "f",
+      "--hidden",
+      "--no-ignore",
+      "--exclude",
+      ".git",
+      "--strip-cwd-prefix",
+    },
+  })
+end)
 
 vim.keymap.set("n", "<leader>fb", function()
   builtin.buffers()
