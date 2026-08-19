@@ -3,6 +3,9 @@ vim.g.maplocalleader = " "
 
 vim.keymap.set({ "n", "v" }, "<leader>e", ":", { desc = "Enter command mode" })
 
+vim.keymap.set("n", "J", ":tabprevious<CR>", { silent = true, desc = "Move to previous tab" })
+vim.keymap.set("n", "K", ":tabnext<CR>", { silent = true, desc = "Move to previous tab" })
+
 vim.keymap.set("n", "<leader>k", ":nohlsearch<CR>", { silent = true, desc = "Clear search highlight" })
 vim.keymap.set("n", "<leader>x", ":!xdg-open %<cr><cr>", { desc = "Open file externally" })
 vim.keymap.set("n", "<leader>Q", ":%bdelete<CR>", { silent = true, desc = "Delete all active buffers" })
