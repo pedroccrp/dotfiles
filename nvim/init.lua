@@ -1,6 +1,4 @@
 require("helpers")
-require("packer-setup")
-require("plugins-installer")
 require("options")
 require("keymaps")
 require("tmux")

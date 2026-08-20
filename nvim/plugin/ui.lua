@@ -1,0 +1,17 @@
+vim.pack.add({
+  "https://github.com/nvim-lua/plenary.nvim",
+  "https://github.com/nvim-tree/nvim-web-devicons",
+  "https://github.com/nvim-telescope/telescope.nvim",
+  "https://github.com/nvim-telescope/telescope-fzf-native.nvim",
+  "https://github.com/nvim-tree/nvim-tree.lua",
+  "https://github.com/stevearc/oil.nvim",
+  "https://github.com/nvim-lualine/lualine.nvim",
+  "https://github.com/folke/noice.nvim",
+  "https://github.com/MunifTanjim/nui.nvim",
+  "https://github.com/rcarriga/nvim-notify",
+  "https://github.com/petertriho/nvim-scrollbar",
+  "https://github.com/OXY2DEV/markview.nvim",
+  "https://github.com/cappyzawa/trim.nvim",
+  "https://github.com/folke/twilight.nvim",
+  "https://github.com/folke/zen-mode.nvim",
+}, { confirm = false })
