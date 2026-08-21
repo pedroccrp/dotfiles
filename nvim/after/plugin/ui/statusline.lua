@@ -30,11 +30,6 @@ local function macro_recording()
   return "RECORDING MACRO @" .. macro_reg
 end
 
-navic.setup({
-  highlight = true,
-  separator = " > ",
-})
-
 local function attach_navic(bufnr)
   local clients = vim.lsp.get_active_clients({ bufnr = bufnr })
   for _, client in ipairs(clients) do

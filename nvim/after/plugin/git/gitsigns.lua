@@ -1,21 +1,9 @@
 local helpers = require("helpers")
 
--- Fugitive
-vim.keymap.set("n", "<leader>gb", ":Git blame<CR>")
-vim.keymap.set("n", "<leader>gs", ":Git status<CR>")
-
--- Gutter
-vim.keymap.set("n", "<leader>hs", ":GitGutterStageHunk<CR>")
-vim.keymap.set("n", "<leader>hr", ":GitGutterUndoHunk<CR>")
-vim.keymap.set("n", "<leader>gn", ":GitGutterNextHunk<CR>")
-vim.keymap.set("n", "<leader>gp", ":GitGutterPrevHunk<CR>")
-
-local git_conflict = helpers.safe_require("git-conflict")
 local gitsigns = helpers.safe_require("gitsigns")
-
-if not git_conflict or not gitsigns then return end
-
-git_conflict.setup()
+if not gitsigns then
+  return
+end
 
 gitsigns.setup({
   signs = {

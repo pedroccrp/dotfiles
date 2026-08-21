@@ -1,13 +1,9 @@
 local helpers = require("helpers")
 
-local twilight = helpers.safe_require("twilight")
 local zen = helpers.safe_require("zen-mode")
-
-if not twilight or not zen then
+if not zen then
   return
 end
-
-twilight.setup({})
 
 zen.setup({
   window = {

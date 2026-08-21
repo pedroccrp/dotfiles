@@ -1,7 +1,9 @@
 local helpers = require("helpers")
 
 local marks = helpers.safe_require("marks")
-if not marks then return end
+if not marks then
+  return
+end
 
 marks.setup({
   default_mappings = true,
