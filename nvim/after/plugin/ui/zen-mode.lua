@@ -14,6 +14,9 @@ zen.setup({
     gitsigns = {
       enabled = true,
     },
+    twilight = {
+      enabled = false,
+    },
   },
 })
 
