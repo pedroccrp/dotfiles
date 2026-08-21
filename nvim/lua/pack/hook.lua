@@ -11,7 +11,7 @@ vim.api.nvim_create_autocmd("User", {
       vim.schedule(function()
         vim.cmd("TSUpdate")
       end)
-    elseif name == "telescope-fzf-native" and changed then
+    elseif name == "telescope-fzf-native.nvim" and changed then
       -- Synchronous: after/plugin loads the fzf extension right after this file.
       vim.system({ "make" }, { cwd = ev.data.path }):wait()
     elseif name == "mason.nvim" and changed then
