@@ -1,3 +1,3 @@
+require("pack")
 require("config")
 require("lsp")
-require("pack")
