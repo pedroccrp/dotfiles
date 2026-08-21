@@ -1,5 +1,4 @@
-vim.api.nvim_create_autocmd("User", {
-  pattern = "PackChanged",
+vim.api.nvim_create_autocmd("PackChanged", {
   callback = function(ev)
     local name, kind = ev.data.spec.name, ev.data.kind
     local changed = kind == "install" or kind == "update"
