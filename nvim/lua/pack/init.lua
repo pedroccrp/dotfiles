@@ -1,0 +1,7 @@
+require("pack.hook")
+require("pack.core")
+require("pack.editing")
+require("pack.git-plugins")
+require("pack.navigation")
+require("pack.ui")
+require("pack.utils")

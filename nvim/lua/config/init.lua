@@ -1,0 +1,5 @@
+require("config.options")
+require("config.keymaps")
+require("config.tmux")
+require("config.filetypes")
+require("config.misc")
